@@ -100,8 +100,8 @@ export default function Home() {
         className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[var(--charcoal)]/82 backdrop-blur-xl"
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
-          <a href="#hero" className="font-serif text-2xl text-[var(--warm-white)]">
-            LUMINA
+          <a href="#hero" className="flex items-baseline gap-1.5 font-serif text-2xl text-[var(--warm-white)]">
+            LUMINA <span className="text-base italic text-[var(--muted-gold)]">Studio</span>
           </a>
           <div className="hidden items-center gap-8 text-sm text-[var(--soft-gray)] md:flex">
             {navItems.map((item) => (
@@ -287,7 +287,9 @@ export default function Home() {
 
       <footer className="section-shell border-t border-white/10 py-8">
         <div className="footer-balance">
-          <p className="font-serif text-3xl text-[var(--warm-white)]">LUMINA</p>
+          <p className="flex items-baseline gap-1.5 font-serif text-3xl text-[var(--warm-white)]">
+            LUMINA <span className="text-xl italic text-[var(--muted-gold)]">Studio</span>
+          </p>
           <p>ToTo Therdsak / Photographer / Visual Storyteller</p>
           <p>Weddings / Ceremonies / Family / Editorial Portraits</p>
         </div>

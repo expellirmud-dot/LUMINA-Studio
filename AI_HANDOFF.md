@@ -10,7 +10,7 @@ Phase 1 — Landing Page
 
 ## Current Status
 
-Phase 1.3 portfolio image integration implemented.
+Phase 1.4 Brand lockup refinement implemented.
 
 ## Repository State
 
@@ -45,6 +45,7 @@ Production URL: N/A
 - Subtle portfolio card hover refinement
 - Four selected portfolio images integrated from `docs/pic/`: `docs/pic/2/IMG_1718.jpg`, `docs/pic/2/IMG_1754.jpg`, `docs/pic/2/PTO_8484.jpg`, `docs/pic/1/125.jpg`
 - Portfolio cards now use real images via Next.js Image while preserving single-page scope
+- Brand lockup refinement: Updated LUMINA wordmark in header and footer to include a small italic gold “Studio” mark
 
 ## Pending
 

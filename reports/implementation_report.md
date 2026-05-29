@@ -2,7 +2,7 @@
 
 ## Latest Task
 
-Phase 1.3 portfolio image integration implemented.
+Phase 1.4 Brand lockup refinement implemented.
 
 ## Files Changed
 
@@ -26,4 +26,4 @@ Passed: `npm run lint`
 
 ## Notes
 
-Updated only the selected portfolio image sources: Wedding Light uses `docs/pic/2/IMG_1718.jpg`, Sacred Ceremony uses `docs/pic/2/IMG_1754.jpg`, Blessing at Home uses `docs/pic/2/PTO_8484.jpg`, and Editorial Presence uses `docs/pic/1/125.jpg`. Layout, copy, motion, styling, profile portrait, and scope remain unchanged.
+Updated LUMINA wordmark in header and footer to include a small italic gold “Studio” mark. Layout, copy, motion, styling, profile portrait, and scope remain unchanged.
