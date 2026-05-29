@@ -21,3 +21,17 @@ For config tasks, prefer src/config/* changes only.
 If build or lint fails, stop and report exact output.
 
 Do not self-expand into backend, booking, CMS, dashboard, database, auth, API routes, Three.js, or WebGL.
+
+## Skill Profiles
+
+Before executing a task, read:
+
+- .ai/SKILL_PROFILES.md
+
+Follow the active skill profile.
+
+If the profile allows proposing improvements, separate them under:
+
+PROPOSED IMPROVEMENTS
+
+Do not implement proposed improvements unless the task explicitly approves them.

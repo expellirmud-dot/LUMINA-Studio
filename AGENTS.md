@@ -35,3 +35,26 @@ Forbidden:
 - Payments
 - Production Three.js
 - Production WebGL
+
+## Skill Execution Profiles
+
+Before executing a skill, check:
+
+- .ai/SKILL_PROFILES.md
+
+If a skill defines a profile, follow that profile for:
+
+- temperature guidance
+- top_p guidance
+- proposal rights
+- strictness
+- whether implementation is allowed
+
+Important:
+
+Agents may propose improvements only when the active profile allows it.
+Agents must not implement unapproved proposals unless explicitly instructed.
+
+Before approving any completed task, execute:
+
+- skills/LUMINA_REVIEW_CHECKLIST.md
