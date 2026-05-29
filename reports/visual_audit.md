@@ -58,11 +58,16 @@ Phase 1.6 — Design Audit and Visual Config System
 - **Recommendation:** PASS. The curation is editorially sound.
 
 
-## Typography Critique
 
-- The Cormorant Garamond and Plus Jakarta Sans pairing supports the editorial direction.
-- Large serif headings work well, but long service/contact labels need mobile checks to avoid crowding.
-- Typography tokens should remain centralized so future scale adjustments are deliberate.
+## Typography QA (LUMINA-QA-004)
+
+- **Font Pairing:** `Cormorant Garamond` (Heading) + `Plus Jakarta Sans` (Body). The contrast between the classical serif and modern sans-serif perfectly supports the luxury editorial direction.
+- **Heading Readability:** Excellent. The high-contrast serif at large scales creates an immediate premium feel while remaining legible.
+- **Body Readability:** High. The sans-serif body text provides a professional, accessible counterpoint to the artistic headings.
+- **Contact Typography:** The bold display values create a clear hierarchy and confidence. The use of muted gold for accents maintains brand consistency.
+- **Mobile Risk:** Moderate. Large display values in the contact section may risk awkward wrapping on narrow screens (< 360px). Recommend verifying font-scaling for the contact values.
+- **Recommendation:** PASS. The system is structurally sound and visually aligned.
+
 
 
 ## Contact Variant QA (LUMINA-QA-001)
