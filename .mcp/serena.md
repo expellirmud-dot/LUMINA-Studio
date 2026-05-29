@@ -28,4 +28,5 @@ Required context:
 - AI_HANDOFF.md
 - docs/BRAND.md
 - docs/DESIGN.md
-- skills/LUMINA_BOOTSTRAP.md
+- skills/LUMINA_BOOTSTRAP/skill.md
+

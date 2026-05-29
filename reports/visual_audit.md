@@ -58,3 +58,4 @@ Phase 1.6 — Design Audit and Visual Config System
 - Hero focal area height and overlay text may feel heavy on small screens.
 - Portfolio cards use vertical crops from wide source images, so subject loss is possible.
 - Contact values use large display type and need real-device checks for wrapping and rhythm.
+
