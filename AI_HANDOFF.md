@@ -10,7 +10,7 @@ Phase 1 — Landing Page
 
 ## Current Status
 
-Phase 1.5 hero visual upgrade implemented.
+Phase 1.6 design audit and visual config system implemented.
 
 ## Repository State
 
@@ -48,6 +48,9 @@ Production URL: N/A
 - Brand lockup refinement: Updated LUMINA wordmark in header and footer to include a small italic gold “Studio” mark
 - Hero visual upgrade: `docs/pic/2/IMG_1754.jpg` added as a darkened editorial image layer behind the Future Crystal concept label
 - Small “Studio” mark increased slightly in header and footer
+- Visual config system added under `src/config/`
+- Brand, hero image, portfolio images, profile image, contact details, typography tokens, and active contact variant are config-driven
+- Visual audit created at `reports/visual_audit.md`
 
 ## Pending
 
@@ -56,4 +59,4 @@ Production URL: N/A
 
 ## Next Task
 
-Run visual QA across mobile and desktop for the hero image crop and contrast, then deploy test and verify the production URL.
+Run the next visual experiment by switching contact presentation variants from config, then perform mobile/desktop QA and deploy test.
