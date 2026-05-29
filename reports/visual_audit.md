@@ -53,9 +53,17 @@ Phase 1.6 — Design Audit and Visual Config System
 - Large serif headings work well, but long service/contact labels need mobile checks to avoid crowding.
 - Typography tokens should remain centralized so future scale adjustments are deliberate.
 
-## Mobile Risk
 
-- Hero focal area height and overlay text may feel heavy on small screens.
-- Portfolio cards use vertical crops from wide source images, so subject loss is possible.
-- Contact values use large display type and need real-device checks for wrapping and rhythm.
+## Contact Variant QA (LUMINA-QA-001)
+
+- **Active Variant:** `contact-strip`
+- **Desktop Readability:** High. The minimalist strip arrangement provides a sophisticated, low-friction path to contact details without cluttering the footer.
+- **Mobile Readability Risk:** Moderate. The large display font for the phone number may risk wrapping or overlapping if not handled by flexible grid containers. Requires real-device verification for rhythm.
+- **Hierarchy Analysis:** 
+  - **Phone:** Dominant and clear; serves as the primary high-trust anchor.
+  - **Line:** Well-balanced; clearly identifiable as the primary instant messaging channel.
+  - **Facebook:** Subtle but present; maintains the professional social presence.
+- **Editorial Feeling:** High. The horizontal "strip" layout avoids the utility-first look of a standard contact list, aligning with the studio's boutique luxury branding.
+- **Recommendation:** Keep `contact-strip`. It provides the best balance between accessibility and editorial restraint.
+
 
