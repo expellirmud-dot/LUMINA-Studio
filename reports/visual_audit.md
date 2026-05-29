@@ -35,11 +35,16 @@ Phase 1.6 — Design Audit and Visual Config System
 - The contact section currently reads premium and direct, but it is visually large; mobile checks should confirm phone and Facebook labels do not dominate the CTA.
 - A config-based contact variant is useful because contact presentation will likely need A/B visual testing without changing core page structure.
 
-## Hero Critique
 
-- The hero image layer solves the empty placeholder feel and keeps the Future Crystal concept present.
-- The crop is cinematic, but the label overlay must be checked on small screens so it does not feel like a boxed promo card.
-- The hero should stay dark and subtle; brighter treatment would push it toward a normal wedding template.
+## Hero QA (LUMINA-QA-002)
+
+- **Active Image:** `docs/pic/2/IMG_1754.jpg` (Sacred Ceremony)
+- **Crop Analysis:** Position `55% 48%` provides a cinematic, asymmetrical balance that accommodates the left-aligned editorial typography.
+- **Readability:** High. The darkened image layer ensures a strong contrast for the white serif headings, maintaining accessibility without sacrificing mood.
+- **Luxury Feeling:** Strong. The image conveys authenticity and emotional weight, avoiding a "stock photo" aesthetic.
+- **Duplication Check:** Image is reused in the portfolio section. While acceptable for Phase 1 due to asset strength, a dedicated hero-only asset is recommended for the final production release to avoid visual repetition.
+- **Recommendation:** PASS. Keep the current image but flag for "Unique Hero Asset" in Phase 2.
+
 
 ## Portfolio Critique
 
