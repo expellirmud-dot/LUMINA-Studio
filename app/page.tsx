@@ -1,65 +1,211 @@
-import Image from "next/image";
+const navItems = ["Story", "Work", "Services", "Studio", "Contact"];
+
+const storySteps = [
+  {
+    label: "Crystal",
+    copy: "A quiet source of refraction, held for the future interactive centerpiece.",
+  },
+  {
+    label: "Light",
+    copy: "Natural contrast, warm highlights, and restrained shadow shape the mood.",
+  },
+  {
+    label: "Lens",
+    copy: "Editorial framing gives every scene a deliberate point of view.",
+  },
+  {
+    label: "Frame",
+    copy: "Composition becomes the studio language: precise, minimal, cinematic.",
+  },
+  {
+    label: "Photography",
+    copy: "Still images carry brand, atmosphere, and emotional clarity.",
+  },
+  {
+    label: "LUMINA",
+    copy: "A premium visual studio for photography, direction, and creative work.",
+  },
+];
+
+const portfolioItems = [
+  "Editorial Portrait",
+  "Studio Product",
+  "Architectural Light",
+  "Campaign Frame",
+];
+
+const services = [
+  "Editorial photography",
+  "Brand visual direction",
+  "Creative image systems",
+  "Portfolio art direction",
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen overflow-hidden bg-[var(--charcoal)] text-[var(--warm-white)]">
+      <nav
+        aria-label="Primary navigation"
+        className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[var(--charcoal)]/82 backdrop-blur-xl"
+      >
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+          <a href="#hero" className="font-serif text-2xl text-[var(--warm-white)]">
+            LUMINA
+          </a>
+          <div className="hidden items-center gap-8 text-sm text-[var(--soft-gray)] md:flex">
+            {navItems.map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`} className="nav-link">
+                {item}
+              </a>
+            ))}
+          </div>
+          <a href="#contact" className="gold-link text-sm">
+            Begin
+          </a>
+        </div>
+      </nav>
+
+      <section id="hero" className="hero-section section-shell pt-28">
+        <div className="grid min-h-[88svh] items-end gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
+          <div className="reveal space-y-8 pb-10">
+            <p className="eyebrow">Luxury editorial photography studio</p>
+            <h1 className="max-w-4xl font-serif text-6xl leading-[0.94] text-[var(--warm-white)] sm:text-7xl lg:text-8xl">
+              LUMINA Studio
+            </h1>
+            <p className="max-w-2xl text-lg leading-8 text-[var(--soft-gray)] sm:text-xl">
+              Cinematic photography and visual direction for brands, artists,
+              and spaces that need a precise visual presence.
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <a href="#work" className="primary-action">
+                View Foundation
+              </a>
+              <a href="#story" className="secondary-action">
+                Follow the Story
+              </a>
+            </div>
+          </div>
+
+          <div className="reveal hero-focal" aria-label="Reserved area for future 3D Crystal Experience">
+            <div className="focal-grid" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
+            <div className="crystal-reserve">
+              <p>Reserved focal area</p>
+              <strong>Future Crystal Experience</strong>
+              <span>No Three.js or WebGL implemented</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" className="section-shell border-t border-white/10 py-24 sm:py-32">
+        <div className="mb-14 grid gap-8 lg:grid-cols-[0.7fr_1fr]">
+          <p className="eyebrow reveal">Scroll Storytelling</p>
+          <h2 className="reveal font-serif text-4xl leading-tight sm:text-6xl">
+            Crystal, light, lens, frame, photography, LUMINA.
+          </h2>
+        </div>
+        <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-3">
+          {storySteps.map((step, index) => (
+            <article key={step.label} className="story-panel reveal">
+              <span className="text-sm text-[var(--muted-gold)]">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="mt-8 font-serif text-4xl">{step.label}</h3>
+              <p className="mt-5 leading-7 text-[var(--soft-gray)]">{step.copy}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="work" className="section-shell py-24 sm:py-32">
+        <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="max-w-2xl">
+            <p className="eyebrow reveal">Featured Work</p>
+            <h2 className="reveal mt-5 font-serif text-4xl leading-tight sm:text-6xl">
+              Placeholder portfolio studies with editorial rhythm.
+            </h2>
+          </div>
+          <p className="reveal max-w-sm leading-7 text-[var(--soft-gray)]">
+            These slots are intentionally image-free until the real studio
+            portfolio is selected.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+        <div className="grid gap-5 md:grid-cols-2">
+          {portfolioItems.map((item, index) => (
+            <article key={item} className="portfolio-tile reveal">
+              <div className="placeholder-frame" aria-hidden="true">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+              </div>
+              <div className="mt-5 flex items-end justify-between gap-4">
+                <h3 className="font-serif text-3xl">{item}</h3>
+                <p className="text-sm text-[var(--muted-gold)]">Placeholder</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="services" className="section-shell border-y border-white/10 py-24 sm:py-32">
+        <div className="grid gap-12 lg:grid-cols-[0.72fr_1fr]">
+          <div>
+            <p className="eyebrow reveal">Services</p>
+            <h2 className="reveal mt-5 font-serif text-4xl leading-tight sm:text-6xl">
+              Focused creative services for visual presence.
+            </h2>
+          </div>
+          <div className="divide-y divide-white/10">
+            {services.map((service) => (
+              <div key={service} className="service-row reveal">
+                <span>{service}</span>
+                <span aria-hidden="true">+</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="studio" className="section-shell py-24 sm:py-32">
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div className="reveal studio-mark" aria-hidden="true">
+            <span>L</span>
+          </div>
+          <div className="reveal space-y-7">
+            <p className="eyebrow">About Studio</p>
+            <h2 className="font-serif text-4xl leading-tight sm:text-6xl">
+              A minimal studio foundation for photography, design, and visual storytelling.
+            </h2>
+            <p className="text-lg leading-8 text-[var(--soft-gray)]">
+              LUMINA Studio is framed as a premium editorial practice: quiet,
+              cinematic, and selective. The page foundation creates room for
+              future portfolio depth while staying strictly within Phase 1.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="section-shell pb-20 pt-10 sm:pb-28">
+        <div className="cta-band reveal">
+          <p className="eyebrow">Contact CTA</p>
+          <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight sm:text-7xl">
+            Build the first impression before the first frame is taken.
+          </h2>
+          <a href="mailto:studio@lumina.example" className="primary-action mt-10 inline-flex">
+            studio@lumina.example
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <footer className="section-shell border-t border-white/10 py-8">
+        <div className="flex flex-col justify-between gap-4 text-sm text-[var(--soft-gray)] sm:flex-row">
+          <p>LUMINA Studio</p>
+          <p>Photography / Visual Storytelling / Creative Direction</p>
+        </div>
+      </footer>
+    </main>
   );
 }
