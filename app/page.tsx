@@ -1,5 +1,9 @@
 import Image from "next/image";
 import profilePortrait from "../docs/Profile Pic.jpg";
+import editorialPresenceImage from "../docs/pic/1/322.jpg";
+import weddingLightImage from "../docs/pic/2/IMG_1718.jpg";
+import blessingAtHomeImage from "../docs/pic/2/PTO_8484.jpg";
+import sacredCeremonyImage from "../docs/pic/4/128.jpg";
 
 const navItems = ["Story", "Work", "Services", "Studio", "Contact"];
 
@@ -34,18 +38,30 @@ const portfolioItems = [
   {
     title: "Wedding Light",
     category: "Weddings",
+    image: weddingLightImage,
+    alt: "Outdoor wedding ceremony stage with soft floral styling and guests",
+    position: "50% 45%",
   },
   {
     title: "Sacred Ceremony",
     category: "Ordinations",
+    image: sacredCeremonyImage,
+    alt: "Formal community ceremony portrait beneath evening lights",
+    position: "50% 47%",
   },
   {
     title: "Blessing at Home",
     category: "House Blessings",
+    image: blessingAtHomeImage,
+    alt: "House blessing setup with ceremonial bowls and floral stage",
+    position: "50% 42%",
   },
   {
     title: "Editorial Presence",
     category: "Editorial Portraits",
+    image: editorialPresenceImage,
+    alt: "Cinematic performance detail with guitar and saturated stage light",
+    position: "50% 50%",
   },
 ];
 
@@ -170,15 +186,23 @@ export default function Home() {
             </h2>
           </div>
           <p className="reveal max-w-sm leading-7 text-[var(--soft-gray)]">
-            Elegant image slots are prepared for future real portfolio photos.
-            Current visuals remain placeholder-only.
+            Four selected portfolio frames establish the visual direction while
+            the full archive remains reserved for future portfolio expansion.
           </p>
         </div>
         <div className="grid gap-5 md:grid-cols-2">
           {portfolioItems.map((item, index) => (
             <article key={item.title} className="portfolio-tile reveal">
-              <div className="placeholder-frame" aria-hidden="true">
-                <span>{String(index + 1).padStart(2, "0")}</span>
+              <div className="portfolio-image-frame">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="portfolio-image"
+                  style={{ objectPosition: item.position }}
+                />
+                <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
               </div>
               <div className="mt-5 flex items-end justify-between gap-4">
                 <h3 className="font-serif text-3xl">{item.title}</h3>

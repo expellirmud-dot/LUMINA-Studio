@@ -218,11 +218,10 @@ body {
   transform: translateY(-2px) scale(1.005);
 }
 
-.placeholder-frame {
+.portfolio-image-frame {
+  position: relative;
   aspect-ratio: 4 / 5;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  overflow: hidden;
   border: 1px solid rgba(246, 241, 232, 0.12);
   background:
     linear-gradient(120deg, rgba(246, 241, 232, 0.14), transparent 38%),
@@ -235,17 +234,44 @@ body {
     transform 180ms ease;
 }
 
-.portfolio-tile:hover .placeholder-frame {
+.portfolio-image-frame::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, transparent 48%, rgba(17, 16, 14, 0.72)),
+    linear-gradient(90deg, rgba(17, 16, 14, 0.22), transparent 42%);
+  pointer-events: none;
+}
+
+.portfolio-image {
+  object-fit: cover;
+  filter: saturate(0.88) contrast(1.03) brightness(0.92);
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.portfolio-image-frame span {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1;
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(4rem, 12vw, 8rem);
+  line-height: 0.82;
+  color: rgba(246, 241, 232, 0.2);
+}
+
+.portfolio-tile:hover .portfolio-image-frame {
   border-color: rgba(185, 154, 95, 0.45);
   opacity: 0.88;
   transform: scale(0.995);
 }
 
-.placeholder-frame span {
-  font-family: var(--font-cormorant), serif;
-  font-size: clamp(4rem, 12vw, 8rem);
-  line-height: 0.82;
-  color: rgba(246, 241, 232, 0.12);
+.portfolio-tile:hover .portfolio-image {
+  filter: saturate(0.94) contrast(1.06) brightness(0.88);
+  transform: scale(1.025);
 }
 
 .service-row {

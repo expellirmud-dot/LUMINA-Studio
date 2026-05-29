@@ -2,7 +2,7 @@
 
 ## Latest Task
 
-Phase 1.2.1 editorial refinement pass implemented.
+Phase 1.3 portfolio image integration implemented.
 
 ## Files Changed
 
@@ -10,6 +10,10 @@ Phase 1.2.1 editorial refinement pass implemented.
 - `app/layout.tsx`
 - `app/globals.css`
 - `docs/Profile Pic.jpg` (used as existing portrait asset)
+- `docs/pic/1/322.jpg`
+- `docs/pic/2/IMG_1718.jpg`
+- `docs/pic/2/PTO_8484.jpg`
+- `docs/pic/4/128.jpg`
 - `AI_HANDOFF.md`
 - `next-env.d.ts` (updated by Next build)
 - `reports/implementation_report.md`
@@ -22,4 +26,4 @@ Passed: `npm run lint`
 
 ## Notes
 
-Refined the existing single-page landing page with the provided profile portrait from `docs/Profile Pic.jpg`, stronger editorial About copy, a short photographer quote, clearer contact hierarchy, subtle portfolio hover treatment, and a more balanced footer. No backend, database, authentication, booking, CMS, dashboard, API routes, Three.js, WebGL, new dependencies, Thai copy, or new features were added.
+Replaced the four portfolio placeholder cards with selected real images from `docs/pic/` using Next.js Image, cinematic crops, editorial overlay treatment, and subtle hover refinement. The existing profile portrait remains in place. No gallery system, carousel, lightbox, backend, database, authentication, booking, CMS, dashboard, API routes, Three.js, WebGL, or new dependencies were added.

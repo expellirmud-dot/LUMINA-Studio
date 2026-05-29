@@ -10,7 +10,7 @@ Phase 1 — Landing Page
 
 ## Current Status
 
-Phase 1.2.1 editorial refinement pass implemented.
+Phase 1.3 portfolio image integration implemented.
 
 ## Repository State
 
@@ -43,6 +43,8 @@ Production URL: N/A
 - Refined editorial About copy and photographer quote
 - Refined contact typography and footer balance
 - Subtle portfolio card hover refinement
+- Four selected portfolio images integrated from `docs/pic/`
+- Portfolio cards now use real images via Next.js Image while preserving single-page scope
 
 ## Pending
 
@@ -51,4 +53,4 @@ Production URL: N/A
 
 ## Next Task
 
-Run visual QA across mobile and desktop, then deploy test and verify the production URL.
+Run visual QA across mobile and desktop for the integrated portfolio images, then deploy test and verify the production URL.
