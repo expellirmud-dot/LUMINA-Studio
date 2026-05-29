@@ -1,10 +1,35 @@
-# CODEGRAPH MCP NOTES
+---
+name: codegraph-mcp-lumina
+description: CodeGraph MCP usage notes for LUMINA Studio.
+---
 
-CodeGraph is optional in Phase 1.
+# CodeGraph MCP Notes
 
-Use only if:
-- Project grows beyond simple landing page
-- Component relationships become hard to track
-- Future phases add portfolio, booking, or client gallery
+Project: LUMINA Studio
 
-Do not introduce CodeGraph complexity during initial landing page work unless needed.
+Current phase:
+Phase 1 - Landing Page
+
+Use CodeGraph only for:
+- Understanding component relationships
+- Reviewing imports
+- Checking frontend structure
+- Detecting unnecessary complexity
+
+Do not use CodeGraph to justify adding:
+- Backend
+- Database
+- Auth
+- CMS
+- Booking
+- Dashboard
+- API routes
+
+Current expected structure:
+- app/
+- src/components/
+- src/sections/
+- src/lib/
+- docs/
+- skills/
+- reports/
