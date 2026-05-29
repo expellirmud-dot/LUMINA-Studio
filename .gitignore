@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# next
+.next/
+out/
+
+# env
+.env
+.env.local
+
+# logs
+*.log
+
+# vscode
+.vscode/
+
+# serena cache
+.serena/cache/
+
+# windows
+Thumbs.db
