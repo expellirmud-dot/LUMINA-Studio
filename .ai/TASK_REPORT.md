@@ -1,29 +1,51 @@
-# TASK REPORT
+# TASK REPORT QA TEMPLATE
 
 ## Task ID
-LUMINA-QA-004
+
+LUMINA-QA-XXX
 
 ## Model Used
-gemma-4-31b-it
+
+<model>
+
+## Serena Check
+
+* Serena configured: PASS / FAIL
+* Project verified: PASS / FAIL
+* Memory status:
+* Stale context detected: YES / NO
+
+## CodeGraph Check
+
+* CodeGraph available: PASS / FAIL
+* Filesystem matches graph: PASS / FAIL
+* Graph scope verified: PASS / FAIL
 
 ## Files Changed
-- reports/visual_audit.md
+
+* ...
 
 ## Summary
-Performed Visual QA for the Typography system. Verified the pairing of Cormorant Garamond and Plus Jakarta Sans. Reviewed readability for headings, body, and contact sections. Identified potential wrapping risks for large display values on mobile.
+
+...
 
 ## Validation
-- npm run lint: Passed
-- npm run build: Passed
+
+* npm run lint:
+* npm run build:
 
 ## Scope Check
-Confirmed no backend/database/auth/booking/CMS/dashboard/API routes were added. No files outside Allowed Files were edited.
+
+...
 
 ## Issues / Risks
-Potential text wrapping on very narrow mobile screens for contact values.
+
+...
 
 ## Recommendation
-PASS. The typography system is visually aligned with the luxury brand.
+
+PASS / CONDITIONAL PASS / FAIL
 
 ## Next Task
-Final visual polish and production deployment verification.
+
+LUMINA-QA-XXX

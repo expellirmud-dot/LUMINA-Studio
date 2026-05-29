@@ -370,6 +370,10 @@ body {
   background: rgba(246, 241, 232, 0.12);
 }
 
+.contact-grid-strip {
+  border-inline: 0;
+}
+
 .contact-link {
   display: grid;
   gap: 0.75rem;
@@ -385,6 +389,15 @@ body {
   color: var(--charcoal);
 }
 
+.contact-link-quiet:hover {
+  background: rgba(246, 241, 232, 0.08);
+  color: var(--warm-white);
+}
+
+.cta-band-quiet {
+  background: rgba(246, 241, 232, 0.035);
+}
+
 .contact-link span {
   color: var(--muted-gold);
   font-size: 0.75rem;
@@ -394,7 +407,7 @@ body {
 
 .contact-link strong {
   font-family: var(--font-cormorant), serif;
-  font-size: clamp(2.15rem, 6vw, 3.7rem);
+  font-size: clamp(1.75rem, 5vw, 3.7rem);
   font-weight: 600;
   line-height: 1;
   overflow-wrap: anywhere;
@@ -405,6 +418,7 @@ body {
   gap: 1rem;
   color: var(--soft-gray);
   font-size: 0.85rem;
+  text-align: center;
 }
 
 .reveal {
@@ -448,6 +462,7 @@ body {
   .footer-balance {
     grid-template-columns: 0.8fr 1fr 1fr;
     align-items: end;
+    text-align: left;
   }
 
   .footer-balance p:last-child {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { siteConfig } from "../src/config/site";
 import "./globals.css";
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -14,11 +15,11 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "LUMINA Studio | ToTo Therdsak Photography",
+  title: `${siteConfig.brandName} | ${siteConfig.ownerName} Photography`,
   description:
     "Premium photography and visual storytelling by ToTo Therdsak for weddings, ceremonies, families, and editorial portraits.",
   openGraph: {
-    title: "LUMINA Studio by ToTo Therdsak",
+    title: `${siteConfig.brandName} by ${siteConfig.ownerName}`,
     description:
       "Premium photography and cinematic visual storytelling for meaningful occasions.",
     type: "website",

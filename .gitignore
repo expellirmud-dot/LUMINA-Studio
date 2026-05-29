@@ -24,3 +24,7 @@ out/
 # windows
 Thumbs.db
 .vercel
+
+.codegraph/*.db
+.codegraph/*.db-shm
+.codegraph/*.db-wal
