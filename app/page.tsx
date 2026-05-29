@@ -1,9 +1,9 @@
 import Image from "next/image";
 import profilePortrait from "../docs/Profile Pic.jpg";
-import editorialPresenceImage from "../docs/pic/1/322.jpg";
+import editorialPresenceImage from "../docs/pic/1/125.jpg";
 import weddingLightImage from "../docs/pic/2/IMG_1718.jpg";
 import blessingAtHomeImage from "../docs/pic/2/PTO_8484.jpg";
-import sacredCeremonyImage from "../docs/pic/4/128.jpg";
+import sacredCeremonyImage from "../docs/pic/2/IMG_1754.jpg";
 
 const navItems = ["Story", "Work", "Services", "Studio", "Contact"];
 
