@@ -6,8 +6,7 @@ node_modules/
 out/
 
 # env
-.env
-.env.local
+.env*
 
 # logs
 *.log
@@ -15,8 +14,12 @@ out/
 # vscode
 .vscode/
 
-# serena cache
+# serena
 .serena/cache/
+.serena/project.local.yml
+
+# codegraph
+.codegraph/
 
 # windows
 Thumbs.db
