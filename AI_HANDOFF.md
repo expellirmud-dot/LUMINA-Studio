@@ -10,7 +10,7 @@ Phase 1 — Landing Page
 
 ## Current Status
 
-Phase 1.4 Brand lockup refinement implemented.
+Phase 1.5 hero visual upgrade implemented.
 
 ## Repository State
 
@@ -46,6 +46,8 @@ Production URL: N/A
 - Four selected portfolio images integrated from `docs/pic/`: `docs/pic/2/IMG_1718.jpg`, `docs/pic/2/IMG_1754.jpg`, `docs/pic/2/PTO_8484.jpg`, `docs/pic/1/125.jpg`
 - Portfolio cards now use real images via Next.js Image while preserving single-page scope
 - Brand lockup refinement: Updated LUMINA wordmark in header and footer to include a small italic gold “Studio” mark
+- Hero visual upgrade: `docs/pic/2/IMG_1754.jpg` added as a darkened editorial image layer behind the Future Crystal concept label
+- Small “Studio” mark increased slightly in header and footer
 
 ## Pending
 
@@ -54,4 +56,4 @@ Production URL: N/A
 
 ## Next Task
 
-Run visual QA across mobile and desktop for the integrated portfolio images, then deploy test and verify the production URL.
+Run visual QA across mobile and desktop for the hero image crop and contrast, then deploy test and verify the production URL.

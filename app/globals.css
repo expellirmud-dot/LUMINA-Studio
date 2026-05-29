@@ -152,9 +152,28 @@ body {
     var(--charcoal-soft);
 }
 
+.hero-focal::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(17, 16, 14, 0.18), rgba(17, 16, 14, 0.78)),
+    linear-gradient(90deg, rgba(17, 16, 14, 0.5), transparent 46%),
+    radial-gradient(circle at 72% 26%, rgba(185, 154, 95, 0.18), transparent 34%);
+  pointer-events: none;
+}
+
+.hero-visual {
+  object-fit: cover;
+  object-position: 55% 48%;
+  filter: saturate(0.72) contrast(1.05) brightness(0.48);
+}
+
 .focal-grid {
   position: absolute;
   inset: 1rem;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   opacity: 0.48;
@@ -167,6 +186,7 @@ body {
 .crystal-reserve {
   position: absolute;
   inset: 50% auto auto 50%;
+  z-index: 3;
   width: min(72%, 27rem);
   aspect-ratio: 3 / 4;
   display: flex;

@@ -101,7 +101,7 @@ export default function Home() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
           <a href="#hero" className="flex items-baseline gap-1.5 font-serif text-2xl text-[var(--warm-white)]">
-            LUMINA <span className="text-base italic text-[var(--muted-gold)]">Studio</span>
+            LUMINA <span className="text-lg italic text-[var(--muted-gold)]">Studio</span>
           </a>
           <div className="hidden items-center gap-8 text-sm text-[var(--soft-gray)] md:flex">
             {navItems.map((item) => (
@@ -142,6 +142,14 @@ export default function Home() {
           </div>
 
           <div className="reveal hero-focal" aria-label="Reserved area for future 3D Crystal Experience">
+            <Image
+              src={sacredCeremonyImage}
+              alt="Editorial ceremony portrait with soft floral styling"
+              fill
+              sizes="(min-width: 1024px) 55vw, 100vw"
+              className="hero-visual"
+              priority
+            />
             <div className="focal-grid" aria-hidden="true">
               <span />
               <span />
@@ -288,7 +296,7 @@ export default function Home() {
       <footer className="section-shell border-t border-white/10 py-8">
         <div className="footer-balance">
           <p className="flex items-baseline gap-1.5 font-serif text-3xl text-[var(--warm-white)]">
-            LUMINA <span className="text-xl italic text-[var(--muted-gold)]">Studio</span>
+            LUMINA <span className="text-[1.4rem] italic text-[var(--muted-gold)]">Studio</span>
           </p>
           <p>ToTo Therdsak / Photographer / Visual Storyteller</p>
           <p>Weddings / Ceremonies / Family / Editorial Portraits</p>

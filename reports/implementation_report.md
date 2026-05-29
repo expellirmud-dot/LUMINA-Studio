@@ -2,7 +2,7 @@
 
 ## Latest Task
 
-Phase 1.4 Brand lockup refinement implemented.
+Phase 1.5 hero visual upgrade implemented.
 
 ## Files Changed
 
@@ -20,10 +20,10 @@ Phase 1.4 Brand lockup refinement implemented.
 
 ## Build Status
 
-Passed: `npm run build`
-
 Passed: `npm run lint`
+
+Passed: `npm run build`
 
 ## Notes
 
-Updated LUMINA wordmark in header and footer to include a small italic gold “Studio” mark. Layout, copy, motion, styling, profile portrait, and scope remain unchanged.
+Upgraded the hero focal area by adding `docs/pic/2/IMG_1754.jpg` as a darkened editorial ceremony image layer behind the existing Future Crystal concept label. Portfolio image choices, About/Profile, Contact, layout scope, and dependencies remain unchanged. No Three.js, animation libraries, gallery, carousel, CMS, backend, database, API routes, booking, or dashboard were added.
