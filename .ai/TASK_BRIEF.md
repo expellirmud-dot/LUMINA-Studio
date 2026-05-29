@@ -2,29 +2,40 @@
 
 ## Task ID
 
-TBD
+TEST-001
 
 ## Assigned Model
 
-TBD
+Gemma 4 / Gemini Coding
 
 ## Objective
 
-TBD
+Switch activeContactVariant from editorial-minimal to contact-strip.
 
 ## Required Read First
 
+- AGENTS.md
+- GEMINI.md
+- .ai/SKILL_PROFILES.md
 - AI_HANDOFF.md
 - reports/implementation_report.md
 - reports/visual_audit.md
-- skills/LUMINA_STARTUP.md
+- skills/LUMINA_STARTUP/skill.md
+- skills/LUMINA_CONFIG_CHANGE/skill.md
 
 ## Allowed Files
 
-- TBD
+- src/config/visual.ts
+- .ai/TASK_REPORT.md
 
 ## Forbidden Files / Areas
 
+- app/page.tsx
+- app/layout.tsx
+- app/globals.css
+- src/config/site.ts
+- src/config/images.ts
+- src/config/typography.ts
 - backend
 - database
 - auth
@@ -32,13 +43,13 @@ TBD
 - CMS
 - dashboard
 - API routes
-- unrelated UI sections
 
 ## Exact Changes Required
 
-1. TBD
-2. TBD
-3. TBD
+1. Open src/config/visual.ts
+2. Change activeContactVariant to contact-strip
+3. Do not change any UI/component/layout file
+4. Write result into .ai/TASK_REPORT.md
 
 ## Validation Required
 
@@ -49,17 +60,21 @@ TBD
 
 Stop and report if:
 
-- required file is missing
-- unexpected unrelated changes exist
-- lint/build fails
-- task requires files outside allowed list
+- src/config/visual.ts does not contain activeContactVariant
+- changing the variant requires editing app/page.tsx
+- lint fails
+- build fails
+- any file outside Allowed Files must be edited
 
 ## Expected Report
 
 Return:
 
 - files changed
-- exact changes made
+- exact change made
 - validation result
+- scope check
 - risks
-- follow-up recommendation
+- recommendation
+
+
