@@ -46,11 +46,17 @@ Phase 1.6 — Design Audit and Visual Config System
 - **Recommendation:** PASS. Keep the current image but flag for "Unique Hero Asset" in Phase 2.
 
 
-## Portfolio Critique
 
-- The four selected cards establish real portfolio credibility without becoming a gallery system.
-- The image overlay and muted saturation help maintain a consistent luxury tone across mixed source imagery.
-- Crops should be reviewed individually before production, especially for group and ceremony images.
+## Portfolio QA (LUMINA-QA-003)
+
+- **Curation:** 4 images (`IMG_1718`, `IMG_1754`, `PTO_8484`, `125`).
+- **Category Balance:** Perfect. One image represents each core service (Weddings, Ordinations, House Blessings, Editorial Portraits).
+- **Crop Consistency:** Strong. Center-X alignment (`50%`) creates a stable, rhythmic flow.
+- **Emotional Flow:** Excellent. Transition from celebratory $\rightarrow$ sacred $\rightarrow$ intimate $\rightarrow$ cinematic creates a complete visual narrative.
+- **Brand Impact:** High. The curated set proves artistic versatility without overloading the page.
+- **Duplication Check:** Reuse of `IMG_1754` in Hero is noted. While it anchors the page's strongest asset, it is flagged for a unique hero asset in Phase 2.
+- **Recommendation:** PASS. The curation is editorially sound.
+
 
 ## Typography Critique
 
