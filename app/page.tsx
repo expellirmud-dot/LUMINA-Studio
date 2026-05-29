@@ -28,17 +28,49 @@ const storySteps = [
 ];
 
 const portfolioItems = [
-  "Editorial Portrait",
-  "Studio Product",
-  "Architectural Light",
-  "Campaign Frame",
+  {
+    title: "Wedding Light",
+    category: "Weddings",
+  },
+  {
+    title: "Sacred Ceremony",
+    category: "Ordinations",
+  },
+  {
+    title: "Blessing at Home",
+    category: "House Blessings",
+  },
+  {
+    title: "Editorial Presence",
+    category: "Editorial Portraits",
+  },
 ];
 
 const services = [
-  "Editorial photography",
-  "Brand visual direction",
-  "Creative image systems",
-  "Portfolio art direction",
+  "Weddings",
+  "Ordinations",
+  "House Blessings",
+  "Ceremonies",
+  "Family Celebrations",
+  "Editorial Portraits",
+];
+
+const contactItems = [
+  {
+    label: "Phone",
+    value: "064-986-1939",
+    href: "tel:0649861939",
+  },
+  {
+    label: "Line",
+    value: "expellirmud",
+    href: "https://line.me/ti/p/~expellirmud",
+  },
+  {
+    label: "Facebook",
+    value: "facebook.com/exstreet",
+    href: "https://facebook.com/exstreet",
+  },
 ];
 
 export default function Home() {
@@ -73,12 +105,16 @@ export default function Home() {
               LUMINA Studio
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-[var(--soft-gray)] sm:text-xl">
-              Cinematic photography and visual direction for brands, artists,
-              and spaces that need a precise visual presence.
+              Premium photography and visual storytelling by ToTo Therdsak
+              for weddings, ceremonies, families, and editorial portraits.
             </p>
+            <div className="hero-trust">
+              <span>ToTo Therdsak</span>
+              <span>Photographer / Visual Storyteller</span>
+            </div>
             <div className="flex flex-col gap-3 sm:flex-row">
               <a href="#work" className="primary-action">
-                View Foundation
+                View Portfolio Slots
               </a>
               <a href="#story" className="secondary-action">
                 Follow the Story
@@ -131,19 +167,19 @@ export default function Home() {
             </h2>
           </div>
           <p className="reveal max-w-sm leading-7 text-[var(--soft-gray)]">
-            These slots are intentionally image-free until the real studio
-            portfolio is selected.
+            Elegant image slots are prepared for future real portfolio photos.
+            Current visuals remain placeholder-only.
           </p>
         </div>
         <div className="grid gap-5 md:grid-cols-2">
           {portfolioItems.map((item, index) => (
-            <article key={item} className="portfolio-tile reveal">
+            <article key={item.title} className="portfolio-tile reveal">
               <div className="placeholder-frame" aria-hidden="true">
                 <span>{String(index + 1).padStart(2, "0")}</span>
               </div>
               <div className="mt-5 flex items-end justify-between gap-4">
-                <h3 className="font-serif text-3xl">{item}</h3>
-                <p className="text-sm text-[var(--muted-gold)]">Placeholder</p>
+                <h3 className="font-serif text-3xl">{item.title}</h3>
+                <p className="text-sm text-[var(--muted-gold)]">{item.category}</p>
               </div>
             </article>
           ))}
@@ -155,7 +191,7 @@ export default function Home() {
           <div>
             <p className="eyebrow reveal">Services</p>
             <h2 className="reveal mt-5 font-serif text-4xl leading-tight sm:text-6xl">
-              Focused creative services for visual presence.
+              Photography for meaningful occasions and editorial presence.
             </h2>
           </div>
           <div className="divide-y divide-white/10">
@@ -177,13 +213,19 @@ export default function Home() {
           <div className="reveal space-y-7">
             <p className="eyebrow">About Studio</p>
             <h2 className="font-serif text-4xl leading-tight sm:text-6xl">
-              A minimal studio foundation for photography, design, and visual storytelling.
+              Led by ToTo Therdsak, Photographer / Visual Storyteller.
             </h2>
             <p className="text-lg leading-8 text-[var(--soft-gray)]">
-              LUMINA Studio is framed as a premium editorial practice: quiet,
-              cinematic, and selective. The page foundation creates room for
-              future portfolio depth while staying strictly within Phase 1.
+              LUMINA Studio is shaped for premium event, ceremony, family, and
+              editorial portrait work. The presentation stays quiet,
+              cinematic, and selective while preparing space for a future real
+              portfolio.
             </p>
+            <div className="owner-card">
+              <p>Owner identity</p>
+              <strong>ToTo Therdsak</strong>
+              <span>Photography / Visual Storytelling / Creative Direction</span>
+            </div>
           </div>
         </div>
       </section>
@@ -192,18 +234,23 @@ export default function Home() {
         <div className="cta-band reveal">
           <p className="eyebrow">Contact CTA</p>
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight sm:text-7xl">
-            Build the first impression before the first frame is taken.
+            For weddings, ceremonies, portraits, and family celebrations.
           </h2>
-          <a href="mailto:studio@lumina.example" className="primary-action mt-10 inline-flex">
-            studio@lumina.example
-          </a>
+          <div className="contact-grid mt-10">
+            {contactItems.map((item) => (
+              <a key={item.label} href={item.href} className="contact-link">
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
       <footer className="section-shell border-t border-white/10 py-8">
         <div className="flex flex-col justify-between gap-4 text-sm text-[var(--soft-gray)] sm:flex-row">
-          <p>LUMINA Studio</p>
-          <p>Photography / Visual Storytelling / Creative Direction</p>
+          <p>LUMINA Studio by ToTo Therdsak</p>
+          <p>Weddings / Ceremonies / Family / Editorial Portraits</p>
         </div>
       </footer>
     </main>

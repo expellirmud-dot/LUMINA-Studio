@@ -14,13 +14,13 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "LUMINA Studio | Premium Editorial Photography",
+  title: "LUMINA Studio | ToTo Therdsak Photography",
   description:
-    "Luxury editorial photography and visual storytelling studio foundation for LUMINA Studio.",
+    "Premium photography and visual storytelling by ToTo Therdsak for weddings, ceremonies, families, and editorial portraits.",
   openGraph: {
-    title: "LUMINA Studio",
+    title: "LUMINA Studio by ToTo Therdsak",
     description:
-      "Premium photography, visual direction, and cinematic creative work.",
+      "Premium photography and cinematic visual storytelling for meaningful occasions.",
     type: "website",
   },
 };

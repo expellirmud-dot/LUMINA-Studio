@@ -10,7 +10,7 @@ Phase 1 — Landing Page
 
 ## Current Status
 
-Landing page foundation implemented.
+Phase 1.2 content and trust update implemented.
 
 ## Repository State
 
@@ -35,6 +35,10 @@ Production URL: N/A
 - SEO metadata
 - Responsive premium editorial layout
 - Reserved hero focal area for future Crystal Experience
+- Owner identity: ToTo Therdsak
+- Contact trust details: phone, Line, Facebook
+- Service categories for weddings, ordinations, house blessings, ceremonies, family celebrations, and editorial portraits
+- Placeholder-only portfolio slots prepared for future real photos
 
 ## Pending
 
@@ -42,4 +46,4 @@ Production URL: N/A
 
 ## Next Task
 
-Run deploy test and verify the production URL.
+Review the live layout visually across mobile and desktop, then run deploy test and verify the production URL.
