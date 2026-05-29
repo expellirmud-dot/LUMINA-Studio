@@ -1,3 +1,6 @@
+import Image from "next/image";
+import profilePortrait from "../docs/Profile Pic.jpg";
+
 const navItems = ["Story", "Work", "Services", "Studio", "Contact"];
 
 const storySteps = [
@@ -58,8 +61,8 @@ const services = [
 const contactItems = [
   {
     label: "Phone",
-    value: "064-986-1939",
-    href: "tel:0649861939",
+    value: "+66 64 986 1939",
+    href: "tel:+66649861939",
   },
   {
     label: "Line",
@@ -68,7 +71,7 @@ const contactItems = [
   },
   {
     label: "Facebook",
-    value: "facebook.com/exstreet",
+    value: "ExStreet",
     href: "https://facebook.com/exstreet",
   },
 ];
@@ -207,25 +210,32 @@ export default function Home() {
 
       <section id="studio" className="section-shell py-24 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          <div className="reveal studio-mark" aria-hidden="true">
-            <span>L</span>
-          </div>
+          <figure className="reveal about-portrait-frame">
+            <Image
+              src={profilePortrait}
+              alt="ToTo Therdsak, Photographer and Visual Storyteller"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="about-portrait"
+              priority={false}
+            />
+            <figcaption>ToTo Therdsak / Photographer</figcaption>
+          </figure>
           <div className="reveal space-y-7">
             <p className="eyebrow">About Studio</p>
             <h2 className="font-serif text-4xl leading-tight sm:text-6xl">
               Led by ToTo Therdsak, Photographer / Visual Storyteller.
             </h2>
             <p className="text-lg leading-8 text-[var(--soft-gray)]">
-              LUMINA Studio is shaped for premium event, ceremony, family, and
-              editorial portrait work. The presentation stays quiet,
-              cinematic, and selective while preparing space for a future real
-              portfolio.
+              LUMINA Studio is built around calm observation, restrained
+              composition, and the emotional weight of real occasions. The work
+              is shaped for weddings, ordinations, house blessings, ceremonies,
+              family celebrations, and editorial portraits with a cinematic,
+              human point of view.
             </p>
-            <div className="owner-card">
-              <p>Owner identity</p>
-              <strong>ToTo Therdsak</strong>
-              <span>Photography / Visual Storytelling / Creative Direction</span>
-            </div>
+            <blockquote className="photographer-quote">
+              &ldquo;I look for the quiet frame where light, memory, and feeling meet.&rdquo;
+            </blockquote>
           </div>
         </div>
       </section>
@@ -234,8 +244,12 @@ export default function Home() {
         <div className="cta-band reveal">
           <p className="eyebrow">Contact CTA</p>
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight sm:text-7xl">
-            For weddings, ceremonies, portraits, and family celebrations.
+            Begin with a clear conversation, not a transaction.
           </h2>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--soft-gray)]">
+            For weddings, ordinations, house blessings, ceremonies, family
+            celebrations, and editorial portraits.
+          </p>
           <div className="contact-grid mt-10">
             {contactItems.map((item) => (
               <a key={item.label} href={item.href} className="contact-link">
@@ -248,8 +262,9 @@ export default function Home() {
       </section>
 
       <footer className="section-shell border-t border-white/10 py-8">
-        <div className="flex flex-col justify-between gap-4 text-sm text-[var(--soft-gray)] sm:flex-row">
-          <p>LUMINA Studio by ToTo Therdsak</p>
+        <div className="footer-balance">
+          <p className="font-serif text-3xl text-[var(--warm-white)]">LUMINA</p>
+          <p>ToTo Therdsak / Photographer / Visual Storyteller</p>
           <p>Weddings / Ceremonies / Family / Editorial Portraits</p>
         </div>
       </footer>

@@ -10,7 +10,7 @@ Phase 1 — Landing Page
 
 ## Current Status
 
-Phase 1.2 content and trust update implemented.
+Phase 1.2.1 editorial refinement pass implemented.
 
 ## Repository State
 
@@ -39,11 +39,16 @@ Production URL: N/A
 - Contact trust details: phone, Line, Facebook
 - Service categories for weddings, ordinations, house blessings, ceremonies, family celebrations, and editorial portraits
 - Placeholder-only portfolio slots prepared for future real photos
+- About section portrait using `docs/Profile Pic.jpg`
+- Refined editorial About copy and photographer quote
+- Refined contact typography and footer balance
+- Subtle portfolio card hover refinement
 
 ## Pending
 
+- Production URL verification
 - Deploy test
 
 ## Next Task
 
-Review the live layout visually across mobile and desktop, then run deploy test and verify the production URL.
+Run visual QA across mobile and desktop, then deploy test and verify the production URL.

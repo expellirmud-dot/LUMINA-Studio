@@ -2,13 +2,14 @@
 
 ## Latest Task
 
-Phase 1.2 content and trust update implemented.
+Phase 1.2.1 editorial refinement pass implemented.
 
 ## Files Changed
 
 - `app/page.tsx`
 - `app/layout.tsx`
 - `app/globals.css`
+- `docs/Profile Pic.jpg` (used as existing portrait asset)
 - `AI_HANDOFF.md`
 - `next-env.d.ts` (updated by Next build)
 - `reports/implementation_report.md`
@@ -21,4 +22,4 @@ Passed: `npm run lint`
 
 ## Notes
 
-Updated the single-page, frontend-only landing page with owner identity, premium contact trust details, photography service categories, clearer portfolio placeholder slots for future real images, refreshed SEO metadata, and preserved the reserved hero focal area for a future Crystal Experience without adding Three.js, WebGL, backend, database, CMS, dashboard, booking, payments, API routes, or new dependencies.
+Refined the existing single-page landing page with the provided profile portrait from `docs/Profile Pic.jpg`, stronger editorial About copy, a short photographer quote, clearer contact hierarchy, subtle portfolio hover treatment, and a more balanced footer. No backend, database, authentication, booking, CMS, dashboard, API routes, Three.js, WebGL, new dependencies, Thai copy, or new features were added.
