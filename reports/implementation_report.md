@@ -34,3 +34,4 @@ Passed: `npm run build`
 Created a config-first visual system for brand identity, hero image selection, portfolio image choices and labels, profile image, contact details, typography tokens, and contact presentation variants. `app/page.tsx` now consumes config values, and the portfolio heading no longer uses the word "Placeholder." The page remains single-page and frontend-only with no backend, database, booking, CMS, dashboard, API routes, Three.js, WebGL, animation libraries, or new dependencies.
 
 
+
