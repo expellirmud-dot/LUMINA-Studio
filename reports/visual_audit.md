@@ -80,6 +80,15 @@ Phase 1.6 — Design Audit and Visual Config System
   - **Line:** Well-balanced; clearly identifiable as the primary instant messaging channel.
   - **Facebook:** Subtle but present; maintains the professional social presence.
 - **Editorial Feeling:** High. The horizontal "strip" layout avoids the utility-first look of a standard contact list, aligning with the studio's boutique luxury branding.
-- **Recommendation:** Keep `contact-strip`. It provides the best balance between accessibility and editorial restraint.
+
+## Mobile Experience QA (LUMINA-QA-005)
+
+- **Hero Section:** High Risk. The overlay text and label are optimized for desktop. On narrow screens, there is a risk of visual crowding, potentially making the luxury focal area feel like a boxed promotional card.
+- **Contact Section:** Moderate Risk. Large display typography for contact values is prone to awkward wrapping on screens < 360px. Requires fluid typography or responsive scaling to maintain rhythm.
+- **Portfolio Grid:** Moderate Risk. Vertical cropping of wide ceremony images may result in subject loss. Individual asset review is required for the final mobile crop.
+- **About/Profile:** Low Risk. The layout is clean, though the photographer's quote requires a check for "widows" and line-break harmony on small screens.
+- **Footer & Touch Targets:** Low Risk. Spacing is generous, but touch targets for the minimalist footer links should be verified for accessibility (min 44x44px).
+- **General Usability:** The overall experience remains premium, but the tension between large editorial typography and narrow viewports is the primary friction point.
+- **Recommendation:** PASS (with caveats). The experience is functional and luxury-aligned, but requires a "Mobile Polish" pass to refine fluid typography and a la carte image cropping before final production.
 
 
