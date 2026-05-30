@@ -1,4 +1,12 @@
 # LUMINA Config System
+
+Status: Completed  
+Purpose: Governance and reference only  
+Do not re-implement this task unless config system is missing or broken.
+
+This document describes the completed config-driven architecture for LUMINA.
+Future tasks should extend the existing config system, not recreate it.
+
 มูเม้นช้าๆ เนียนๆ 
 ## Goal
 

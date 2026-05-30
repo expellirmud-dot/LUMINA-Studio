@@ -1,6 +1,7 @@
 export const contactConfig = {
-  heading: "Begin with a clear conversation, not a transaction.",
-  copy: "For weddings, ordinations, house blessings, ceremonies, family celebrations, and editorial portraits.",
+  eyebrow: "Contact",
+  heading: "เริ่มจากเล่าให้ฟังก่อนได้ว่างานเป็นแบบไหน.",
+  copy: "ไม่ต้องมีแพ็กเกจในใจก็ได้ แค่บอกวัน เวลา สถานที่ และสิ่งที่อยากเก็บไว้ แล้วค่อยคุยกันอย่างเป็นธรรมชาติ.",
   items: [
     {
       label: "Phone",

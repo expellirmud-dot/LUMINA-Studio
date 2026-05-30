@@ -1,8 +1,8 @@
 export const servicesConfig = [
-  "Weddings",
-  "Ordinations",
+  "Wedding & Ceremony",
+  "Ordination Stories",
   "House Blessings",
-  "Ceremonies",
-  "Family Celebrations",
-  "Editorial Portraits",
+  "Family Gatherings",
+  "People & Portrait",
+  "Stage & Concert",
 ];

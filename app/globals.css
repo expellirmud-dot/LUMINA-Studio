@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --charcoal: #11100e;
-  --charcoal-soft: #1a1815;
-  --warm-white: #f6f1e8;
-  --soft-gray: #b8b1a6;
-  --muted-gold: #b99a5f;
-  --deep-gold: #806a3e;
+  --charcoal: #1b1916;
+  --charcoal-soft: #24211d;
+  --warm-white: #f7f2ea;
+  --soft-gray: #c7beb2;
+  --muted-gold: #b08b6a;
+  --deep-gold: #806653;
   --background: var(--charcoal);
   --foreground: var(--warm-white);
 }
@@ -268,7 +268,7 @@ body {
   transition: box-shadow 150ms ease-out;
 }
 
-.crystal-reserve {
+.story-reserve {
   position: absolute;
   inset: 50% auto auto 50%;
   z-index: 3;
@@ -282,20 +282,11 @@ body {
   transform: translate(-50%, -48%);
 }
 
-.crystal-reserve p,
-.crystal-reserve span {
+.story-reserve p,
+.story-reserve span {
   color: var(--soft-gray);
   font-size: 0.78rem;
   text-transform: uppercase;
-}
-
-.crystal-reserve strong {
-  max-width: 13ch;
-  margin-block: 0.75rem;
-  font-family: var(--font-cormorant), serif;
-  font-size: clamp(2.6rem, 7vw, 5.8rem);
-  font-weight: 600;
-  line-height: 0.9;
 }
 
 .story-panel,
@@ -490,14 +481,6 @@ body {
   text-transform: uppercase;
 }
 
-.contact-link strong {
-  font-family: var(--font-cormorant), serif;
-  font-size: clamp(1.75rem, 5vw, 3.7rem);
-  font-weight: 600;
-  line-height: 1;
-  overflow-wrap: anywhere;
-}
-
 .footer-balance {
   display: grid;
   gap: 1rem;
@@ -538,6 +521,21 @@ body {
   100% {
     transform: translate(75px, 30px) rotate(7.5deg);
   }
+}
+
+@keyframes subtle-studio-drift {
+  0%, 100% {
+    opacity: 0.82;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-0.5px);
+  }
+}
+
+.animate-studio-drift {
+  animation: subtle-studio-drift 10000ms cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
 }
 
 @media (hover: none) {

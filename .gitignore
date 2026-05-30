@@ -28,3 +28,5 @@ Thumbs.db
 .codegraph/*.db
 .codegraph/*.db-shm
 .codegraph/*.db-wal
+
+Portfolio/

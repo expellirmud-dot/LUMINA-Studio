@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: contentConfig.hero.subtitle,
   openGraph: {
     title: `${navigationConfig.logoText} ${navigationConfig.logoSecondary} by ${contentConfig.owner.name}`,
-    description: "Premium photography and cinematic visual storytelling for meaningful occasions.",
+    description: contentConfig.hero.subtitle,
     type: "website",
   },
 };

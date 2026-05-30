@@ -1,10 +1,11 @@
 import type { StaticImageData } from "next/image";
 import profilePortrait from "../../docs/Profile Pic.jpg";
-import weddingLightImage from "../../docs/pic/2/IMG_1718.jpg";
-import sparklerExitImage from "../../docs/pic/2/IMG_2677.jpg";
-import waterCeremonyImage from "../../docs/pic/2/IMG_0673.jpg";
-import firstDanceImage from "../../docs/pic/2/IMG_2232.jpg";
-import whisperImage from "../../docs/pic/2/IMG_1159.jpg";
+import bridePortraitImage from "../../Portfolio/TOP10/1/PTO-506.jpg";
+import coupleWalkImage from "../../Portfolio/TOP10/1/PTO-556.jpg";
+import familyMomentImage from "../../Portfolio/TOP10/1/PTO-692.jpg";
+import waterCeremonyImage from "../../Portfolio/TOP10/1/TK (142).jpg";
+import quietFrameImage from "../../Portfolio/TOP10/1/TK_2 (317).jpg";
+import detailImage from "../../Portfolio/TOP10/3/PTO_3488.jpg";
 
 export type ConfigImage = {
   src: StaticImageData;
@@ -27,43 +28,48 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: sparklerExitImage,
-  path: "docs/pic/2/IMG_2677.jpg",
-  alt: "Cinematic sparkler exit at a premium evening reception",
-  position: "50% 40%",
+  src: coupleWalkImage,
+  path: "Portfolio/TOP10/1/PTO-556.jpg",
+  alt: "Couple walking together during an outdoor wedding ceremony",
+  position: "50% 48%",
 };
 
 export const heroSequence: ConfigImage[] = [
   {
-    src: weddingLightImage, // IMG_1718.jpg (Beauty)
-    path: "docs/pic/2/IMG_1718.jpg",
-    alt: "Outdoor wedding ceremony stage with soft floral styling and guests",
-    position: "50% 45%",
+    src: coupleWalkImage,
+    path: "Portfolio/TOP10/1/PTO-556.jpg",
+    alt: "Couple walking together during an outdoor wedding ceremony",
+    position: "50% 48%",
   },
   {
-    src: waterCeremonyImage, // IMG_0673.jpg (Ceremony)
-    path: "docs/pic/2/IMG_0673.jpg",
-    alt: "Traditional Thai water pouring ceremony moment with close-up detail",
+    src: bridePortraitImage,
+    path: "Portfolio/TOP10/1/PTO-506.jpg",
+    alt: "Bride smiling naturally while holding a bouquet",
+    position: "50% 42%",
+  },
+  {
+    src: waterCeremonyImage,
+    path: "Portfolio/TOP10/1/TK (142).jpg",
+    alt: "Couple sharing a traditional water ceremony moment",
     position: "50% 50%",
   },
   {
-    src: firstDanceImage, // IMG_2232.jpg (Family)
-    path: "docs/pic/2/IMG_2232.jpg",
-    alt: "First dance candid surrounded by warm ambient fairy lights",
-    position: "50% 40%",
+    src: quietFrameImage,
+    path: "Portfolio/TOP10/1/TK_2 (317).jpg",
+    alt: "Quiet couple moment framed through a doorway",
+    position: "50% 50%",
   },
   {
-    src: whisperImage, // IMG_1159.jpg (Memory)
-    path: "docs/pic/2/IMG_1159.jpg",
-    alt: "Intimate candid conversation between couple captured in high contrast",
-    position: "50% 47%",
+    src: familyMomentImage,
+    path: "Portfolio/TOP10/1/PTO-692.jpg",
+    alt: "Bride embracing an elder during a family portrait moment",
+    position: "50% 44%",
   },
   {
-    src: sparklerExitImage, // IMG_2677.jpg (Afterglow)
-    path: "docs/pic/2/IMG_2677.jpg",
-    alt: "Cinematic sparkler exit at a premium evening reception",
-    position: "50% 40%",
+    src: detailImage,
+    path: "Portfolio/TOP10/3/PTO_3488.jpg",
+    alt: "Close detail of a hand resting on a shoulder with a ring visible",
+    position: "50% 50%",
   },
 ];
-
 

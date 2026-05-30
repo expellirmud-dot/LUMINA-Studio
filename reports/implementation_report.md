@@ -2,17 +2,17 @@
 
 ## Latest Task
 
-LUMINA-CONFIG-SYSTEM-001: Implement Config-Driven Website System.
+Human Documentary Redesign — Phase 2 Limited Config-First Implementation.
 
 ## Files Changed
 
-- `src/config/motion.ts` (new)
-- `src/config/content.ts` (new)
-- `src/config/portfolio.ts` (new)
-- `src/config/services.ts` (new)
-- `src/config/navigation.ts` (new)
-- `src/config/contact.ts` (new)
-- `src/config/site.ts` (deleted)
+- `src/config/content.ts` (modified)
+- `src/config/portfolio.ts` (modified)
+- `src/config/contact.ts` (modified)
+- `src/config/services.ts` (modified)
+- `src/config/navigation.ts` (modified)
+- `src/config/motion.ts` (modified)
+- `src/config/visual.ts` (modified)
 - `src/config/images.ts` (modified)
 - `app/page.tsx` (modified)
 - `app/layout.tsx` (modified)
@@ -20,11 +20,15 @@ LUMINA-CONFIG-SYSTEM-001: Implement Config-Driven Website System.
 - `src/components/HeroSlideshow.tsx` (modified)
 - `reports/implementation_report.md` (modified)
 - `AI_HANDOFF.md` (modified)
+- `reports/visual_audit.md` (modified)
 
 ## Build Status
 
 Passed: `npm run lint`
 Passed: `npm run build`
+
+Build note:
+- Next.js build passed with existing Node deprecation warnings for `module.register()`.
 
 ## Art Direction Lock
 
@@ -49,4 +53,13 @@ Motion Must Never Become The Subject.
 
 ## Notes
 
-Implemented the LUMINA config system to move configurable website data and motion behavior out of components (`app/page.tsx`, `HeroSlideshow.tsx`) and into dedicated config files (`motion.ts`, `content.ts`, `portfolio.ts`, `services.ts`, `navigation.ts`, `contact.ts`) without redesigning or adding new dependencies. Verified that `npm run lint` and `npm run build` both pass successfully.
+Implemented the approved limited redesign without recreating architecture or adding dependencies. The visible website direction now uses Human Documentary Photography copy, warm conversation-first contact language, verified `Portfolio/TOP10` images, and slower config-controlled Hero motion. Hero structure/layout was not redesigned; only config-controlled copy, image sequence, and motion values changed. A small JSX wiring change moved the contact eyebrow into `contactConfig` and replaced old Crystal-facing aria/class labels.
+
+Remaining technical debt:
+- `app/globals.css` still contains several hardcoded transition/animation values. They were not fully extracted in this phase because the approval explicitly limited CSS cleanup to necessary changes.
+- `docs/BRAND.md`, `docs/DESIGN.md`, and examples inside `LUMINA_CONFIG_SYSTEM.md` still describe the older luxury/crystal direction as governance/history docs. They were not part of the approved implementation file list.
+
+## Deployment Verification (Phase 4)
+- **Status:** Vercel CLI Blocked by API Error.
+- **Details:** `npm run build` and `npm run lint` passed. However, `npx vercel --prod` fails with an upstream Vercel API 500 error (`Invalid JSON response: "Internal S..."`).
+- **Next Steps:** The codebase is ready. Deployment must be triggered via `git push` to GitHub rather than local CLI.

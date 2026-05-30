@@ -1,27 +1,36 @@
 export const motionConfig = {
-  preset: "calm-luxury",
+  preset: "calm-documentary",
 
   global: {
     easing: "cubic-bezier(0.22, 1, 0.36, 1)",
     reducedMotion: true,
   },
 
+  brand: {
+    wordmark: {
+      type: "quiet-presence",
+      duration: 12000,
+      easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+      translateY: -0.25,
+    },
+  },
+
   hero: {
     slideshow: {
-      interval: 6000,
-      transitionDuration: 1500,
-      scale: 1.05,
-      animationDuration: 7500,
+      interval: 9000,
+      transitionDuration: 1800,
+      scale: 1.025,
+      animationDuration: 9500,
       easing: "ease-out",
     },
     parallax: {
       subtle: {
-        maxImgShift: 4,
-        maxGridShift: 8,
+        maxImgShift: 2,
+        maxGridShift: 3,
       },
       medium: {
-        maxImgShift: 8,
-        maxGridShift: 12,
+        maxImgShift: 3,
+        maxGridShift: 5,
       },
     },
   },

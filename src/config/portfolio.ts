@@ -1,58 +1,85 @@
 import type { PortfolioImage } from "./images";
-import tk2_739 from "../../public/images/portfolio/TK_2_739.jpg";
-import mt_163 from "../../public/images/portfolio/MT_163.jpg";
-import pto_246 from "../../public/images/portfolio/PTO-246.jpg";
-import pto_364 from "../../public/images/portfolio/PTO-364.jpg";
-import pto_210 from "../../public/images/portfolio/PTO_210.jpg";
-import tk2_612 from "../../public/images/portfolio/TK_2_612.jpg";
+import bridePortrait from "../../Portfolio/TOP10/1/PTO-506.jpg";
+import coupleWalk from "../../Portfolio/TOP10/1/PTO-556.jpg";
+import familyMoment from "../../Portfolio/TOP10/1/PTO-692.jpg";
+import waterCeremony from "../../Portfolio/TOP10/1/TK (142).jpg";
+import quietDoorway from "../../Portfolio/TOP10/1/TK_2 (317).jpg";
+import ordinationPortrait from "../../Portfolio/TOP10/2/PTO-380.jpg";
+import templeRitual from "../../Portfolio/TOP10/2/PTO-406.jpg";
+import ringDetail from "../../Portfolio/TOP10/3/PTO_3488.jpg";
+import stagePortrait from "../../Portfolio/TOP10/3/418.jpg";
 
 export const portfolioConfig: PortfolioImage[] = [
   {
-    title: "Couple Narrative",
-    category: "Weddings",
-    src: tk2_739,
-    path: "/images/portfolio/TK_2_739.jpg",
-    alt: "Elegant couple movement with clean greenery and natural connection",
+    title: "Walking Into the Day",
+    category: "Wedding & Ceremony",
+    src: coupleWalk,
+    path: "/Portfolio/TOP10/1/PTO-556.jpg",
+    alt: "Couple walking together during an outdoor wedding ceremony",
+    position: "50% 48%",
+  },
+  {
+    title: "Bride, Naturally",
+    category: "People & Portrait",
+    src: bridePortrait,
+    path: "/Portfolio/TOP10/1/PTO-506.jpg",
+    alt: "Bride smiling naturally while holding a bouquet",
+    position: "50% 42%",
+  },
+  {
+    title: "Shared Ceremony",
+    category: "Wedding & Ceremony",
+    src: waterCeremony,
+    path: "/Portfolio/TOP10/1/TK (142).jpg",
+    alt: "Couple sharing a traditional water ceremony moment",
     position: "50% 50%",
   },
   {
-    title: "Bridal Editorial",
-    category: "Portraits",
-    src: mt_163,
-    path: "/images/portfolio/MT_163.jpg",
-    alt: "Intimate bridal portrait with emotional restraint and soft styling",
+    title: "Between Two People",
+    category: "People & Portrait",
+    src: quietDoorway,
+    path: "/Portfolio/TOP10/1/TK_2 (317).jpg",
+    alt: "Quiet couple moment framed through a doorway",
     position: "50% 50%",
   },
   {
-    title: "Tactile Luxury",
-    category: "Details",
-    src: pto_246,
-    path: "/images/portfolio/PTO-246.jpg",
-    alt: "Ring and hand detail showing tactile luxury storytelling",
+    title: "Family Close",
+    category: "People & Portrait",
+    src: familyMoment,
+    path: "/Portfolio/TOP10/1/PTO-692.jpg",
+    alt: "Bride embracing an elder during a family portrait moment",
+    position: "50% 44%",
+  },
+  {
+    title: "Ordination Portrait",
+    category: "Ordination Stories",
+    src: ordinationPortrait,
+    path: "/Portfolio/TOP10/2/PTO-380.jpg",
+    alt: "New monk portrait outside a temple doorway",
+    position: "50% 44%",
+  },
+  {
+    title: "Temple Atmosphere",
+    category: "Ordination Stories",
+    src: templeRitual,
+    path: "/Portfolio/TOP10/2/PTO-406.jpg",
+    alt: "Ordination ritual inside a colorful temple hall",
     position: "50% 50%",
   },
   {
-    title: "Emotional Ceremony",
-    category: "Weddings",
-    src: pto_364,
-    path: "/images/portfolio/PTO-364.jpg",
-    alt: "Ceremony joy with natural expression and emotional clarity",
+    title: "Small Detail",
+    category: "People & Portrait",
+    src: ringDetail,
+    path: "/Portfolio/TOP10/3/PTO_3488.jpg",
+    alt: "Close detail of a hand resting on a shoulder with a ring visible",
     position: "50% 50%",
   },
   {
-    title: "Ritual Detail",
-    category: "Ordinations",
-    src: pto_210,
-    path: "/images/portfolio/PTO_210.jpg",
-    alt: "Ritual close-up with water blessing detail and documentary texture",
-    position: "50% 50%",
-  },
-  {
-    title: "Signature Couple",
-    category: "Weddings",
-    src: tk2_612,
-    path: "/images/portfolio/TK_2_612.jpg",
-    alt: "Polished couple portrait with refined posture and flattering light",
-    position: "50% 50%",
+    title: "Stage Moment",
+    category: "Stage & Concert",
+    src: stagePortrait,
+    path: "/Portfolio/TOP10/3/418.jpg",
+    alt: "Musician performing on stage under warm concert lights",
+    position: "50% 45%",
   },
 ];

@@ -1,5 +1,31 @@
 # VISUAL AUDIT
 
+## Human Documentary Direction Update
+
+Task:
+Phase 2 limited Human Documentary redesign.
+
+Current assessment:
+- Visible website copy now moves away from luxury / premium / crystal positioning and toward human documentary photography.
+- Hero remains structurally frozen; only config-controlled copy, image sequence, and motion values were changed.
+- Portfolio now uses verified `Portfolio/TOP10` photography assets with people, ceremony, family, ordination, detail, and one supporting stage/concert image.
+- Contact language is warmer and conversation-first, with Thai copy that invites the client to describe the event before choosing a package.
+- Motion is slower and less showy: the Hero slideshow interval and image drift were reduced through `motionConfig`, and pointer interaction intensity is set to `off`.
+
+What works:
+- The new image set feels more human and event-based than the previous luxury placeholder direction.
+- Wedding and ceremony images lead the sequence, while concert imagery is supporting rather than dominant.
+- The copy now clearly communicates real moments, meaningful days, people, place, atmosphere, and memory.
+- Metadata no longer uses premium/cinematic phrasing.
+
+What feels weak:
+- The underlying CSS still carries a dark portfolio structure and hardcoded motion values, so the visual system is warmer but not fully re-authored.
+- Some class names and historical docs previously tied to luxury/crystal were intentionally not fully refactored unless visible or user-facing.
+- Full browser screenshot QA is still recommended to verify mobile crop safety for the new `Portfolio/TOP10` images.
+
+Recommendation:
+APPROVED_WITH_NOTES for limited implementation scope. Next task should be browser visual QA and mobile crop review before deploy.
+
 ## Phase
 
 Phase 1.6 — Design Audit and Visual Config System

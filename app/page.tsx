@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="reveal hero-focal" aria-label="Reserved area for future 3D Crystal Experience">
+          <div className="reveal hero-focal" aria-label="Human documentary photography sequence">
             <HeroSlideshow
               images={heroSequence}
             />
@@ -72,9 +72,9 @@ export default function Home() {
               <span />
               <span />
             </div>
-            <div className="crystal-reserve">
+            <div className="story-reserve">
               <p>{contentConfig.hero.conceptLabel}</p>
-              <strong>{contentConfig.hero.conceptTitle}</strong>
+              <div className={typographyConfig.tokens.heroConceptTitle}>{contentConfig.hero.conceptTitle}</div>
               <span>{contentConfig.hero.conceptNote}</span>
             </div>
           </div>
@@ -186,8 +186,8 @@ export default function Home() {
 
       <section id="contact" className="section-shell pb-20 pt-10 sm:pb-28">
         <div className={contactVariant.wrapperClass}>
-          <p className="eyebrow">Contact CTA</p>
-          <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight sm:text-7xl">
+          <p className="eyebrow">{contactConfig.eyebrow}</p>
+          <h2 className={`mt-5 max-w-4xl ${typographyConfig.tokens.contactHeadline}`}>
             {contactConfig.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--soft-gray)]">
@@ -197,7 +197,7 @@ export default function Home() {
             {contactConfig.items.map((item) => (
               <a key={item.label} href={item.href} className={contactVariant.itemClass}>
                 <span>{item.label}</span>
-                <strong>{item.value}</strong>
+                <div className={typographyConfig.tokens.contactValue}>{item.value}</div>
               </a>
             ))}
           </div>

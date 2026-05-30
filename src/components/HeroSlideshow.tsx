@@ -56,14 +56,14 @@ export default function HeroSlideshow({ images }: HeroSlideshowProps) {
     return () => clearInterval(timer);
   }, [activeIndex, images.length, interval, prefersReducedMotion]);
 
-  // Effect for "Editorial Breathing Frame"
+  // Effect for the quiet breathing frame variant.
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
     const parent = el.parentElement;
     if (!parent) return;
 
-    if (variant === "editorial-breathing-frame" && !prefersReducedMotion) {
+    if (variant === "quiet-breathing-frame" && !prefersReducedMotion) {
       parent.classList.add("breathing-frame");
     } else {
       parent.classList.remove("breathing-frame");
@@ -191,7 +191,7 @@ export default function HeroSlideshow({ images }: HeroSlideshowProps) {
     <div 
       ref={containerRef}
       className="absolute inset-0 z-0 overflow-hidden bg-[var(--charcoal)]"
-      aria-label="Cinematic portfolio showcase"
+      aria-label="Human documentary portfolio showcase"
       role="region"
     >
       {images.map((img, idx) => {
