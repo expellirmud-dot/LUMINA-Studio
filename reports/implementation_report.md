@@ -60,6 +60,5 @@ Remaining technical debt:
 - `docs/BRAND.md`, `docs/DESIGN.md`, and examples inside `LUMINA_CONFIG_SYSTEM.md` still describe the older luxury/crystal direction as governance/history docs. They were not part of the approved implementation file list.
 
 ## Deployment Verification (Phase 4)
-- **Status:** Vercel CLI Blocked by API Error.
-- **Details:** `npm run build` and `npm run lint` passed. However, `npx vercel --prod` fails with an upstream Vercel API 500 error (`Invalid JSON response: "Internal S..."`).
-- **Next Steps:** The codebase is ready. Deployment must be triggered via `git push` to GitHub rather than local CLI.
+- **Status:** BLOCKED. Vercel CLI 500 Error persists. Git push to origin/main succeeded but Vercel deployment did not trigger.
+- **Next Steps:** Resolve Vercel access/pipeline issues. Once deployed, capture screenshots and verify URL.
