@@ -2,10 +2,11 @@
 
 ## Latest Task
 
-Human Documentary Redesign — Phase 2 Limited Config-First Implementation.
+LUMINA-REFINEMENT-001: Refine landing page toward premium modern documentary photography, including typography, copywriting, and hero microcopy layout.
 
 ## Files Changed
 
+- `src/components/RotatingMicrocopy.tsx` (new)
 - `src/config/content.ts` (modified)
 - `src/config/portfolio.ts` (modified)
 - `src/config/contact.ts` (modified)

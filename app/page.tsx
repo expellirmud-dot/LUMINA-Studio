@@ -8,6 +8,7 @@ import { servicesConfig } from "../src/config/services";
 import { navigationConfig } from "../src/config/navigation";
 import { contactConfig } from "../src/config/contact";
 import HeroSlideshow from "../src/components/HeroSlideshow";
+import RotatingMicrocopy from "../src/components/RotatingMicrocopy";
 
 export default function Home() {
   const contactVariant = contactVariants[visualConfig.activeContactVariant];
@@ -73,9 +74,7 @@ export default function Home() {
               <span />
             </div>
             <div className="story-reserve">
-              <p>{contentConfig.hero.conceptLabel}</p>
-              <div className={typographyConfig.tokens.heroConceptTitle}>{contentConfig.hero.conceptTitle}</div>
-              <span>{contentConfig.hero.conceptNote}</span>
+              <RotatingMicrocopy />
             </div>
           </div>
         </div>
