@@ -2,37 +2,51 @@
 
 ## Latest Task
 
-Phase 1.6 design audit and visual config system implemented.
+LUMINA-CONFIG-SYSTEM-001: Implement Config-Driven Website System.
 
 ## Files Changed
 
-- `app/page.tsx`
-- `app/layout.tsx`
-- `app/globals.css`
-- `src/config/site.ts`
-- `src/config/images.ts`
-- `src/config/typography.ts`
-- `src/config/visual.ts`
-- `docs/Profile Pic.jpg` (used as existing portrait asset)
-- `docs/pic/1/125.jpg`
-- `docs/pic/2/IMG_1718.jpg`
-- `docs/pic/2/IMG_1754.jpg`
-- `docs/pic/2/PTO_8484.jpg`
-- `AI_HANDOFF.md`
-- `next-env.d.ts` (updated by Next build)
-- `reports/implementation_report.md`
-- `reports/visual_audit.md`
+- `src/config/motion.ts` (new)
+- `src/config/content.ts` (new)
+- `src/config/portfolio.ts` (new)
+- `src/config/services.ts` (new)
+- `src/config/navigation.ts` (new)
+- `src/config/contact.ts` (new)
+- `src/config/site.ts` (deleted)
+- `src/config/images.ts` (modified)
+- `app/page.tsx` (modified)
+- `app/layout.tsx` (modified)
+- `app/globals.css` (modified)
+- `src/components/HeroSlideshow.tsx` (modified)
+- `reports/implementation_report.md` (modified)
+- `AI_HANDOFF.md` (modified)
 
 ## Build Status
 
 Passed: `npm run lint`
-
 Passed: `npm run build`
+
+## Art Direction Lock
+
+Approved:
+- Cinematic Sequence
+- Reactive Light Frame
+- Editorial Minimalism
+- Photography-first Hero
+
+Rejected by QA:
+- Lens Light Sweep
+- Heavy Optical Overlays
+- Hero Focus Blur In
+- Heavy Glassmorphism
+- Large Cursor Spotlight
+- WebGL / Three.js / Canvas
+
+Core Principle:
+Photography First.
+Motion Supports Photography.
+Motion Must Never Become The Subject.
 
 ## Notes
 
-Created a config-first visual system for brand identity, hero image selection, portfolio image choices and labels, profile image, contact details, typography tokens, and contact presentation variants. `app/page.tsx` now consumes config values, and the portfolio heading no longer uses the word "Placeholder." The page remains single-page and frontend-only with no backend, database, booking, CMS, dashboard, API routes, Three.js, WebGL, animation libraries, or new dependencies.
-
-
-
-
+Implemented the LUMINA config system to move configurable website data and motion behavior out of components (`app/page.tsx`, `HeroSlideshow.tsx`) and into dedicated config files (`motion.ts`, `content.ts`, `portfolio.ts`, `services.ts`, `navigation.ts`, `contact.ts`) without redesigning or adding new dependencies. Verified that `npm run lint` and `npm run build` both pass successfully.

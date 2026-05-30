@@ -25,6 +25,9 @@ export const contactVariants: Record<
   },
 };
 
+export type HeroExperienceVariant = "cinematic-sequence" | "reactive-light-frame" | "lens-light-sweep" | "editorial-breathing-frame";
+export type HeroInteractionIntensity = "off" | "subtle" | "medium";
+
 export const visualConfig: {
   activeContactVariant: ContactVariantName;
   heroImageClass: string;
@@ -33,6 +36,8 @@ export const visualConfig: {
   portfolioImageSizes: string;
   heroImageSizes: string;
   profileImageSizes: string;
+  heroExperienceVariant: HeroExperienceVariant;
+  heroInteractionIntensity: HeroInteractionIntensity;
 } = {
   activeContactVariant: "contact-strip",
   heroImageClass: "hero-visual",
@@ -41,4 +46,11 @@ export const visualConfig: {
   portfolioImageSizes: "(min-width: 768px) 50vw, 100vw",
   heroImageSizes: "(min-width: 1024px) 55vw, 100vw",
   profileImageSizes: "(min-width: 1024px) 50vw, 100vw",
+  heroExperienceVariant: "editorial-breathing-frame",
+  heroInteractionIntensity: "subtle",
+};
+
+export const slideshowConfig = {
+  interval: 6000,
+  transitionDuration: 1500,
 };

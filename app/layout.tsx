@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
-import { siteConfig } from "../src/config/site";
+import { contentConfig } from "../src/config/content";
+import { navigationConfig } from "../src/config/navigation";
 import "./globals.css";
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -15,13 +16,11 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: `${siteConfig.brandName} | ${siteConfig.ownerName} Photography`,
-  description:
-    "Premium photography and visual storytelling by ToTo Therdsak for weddings, ceremonies, families, and editorial portraits.",
+  title: `${navigationConfig.logoText} ${navigationConfig.logoSecondary} | ${contentConfig.owner.name} Photography`,
+  description: contentConfig.hero.subtitle,
   openGraph: {
-    title: `${siteConfig.brandName} by ${siteConfig.ownerName}`,
-    description:
-      "Premium photography and cinematic visual storytelling for meaningful occasions.",
+    title: `${navigationConfig.logoText} ${navigationConfig.logoSecondary} by ${contentConfig.owner.name}`,
+    description: "Premium photography and cinematic visual storytelling for meaningful occasions.",
     type: "website",
   },
 };

@@ -8,6 +8,54 @@ LUMINA Studio
 
 Phase 1 — Premium Photography Landing Page
 
+## Art Direction Lock
+
+Approved:
+- Cinematic Sequence
+- Reactive Light Frame
+- Editorial Minimalism
+- Photography-first Hero
+
+Rejected by QA:
+- Lens Light Sweep
+- Heavy Optical Overlays
+- Hero Focus Blur In
+- Heavy Glassmorphism
+- Large Cursor Spotlight
+- WebGL / Three.js / Canvas
+
+Core Principle:
+Photography First.
+Motion Supports Photography.
+Motion Must Never Become The Subject.
+
+## Hero Status
+
+Status: FROZEN
+
+Approved Hero Stack
+
+* Cinematic Sequence
+* Reactive Light Frame
+* Editorial Breathing Frame Premium
+
+Design Principle
+
+Photography First.
+Motion Supports Photography.
+Motion Must Never Become The Subject.
+
+Future Rule
+
+Further Hero redesign requires explicit user approval.
+
+Hero experimentation is closed.
+Future visual exploration should focus on:
+
+* Portfolio Experience
+* About Storytelling
+* Contact Experience
+
 ## Current Application Type
 
 Single-page frontend landing page.

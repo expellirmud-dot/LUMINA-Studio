@@ -1,9 +1,10 @@
 import type { StaticImageData } from "next/image";
 import profilePortrait from "../../docs/Profile Pic.jpg";
-import editorialPresenceImage from "../../docs/pic/1/125.jpg";
 import weddingLightImage from "../../docs/pic/2/IMG_1718.jpg";
-import sacredCeremonyImage from "../../docs/pic/2/IMG_1754.jpg";
-import blessingAtHomeImage from "../../docs/pic/2/PTO_8484.jpg";
+import sparklerExitImage from "../../docs/pic/2/IMG_2677.jpg";
+import waterCeremonyImage from "../../docs/pic/2/IMG_0673.jpg";
+import firstDanceImage from "../../docs/pic/2/IMG_2232.jpg";
+import whisperImage from "../../docs/pic/2/IMG_1159.jpg";
 
 export type ConfigImage = {
   src: StaticImageData;
@@ -17,6 +18,7 @@ export type PortfolioImage = ConfigImage & {
   category: string;
 };
 
+
 export const profileImage: ConfigImage = {
   src: profilePortrait,
   path: "docs/Profile Pic.jpg",
@@ -25,43 +27,43 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: sacredCeremonyImage,
-  path: "docs/pic/2/IMG_1754.jpg",
-  alt: "Editorial ceremony portrait with soft floral styling",
-  position: "55% 48%",
+  src: sparklerExitImage,
+  path: "docs/pic/2/IMG_2677.jpg",
+  alt: "Cinematic sparkler exit at a premium evening reception",
+  position: "50% 40%",
 };
 
-export const portfolioImages: PortfolioImage[] = [
+export const heroSequence: ConfigImage[] = [
   {
-    title: "Wedding Light",
-    category: "Weddings",
-    src: weddingLightImage,
+    src: weddingLightImage, // IMG_1718.jpg (Beauty)
     path: "docs/pic/2/IMG_1718.jpg",
     alt: "Outdoor wedding ceremony stage with soft floral styling and guests",
     position: "50% 45%",
   },
   {
-    title: "Sacred Ceremony",
-    category: "Ordinations",
-    src: sacredCeremonyImage,
-    path: "docs/pic/2/IMG_1754.jpg",
-    alt: "Formal community ceremony portrait beneath evening lights",
+    src: waterCeremonyImage, // IMG_0673.jpg (Ceremony)
+    path: "docs/pic/2/IMG_0673.jpg",
+    alt: "Traditional Thai water pouring ceremony moment with close-up detail",
+    position: "50% 50%",
+  },
+  {
+    src: firstDanceImage, // IMG_2232.jpg (Family)
+    path: "docs/pic/2/IMG_2232.jpg",
+    alt: "First dance candid surrounded by warm ambient fairy lights",
+    position: "50% 40%",
+  },
+  {
+    src: whisperImage, // IMG_1159.jpg (Memory)
+    path: "docs/pic/2/IMG_1159.jpg",
+    alt: "Intimate candid conversation between couple captured in high contrast",
     position: "50% 47%",
   },
   {
-    title: "Blessing at Home",
-    category: "House Blessings",
-    src: blessingAtHomeImage,
-    path: "docs/pic/2/PTO_8484.jpg",
-    alt: "House blessing setup with ceremonial bowls and floral stage",
-    position: "50% 42%",
-  },
-  {
-    title: "Editorial Presence",
-    category: "Editorial Portraits",
-    src: editorialPresenceImage,
-    path: "docs/pic/1/125.jpg",
-    alt: "Cinematic performance detail with guitar and saturated stage light",
-    position: "50% 50%",
+    src: sparklerExitImage, // IMG_2677.jpg (Afterglow)
+    path: "docs/pic/2/IMG_2677.jpg",
+    alt: "Cinematic sparkler exit at a premium evening reception",
+    position: "50% 40%",
   },
 ];
+
+

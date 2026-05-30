@@ -8,7 +8,56 @@ LUMINA Studio
 
 Phase 1 — Landing Page
 
+## Art Direction Lock
+
+Approved:
+- Cinematic Sequence
+- Reactive Light Frame
+- Editorial Minimalism
+- Photography-first Hero
+
+Rejected by QA:
+- Lens Light Sweep
+- Heavy Optical Overlays
+- Hero Focus Blur In
+- Heavy Glassmorphism
+- Large Cursor Spotlight
+- WebGL / Three.js / Canvas
+
+Core Principle:
+Photography First.
+Motion Supports Photography.
+Motion Must Never Become The Subject.
+
+## Hero Status
+
+Status: FROZEN
+
+Approved Hero Stack
+
+* Cinematic Sequence
+* Reactive Light Frame
+* Editorial Breathing Frame Premium
+
+Design Principle
+
+Photography First.
+Motion Supports Photography.
+Motion Must Never Become The Subject.
+
+Future Rule
+
+Further Hero redesign requires explicit user approval.
+
+Hero experimentation is closed.
+Future visual exploration should focus on:
+
+* Portfolio Experience
+* About Storytelling
+* Contact Experience
+
 ## Current Status
+
 
 Phase 1.6 design audit and visual config system implemented.
 
@@ -51,6 +100,18 @@ Production URL: N/A
 - Visual config system added under `src/config/`
 - Brand, hero image, portfolio images, profile image, contact details, typography tokens, and active contact variant are config-driven
 - Visual audit created at `reports/visual_audit.md`
+- Browser MCP (Puppeteer) tool installed for agent visual QA and automation
+- Captured full-set section screenshots (Home, Story, Work, Studio, Contact) at 1440x900
+- Captured full-page desktop screenshot at 1440x900
+- Repaired lint errors in utility scripts (LUMINA-FIX-001)
+- Completed photography curation and ranking (QA-013)
+- Finalized Hero image selection: Candidate B (IMG_2677) after visual comparison (QA-014)
+- Implemented lightweight client-side cinematic slideshow sequence in Hero section using 5 real photography assets with clean crossfade, keyframes, DOM pruning, and prefers-reduced-motion media query validation (LUMINA-HERO-CINEMATIC-001)
+- Refactored prefers-reduced-motion detection inside HeroSlideshow component to use a clean lazy state initializer, removing the temporary setTimeout handler (LUMINA-CLEANUP-001)
+- Implemented configurable, mouse-reactive light frame layout variants, gold lens mask, and hardware-accelerated viewport parallax shifts updating at 120fps with mobile and prefers-reduced-motion fallbacks (LUMINA-INTERACTION-001)
+- Replaced the subtle reactive frame with the Lens Light Sweep experience, adding a highly-visible optical viewfinder streak utilizing linear gradients, mix-blend-mode, and hardware-accelerated transforms (LUMINA-INTERACTION-002)
+- Established the Art Direction Lock listing approved/rejected features and core principles (LUMINA-ART-DIRECTION-LOCK-001)
+- Implemented the LUMINA config system by moving configurable website data (content, portfolio, services, navigation, contact) and motion behavior out of components into dedicated config files without adding new dependencies (LUMINA-CONFIG-SYSTEM-001)
 
 ## Pending
 
@@ -59,7 +120,7 @@ Production URL: N/A
 
 ## Next Task
 
-Run the next visual experiment by switching contact presentation variants from config, then perform mobile/desktop QA and deploy test.
+Deploy the lander to staging/production and perform final cross-browser and visual verification.
 
 
 
