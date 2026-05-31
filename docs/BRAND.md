@@ -10,12 +10,16 @@ Photography, visual storytelling, creative design, and graphic work.
 
 ## Brand Direction
 
-Luxury Editorial Photography
+Human Documentary Photography
+
+Production code is approved. This task updates documentation only.
+
+Do not reintroduce Luxury / Crystal / Premium as primary direction.
 
 ## Mood
 
-- Cinematic
-- Premium
+- Human
+- Documentary
 - Minimal
 - Emotional
 - Artistic
@@ -26,7 +30,7 @@ Luxury Editorial Photography
 - Leica
 - Vogue
 - Monocle
-- Premium photography portfolio websites
+- Modern documentary photography portfolios
 
 ## Color Palette
 

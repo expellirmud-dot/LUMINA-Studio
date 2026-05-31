@@ -58,8 +58,22 @@ Implemented the approved limited redesign without recreating architecture or add
 
 Remaining technical debt:
 - `app/globals.css` still contains several hardcoded transition/animation values. They were not fully extracted in this phase because the approval explicitly limited CSS cleanup to necessary changes.
-- `docs/BRAND.md`, `docs/DESIGN.md`, and examples inside `LUMINA_CONFIG_SYSTEM.md` still describe the older luxury/crystal direction as governance/history docs. They were not part of the approved implementation file list.
+- Examples inside `LUMINA_CONFIG_SYSTEM.md` still describe the older luxury/crystal direction as governance/history docs. They were not part of the approved documentation-alignment file list.
 
-## Deployment Verification (Phase 4)
-- **Status:** BLOCKED. Vercel CLI 500 Error persists. Git push to origin/main succeeded but Vercel deployment did not trigger.
-- **Next Steps:** Resolve Vercel access/pipeline issues. Once deployed, capture screenshots and verify URL.
+## Deployment Verification (Phase 5B)
+- **Status:** DEPLOYED. Vercel deployment pipeline unblocked using Vercel CLI `--prod`.
+- **Production URL:** https://lumina-studio-iota-ten.vercel.app
+- **Verification:** Verified site loads (200 OK) and screenshots captured.
+
+## Latest Deployment
+- **Status:** DEPLOYED via `vercel --prod`.
+- **Deployment URL:** https://lumina-studio-g0yk9dwnq-expellirmud-dots-projects.vercel.app
+- **Production Alias:** https://lumina-studio-iota-ten.vercel.app
+
+## Documentation Alignment (LUMINA-DOCS-ALIGNMENT-001)
+
+- Updated `docs/BRAND.md` and `docs/DESIGN.md` to align future agent guidance with the approved Human Documentary Photography direction.
+- Removed the Crystal-led design story from `docs/DESIGN.md`.
+- Preserved the modern, minimal, emotional, professional photography direction and warnings against SaaS, dashboard, corporate, and generic template styles.
+- Added an explicit documentation-only note and a warning not to reintroduce Luxury / Crystal / Premium as the primary direction.
+- Production code was not changed.

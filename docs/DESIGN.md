@@ -6,16 +6,22 @@ Single-page landing page.
 
 ## Layout Direction
 
-Editorial luxury photography portfolio.
+Modern minimal Human Documentary Photography portfolio.
+
+Production code is approved. This task updates documentation only.
+
+Do not reintroduce Luxury / Crystal / Premium as primary direction.
 
 ## Core Story
 
-Crystal
-→ Light
-→ Lens
-→ Frame
-→ Photography
+People
+→ Place
+→ Atmosphere
+→ Feeling
+→ Memory
 → LUMINA
+
+Photography comes first. Motion supports photography and must never become the subject.
 
 ## Main Sections
 
