@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { visualConfig } from "../config/visual";
 import type { PortfolioImage } from "../config/images";
 
 interface PortfolioEditorialProps {
@@ -19,18 +18,18 @@ export default function PortfolioEditorial({ images }: PortfolioEditorialProps) 
       <article className="portfolio-editorial-hero">
         <div className="portfolio-editorial-image-frame">
           <Image
-            src={hero.src}
-            alt={hero.alt}
+            src={hero.image.src}
+            alt={hero.image.alt}
             fill
             sizes="(max-width: 1024px) 100vw, 65vw"
             className="portfolio-editorial-image"
-            style={{ objectPosition: hero.position }}
+            style={{ objectPosition: hero.image.position }}
           />
           <div className="portfolio-editorial-label">
             <span className="block text-sm uppercase tracking-widest text-[var(--muted-gold)] mb-1">
-              {hero.title}
+              {hero.eyebrow}
             </span>
-            {hero.category}
+            {hero.description}
           </div>
         </div>
       </article>
@@ -40,18 +39,18 @@ export default function PortfolioEditorial({ images }: PortfolioEditorialProps) 
         <article className="portfolio-editorial-story">
           <div className="portfolio-editorial-image-frame">
             <Image
-              src={story.src}
-              alt={story.alt}
+              src={story.image.src}
+              alt={story.image.alt}
               fill
               sizes="(max-width: 1024px) 50vw, 35vw"
               className="portfolio-editorial-image"
-              style={{ objectPosition: story.position }}
+              style={{ objectPosition: story.image.position }}
             />
             <div className="portfolio-editorial-label">
               <span className="block text-sm uppercase tracking-widest text-[var(--muted-gold)] mb-1">
-                {story.title}
+                {story.eyebrow}
               </span>
-              {story.category}
+              {story.description}
             </div>
           </div>
         </article>
@@ -59,18 +58,18 @@ export default function PortfolioEditorial({ images }: PortfolioEditorialProps) 
         <article className="portfolio-editorial-peak">
           <div className="portfolio-editorial-image-frame">
             <Image
-              src={peak.src}
-              alt={peak.alt}
+              src={peak.image.src}
+              alt={peak.image.alt}
               fill
               sizes="(max-width: 1024px) 50vw, 35vw"
               className="portfolio-editorial-image"
-              style={{ objectPosition: peak.position }}
+              style={{ objectPosition: peak.image.position }}
             />
             <div className="portfolio-editorial-label">
               <span className="block text-sm uppercase tracking-widest text-[var(--muted-gold)] mb-1">
-                {peak.title}
+                {peak.eyebrow}
               </span>
-              {peak.category}
+              {peak.description}
             </div>
           </div>
         </article>
@@ -80,18 +79,18 @@ export default function PortfolioEditorial({ images }: PortfolioEditorialProps) 
       <article className="portfolio-editorial-character">
         <div className="portfolio-editorial-image-frame">
           <Image
-            src={character.src}
-            alt={character.alt}
+            src={character.image.src}
+            alt={character.image.alt}
             fill
             sizes="(max-width: 1024px) 100vw, 35vw"
             className="portfolio-editorial-image"
-            style={{ objectPosition: character.position }}
+            style={{ objectPosition: character.image.position }}
           />
           <div className="portfolio-editorial-label">
             <span className="block text-sm uppercase tracking-widest text-[var(--muted-gold)] mb-1">
-              {character.title}
+              {character.eyebrow}
             </span>
-            {character.category}
+            {character.description}
           </div>
         </div>
       </article>
@@ -100,18 +99,18 @@ export default function PortfolioEditorial({ images }: PortfolioEditorialProps) 
       <article className="portfolio-editorial-signature">
         <div className="portfolio-editorial-image-frame">
           <Image
-            src={signature.src}
-            alt={signature.alt}
+            src={signature.image.src}
+            alt={signature.image.alt}
             fill
             sizes="100vw"
             className="portfolio-editorial-image"
-            style={{ objectPosition: signature.position }}
+            style={{ objectPosition: signature.image.position }}
           />
           <div className="portfolio-editorial-label">
             <span className="block text-sm uppercase tracking-widest text-[var(--muted-gold)] mb-1">
-              {signature.title}
+              {signature.eyebrow}
             </span>
-            {signature.category}
+            {signature.description}
           </div>
         </div>
       </article>
