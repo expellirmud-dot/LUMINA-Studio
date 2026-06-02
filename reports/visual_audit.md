@@ -33,6 +33,11 @@ APPROVED_WITH_NOTES for limited implementation scope. Next task should be browse
 - **Microcopy**: Border softened to `rgba(185, 154, 95, 0.25)` to keep text readable but secondary.
 - **Overall Feel**: Much stronger alignment with the intended "Human Documentary Photography" direction without requiring a structural redesign.
 
+## LUMINA-POST-DEPLOY-VERIFICATION-001
+- **Status**: PASS
+- **Production URL**: https://lumina-studio-iota-ten.vercel.app/
+- **Verification**: Production accurately reflects the Homepage Narrative Polish and Portfolio B+ Interactive Album. Expected copy is present, stale copy is removed, and visual scaling is verified across desktop (1440x900) and mobile (390x844).
+
 ## Phase
 
 Phase 1.6 — Design Audit and Visual Config System

@@ -75,9 +75,14 @@ Remaining technical debt:
 - **Verification:** Verified site loads (200 OK) and screenshots captured.
 
 ## Latest Deployment
-- **Status:** DEPLOYED via `vercel --prod`.
+- **Status:** DEPLOYED via `vercel --prod` (LUMINA-DEPLOYMENT-EXECUTION-001).
 - **Deployment URL:** https://lumina-studio-g0yk9dwnq-expellirmud-dots-projects.vercel.app
 - **Production Alias:** https://lumina-studio-iota-ten.vercel.app
+
+## Post-Deploy Verification (LUMINA-POST-DEPLOY-VERIFICATION-001)
+- **Status:** PASS
+- **Production URL:** https://lumina-studio-iota-ten.vercel.app/
+- **Verified:** Latest approved local candidate (Homepage Narrative Polish and Portfolio Album B+) perfectly matches production. No stale copy. Desktop and mobile visual QA passed.
 
 ## Documentation Alignment (LUMINA-DOCS-ALIGNMENT-001)
 
