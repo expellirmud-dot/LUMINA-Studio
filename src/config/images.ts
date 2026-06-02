@@ -1,7 +1,6 @@
 import type { StaticImageData } from "next/image";
 import profilePortrait from "../../docs/Profile Pic.jpg";
 
-
 export type ConfigImage = {
   src: StaticImageData | string;
   path: string;
@@ -15,7 +14,6 @@ export type PortfolioImage = {
   description: string;
 };
 
-
 export const profileImage: ConfigImage = {
   src: profilePortrait,
   path: "docs/Profile Pic.jpg",
@@ -24,36 +22,41 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.jpg",
-  path: "images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.jpg",
-  alt: "Candid moment during the ceremony",
+  src: "/images/portfolio/phra-ob-v1/000046_hero_ordination_14.jpg",
+  path: "images/portfolio/phra-ob-v1/000046_hero_ordination_14.jpg",
+  alt: "Ordination ceremony hero shot",
   position: "50% 50%",
 };
 
 export const heroSequence: ConfigImage[] = [
   {
-    src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.jpg",
-    path: "images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.jpg",
-    alt: "Candid moment during the ceremony",
+    src: "/images/portfolio/phra-ob-v1/000046_hero_ordination_14.jpg",
+    path: "images/portfolio/phra-ob-v1/000046_hero_ordination_14.jpg",
+    alt: "Ordination ceremony opening",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.jpg",
-    path: "images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.jpg",
-    alt: "Hero shot of a wedding ceremony",
-    position: "50% 48%",
-  },
-  {
-    src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.jpg",
-    path: "images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.jpg",
-    alt: "Family emotion moment",
+    src: "/images/portfolio/phra-ob-v1/001217_documentary_moment_PTO (563).jpg",
+    path: "images/portfolio/phra-ob-v1/001217_documentary_moment_PTO (563).jpg",
+    alt: "Family sharing a joyful moment during the ceremony",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/lumina-harvest-v1/000029_ceremony_cinematic_PTO_4000.jpg",
-    path: "images/portfolio/lumina-harvest-v1/000029_ceremony_cinematic_PTO_4000.jpg",
-    alt: "Ceremony cinematic moment",
+    src: "/images/portfolio/phra-ob-v1/000095_portrait_184.jpg",
+    path: "images/portfolio/phra-ob-v1/000095_portrait_184.jpg",
+    alt: "Portrait of the newly ordained monk",
+    position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/phra-ob-v1/ritual_detail_54.jpg",
+    path: "images/portfolio/phra-ob-v1/ritual_detail_54.jpg",
+    alt: "Traditional ordination ritual detail",
+    position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/phra-ob-v1/000103_ceremony_vertical_191.jpg",
+    path: "images/portfolio/phra-ob-v1/000103_ceremony_vertical_191.jpg",
+    alt: "Ordination procession and ceremony",
     position: "50% 50%",
   },
 ];
-
