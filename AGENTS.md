@@ -3,10 +3,11 @@
 Before any work, read:
 
 - PROJECT_RULES.md
+- LUMINA_CONFIG_SYSTEM.md
 - AI_HANDOFF.md
 - reports/implementation_report.md
 - reports/visual_audit.md
-- skills/LUMINA_STARTUP/skill.md
+- skills/LUMINA_STARTUP/SKILL.md
 - .mcp/serena.md
 - .mcp/codegraph.md
 
@@ -57,7 +58,10 @@ Agents must not implement unapproved proposals unless explicitly instructed.
 
 Before approving any completed task, execute:
 
-- skills/LUMINA_REVIEW_CHECKLIST/skill.md
+- skills/LUMINA_REVIEW_CHECKLIST/SKILL.md
+
+
+
 
 
 

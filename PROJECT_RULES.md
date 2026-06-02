@@ -64,3 +64,13 @@ Instead:
 - Build passes
 - Deploy passes
 - Visual direction matches LUMINA Studio brand
+
+## Current Locked Rules
+
+- Hero Status: FROZEN.
+- Further Hero redesign requires explicit user approval.
+- Use the existing config system for content, image, visual token, motion, service, navigation, contact, and portfolio changes.
+- Do not re-implement the config system unless it is missing or broken.
+- Motion must support photography and must never become the subject.
+- Photography remains the primary visual identity.
+- Avoid heavy optical overlays, heavy glassmorphism, large cursor spotlights, WebGL, Three.js, and Canvas in production.

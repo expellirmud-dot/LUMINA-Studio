@@ -1,6 +1,6 @@
 ---
-name: frontend-visual-design
-description: Frontend visual design guidance for landing pages, marketing websites, portfolio sites, SaaS interfaces, UI components, motion systems, and visual review. Use when a task involves frontend design, visual refinement, motion design, or design review and the work should prioritize clarity, accessibility, performance, and maintainability.
+name: lumina-frontend-visual-design
+description: LUMINA-specific frontend visual design guidance for premium editorial photography landing page, portfolio sections, motion discipline, visual review, and config-driven UI refinement.
 ---
 
 # Frontend Visual Design
@@ -68,3 +68,5 @@ Always support reduced motion:
 - Check spacing and hierarchy.
 - Check performance impact.
 - Check that the final result still feels intentional rather than overdesigned.
+
+

@@ -3,6 +3,7 @@
 Before implementation, read:
 
 - PROJECT_RULES.md
+- LUMINA_CONFIG_SYSTEM.md
 - AI_HANDOFF.md
 - reports/implementation_report.md
 - reports/visual_audit.md
@@ -24,3 +25,4 @@ Run:
 - git status --short
 
 Do not implement before startup report is complete.
+
