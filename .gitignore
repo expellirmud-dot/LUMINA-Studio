@@ -45,3 +45,6 @@ broadcast.md
 .gemini/skills/
 
 .gemini/settings.json
+
+.agent/
+.opencode/
