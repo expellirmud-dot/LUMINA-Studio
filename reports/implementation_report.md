@@ -2,7 +2,7 @@
 
 ## Latest Task
 
-LUMINA-REFINEMENT-001: Refine landing page toward premium modern documentary photography, including typography, copywriting, and hero microcopy layout.
+LUMINA-PORTFOLIO-CURATION-001 & LUMINA-PORTFOLIO-SEQUENCING-001: Redesigned the Portfolio section into an interactive album component, grouped and sequenced images by narrative classes.
 
 ## Files Changed
 
@@ -54,11 +54,15 @@ Motion Must Never Become The Subject.
 
 ## Notes
 
-Implemented the approved limited redesign without recreating architecture or adding dependencies. The visible website direction now uses Human Documentary Photography copy, warm conversation-first contact language, verified `Portfolio/TOP10` images, and slower config-controlled Hero motion. Hero structure/layout was not redesigned; only config-controlled copy, image sequence, and motion values changed. A small JSX wiring change moved the contact eyebrow into `contactConfig` and replaced old Crystal-facing aria/class labels.
+Implemented the interactive portfolio redesign (LUMINA-PORTFOLIO-CURATION-001).
+- Updated `src/config/images.ts` to include a new `PortfolioAlbum` type.
+- Updated `src/config/portfolio.ts` to group images into narrative albums (Sacred Ceremonies, Ordination, People & Bonds, Stage).
+- Created `src/components/PortfolioAlbumInteractive.tsx`, a client component for smooth, slow-transitioning image viewing.
+- Modified `app/page.tsx` and `app/globals.css` to integrate the new component and its layout styles.
 
 Remaining technical debt:
-- `app/globals.css` still contains several hardcoded transition/animation values. They were not fully extracted in this phase because the approval explicitly limited CSS cleanup to necessary changes.
-- Examples inside `LUMINA_CONFIG_SYSTEM.md` still describe the older luxury/crystal direction as governance/history docs. They were not part of the approved documentation-alignment file list.
+- `app/globals.css` still contains several hardcoded transition/animation values.
+- Examples inside `LUMINA_CONFIG_SYSTEM.md` still describe the older luxury/crystal direction as governance/history docs.
 
 ## Deployment Verification (Phase 5B)
 - **Status:** DEPLOYED. Vercel deployment pipeline unblocked using Vercel CLI `--prod`.

@@ -2,9 +2,9 @@ export const contentConfig = {
   hero: {
     eyebrow: "Human documentary photography",
     title: "LUMINA Studio",
-    subtitle: "ภาพถ่ายที่เล่าเรื่องราวของวันสำคัญด้วยความจริงใจ เรียบง่าย และให้ความรู้สึกอบอุ่น",
-    primaryCta: "ชมผลงาน",
-    secondaryCta: "แนวทางการถ่ายภาพ",
+    subtitle: "Storytelling, Authentic, Minimal, Warmth, Memories.",
+    primaryCta: "View Work",
+    secondaryCta: "Approach",
     rotatingMicrocopy: [
       "Real moments, held with care.",
       "Quiet frames. Honest stories.",
@@ -19,34 +19,34 @@ export const contentConfig = {
     steps: [
       {
         label: "People",
-        copy: "ให้ความสำคัญกับความสัมพันธ์และรอยยิ้มที่เป็นธรรมชาติของผู้คนในงาน",
+        copy: "Focusing on relationships and the natural smiles of the people present.",
       },
       {
         label: "Place",
-        copy: "เก็บบรรยากาศและรายละเอียดของสถานที่เพื่อช่วยเติมเต็มเรื่องราว",
+        copy: "Capturing the atmosphere and details of the location to complete the story.",
       },
       {
         label: "Atmosphere",
-        copy: "บันทึกความรู้สึกของช่วงเวลา ไม่ว่าจะเป็นความสงบหรือความสุขที่เกิดขึ้น",
+        copy: "Recording the feeling of the moment, whether it's peace or joy.",
       },
       {
         label: "Feeling",
-        copy: "ปล่อยให้โมเมนต์ดำเนินไปตามจริง ไม่ฝืนธรรมชาติ ไม่เร่งจังหวะ",
+        copy: "Letting moments unfold naturally, without forcing or rushing the pace.",
       },
       {
         label: "Memory",
-        copy: "เพื่อเป็นภาพความทรงจำที่พากลับไปสัมผัสความรู้สึกในวันนั้นได้เสมอ",
+        copy: "Creating memories that always take you back to the feelings of that day.",
       },
       {
         label: "LUMINA",
-        copy: "ความตั้งใจที่จะเก็บรักษาเรื่องราวดีๆ ด้วยภาพถ่ายที่เรียบง่ายและยั่งยืน",
+        copy: "The intention to preserve good stories through simple, enduring photography.",
       },
     ],
   },
   portfolio: {
     eyebrow: "Featured Work",
-    title: "ตัวอย่างผลงานภาพถ่ายที่เน้นความรู้สึกจริง",
-    description: "คัดเลือกภาพจากงานแต่งงานและพิธีสำคัญ ที่สื่อถึงความสัมพันธ์ บรรยากาศ และเรื่องราวที่เกิดขึ้นในวันนั้นอย่างเป็นธรรมชาติ",
+    title: "Selected works focusing on genuine feelings.",
+    description: "A curated selection from weddings and ceremonies that naturally convey relationships, atmosphere, and stories of the day.",
   },
   services: {
     eyebrow: "Services",
@@ -55,7 +55,7 @@ export const contentConfig = {
   about: {
     eyebrow: "About Studio",
     title: "Led by ToTo Therdsak, Photographer / Visual Storyteller.",
-    description: "LUMINA Studio เชื่อในการสังเกตอย่างใจเย็น เพื่อบันทึกความเป็นไปตามธรรมชาติของวันสำคัญ เราเก็บความรู้สึกและเรื่องราวของผู้คนในมุมมองที่อบอุ่น เรียบง่าย และเป็นตัวของตัวเอง",
+    description: "LUMINA Studio believes in calm observation to document the natural progression of your important day. We capture the feelings and stories of people from a warm, simple, and authentic perspective.",
     quote: "I look for the moment that still feels true when the day has passed.",
   },
   footer: {

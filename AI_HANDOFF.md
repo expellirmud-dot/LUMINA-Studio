@@ -177,9 +177,9 @@ Next.js: Initialized
 
 Tailwind: Initialized
 
-Deployment: Not Started
+Deployment: Completed
 
-Production URL: N/A
+Production URL: https://lumina-studio-iota-ten.vercel.app
 
 ## Completed
 
@@ -222,11 +222,13 @@ Production URL: N/A
 - Implemented the LUMINA config system by moving configurable website data (content, portfolio, services, navigation, contact) and motion behavior out of components into dedicated config files without adding new dependencies (LUMINA-CONFIG-SYSTEM-001)
 - Implemented limited Human Documentary redesign through existing config files: visible Luxury / Premium / Crystal / Exclusive direction removed from app copy and metadata; portfolio now uses verified `Portfolio/TOP10` photography assets; Hero changed only through config-controlled copy, image sequence, and motion values; no Hero structure redesign, routing change, backend, database, or dependency added.
 - Refined landing page toward premium modern documentary photography, including typography (Inter & IBM Plex Sans Thai Looped), bilingual copywriting, and hero portrait layout with rotating microcopy (LUMINA-REFINEMENT-001)
+- Executed user-authorized override of Art Direction Lock to update Hero and Gallery copy to English ("Storytelling, Authentic, Minimal, Warmth, Memories"), slowed down global motion, added scroll snapping, and updated image curation from Portfolio 1-5 (LUMINA-REDESIGN-001).
+- Designed and integrated an Interactive Portfolio Album component to support curated narrative image sequencing with slow, seamless opacity transitions and layout refactoring (LUMINA-PORTFOLIO-CURATION-001).
 
 ## Pending
 
-- Resolve Vercel CLI 500 Error. GitHub push succeeded but deployment did not trigger. Deployment access remains blocked.
+- None.
 
 ## Next Task
 
-Fix Vercel deployment pipeline/access to obtain a production URL.
+- Visual Review (QA) or Feature Development as directed by user.

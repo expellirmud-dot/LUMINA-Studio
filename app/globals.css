@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -46,6 +47,7 @@ body {
   width: min(100%, 1440px);
   margin-inline: auto;
   padding-inline: clamp(1.25rem, 4vw, 5rem);
+  scroll-snap-align: start;
 }
 
 .hero-section {
@@ -73,8 +75,8 @@ body {
 .nav-link,
 .gold-link {
   transition:
-    color 180ms ease,
-    opacity 180ms ease;
+    color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .nav-link:hover,
@@ -113,10 +115,10 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   transition:
-    background-color 180ms ease,
-    border-color 180ms ease,
-    color 180ms ease,
-    transform 180ms ease;
+    background-color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .primary-action {
@@ -319,15 +321,15 @@ body {
   border: 1px solid rgba(246, 241, 232, 0.12);
   padding: clamp(1rem, 3vw, 1.5rem);
   transition:
-    border-color 180ms ease,
-    opacity 180ms ease,
-    transform 180ms ease;
+    border-color 400ms ease,
+    opacity 400ms ease,
+    transform 400ms ease;
 }
 
 .portfolio-tile:hover {
   border-color: rgba(185, 154, 95, 0.72);
-  opacity: 0.94;
-  transform: translateY(-2px) scale(1.005);
+  opacity: 1;
+  transform: translateY(-2px) scale(1.01);
 }
 
 .portfolio-image-frame {
@@ -341,9 +343,9 @@ body {
     #171511;
   padding: 1rem;
   transition:
-    border-color 180ms ease,
-    opacity 180ms ease,
-    transform 180ms ease;
+    border-color 400ms ease,
+    opacity 400ms ease,
+    transform 400ms ease;
 }
 
 .portfolio-image-frame::after {
@@ -358,10 +360,10 @@ body {
 
 .portfolio-image {
   object-fit: cover;
-  filter: saturate(0.88) contrast(1.03) brightness(0.92);
+  filter: saturate(0.88) contrast(1.03) brightness(0.95);
   transition:
-    filter 180ms ease,
-    transform 180ms ease;
+    filter 400ms ease,
+    transform 400ms ease;
 }
 
 .portfolio-image-frame span {
@@ -376,15 +378,139 @@ body {
 }
 
 .portfolio-tile:hover .portfolio-image-frame {
-  border-color: rgba(185, 154, 95, 0.45);
-  opacity: 0.88;
+  border-color: rgba(185, 154, 95, 0.6);
+  opacity: 1;
   transform: scale(0.995);
 }
 
 .portfolio-tile:hover .portfolio-image {
-  filter: saturate(0.94) contrast(1.06) brightness(0.88);
+  filter: saturate(1.0) contrast(1.05) brightness(1.05);
   transform: scale(1.025);
 }
+
+/* Portfolio Editorial Concept B+ */
+.portfolio-editorial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .portfolio-editorial-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.portfolio-editorial-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+@media (min-width: 1024px) {
+  .portfolio-editorial-hero {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+}
+
+.portfolio-editorial-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .portfolio-editorial-story-grid {
+    display: contents;
+  }
+}
+
+.portfolio-editorial-story,
+.portfolio-editorial-peak {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+@media (min-width: 1024px) {
+  .portfolio-editorial-story {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .portfolio-editorial-peak {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.portfolio-editorial-character {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+@media (min-width: 1024px) {
+  .portfolio-editorial-character {
+    aspect-ratio: 1 / 1;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.portfolio-editorial-signature {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 4rem;
+}
+@media (min-width: 1024px) {
+  .portfolio-editorial-signature {
+    grid-column: 1 / -1;
+    margin-top: 6rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 16 / 7;
+  }
+}
+
+.portfolio-editorial-image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(246, 241, 232, 0.12);
+  background: var(--charcoal);
+}
+
+.portfolio-editorial-image {
+  object-fit: cover;
+  filter: saturate(0.9) contrast(1.05);
+  transition: transform 800ms ease, filter 800ms ease;
+}
+
+.portfolio-editorial-image-frame:hover .portfolio-editorial-image {
+  transform: scale(1.02);
+  filter: saturate(1) contrast(1.1);
+}
+
+.portfolio-editorial-label {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.portfolio-editorial-image-frame:hover .portfolio-editorial-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .service-row {
   display: flex;
@@ -472,8 +598,8 @@ body {
   background: var(--charcoal);
   padding: clamp(1.15rem, 3vw, 1.8rem);
   transition:
-    background-color 180ms ease,
-    color 180ms ease;
+    background-color 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .contact-link:hover {
@@ -506,7 +632,7 @@ body {
 }
 
 .reveal {
-  animation: reveal-up 760ms ease both;
+  animation: reveal-up 1200ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes reveal-up {

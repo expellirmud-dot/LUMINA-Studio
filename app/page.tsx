@@ -9,6 +9,7 @@ import { navigationConfig } from "../src/config/navigation";
 import { contactConfig } from "../src/config/contact";
 import HeroSlideshow from "../src/components/HeroSlideshow";
 import RotatingMicrocopy from "../src/components/RotatingMicrocopy";
+import PortfolioEditorial from "../src/components/PortfolioEditorial";
 
 export default function Home() {
   const contactVariant = contactVariants[visualConfig.activeContactVariant];
@@ -63,7 +64,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="reveal hero-focal" aria-label="Human documentary photography sequence">
+          <div className="reveal hero-focal" aria-label="Human documentary photography sequence" style={{ animationDelay: "200ms" }}>
             <HeroSlideshow
               images={heroSequence}
             />
@@ -83,13 +84,13 @@ export default function Home() {
       <section id="story" className="section-shell border-t border-white/10 py-24 sm:py-32">
         <div className="mb-14 grid gap-8 lg:grid-cols-[0.7fr_1fr]">
           <p className="eyebrow reveal">{contentConfig.story.eyebrow}</p>
-          <h2 className={`reveal ${typographyConfig.tokens.sectionHeadline}`}>
+          <h2 className={`reveal ${typographyConfig.tokens.sectionHeadline}`} style={{ animationDelay: "150ms" }}>
             {contentConfig.story.title}
           </h2>
         </div>
         <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-3">
           {contentConfig.story.steps.map((step, index) => (
-            <article key={step.label} className="story-panel reveal">
+            <article key={step.label} className="story-panel reveal" style={{ animationDelay: `${300 + index * 100}ms` }}>
               <span className="text-sm text-[var(--muted-gold)]">
                 {String(index + 1).padStart(2, "0")}
               </span>
@@ -104,48 +105,28 @@ export default function Home() {
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="eyebrow reveal">{contentConfig.portfolio.eyebrow}</p>
-            <h2 className={typographyConfig.tokens.portfolioHeadline}>
+            <h2 className={`reveal ${typographyConfig.tokens.portfolioHeadline}`} style={{ animationDelay: "150ms" }}>
               {contentConfig.portfolio.title}
             </h2>
           </div>
-          <p className="reveal max-w-sm leading-7 text-[var(--soft-gray)]">
+          <p className="reveal max-w-sm leading-7 text-[var(--soft-gray)]" style={{ animationDelay: "300ms" }}>
             {contentConfig.portfolio.description}
           </p>
         </div>
-        <div className="grid gap-5 md:grid-cols-2">
-          {portfolioConfig.map((item, index) => (
-            <article key={item.title} className="portfolio-tile reveal">
-              <div className="portfolio-image-frame">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  sizes={visualConfig.portfolioImageSizes}
-                  className={visualConfig.portfolioImageClass}
-                  style={{ objectPosition: item.position }}
-                />
-                <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
-              </div>
-              <div className="mt-5 flex items-end justify-between gap-4">
-                <h3 className="font-serif text-3xl">{item.title}</h3>
-                <p className="text-sm text-[var(--muted-gold)]">{item.category}</p>
-              </div>
-            </article>
-          ))}
-        </div>
+        <PortfolioEditorial images={portfolioConfig} />
       </section>
 
       <section id="services" className="section-shell border-y border-white/10 py-24 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-[0.72fr_1fr]">
           <div>
             <p className="eyebrow reveal">{contentConfig.services.eyebrow}</p>
-            <h2 className={`reveal mt-5 ${typographyConfig.tokens.sectionHeadline}`}>
+            <h2 className={`reveal mt-5 ${typographyConfig.tokens.sectionHeadline}`} style={{ animationDelay: "150ms" }}>
               {contentConfig.services.title}
             </h2>
           </div>
           <div className="divide-y divide-white/10">
-            {servicesConfig.map((service) => (
-              <div key={service} className="service-row reveal">
+            {servicesConfig.map((service, index) => (
+              <div key={service} className="service-row reveal" style={{ animationDelay: `${300 + index * 100}ms` }}>
                 <span>{service}</span>
                 <span aria-hidden="true">+</span>
               </div>
@@ -168,7 +149,7 @@ export default function Home() {
             />
             <figcaption>{contentConfig.owner.name} / Photographer</figcaption>
           </figure>
-          <div className="reveal space-y-7">
+          <div className="reveal space-y-7" style={{ animationDelay: "200ms" }}>
             <p className="eyebrow">{contentConfig.about.eyebrow}</p>
             <h2 className={typographyConfig.tokens.sectionHeadline}>
               {contentConfig.about.title}

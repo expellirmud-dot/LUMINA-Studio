@@ -17,10 +17,10 @@ export const motionConfig = {
 
   hero: {
     slideshow: {
-      interval: 9000,
-      transitionDuration: 1800,
-      scale: 1.025,
-      animationDuration: 9500,
+      interval: 12000,
+      transitionDuration: 2400,
+      scale: 1.02,
+      animationDuration: 12500,
       easing: "ease-out",
     },
     parallax: {
