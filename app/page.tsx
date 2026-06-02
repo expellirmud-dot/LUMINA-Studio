@@ -41,7 +41,7 @@ export default function Home() {
       </nav>
 
       <section id="hero" className="hero-section section-shell pt-28">
-        <div className="grid min-h-[88svh] items-end gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
+        <div className="grid min-h-[70svh] lg:min-h-[88svh] items-end gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
           <div className="reveal space-y-8 pb-10">
             <p className="eyebrow">{contentConfig.hero.eyebrow}</p>
             <h1 className={typographyConfig.tokens.heroHeadline}>
