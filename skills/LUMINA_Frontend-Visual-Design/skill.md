@@ -1,130 +1,70 @@
-# Frontend Visual Design Skill
+---
+name: frontend-visual-design
+description: Frontend visual design guidance for landing pages, marketing websites, portfolio sites, SaaS interfaces, UI components, motion systems, and visual review. Use when a task involves frontend design, visual refinement, motion design, or design review and the work should prioritize clarity, accessibility, performance, and maintainability.
+---
 
-Use this skill when designing or implementing frontend interfaces, landing pages, dashboards, components, motion systems, or immersive visual sections.
+# Frontend Visual Design
 
-## Core Priority
+## Define The Problem
 
-Frontend quality comes first:
-- Clear UX
-- Strong visual direction
-- Production-ready code
-- Accessibility
-- Performance
-- Maintainability
-- No over-engineering
+- Define the user goal.
+- Identify the audience.
+- State the visual direction.
+- List the constraints.
 
-Do not add 3D, WebGL, shaders, canvas, or heavy animation unless the user explicitly asks for immersive visuals or the project clearly benefits from it.
+## Choose The Simplest Path
 
-## Design Direction
+Prefer the lightest solution that meets the brief:
 
-Before coding, define:
-- Purpose
-- Audience
-- Tone
-- Visual style
-- Typography
-- Color system
-- Motion level
-- Layout composition
-- Performance constraints
+1. HTML
+2. CSS
+3. React components
+4. CSS variables
+5. CSS animations
+6. Framer Motion
+7. Three.js
 
-Avoid generic AI-looking UI:
-- no default purple gradients
-- no generic card grids unless appropriate
-- no unnecessary glassmorphism
-- no random animation
-- no decorative effects that fight the content
+Move down the ladder only when the simpler option is insufficient.
 
-## Frontend Implementation
+## Apply Visual Rules
 
-Prefer simple, robust frontend techniques first:
-1. HTML / CSS / React components
-2. CSS variables
-3. CSS transitions and keyframes
-4. Lightweight interaction
-5. Framer Motion only if already available or justified
-6. Three.js only when explicitly required
+- Avoid generic AI gradients.
+- Avoid random motion.
+- Avoid unnecessary glassmorphism.
+- Avoid decorative effects that compete with content.
+- Prefer strong hierarchy.
+- Prefer clear spacing.
+- Prefer intentional typography.
+- Prefer a consistent visual language.
+- Prefer purposeful motion.
 
-## Three.js Mode
+## Apply Motion Rules
 
-Use Three.js only for:
-- immersive hero sections
-- product/scene visualization
-- creative visual experiments
-- 3D backgrounds where 2D CSS is insufficient
-- explicit user request for WebGL / shader / 3D
+- Make motion support usability.
+- Make motion reinforce hierarchy.
+- Make motion guide attention.
+- Do not let motion distract users.
+- Do not let motion reduce readability.
+- Do not let motion hurt accessibility.
 
-Do not use Three.js for normal landing pages, dashboards, forms, admin panels, or content pages.
+Always support reduced motion:
 
-## Three.js Geometry
+```css
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+```
 
-When creating 3D geometry:
-- reuse geometry and materials
-- use BufferGeometry for custom shapes
-- use InstancedMesh for many repeated objects
-- control segment counts
-- dispose unused geometry
-- keep geometry purposeful, not decorative noise
+## Review Before Shipping
 
-## Three.js Animation
-
-When animating 3D scenes:
-- use requestAnimationFrame carefully
-- use delta time
-- pause or reduce updates when offscreen
-- respect prefers-reduced-motion
-- avoid constant motion that distracts from content
-- keep text readable and stable
-
-## Three.js Shaders
-
-Use shaders only when standard materials are not enough.
-
-Shader rules:
-- start simple
-- expose values as uniforms
-- avoid unnecessary branching
-- move expensive calculations out of fragment shaders where possible
-- debug UV, normals, and positions visually
-- keep shader effects aligned with the design direction
-
-## Three.js Postprocessing
-
-Use postprocessing sparingly.
-
-Allowed when justified:
-- subtle bloom
-- vignette
-- depth of field
-- color grading
-- anti-aliasing
-- cinematic finishing
-
-Avoid:
-- excessive bloom
-- glitch effects unless stylistically required
-- heavy multi-pass pipelines on normal websites
-- effects that reduce readability
-
-## Decision Rule
-
-Before adding any advanced visual technique, answer:
-
-1. Does it improve the user's goal?
-2. Does it fit the brand/style?
-3. Can CSS achieve it more simply?
-4. Will it hurt performance?
-5. Does it make maintenance harder?
-
-If the answer is unclear, choose the simpler frontend solution.
-
-## Output Expectations
-
-When implementing:
-- explain the chosen visual direction briefly
-- keep code scoped
-- avoid adding dependencies unless necessary
-- preserve existing project structure
-- implement the smallest complete change
-- include reduced-motion handling for animation-heavy work
-- validate responsive behavior
+- Check mobile layouts.
+- Check contrast and readability.
+- Check spacing and hierarchy.
+- Check performance impact.
+- Check that the final result still feels intentional rather than overdesigned.
