@@ -224,6 +224,7 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 - Refined landing page toward premium modern documentary photography, including typography (Inter & IBM Plex Sans Thai Looped), bilingual copywriting, and hero portrait layout with rotating microcopy (LUMINA-REFINEMENT-001)
 - Executed user-authorized override of Art Direction Lock to update Hero and Gallery copy to English ("Storytelling, Authentic, Minimal, Warmth, Memories"), slowed down global motion, added scroll snapping, and updated image curation from Portfolio 1-5 (LUMINA-REDESIGN-001).
 - Designed and integrated an Interactive Portfolio Album component to support curated narrative image sequencing with slow, seamless opacity transitions and layout refactoring (LUMINA-PORTFOLIO-CURATION-001).
+- Executed LUMINA-HOMEPAGE-NARRATIVE-POLISH-001: Rebalanced the homepage hero by increasing photograph brightness, reducing overlay density, and lowering focal-grid opacity while preserving the Human Documentary Photography direction. Reduced repeated copy phrasing across the portfolio, services, and about sections.
 
 ## Pending
 

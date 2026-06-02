@@ -2,44 +2,42 @@
 
 ## Task ID
 
-LUMINA-QA-001
+LUMINA-HOMEPAGE-NARRATIVE-POLISH-001
 
 ## Assigned Model
 
-Gemma 4 / Gemini Coding
+Gemini 3.1 Pro
 
 ## Objective
 
-Run visual QA for the current LUMINA landing page and compare the active contact variant.
+Rebalance the existing homepage so photography carries more emotional weight, and reduce repeated explanatory copy without redesigning structure.
 
 ## Required Read First
 
 - AGENTS.md
 - GEMINI.md
-- .ai/ARCHITECTURE_STATE.md
 - .ai/SKILL_PROFILES.md
 - AI_HANDOFF.md
 - reports/implementation_report.md
 - reports/visual_audit.md
 - skills/LUMINA_STARTUP/skill.md
-- skills/LUMINA_VISUAL_REVIEW/skill.md
-- skills/LUMINA_CONFIG_CHANGE/skill.md
+- skills/LUMINA_REVIEW_CHECKLIST/skill.md
 
 ## Allowed Files
 
-- src/config/visual.ts
-- reports/visual_audit.md
+- src/config/content.ts
+- app/globals.css
+- AI_HANDOFF.md
 - reports/implementation_report.md
+- reports/visual_audit.md
 - .ai/TASK_REPORT.md
 
 ## Forbidden Files / Areas
 
 - app/page.tsx
-- app/layout.tsx
-- app/globals.css
-- src/config/site.ts
-- src/config/images.ts
-- src/config/typography.ts
+- src/components/HeroSlideshow.tsx
+- src/components/RotatingMicrocopy.tsx
+- src/config/motion.ts
 - backend
 - database
 - auth
@@ -51,30 +49,24 @@ Run visual QA for the current LUMINA landing page and compare the active contact
 
 ## Exact Changes Required
 
-1. Inspect current activeContactVariant.
-2. If current variant is contact-strip, keep it.
-3. Run visual QA notes for Contact section:
-   - desktop readability
-   - mobile readability risk
-   - phone number hierarchy
-   - Line hierarchy
-   - Facebook hierarchy
-   - luxury/editorial feeling
-4. Do not change app/page.tsx or CSS.
-5. Update reports/visual_audit.md with a Contact Variant QA section.
+1. Adjust Hero CSS selectors to increase photograph brightness slightly, reduce overlay density, reduce gold corner luminosity, lower focal-grid opacity, and soften the microcopy frame border.
+2. Replace copy in src/config/content.ts to reduce repetitive use of words like "people" and "feeling".
+3. Preserve the Portfolio sequence, signature image crop, hover labels, and motion timings.
+4. Do not redesign or add new effects.
+5. Update reports and AI_HANDOFF.md after validation.
 6. Update .ai/TASK_REPORT.md.
 
 ## Validation Required
 
+- git diff --name-only
 - npm run lint
 - npm run build
+- Desktop and Mobile QA
 
 ## Stop Conditions
 
 Stop and report if:
-
-- visual.ts does not expose activeContactVariant
-- the contact variant requires editing app/page.tsx
+- the Hero becomes too bright, too flat, or the microcopy becomes unreadable
 - lint fails
 - build fails
 - any forbidden file must be edited
@@ -82,9 +74,16 @@ Stop and report if:
 ## Expected Report
 
 Return:
-
-- current contact variant
-- files changed
-- validation result
-- visual QA findings
-- keep/revert recommendation
+- Task ID
+- Files changed
+- Hero rebalance summary
+- Copy replacements
+- Lint result
+- Build result
+- Desktop & Mobile QA result
+- Portfolio preservation check
+- Motion preservation check
+- Scope check
+- Pre-existing modified file check
+- Risk level
+- Decision

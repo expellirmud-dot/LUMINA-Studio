@@ -2,15 +2,15 @@ export const contentConfig = {
   hero: {
     eyebrow: "Human documentary photography",
     title: "LUMINA Studio",
-    subtitle: "Storytelling, Authentic, Minimal, Warmth, Memories.",
+    subtitle: "Honest photographs of days worth remembering.",
     primaryCta: "View Work",
     secondaryCta: "Approach",
     rotatingMicrocopy: [
-      "Real moments, held with care.",
-      "Quiet frames. Honest stories.",
-      "People, place, and feeling.",
-      "For meaningful days.",
-      "Documentary with warmth."
+      "Stay close to what is real.",
+      "Let the day unfold.",
+      "Hold the quiet moments.",
+      "Notice the people around you.",
+      "Keep what mattered."
     ]
   },
   story: {
@@ -45,17 +45,17 @@ export const contentConfig = {
   },
   portfolio: {
     eyebrow: "Featured Work",
-    title: "Selected works focusing on genuine feelings.",
-    description: "A curated selection from weddings and ceremonies that naturally convey relationships, atmosphere, and stories of the day.",
+    title: "A sequence of honest frames.",
+    description: "Weddings and ceremonies, edited as a visual story: arrival, tradition, celebration, personality, and connection.",
   },
   services: {
     eyebrow: "Services",
-    title: "Photography for meaningful days, people, and atmosphere.",
+    title: "Photography for weddings, ceremonies, families, and gatherings.",
   },
   about: {
     eyebrow: "About Studio",
     title: "Led by ToTo Therdsak, Photographer / Visual Storyteller.",
-    description: "LUMINA Studio believes in calm observation to document the natural progression of your important day. We capture the feelings and stories of people from a warm, simple, and authentic perspective.",
+    description: "LUMINA Studio works with calm observation, following the natural rhythm of the day. The result is warm, simple photography that stays close to what really happened.",
     quote: "I look for the moment that still feels true when the day has passed.",
   },
   footer: {

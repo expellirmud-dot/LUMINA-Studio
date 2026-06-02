@@ -2,12 +2,17 @@
 
 ## Latest Task
 
+LUMINA-HOMEPAGE-NARRATIVE-POLISH-001: Rebalanced the homepage so photography carries more emotional weight, and reduced repeated explanatory copy without redesigning structure.
+
+## Previous Task
+
 LUMINA-PORTFOLIO-CURATION-001 & LUMINA-PORTFOLIO-SEQUENCING-001: Redesigned the Portfolio section into an interactive album component, grouped and sequenced images by narrative classes.
 
 ## Files Changed
 
 - `src/components/RotatingMicrocopy.tsx` (new)
 - `src/config/content.ts` (modified)
+- `app/globals.css` (modified)
 - `src/config/portfolio.ts` (modified)
 - `src/config/contact.ts` (modified)
 - `src/config/services.ts` (modified)

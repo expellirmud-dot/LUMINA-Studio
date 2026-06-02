@@ -26,6 +26,13 @@ What feels weak:
 Recommendation:
 APPROVED_WITH_NOTES for limited implementation scope. Next task should be browser visual QA and mobile crop review before deploy.
 
+## LUMINA-HOMEPAGE-NARRATIVE-POLISH-001
+- **Hero Image Brightness**: CSS overlay densities in `.hero-section::before`, `.hero-focal`, `.hero-focal::after`, and `.focal-grid` were reduced. Brightness increased in `.hero-visual` (`0.48` to `0.68`). Image now carries more emotional weight.
+- **Copy Restraint**: Story sequence core worldview remains but repeated words ("people", "feeling") are replaced with simpler action phrasing (e.g. "Stay close to what is real", "Hold the quiet moments").
+- **Motion Restraint**: `.breathing-frame::before` luminosity reduced slightly (`0.15` to `0.08`), keeping it present but less dominant.
+- **Microcopy**: Border softened to `rgba(185, 154, 95, 0.25)` to keep text readable but secondary.
+- **Overall Feel**: Much stronger alignment with the intended "Human Documentary Photography" direction without requiring a structural redesign.
+
 ## Phase
 
 Phase 1.6 — Design Audit and Visual Config System
