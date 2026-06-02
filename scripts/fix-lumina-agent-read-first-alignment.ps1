@@ -378,7 +378,7 @@ Write-Host "LUMINA Worker Read-First Runtime Test"
 Write-Host "RepoPath: `$RepoPath"
 Write-Host ""
 
-`$requiredFiles = @(
+$requiredFiles = @(
     "PROJECT_RULES.md",
     "LUMINA_CONFIG_SYSTEM.md",
     "AI_HANDOFF.md",
@@ -387,6 +387,9 @@ Write-Host ""
     "skills\LUMINA_STARTUP\SKILL.md",
     "skills\LUMINA_REVIEW_CHECKLIST\SKILL.md",
     ".ai\SKILL_PROFILES.md",
+    ".mcp\serena.md",
+    ".mcp\codegraph.md",
+    ".serena",
     "GEMINI.md",
     "AGENTS.md"
 )
