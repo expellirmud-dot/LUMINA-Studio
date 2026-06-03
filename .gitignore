@@ -29,7 +29,7 @@ Thumbs.db
 .codegraph/*.db-shm
 .codegraph/*.db-wal
 
-Portfolio/
+/Portfolio/
 backups/
 
 .serena/memories/
