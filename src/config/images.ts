@@ -22,17 +22,17 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-  path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
-  alt: "The deeply emotional moment of ordination reflecting personal dedication.",
+  src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
+  path: "images/portfolio/phra-louis-v1/PTO-250.jpg",
+  alt: "The solemn and respectful atmosphere during the ordination ceremony.",
   position: "50% 50%",
 };
 
 export const heroSequence: ConfigImage[] = [
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
-    alt: "The deeply emotional moment of ordination reflecting personal dedication.",
+    src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-250.jpg",
+    alt: "The solemn and respectful atmosphere during the ordination ceremony.",
     position: "50% 50%",
   },
   {
@@ -48,15 +48,15 @@ export const heroSequence: ConfigImage[] = [
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-250.jpg",
-    alt: "The solemn and respectful atmosphere during the ordination ceremony.",
-    position: "50% 50%",
-  },
-  {
     src: "/images/portfolio/phra-louis-v1/PTO-280.jpg",
     path: "images/portfolio/phra-louis-v1/PTO-280.jpg",
     alt: "The quiet and reflective closing moment of the ceremony.",
+    position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
+    alt: "A joyful release moment tossing coins at the end of the ceremony.",
     position: "50% 50%",
   },
 ];
