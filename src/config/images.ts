@@ -22,41 +22,41 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
-  path: "images/portfolio/phra-louis-v1/PTO-250.jpg",
-  alt: "The solemn and respectful atmosphere during the ordination ceremony.",
+  src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+  path: "images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+  alt: "The couple walking together, reflecting a modern and romantic beginning.",
   position: "50% 50%",
 };
 
 export const heroSequence: ConfigImage[] = [
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-250.jpg",
-    alt: "The solemn and respectful atmosphere during the ordination ceremony.",
+    src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+    path: "images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+    alt: "The couple walking together, reflecting a modern and romantic beginning.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-101.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-101.jpg",
-    alt: "The serene morning start of the ordination preparation.",
+    src: "/images/portfolio/wedding-ceremony-v1/PTO-506.jpg",
+    path: "images/portfolio/wedding-ceremony-v1/PTO-506.jpg",
+    alt: "A quiet and delicate portrait of the bride.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-296.jpg",
-    alt: "Family participating in the heartfelt traditional ritual.",
+    src: "/images/portfolio/wedding-ceremony-v1/TK-142.jpg",
+    path: "images/portfolio/wedding-ceremony-v1/TK-142.jpg",
+    alt: "An authentic documentary moment capturing the cultural ceremony.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-280.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-280.jpg",
-    alt: "The quiet and reflective closing moment of the ceremony.",
+    src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+    path: "images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+    alt: "A heartfelt and emotional family moment during the ceremony.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
-    alt: "A joyful release moment tossing coins at the end of the ceremony.",
+    src: "/images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
+    path: "images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
+    alt: "Intimate details that complete the story.",
     position: "50% 50%",
   },
 ];
