@@ -22,41 +22,41 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: "/images/portfolio/phra-ob-v1/000046_hero_ordination_14.webp",
-  path: "images/portfolio/phra-ob-v1/000046_hero_ordination_14.webp",
-  alt: "Ordination ceremony hero shot",
+  src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+  path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
+  alt: "The deeply emotional moment of ordination reflecting personal dedication.",
   position: "50% 50%",
 };
 
 export const heroSequence: ConfigImage[] = [
   {
-    src: "/images/portfolio/phra-ob-v1/000046_hero_ordination_14.webp",
-    path: "images/portfolio/phra-ob-v1/000046_hero_ordination_14.webp",
-    alt: "Ordination ceremony opening",
+    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
+    alt: "The deeply emotional moment of ordination reflecting personal dedication.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-ob-v1/001217_documentary_moment_PTO (563).webp",
-    path: "images/portfolio/phra-ob-v1/001217_documentary_moment_PTO (563).webp",
-    alt: "Family sharing a joyful moment during the ceremony",
+    src: "/images/portfolio/phra-louis-v1/PTO-101.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-101.jpg",
+    alt: "The serene morning start of the ordination preparation.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-ob-v1/000095_portrait_184.webp",
-    path: "images/portfolio/phra-ob-v1/000095_portrait_184.webp",
-    alt: "Portrait of the newly ordained monk",
+    src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-296.jpg",
+    alt: "Family participating in the heartfelt traditional ritual.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-ob-v1/ritual_detail_54.webp",
-    path: "images/portfolio/phra-ob-v1/ritual_detail_54.webp",
-    alt: "Traditional ordination ritual detail",
+    src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-250.jpg",
+    alt: "The solemn and respectful atmosphere during the ordination ceremony.",
     position: "50% 50%",
   },
   {
-    src: "/images/portfolio/phra-ob-v1/000103_ceremony_vertical_191.webp",
-    path: "images/portfolio/phra-ob-v1/000103_ceremony_vertical_191.webp",
-    alt: "Ordination procession and ceremony",
+    src: "/images/portfolio/phra-louis-v1/PTO-280.jpg",
+    path: "images/portfolio/phra-louis-v1/PTO-280.jpg",
+    alt: "The quiet and reflective closing moment of the ceremony.",
     position: "50% 50%",
   },
 ];
