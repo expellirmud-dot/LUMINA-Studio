@@ -1,10 +1,9 @@
 export const contentConfig = {
   hero: {
-    eyebrow: "Human documentary photography",
-    title: "LUMINA Studio",
-    subtitle: "Honest photographs of days worth remembering.",
-    primaryCta: "View Work",
-    secondaryCta: "Approach",
+    title: "เรื่องราวที่ดีที่สุด\nมักเกิดขึ้นในช่วงเวลาธรรมดา",
+    subtitle: "Natural • Emotional • Documentary Photography",
+    body: "บันทึกผู้คน ความสัมพันธ์ และความรู้สึก\nในแบบที่เกิดขึ้นจริง",
+    primaryCta: "View Stories",
     rotatingMicrocopy: [
       "Stay close to what is real.",
       "Let the day unfold.",
@@ -13,53 +12,44 @@ export const contentConfig = {
       "Keep what mattered."
     ]
   },
-  story: {
-    eyebrow: "Documentary Approach",
-    title: "People, place, atmosphere, feeling, memory, LUMINA.",
-    steps: [
-      {
-        label: "People",
-        copy: "Focusing on relationships and the natural smiles of the people present.",
-      },
-      {
-        label: "Place",
-        copy: "Capturing the atmosphere and details of the location to complete the story.",
-      },
-      {
-        label: "Atmosphere",
-        copy: "Recording the feeling of the moment, whether it's peace or joy.",
-      },
-      {
-        label: "Feeling",
-        copy: "Letting moments unfold naturally, without forcing or rushing the pace.",
-      },
-      {
-        label: "Memory",
-        copy: "Creating memories that always take you back to the feelings of that day.",
-      },
-      {
-        label: "LUMINA",
-        copy: "The intention to preserve good stories through simple, enduring photography.",
-      },
+  whatWeNotice: {
+    label: "What We Notice",
+    copy: [
+      "เราไม่ได้มองหาช่วงเวลาที่สมบูรณ์แบบ",
+      "เราเฝ้าสังเกตรอยยิ้มเล็ก ๆ\nการจับมือโดยไม่รู้ตัว\nและความรู้สึกที่เกิดขึ้นเพียงชั่วครู่",
+      "เพราะหลายครั้ง\nสิ่งที่ผู้คนคิดถึงมากที่สุด\nไม่ใช่ภาพที่สวยที่สุด",
+      "แต่คือภาพที่ทำให้พวกเขารู้สึกได้อีกครั้ง",
     ],
   },
-  portfolio: {
-    eyebrow: "Featured Work",
-    title: "A sequence of honest frames.",
-    description: "Weddings and ceremonies, edited as a visual story: arrival, tradition, celebration, personality, and connection.",
+  selectedStories: {
+    label: "Selected Stories",
+    title: "Stories held together by people, ritual, and quiet feeling.",
   },
-  services: {
-    eyebrow: "Services",
-    title: "Photography for weddings, ceremonies, families, and gatherings.",
+  momentsBetween: {
+    label: "The Moments Between",
+    copy: "บางช่วงเวลา\nไม่มีใครวางแผนให้เกิดขึ้น\n\nและนั่นคือเหตุผลที่เราชอบมันมากที่สุด",
   },
-  about: {
-    eyebrow: "About Studio",
-    title: "Led by ToTo Therdsak, Photographer / Visual Storyteller.",
-    description: "LUMINA Studio works with calm observation, following the natural rhythm of the day. The result is warm, simple photography that stays close to what really happened.",
-    quote: "I look for the moment that still feels true when the day has passed.",
+  behindTheLens: {
+    label: "Behind The Lens",
+    button: "About Toto",
+    copy: "ผมเชื่อว่าภาพถ่ายที่ดี\nไม่ได้เริ่มจากกล้อง\n\nแต่มาจากการทำให้ผู้คนรู้สึกสบายใจ\nมากพอที่จะเป็นตัวของตัวเอง\n\nและนั่นคือสิ่งที่ผมพยายามทำ\nทุกครั้งที่รับหน้าที่บันทึกเรื่องราวของใครสักคน",
+  },
+  kindWords: {
+    label: "Kind Words",
+    quote: "ภาพที่ได้ไม่ได้ทำให้เรานึกถึงแค่ว่าวันนั้นหน้าตาเป็นอย่างไร แต่ทำให้เราจำได้ว่าเรารู้สึกอย่างไรในวันนั้น",
+    credit: "A family story, remembered quietly",
+  },
+  experience: {
+    label: "Experience",
+    button: "Learn More",
+    copy: "ทุกเรื่องราวมีจังหวะของตัวเอง\n\nเราเชื่อว่าการถ่ายภาพที่ดี\nเริ่มต้นจากการพูดคุยและทำความเข้าใจ\n\nเพื่อให้วันสำคัญของคุณ\nถูกบันทึกในแบบที่เป็นคุณจริง ๆ",
+  },
+  finalCta: {
+    button: "Let's Talk",
+    copy: "หากเรื่องราวของคุณกำลังจะเริ่มต้น\n\nเรายินดีรับฟัง",
   },
   footer: {
-    text: "Weddings / Ceremonies / People / Stage / Documentary Stories",
+    text: "Natural • Emotional • Documentary Photography",
   },
   owner: {
     name: "ToTo Therdsak",

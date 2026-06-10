@@ -2,13 +2,45 @@
 
 ## Latest Task
 
-LUMINA-HOMEPAGE-NARRATIVE-POLISH-001: Rebalanced the homepage so photography carries more emotional weight, and reduced repeated explanatory copy without redesigning structure.
+LUMINA-V2-QUIET-POLISH-001: LUMINA V2 Final Quiet Premium Polish.
+
+## Current Implementation
+
+- Modified typography settings to reduce Hero headline size and set font-weight to normal, relaxing line-height and max-width.
+- Updated Hero overlays to a warmer, softer brown-charcoal gradient with lower opacity.
+- Relaxed subtitle and body spacing, tracking, and sizing on Hero copy elements.
+- Increased block padding in the What We Notice section and improved paragraph line-heights.
+- Cleaned Selected Stories to remove rigid card borders, softened hover zooms, and added staggered vertical offsets on desktop to resemble a premium editorial spread.
+- Softened Moments Between section borders and designed an asymmetric moments grid with varying vertical/horizontal aspect ratios and collage-style vertical translations.
+
+## Current Files Changed
+
+- `app/globals.css`
+- `src/config/typography.ts`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+- `reports/visual_audit.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint`
 
 ## Previous Task
 
-LUMINA-PORTFOLIO-CURATION-001 & LUMINA-PORTFOLIO-SEQUENCING-001: Redesigned the Portfolio section into an interactive album component, grouped and sequenced images by narrative classes.
+LUMINA-V2-HOME-CONSTITUTION-001: Rebuilt the Home page from the locked LUMINA V2 Constitution, Visual Language, and Home Page Blueprint.
 
-## Files Changed
+- Replaced the old dark/slideshow Home surface with a warm linen, quiet-premium editorial page.
+- Implemented the locked Home sequence: Hero, What We Notice, Selected Stories, The Moments Between, Behind The Lens, Kind Words, Experience, Final CTA.
+- Moved V2 Home copy, navigation language, image roles, service-flow language, and hero image selection through the existing config layer.
+- Removed Home reliance on carousel/auto-slide behavior, dark luxury styling, Work/Services/Studio language, and generic portfolio framing.
+- Kept implementation frontend-only with no dependencies, routes, backend, database, auth, booking, CMS, dashboard, API routes, payment, Three.js, WebGL, or Canvas.
+
+## Historical Task
+
+LUMINA-HOMEPAGE-NARRATIVE-POLISH-001: Rebalanced the homepage so photography carries more emotional weight, and reduced repeated explanatory copy without redesigning structure.
+
+### Files Changed (Historical)
 
 - `src/components/RotatingMicrocopy.tsx` (new)
 - `src/config/content.ts` (modified)
@@ -27,14 +59,6 @@ LUMINA-PORTFOLIO-CURATION-001 & LUMINA-PORTFOLIO-SEQUENCING-001: Redesigned the 
 - `reports/implementation_report.md` (modified)
 - `AI_HANDOFF.md` (modified)
 - `reports/visual_audit.md` (modified)
-
-## Build Status
-
-Passed: `npm run lint`
-Passed: `npm run build`
-
-Build note:
-- Next.js build passed with existing Node deprecation warnings for `module.register()`.
 
 ## Art Direction Lock
 

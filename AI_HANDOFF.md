@@ -112,6 +112,27 @@ Production URL: N/A
 
 LUMINA Studio
 
+## Latest Completed Scope
+
+LUMINA-V2-QUIET-POLISH-001: Visual fine-tuning and premium editorial layout adjustments on the home page (headline visual weight reduced, warmer/softer hero overlay, relaxed line heights/spacing, "de-cardified" Selected Stories grid with stagger, and asymmetric collage styling in Moments Between).
+
+LUMINA-V2-HOME-CONSTITUTION-001: Rebuilt the Home page from the locked LUMINA V2 Constitution, Visual Language, and Home Page Blueprint.
+
+Implemented Home section order:
+1. Hero
+2. What We Notice
+3. Selected Stories
+4. The Moments Between
+5. Behind The Lens
+6. Kind Words
+7. Experience
+8. Final CTA
+
+Validation:
+- Passed: `npm run build`
+- Passed: `npm run lint` with existing warnings only in copied skill/external folders
+- Browser QA: desktop and mobile local render verified; section order matches blueprint; no horizontal overflow; all rendered images load after scroll; no visible Home text matches `Portfolio`, `Investment`, `Package`, `Price`, or `Gallery`
+
 ## Current Phase
 
 Phase 1 — Landing Page

@@ -1,0 +1,8 @@
+ROOT_DIR: D:\lumina-studio\public\images\portfolio
+total image files inspected: 246
+total candidate images: 246
+skipped small images: 0
+failed image reads: 0
+number of contact sheets generated: 7
+priority folders found: True
+source images modified: no

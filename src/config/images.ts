@@ -22,41 +22,12 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
-  path: "images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
-  alt: "The couple walking together, reflecting a modern and romantic beginning.",
-  position: "50% 50%",
+  src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+  path: "images/portfolio/phra-louis-v1/PTO-296.jpg",
+  alt: "Ordination blessing with family gathered close",
+  position: "56% 42%",
 };
 
 export const heroSequence: ConfigImage[] = [
-  {
-    src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
-    path: "images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
-    alt: "The couple walking together, reflecting a modern and romantic beginning.",
-    position: "50% 50%",
-  },
-  {
-    src: "/images/portfolio/wedding-ceremony-v1/PTO-506.jpg",
-    path: "images/portfolio/wedding-ceremony-v1/PTO-506.jpg",
-    alt: "A quiet and delicate portrait of the bride.",
-    position: "50% 50%",
-  },
-  {
-    src: "/images/portfolio/wedding-ceremony-v1/TK-142.jpg",
-    path: "images/portfolio/wedding-ceremony-v1/TK-142.jpg",
-    alt: "An authentic documentary moment capturing the cultural ceremony.",
-    position: "50% 50%",
-  },
-  {
-    src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
-    path: "images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
-    alt: "A heartfelt and emotional family moment during the ceremony.",
-    position: "50% 50%",
-  },
-  {
-    src: "/images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
-    path: "images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
-    alt: "Intimate details that complete the story.",
-    position: "50% 50%",
-  },
+  heroImage,
 ];

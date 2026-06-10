@@ -1,8 +1,6 @@
 export const servicesConfig = [
-  "Wedding & Ceremony",
-  "Ordination Stories",
-  "House Blessings",
-  "Family Gatherings",
-  "People & Portrait",
-  "Stage & Concert",
+  "พูดคุยเพื่อเข้าใจจังหวะของวัน",
+  "วางลำดับภาพจากผู้คนและความสัมพันธ์",
+  "อยู่ใกล้พอที่จะเห็น แต่ไม่รบกวนช่วงเวลา",
+  "ส่งมอบเรื่องราวที่เรียบง่าย อบอุ่น และจริง",
 ];

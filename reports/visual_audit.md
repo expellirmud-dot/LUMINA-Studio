@@ -1,5 +1,49 @@
 # VISUAL AUDIT
 
+## LUMINA-V2-QUIET-POLISH-001
+
+Task:
+LUMINA V2 Final Quiet Premium Polish
+
+Current assessment:
+- Headline visual weight reduced from 500 (medium) to 400 (normal) with a slightly narrower clamp container, leading to a much more elegant, less loud typography presentation.
+- Hero image overlay is warmer and softer (using `#36302a` brown-charcoal base with lower opacity parameters), improving background color warmth and visibility while preserving text readability.
+- Spacing in the Hero section, What We Notice section, and Selected Stories has been increased. Notice block padding was widened, and spacing of subtitle and description body copy is relaxed.
+- Selected Stories was "de-cardified" by removing the divider line on copy blocks, reducing heading weight and sizes, easing zoom hovers, and introducing a staggered vertical translation on the middle story card to mimic high-end editorial layouts.
+- The Moments Between section borders were softened to `rgba(45, 42, 38, 0.05)`.
+- Moments grid collage feels significantly more intentional and editorial: images use a combination of vertical, horizontal, and square aspect ratios tailored to horizontal and portrait photography subjects, and they use staggered vertical shifts (e.g. child 4 translated up, child 2 and 5 translated down) to form a curated gallery collage.
+
+Recommendation:
+APPROVED. The home page feels significantly more breathable, editorial, and "แพงแบบเงียบ ๆ" (quiet luxury), successfully completing Phase 1 final polish.
+
+## LUMINA-V2-HOME-CONSTITUTION-001
+
+Task:
+Rebuild Home from the locked LUMINA V2 Constitution, Visual Language, and Home Page Blueprint.
+
+Current assessment:
+- Home now follows the locked V2 section order exactly: Hero, What We Notice, Selected Stories, The Moments Between, Behind The Lens, Kind Words, Experience, Final CTA.
+- The visual system moved away from charcoal/gold luxury toward warm linen, quiet premium, documentary pacing, and human-first copy.
+- Hero uses a single ordination blessing image with a dedicated Hero Grade overlay for soft contrast, lower saturation, gentle highlight control, and readable text.
+- Main navigation now uses Home, Stories, About, Experience, Contact.
+- Home no longer uses carousel, auto-slide, video background, optical sweep, WebGL, Three.js, Canvas, dense grid, pricing/package language, or portfolio-first framing.
+
+Image choices:
+- Hero: `images/portfolio/phra-louis-v1/PTO-296.jpg`, ordination blessing with family gathered close.
+- Selected Stories: `lumina-harvest-v1/000013_ceremony_IMG_1676.webp`, `phra-louis-v1/PTO-296.jpg`, `2569-03-09/A M/PTO_0627.jpg`.
+- The Moments Between: `phra-louis-v1/PTO-318.jpg`, `phra-louis-v1/PTO-296.jpg`, `wedding-party-trial/final_40/PTO_3246.jpg`, `wedding-party-trial/final_40/PTO_3397.jpg`, `2569-03-09/A M/PTO_5723.jpg`.
+- Behind The Lens: existing `docs/Profile Pic.jpg`.
+
+Browser QA:
+- Desktop and mobile first viewport checked at `http://127.0.0.1:3000`.
+- Section order verified from DOM.
+- No horizontal overflow detected.
+- Lazy-loaded images verified after scrolling: 10 images, 0 broken.
+- Visible Home text scan found no `Portfolio`, `Investment`, `Package`, `Price`, or `Gallery`.
+
+Recommendation:
+APPROVED_WITH_NOTES. The V2 direction is implemented and build-safe. Remaining note: final human visual review should confirm mobile crops on the selected ordination and ceremony images before deployment.
+
 ## Human Documentary Direction Update
 
 Task:
