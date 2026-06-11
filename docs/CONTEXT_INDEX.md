@@ -34,14 +34,20 @@ The folders in the project have distinct and non-overlapping roles:
 
 *   **`.tasks/`**: The project-local task packet system. Tracks planning, implementation parts, progress logs, and validation checklists for the active work slice.
 *   **`docs/`**: Permanent brand, visual design, layout blueprint, decisions, and context documentation.
-*   **`skills/`**: Root project skill directory containing local agent instructions and execution scripts (e.g. review checklists, visual audits).
+*   **`skills/`**: Root project skill directory. This is the **source of truth** for all agent execution rules.
 *   **`.ai/`**: Legacy task brief and phase gate folders. Deprecated in favor of `.tasks/` for active task packets.
-*   **`.agent/`**: Global agent capability store holding general skills and MCP instructions.
-*   **`.gemini/`**: Editor / tool environment adapter configurations for the Gemini interface.
-*   **`.opencode/`**: Editor / tool environment adapter configurations for the OpenCode interface.
+*   **`.gemini/skills/`, `.opencode/skills/`, `.agent/skills/`**: App-specific **mirrors and adapters** only. They must sync from `skills/`.
 *   **`.cursor/`**: Editor settings and workspace-specific AI guidelines (`.cursor/rules/`).
-*   **`reports/`**: Logs of build checklists, visual QA inspections, and previous implementation summaries.
-*   **`repo_memory/`**: High-level repository state memory files.
+*   **`reports/`**: Logs of build checklists, visual QA inspections, and previous implementation summaries. Historical evidence only.
+*   **`repo_memory/`**: High-level repository state memory files. Historical evidence only.
+
+---
+
+## 3.5 Out of Scope Workflows
+
+To prevent mission creep, the following are explicitly declared out of scope for LUMINA:
+*   **STT Correction**: STT correction belongs strictly to `D:\stt_typing`, not LUMINA.
+*   **Dashboard**: Dashboard is not part of the core workflow for this premium landing page phase.
 
 ---
 
