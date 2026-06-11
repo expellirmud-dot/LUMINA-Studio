@@ -251,6 +251,16 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 - Executed TASK-000: Created AI Workflow Ready task scaffold under `.tasks/` directory. Status: COMPLETED.
 - Executed TASK-001: Created unified context index (`docs/CONTEXT_INDEX.md`), skills registry (`docs/SKILL_SOURCE_REGISTRY.md`), and sync plan (`docs/SKILL_SYNC_PLAN.md`). Removed STT correction scope to external project `D:\stt_typing`. Status: COMPLETED.
 - Executed TASK-002: Performed dry-run comparison and backup mapping of mirror folders without performing deletions or mutations. Status: COMPLETED.
+- Executed BATCH-001 / TASK-003-006: Backup and dry-run sync workflow created. Status: COMPLETED.
+- Executed BATCH-002 / TASK-007-010: `.gemini/skills/skills` duplicate cleanup and safe sync applied without `-ForceDeleteUnknown`. Status: COMPLETED.
+- Executed BATCH-003 / TASK-011-013: Final context verification and mirror verification. Status: COMPLETED.
+- Executed TASK-014: Duplicate `read-first-governance/read-first-governance` cleanup documented and executed. Status: COMPLETED.
+
+## Current Architecture State
+- Current skill structure is closed and clean.
+- `skills/` is the source of truth.
+- `.gemini/skills`, `.opencode/skills`, `.agent/skills` are mirrors/adapters.
+- Working tree was clean after commit `8e3a18e`.
 
 ## Pending
 
@@ -258,5 +268,4 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 
 ## Next Task
 
-- Skill sync execution or cleanup of corrupted `.gemini/skills/skills/` recursively nested directories under owner's approval.
-
+- Await owner's instruction for the next active work slice.

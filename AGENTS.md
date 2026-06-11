@@ -11,8 +11,15 @@ Before any work, read:
 - .mcp/serena.md
 - .mcp/codegraph.md
 
-Rules:
+Rules & Governance Architecture:
 
+- `docs/CONTEXT_INDEX.md` is the context map.
+- `.tasks/` is the task packet/report/checkpoint system.
+- `skills/` is project skill source of truth.
+- App-specific skill folders are mirrors/adapters.
+- STT correction belongs to `D:\stt_typing`, not LUMINA.
+- Dashboard is not core workflow.
+- Any destructive action must have explicit owner approval and a task report.
 - Filesystem is source of truth.
 - Verify Serena context before implementation.
 - Verify CodeGraph is not stale before trusting it.
@@ -59,10 +66,3 @@ Agents must not implement unapproved proposals unless explicitly instructed.
 Before approving any completed task, execute:
 
 - skills/LUMINA_REVIEW_CHECKLIST/SKILL.md
-
-
-
-
-
-
-
