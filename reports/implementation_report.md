@@ -2,9 +2,34 @@
 
 ## Latest Task
 
-LUMINA-V2-QUIET-POLISH-001: LUMINA V2 Final Quiet Premium Polish.
+TASK-000, TASK-001, and TASK-002: Context Scaffolding, Sync Planning, and Dry-Run.
 
 ## Current Implementation
+
+- Created AI Workflow Ready task scaffold under `.tasks/` directory (`TASK-000`, `TASK-001`, `TASK-002`).
+- Established `docs/CONTEXT_INDEX.md` as the authoritative context map, defining root `skills/` as the primary source of truth.
+- Created `docs/SKILL_SOURCE_REGISTRY.md` to catalog all flat skills and document the nested recursion bug under `.gemini/skills/skills/`.
+- Developed `docs/SKILL_SYNC_PLAN.md` mapping out the sync scripts and dry-run safety requirements.
+- Completed TASK-002 dry-run check comparing `skills/` to mirrors, identifying 9 capitalization mismatches, 99 missing files in `.gemini`, and duplicated nested folders.
+- Formulated the mirror backup mapping plan without executing any file deletions or mutations.
+
+## Current Files Changed
+
+- `.tasks/` (TASK-000 and TASK-001 task folders committed; TASK-002 left unstaged)
+- `docs/CONTEXT_INDEX.md`
+- `docs/SKILL_SOURCE_REGISTRY.md`
+- `docs/SKILL_SYNC_PLAN.md`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint`
+
+## Previous Task
+
+LUMINA-V2-QUIET-POLISH-001: LUMINA V2 Final Quiet Premium Polish.
 
 - Modified typography settings to reduce Hero headline size and set font-weight to normal, relaxing line-height and max-width.
 - Updated Hero overlays to a warmer, softer brown-charcoal gradient with lower opacity.
@@ -13,18 +38,6 @@ LUMINA-V2-QUIET-POLISH-001: LUMINA V2 Final Quiet Premium Polish.
 - Cleaned Selected Stories to remove rigid card borders, softened hover zooms, and added staggered vertical offsets on desktop to resemble a premium editorial spread.
 - Softened Moments Between section borders and designed an asymmetric moments grid with varying vertical/horizontal aspect ratios and collage-style vertical translations.
 
-## Current Files Changed
-
-- `app/globals.css`
-- `src/config/typography.ts`
-- `AI_HANDOFF.md`
-- `reports/implementation_report.md`
-- `reports/visual_audit.md`
-
-## Current Build Status
-
-Passed: `npm run build`
-Passed: `npm run lint`
 
 ## Previous Task
 

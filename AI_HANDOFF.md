@@ -248,6 +248,9 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 - Executed LUMINA-HOMEPAGE-NARRATIVE-POLISH-001: Rebalanced the homepage hero by increasing photograph brightness, reducing overlay density, and lowering focal-grid opacity while preserving the Human Documentary Photography direction. Reduced repeated copy phrasing across the portfolio, services, and about sections. Status: APPROVED_WITH_NOTES.
 - Executed LUMINA-DEPLOYMENT-EXECUTION-001: Deployed to production using `vercel --prod`. Status: DEPLOYED.
 - Executed LUMINA-POST-DEPLOY-VERIFICATION-001: Verified production URL (https://lumina-studio-iota-ten.vercel.app/) matches the approved local candidate. Desktop and mobile visual QA passed with no stale copy. Status: PASS.
+- Executed TASK-000: Created AI Workflow Ready task scaffold under `.tasks/` directory. Status: COMPLETED.
+- Executed TASK-001: Created unified context index (`docs/CONTEXT_INDEX.md`), skills registry (`docs/SKILL_SOURCE_REGISTRY.md`), and sync plan (`docs/SKILL_SYNC_PLAN.md`). Removed STT correction scope to external project `D:\stt_typing`. Status: COMPLETED.
+- Executed TASK-002: Performed dry-run comparison and backup mapping of mirror folders without performing deletions or mutations. Status: COMPLETED.
 
 ## Pending
 
@@ -255,4 +258,5 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 
 ## Next Task
 
-- Visual Review (QA) or Feature Development as directed by user.
+- Skill sync execution or cleanup of corrupted `.gemini/skills/skills/` recursively nested directories under owner's approval.
+
