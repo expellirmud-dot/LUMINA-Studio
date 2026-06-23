@@ -45,6 +45,21 @@ broadcast.md
 .gemini/skills/
 
 .gemini/settings.json
+backups/
+
+.serena/memories/
+
+external/
+
+.serena/memories/
+
+external/
+
+broadcast.md
+
+.gemini/skills/
+
+.gemini/settings.json
 
 .agent/
 .opencode/
@@ -52,3 +67,8 @@ broadcast.md
 reports/*.png
 
 screenshot.png
+
+# Python & Runtime Captures
+__pycache__/
+*.pyc
+.runtime-captures/

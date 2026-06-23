@@ -2,9 +2,26 @@
 
 ## Latest Task
 
-TASK-016: Import Web Review Runtime Skills.
+TASK-017: Clarify Runtime Review Skill Roles.
 
 ## Current Implementation
+
+- Marked `computer-use-runtime-bridge` as the primary LUMINA runtime review bridge.
+- Marked `windows-ui-review-runtime` as STT-derived reference/template only.
+- Added `__pycache__/`, `*.pyc`, and `.runtime-captures/` rules to `.gitignore`.
+
+## Current Files Changed
+
+- `skills/computer-use-runtime-bridge/SKILL.md`
+- `skills/windows-ui-review-runtime/SKILL.md`
+- `.gitignore`
+- `.tasks/TASK-017/task.md`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+
+## Previous Task
+
+TASK-016: Import Web Review Runtime Skills.
 
 - Imported `computer-use-runtime-bridge` and `windows-ui-review-runtime` skills from `D:\stt_typing` into `D:\lumina-studio\skills`.
 - Adapted the copied files' paths and runner arguments to refer to the LUMINA workspace instead of STT, and documented non-functional python scripts as templates.
@@ -12,15 +29,13 @@ TASK-016: Import Web Review Runtime Skills.
 - Documented the imported skills' role and usage constraints in `docs/CONTEXT_INDEX.md`.
 - Ran dry-run and applied sync script (`scripts/sync-project-skills.ps1`) to populate `.gemini/skills`, `.opencode/skills`, and `.agent/skills` mirrors.
 
-## Current Files Changed
+## Previous Files Changed
 
 - `skills/computer-use-runtime-bridge/`
 - `skills/windows-ui-review-runtime/`
 - `docs/SKILL_SOURCE_REGISTRY.md`
 - `docs/CONTEXT_INDEX.md`
 - `.tasks/TASK-016/`
-- `AI_HANDOFF.md`
-- `reports/implementation_report.md`
 
 ## Current Build Status
 

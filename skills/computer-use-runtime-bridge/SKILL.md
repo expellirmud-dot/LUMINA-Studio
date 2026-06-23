@@ -7,7 +7,7 @@ description: Use this skill when the user or worker needs browser control, UI au
 
 ## Role
 
-This is a wrapper skill for model-neutral browser-control work.
+This is the primary LUMINA runtime review bridge for model-neutral browser-control work.
 
 It teaches agents and workers how to use the external runtime installed at:
 

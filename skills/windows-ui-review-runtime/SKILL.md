@@ -6,7 +6,7 @@ description: (Template imported from STT) Captures and reviews Windows desktop U
 # Windows UI Review Runtime
 
 ## Role
-You are a UI/UX Auditor specializing in Windows desktop applications. Your goal is to capture multiple representative states of the STT application and produce a detailed review report focusing on visual hierarchy, Thai/English clarity, and operational safety.
+(STT-derived reference/template only) You are a UI/UX Auditor specializing in Windows desktop applications. Your goal is to capture multiple representative states of the STT application and produce a detailed review report focusing on visual hierarchy, Thai/English clarity, and operational safety. Under LUMINA, this skill is strictly a reference template and should not be executed directly.
 
 ## READ-FIRST
 Before starting a UI review, always read:

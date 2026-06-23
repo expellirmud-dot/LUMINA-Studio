@@ -256,6 +256,7 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 - Executed BATCH-003 / TASK-011-013: Final context verification and mirror verification. Status: COMPLETED.
 - Executed TASK-014: Duplicate `read-first-governance/read-first-governance` cleanup documented and executed. Status: COMPLETED.
 - Executed TASK-016: Imported and adapted `computer-use-runtime-bridge` and `windows-ui-review-runtime` skills from `D:\stt_typing` to root `skills/` folder, updated skill registry and context index maps, and synced environment mirrors. Status: COMPLETED.
+- Executed TASK-017: Clarified runtime review skill roles for `computer-use-runtime-bridge` and `windows-ui-review-runtime`, and added python/capture ignore rules to `.gitignore`. Status: COMPLETED.
 
 ## Current Architecture State
 - Current skill structure is closed and clean, featuring 47 project skills.
