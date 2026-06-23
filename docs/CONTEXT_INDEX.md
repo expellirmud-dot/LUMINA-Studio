@@ -35,6 +35,7 @@ The folders in the project have distinct and non-overlapping roles:
 *   **`.tasks/`**: The project-local task packet system. Tracks planning, implementation parts, progress logs, and validation checklists for the active work slice.
 *   **`docs/`**: Permanent brand, visual design, layout blueprint, decisions, and context documentation.
 *   **`skills/`**: Root project skill directory. This is the **source of truth** for all agent execution rules.
+    *   *Web Review Runtime Skills*: `computer-use-runtime-bridge` (available for browser/runtime/computer-use bridge workflows) and `windows-ui-review-runtime` (available for Windows UI / browser visual review workflows) are under `skills/`. They must be used only when a task explicitly requests website/runtime/UI review, and must not become mandatory for every task.
 *   **`.ai/`**: Legacy task brief and phase gate folders. Deprecated in favor of `.tasks/` for active task packets.
 *   **`.gemini/skills/`, `.opencode/skills/`, `.agent/skills/`**: App-specific **mirrors and adapters** only. They must sync from `skills/`.
 *   **`.cursor/`**: Editor settings and workspace-specific AI guidelines (`.cursor/rules/`).

@@ -8,7 +8,7 @@ This registry catalogues all project-local and app-specific agent skills detecte
 
 We audited five folders in the workspace:
 
-*   **`skills/`**: 45 skills (Clean, flat layout. Primary project source of truth).
+*   **`skills/`**: 47 skills (Clean, flat layout. Primary project source of truth).
 *   **`.agent/skills/`**: 45 skills (Clean, flat layout. Mirror of primary skills).
 *   **`.opencode/skills/`**: 45 skills (Clean, flat layout. Mirror of primary skills).
 *   **`.gemini/skills/`**: 44 skills + 1 corrupted subfolder `skills/` containing nested structures.
@@ -41,6 +41,7 @@ Root `skills/` is **always** the primary source of truth. All others are mirrors
 | `canvas-design` | `skills/canvas-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `certification-governance` | `skills/certification-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `code-analysis-ocumentation-agent` | `skills/code-analysis-ocumentation-agent/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
+| `computer-use-runtime-bridge` | `skills/computer-use-runtime-bridge/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` / Available for browser/runtime/computer-use bridge workflows. Used only when explicitly requested; not mandatory. |
 | `docx` | `skills/docx/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `entra-agent-id` | `skills/entra-agent-id/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `entra-app-registration` | `skills/entra-app-registration/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
@@ -70,6 +71,7 @@ Root `skills/` is **always** the primary source of truth. All others are mirrors
 | `task-state-governance` | `skills/task-state-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `web-artifacts-builder` | `skills/web-artifacts-builder/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `webapp-testing` | `skills/webapp-testing/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
+| `windows-ui-review-runtime` | `skills/windows-ui-review-runtime/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` / Available for Windows UI / browser visual review workflows. Used only when explicitly requested; not mandatory. |
 | `xlsx` | `skills/xlsx/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 
 ---

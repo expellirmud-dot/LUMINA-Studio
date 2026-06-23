@@ -2,9 +2,34 @@
 
 ## Latest Task
 
-TASK-000, TASK-001, and TASK-002: Context Scaffolding, Sync Planning, and Dry-Run.
+TASK-016: Import Web Review Runtime Skills.
 
 ## Current Implementation
+
+- Imported `computer-use-runtime-bridge` and `windows-ui-review-runtime` skills from `D:\stt_typing` into `D:\lumina-studio\skills`.
+- Adapted the copied files' paths and runner arguments to refer to the LUMINA workspace instead of STT, and documented non-functional python scripts as templates.
+- Registered the new skills in `docs/SKILL_SOURCE_REGISTRY.md` and updated count to 47.
+- Documented the imported skills' role and usage constraints in `docs/CONTEXT_INDEX.md`.
+- Ran dry-run and applied sync script (`scripts/sync-project-skills.ps1`) to populate `.gemini/skills`, `.opencode/skills`, and `.agent/skills` mirrors.
+
+## Current Files Changed
+
+- `skills/computer-use-runtime-bridge/`
+- `skills/windows-ui-review-runtime/`
+- `docs/SKILL_SOURCE_REGISTRY.md`
+- `docs/CONTEXT_INDEX.md`
+- `.tasks/TASK-016/`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint` (with warnings only in copied/external skill folders)
+
+## Previous Task
+
+TASK-000, TASK-001, and TASK-002: Context Scaffolding, Sync Planning, and Dry-Run.
 
 - Created AI Workflow Ready task scaffold under `.tasks/` directory (`TASK-000`, `TASK-001`, `TASK-002`).
 - Established `docs/CONTEXT_INDEX.md` as the authoritative context map, defining root `skills/` as the primary source of truth.
@@ -12,20 +37,6 @@ TASK-000, TASK-001, and TASK-002: Context Scaffolding, Sync Planning, and Dry-Ru
 - Developed `docs/SKILL_SYNC_PLAN.md` mapping out the sync scripts and dry-run safety requirements.
 - Completed TASK-002 dry-run check comparing `skills/` to mirrors, identifying 9 capitalization mismatches, 99 missing files in `.gemini`, and duplicated nested folders.
 - Formulated the mirror backup mapping plan without executing any file deletions or mutations.
-
-## Current Files Changed
-
-- `.tasks/` (TASK-000 and TASK-001 task folders committed; TASK-002 left unstaged)
-- `docs/CONTEXT_INDEX.md`
-- `docs/SKILL_SOURCE_REGISTRY.md`
-- `docs/SKILL_SYNC_PLAN.md`
-- `AI_HANDOFF.md`
-- `reports/implementation_report.md`
-
-## Current Build Status
-
-Passed: `npm run build`
-Passed: `npm run lint`
 
 ## Previous Task
 
