@@ -213,7 +213,7 @@ export default function Home() {
                   rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
                   className="hover:text-[var(--text)] transition-colors duration-300"
                 >
-                  {item.label === "Facebook" ? item.label : `${item.label}: ${item.value}`}
+                  {item.label} {item.value}
                 </a>
               ))}
             </div>

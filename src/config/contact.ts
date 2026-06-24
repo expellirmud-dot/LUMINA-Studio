@@ -15,7 +15,7 @@ export const contactConfig = {
     },
     {
       label: "Facebook",
-      value: "ExStreet",
+      value: "Exstreet",
       href: "https://www.facebook.com/Exstreet",
     },
   ],

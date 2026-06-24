@@ -4,14 +4,14 @@
 
 LUMINA Studio
 
-**Current Active Task:** TASK-028 (Final Visual QA and Deploy Readiness) - COMPLETE
+**Current Active Task:** TASK-030 (Micro Lock Polish) - COMPLETE
 **Overall Status:** PASSED / READY FOR DEPLOY
 
 ## What Was Just Done
-1. **TASK-025**: Image sequence narrative polish.
-2. **TASK-026**: Rhythm and typography spacing polish.
-3. **TASK-027**: Copy and tone alignment.
-4. **TASK-028**: Final Visual QA, Build validation, Lint validation, and Evidence Capture.
+1. **TASK-026**: Rhythm and typography spacing polish.
+2. **TASK-027**: Copy and tone alignment.
+3. **TASK-028**: Final Visual QA, Build validation, Lint validation, and Evidence Capture.
+4. **TASK-030**: Micro Lock Polish (Header clipping fix and footer contact labels).
 
 All visual requirements have been met. The site builds, lints, and captures successfully. Ready for Vercel production deploy.
 
@@ -174,6 +174,7 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 - Executed TASK-014: Duplicate `read-first-governance/read-first-governance` cleanup documented and executed. Status: COMPLETED.
 - Executed TASK-016: Imported and adapted `computer-use-runtime-bridge` and `windows-ui-review-runtime` skills from `D:\stt_typing` to root `skills/` folder, updated skill registry and context index maps, and synced environment mirrors. Status: COMPLETED.
 - Executed TASK-017: Clarified runtime review skill roles for `computer-use-runtime-bridge` and `windows-ui-review-runtime`, and added python/capture ignore rules to `.gitignore`. Status: COMPLETED.
+- Executed TASK-030: Verified header Let's Talk button wrapping and added white-space: nowrap fix. Polished footer contact formatting to "Phone {value}", "LINE {value}", "Facebook {value}" instead of raw metadata format. Checked mobile typography and intentionally left it untouched. Status: COMPLETED.
 
 ## Current Architecture State
 - Current skill structure is closed and clean, featuring 47 project skills.
