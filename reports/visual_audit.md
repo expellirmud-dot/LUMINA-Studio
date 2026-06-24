@@ -4,6 +4,11 @@
 
 ## Latest Visual Assessments
 
+### TASK-028 Final Visual QA and Deploy Readiness
+- **Status**: PASSED
+- **Overall Assessment**: Passed. The site builds without errors and lints correctly. All visual issues from prior rounds (image sequence, typography line-heights, grid gaps, scroll margins, copy tone) have been validated as resolved across both desktop and mobile viewports.
+- **Evidence**: Captured at `.runtime-captures/lumina/TASK-028-FINAL/`
+
 ### TASK-027 Copy Polish
 - **Status**: PASSED
 - **Copy Alignment**: Passed. Replaced agency/UX rationale subtitles in Selected Stories with warm, documentary-style captions. Softened Thai formal copy in "Experience" and "Behind the Lens" to sound more natural and conversational.

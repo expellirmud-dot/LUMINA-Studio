@@ -4,7 +4,20 @@
 
 LUMINA Studio
 
+**Current Active Task:** TASK-028 (Final Visual QA and Deploy Readiness) - COMPLETE
+**Overall Status:** PASSED / READY FOR DEPLOY
+
+## What Was Just Done
+1. **TASK-025**: Image sequence narrative polish.
+2. **TASK-026**: Rhythm and typography spacing polish.
+3. **TASK-027**: Copy and tone alignment.
+4. **TASK-028**: Final Visual QA, Build validation, Lint validation, and Evidence Capture.
+
+All visual requirements have been met. The site builds, lints, and captures successfully. Ready for Vercel production deploy.
+
 ## Latest Completed Scope
+
+TASK-028: Final visual QA pass completed. Verified responsiveness, image loading sequences, and typography scaling across viewport breakpoints. Build and lint passes confirmed. Status: READY.
 
 TASK-027: Copy Polish. Replaced agency/UX internal language and generic wedding template phrasing with warm, documentary-style human copy. Verified with local desktop/mobile visual capture.
 

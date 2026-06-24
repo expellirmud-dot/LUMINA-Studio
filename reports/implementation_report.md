@@ -2,9 +2,14 @@
 
 *Note: The `.tasks/<TASK-ID>/reports/` directory remains the authoritative source of truth per task. These rolling reports summarize recent highlights.*
 
-## Latest Task
+## Latest Activity
 
-TASK-027: Copy Polish.
+### TASK-028 Final Visual QA and Deploy Readiness
+- **Status**: COMPLETE
+- **Description**: Ran final project validations (`npm run build`, `npm run lint`) and captured final evidence for TASK-028-FINAL. Visual QA confirmed on desktop and mobile. Project is ready for deploy.
+- **Files Touched**: `reports/*`, `AI_HANDOFF.md`, `.tasks/TASK-028/*`
+
+### TASK-027 Copy Polish.
 
 ## Current Implementation
 
