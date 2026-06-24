@@ -27,6 +27,42 @@ Rules & Governance Architecture:
 - If build or lint fails, stop and report unless explicitly allowed to fix.
 - Update AI_HANDOFF.md and reports/implementation_report.md after successful work.
 
+## Goal Execution Contract
+
+Owner → ChatGPT Web → Codex/AntiGravity Controller → CLI Workers
+
+**Controller paths:**
+- Primary Controller: Codex GPT-5.4
+- Fallback Controller when Codex quota is exhausted: AntiGravity / AGY Gemini 3.1 Pro Low/High
+- GPT-5.5 remains architecture / art direction / dashboard UI / high-risk decision / final gate
+
+**Controller responsibilities:**
+- create task packets
+- define scope
+- define allowed/forbidden files
+- select workers
+- review CLI evidence
+- review diff
+- verify validation
+- commit only after validation and review
+- stop for owner/GPT-5.5 when subjective, risky, or blocked
+
+## Controller-specific CLI Routing
+
+**When Codex is Controller:**
+- may call OpenCode CLI
+- may call AGY CLI
+- may call Gemini CLI
+- must still scope tasks before delegation
+- CLI workers must not self-scope or self-commit
+
+**When AntiGravity is Controller:**
+- use Gemini CLI only as CLI worker path
+- do not call OpenCode CLI
+- if OpenCode is needed, stop and hand command back to Owner or Codex
+- AntiGravity inherits Controller responsibilities from Codex GPT-5.4
+
+
 Current phase:
 
 Phase 1 — Premium Photography Landing Page

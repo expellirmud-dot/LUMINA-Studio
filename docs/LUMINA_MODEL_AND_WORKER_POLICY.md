@@ -34,44 +34,35 @@ The locked LUMINA identity:
 
 ## 4. Model Routing
 
+**Controller / Task Packet / Review / Goal Orchestration:**
+- Primary: Codex GPT-5.4
+- Fallback: AntiGravity / AGY Gemini 3.1 Pro Low/High when Codex quota is exhausted
+
 **GPT-5.5:**
-* art direction
-* identity lock
-* roadmap
-* high-risk design decisions
-* visual rhythm review
-* Thai copy direction
-* typography decision
-* image sequence logic
-* final approval before major visual changes
+- architecture
+- art direction
+- dashboard/system UI
+- identity decisions
+- high-risk gates
+- final review
 
-**GPT-5.4:**
-* task packet creation
-* worker handoff
-* allowed/forbidden file lists
-* validation checklist
-* summarizing worker reports
-* routine coordination after GPT-5.5 has approved direction
+**Gemini CLI:**
+- worker/reviewer only
+- preferred worker path under AntiGravity Controller
+- also allowed under Codex Controller
+- do not use gemini-3.1-pro-preview
+- use only owner-confirmed available models
 
-**AntiGravity / Gemini 3.1 Pro L/H:**
-* fallback Controller when Codex/GPT quota is limited
-* visual/evidence worker supervision
-* read-only review
-* tightly scoped implementation under a formal task packet
+**OpenCode CLI:**
+- allowed under Codex Controller
+- allowed in owner-operated foreground terminal
+- not allowed under AntiGravity Controller
 
-**Codex:**
-* precise code edits
-* layout/config implementation
-* build/lint validation
-* diff review support
-* must not self-expand scope
+**AGY CLI:**
+- allowed under Codex Controller when useful
+- AntiGravity-side Controller/tooling path
+- not a replacement for OpenCode worker under AntiGravity
 
-**OpenCode / Gemini CLI / Google-family CLI:**
-* worker/reviewer only
-* scoped executor
-* no architecture decisions
-* no self-scoping
-* no commits unless owner explicitly approves
 
 **computer-use-runtime-bridge:**
 * optional eyes/reporter
