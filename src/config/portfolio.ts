@@ -55,32 +55,32 @@ export const portfolioConfig: PortfolioImage[] = [
 
 export const selectedStoriesConfig = [
   {
-    title: "Wedding / Family Ceremony",
-    subtitle: "Parents, blessing, and the quiet gravity of a family day.",
+    title: "The Ceremony",
+    subtitle: "A real human ritual moment, establishing context immediately.",
+    image: {
+      src: "/images/portfolio/wedding-party-trial/final_40/PTO_3403.jpg",
+      path: "/images/portfolio/wedding-party-trial/final_40/PTO_3403.jpg",
+      alt: "Ritual / ceremony",
+      position: "50% 50%",
+    },
+  },
+  {
+    title: "Family Blessing",
+    subtitle: "Hands, blessing, and proximity expressing the relational core.",
     image: {
       src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
-      path: "images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
+      path: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
       alt: "Elder blessing a couple during a family ceremony",
       position: "50% 48%",
     },
   },
   {
-    title: "Ordination / Family Celebration",
-    subtitle: "Ritual, laughter, and hands reaching in at the same time.",
+    title: "The Warmth Remains",
+    subtitle: "Family warmth and what remains after the formal moments pass.",
     image: {
-      src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-      path: "images/portfolio/phra-louis-v1/PTO-296.jpg",
-      alt: "Family blessing during an ordination ritual",
-      position: "52% 46%",
-    },
-  },
-  {
-    title: "Quiet Couple Story",
-    subtitle: "A clean, emotional pause between the planned moments.",
-    image: {
-      src: "/images/portfolio/2569-03-09/A M/PTO_0627.jpg",
-      path: "images/portfolio/2569-03-09/A M/PTO_0627.jpg",
-      alt: "Quiet couple detail with hands and fabric",
+      src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+      path: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+      alt: "Family emotion and aftermath",
       position: "50% 50%",
     },
   },
@@ -88,32 +88,32 @@ export const selectedStoriesConfig = [
 
 export const momentImagesConfig = [
   {
-    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-318.jpg",
-    alt: "Ordination portrait during a ritual moment",
-    position: "50% 42%",
-  },
-  {
-    src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-    path: "images/portfolio/phra-louis-v1/PTO-296.jpg",
-    alt: "Family gathered close during blessing",
-    position: "52% 46%",
-  },
-  {
     src: "/images/portfolio/wedding-party-trial/final_40/PTO_3246.jpg",
-    path: "images/portfolio/wedding-party-trial/final_40/PTO_3246.jpg",
+    path: "/images/portfolio/wedding-party-trial/final_40/PTO_3246.jpg",
     alt: "Monks seated during a wedding ceremony",
     position: "50% 50%",
   },
   {
     src: "/images/portfolio/wedding-party-trial/final_40/PTO_3397.jpg",
-    path: "images/portfolio/wedding-party-trial/final_40/PTO_3397.jpg",
+    path: "/images/portfolio/wedding-party-trial/final_40/PTO_3397.jpg",
     alt: "Hands lighting candles during a ceremony",
     position: "50% 50%",
   },
   {
+    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+    path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+    alt: "Ordination portrait during a ritual moment",
+    position: "50% 42%",
+  },
+  {
+    src: "/images/portfolio/2569-03-09/A M/PTO_5711.jpg",
+    path: "/images/portfolio/2569-03-09/A M/PTO_5711.jpg",
+    alt: "Quiet family care image",
+    position: "50% 50%",
+  },
+  {
     src: "/images/portfolio/2569-03-09/A M/PTO_5723.jpg",
-    path: "images/portfolio/2569-03-09/A M/PTO_5723.jpg",
+    path: "/images/portfolio/2569-03-09/A M/PTO_5723.jpg",
     alt: "Family walking together with a ceremonial offering",
     position: "50% 50%",
   },
