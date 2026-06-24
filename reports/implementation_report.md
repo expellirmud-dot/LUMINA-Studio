@@ -2,16 +2,42 @@
 
 ## Latest Task
 
-TASK-023: Thai Typography Experiment.
+TASK-024: Mobile Hero Balance.
 
 ## Current Implementation
+
+- Applied a narrow mobile-only hero balance pass without changing hero concept, imagery, or structure.
+- Softened mobile hero overlay density slightly and increased top breathing room beneath the fixed header.
+- Tightened subtitle/body/CTA spacing so the mobile first screen feels calmer while keeping the photograph primary.
+- Captured local desktop/mobile evidence for the modified candidate at `.runtime-captures/lumina/TASK-024/`.
+
+## Current Files Changed
+
+- `app/globals.css`
+- `.tasks/TASK-024/task.md`
+- `.tasks/TASK-024/plan.md`
+- `.tasks/TASK-024/status.md`
+- `.tasks/TASK-024/reports/final-report.md`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+- `reports/visual_audit.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint` (with existing warnings in skill/mirror folders outside the task diff)
+Passed: `node tools\\capture-lumina-evidence.mjs` against local candidate via `LUMINA_CAPTURE_URL=http://127.0.0.1:3011`
+
+## Previous Task
+
+TASK-023: Thai Typography Experiment.
 
 - Applied a conservative "Softer Editorial Thai" typography pass under the approved GPT-5.5 decision memo.
 - Reduced mobile hero headline heaviness slightly while preserving large editorial presence.
 - Relaxed Thai section headline rhythm and supporting Thai copy line-height without redesigning the page.
 - Captured local desktop/mobile evidence for the modified candidate at `.runtime-captures/lumina/TASK-023/`.
 
-## Current Files Changed
+## Previous Files Changed
 
 - `src/config/typography.ts`
 - `app/globals.css`
@@ -23,7 +49,7 @@ TASK-023: Thai Typography Experiment.
 - `reports/implementation_report.md`
 - `reports/visual_audit.md`
 
-## Current Build Status
+## Previous Build Status
 
 Passed: `npm run build`
 Passed: `npm run lint` (with existing warnings in skill/mirror folders outside the task diff)
@@ -51,28 +77,6 @@ TASK-022: Identity Lock Review.
 
 Not run for TASK-022 because this task is documentation-only.
 Validation run: `git status --short`
-
-## Previous Task
-
-TASK-017: Clarify Runtime Review Skill Roles.
-
-- Marked `computer-use-runtime-bridge` as the primary LUMINA runtime review bridge.
-- Marked `windows-ui-review-runtime` as STT-derived reference/template only.
-- Added `__pycache__/`, `*.pyc`, and `.runtime-captures/` rules to `.gitignore`.
-
-## Previous Files Changed
-
-- `skills/computer-use-runtime-bridge/SKILL.md`
-- `skills/windows-ui-review-runtime/SKILL.md`
-- `.gitignore`
-- `.tasks/TASK-017/task.md`
-- `AI_HANDOFF.md`
-- `reports/implementation_report.md`
-
-## Previous Build Status
-
-Passed: `npm run build`
-Passed: `npm run lint` (with warnings only in copied/external skill folders)
 
 ## Previous Task
 

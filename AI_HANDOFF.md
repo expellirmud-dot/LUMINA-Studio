@@ -6,6 +6,8 @@ LUMINA Studio
 
 ## Latest Completed Scope
 
+TASK-024: Mobile hero balance polished without redesign. Mobile-only hero overlay density was softened slightly, the copy block was given more breathing room below the fixed header, and subtitle/body/CTA spacing was tightened so text and photograph sit together more calmly on first screen. Validation passed with local evidence captured under `.runtime-captures/lumina/TASK-024/`.
+
 TASK-023: Conservative Thai typography polish completed under GPT-5.5 "Softer Editorial Thai" approval. Mobile hero headline scale/line-height was softened slightly, section Thai headline weight/rhythm was relaxed, and supporting Thai copy line-height was tuned without redesigning the page, changing imagery, or altering layout structure. Validation passed with local evidence captured under `.runtime-captures/lumina/TASK-023/`.
 
 TASK-022: Identity lock review completed for the final homepage polish sequence. Existing evidence from reports and `TASK-021-TEST` runtime captures was reviewed and the current direction was locked as Warm Premium / Quiet Luxury / Human Documentary with Stories-before-Portfolio preserved. Approved polish targets for the next sequence are Thai typography, mobile hero balance, image ordering logic, rhythm spacing, and quiet copy refinement. No website code changed.

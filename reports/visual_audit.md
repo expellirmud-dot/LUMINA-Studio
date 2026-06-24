@@ -1,5 +1,20 @@
 # VISUAL AUDIT
 
+## TASK-024
+
+Task:
+Mobile Hero Balance
+
+Current assessment:
+- The hero remains the same conceptually, but the mobile first screen breathes better.
+- The lighter mobile overlay allows the ceremony image to stay emotionally present instead of feeling too covered by text treatment.
+- Additional top spacing beneath the fixed header makes the first screen feel calmer and less compressed.
+- The text block still reads editorial and premium without drifting into a designed promo-card look.
+- Desktop above-fold remains effectively unchanged.
+
+Recommendation:
+APPROVED. This is an appropriate mobile-only hero balance refinement and does not cross into redesign.
+
 ## TASK-023
 
 Task:
