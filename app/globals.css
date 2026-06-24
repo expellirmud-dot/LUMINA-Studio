@@ -305,6 +305,7 @@ body {
   display: grid;
   gap: clamp(2.5rem, 6vw, 5rem);
   border-block: 1px solid rgba(45, 42, 38, 0.05);
+  scroll-margin-top: 5.5rem;
 }
 
 .moments-intro {
@@ -491,7 +492,7 @@ body {
 
   .moments-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: clamp(1rem, 2.4vw, 2.2rem);
+    gap: clamp(1.25rem, 2.6vw, 2.5rem);
   }
 
   .moment-frame {
@@ -577,6 +578,19 @@ body {
 
   .primary-action {
     margin-top: 1.75rem;
+  }
+
+  .moments-section {
+    gap: 2rem;
+  }
+
+  .moments-intro h2 {
+    font-size: clamp(1.65rem, 6.5vw, 1.85rem) !important;
+    line-height: 1.42 !important;
+  }
+
+  .moments-grid {
+    gap: 1.25rem;
   }
 }
 
