@@ -4,6 +4,35 @@
 
 ## Latest Task
 
+TASK-027: Copy Polish.
+
+## Current Implementation
+
+- Polished homepage Thai and English copy to sound more like LUMINA's "Warm Premium, Quiet Luxury, Human Documentary" voice.
+- Replaced internal UX/agency rationale in `portfolio.ts` Selected Stories subtitles with warm, user-facing emotional captions (e.g., "Hands held close, passing warmth and unspoken words").
+- Refined `content.ts` Thai copy in "Behind The Lens" and "Experience" to remove formal, agency-like phrasing and wedding template cliches, making it feel more natural and documentary.
+- Ensured no changes were made to layout, typography, or CSS.
+
+## Current Files Changed
+
+- `src/config/content.ts`
+- `src/config/portfolio.ts`
+- `.tasks/TASK-027/task.md`
+- `.tasks/TASK-027/plan.md`
+- `.tasks/TASK-027/status.md`
+- `.tasks/TASK-027/reports/final-report.md`
+- `reports/implementation_report.md`
+- `reports/visual_audit.md`
+- `AI_HANDOFF.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint`
+Passed: `node tools\capture-lumina-evidence.mjs` (Evidence captured at `.runtime-captures/lumina/TASK-027/`)
+
+## Previous Task
+
 TASK-026: Rhythm Polish.
 
 ## Current Implementation

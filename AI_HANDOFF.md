@@ -6,6 +6,8 @@ LUMINA Studio
 
 ## Latest Completed Scope
 
+TASK-027: Copy Polish. Replaced agency/UX internal language and generic wedding template phrasing with warm, documentary-style human copy. Verified with local desktop/mobile visual capture.
+
 TASK-026: Rhythm polish implemented strictly for the Moments Between section to improve mobile spacing and heading flow. Verified with local desktop/mobile visual capture.
 
 TASK-025: Image sequence logic updated to use the approved narrative sequence from the image audit. Verified with local desktop/mobile visual capture.

@@ -2,6 +2,14 @@
 
 *Note: The `.tasks/<TASK-ID>/reports/` directory remains the authoritative source of truth per task. These rolling reports summarize recent highlights.*
 
+## Latest Visual Assessments
+
+### TASK-027 Copy Polish
+- **Status**: PASSED
+- **Copy Alignment**: Passed. Replaced agency/UX rationale subtitles in Selected Stories with warm, documentary-style captions. Softened Thai formal copy in "Experience" and "Behind the Lens" to sound more natural and conversational.
+- **Rhythm Impact**: Passed. Copy length remains very similar to the original, preventing new line-wrapping issues.
+- **Evidence**: Captured at `.runtime-captures/lumina/TASK-027/`
+
 ## TASK-026
 
 Task:

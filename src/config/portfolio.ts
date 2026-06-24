@@ -33,7 +33,7 @@ export const portfolioConfig: PortfolioImage[] = [
   },
   {
     eyebrow: "CELEBRATION",
-    description: "The energy and joy of the reception.",
+    description: "Laughter, movement, and the people you love.",
     image: {
       src: "/images/portfolio/wedding-party-trial/hero_5/340.jpg",
       path: "/images/portfolio/wedding-party-trial/hero_5/340.jpg",
@@ -56,7 +56,7 @@ export const portfolioConfig: PortfolioImage[] = [
 export const selectedStoriesConfig = [
   {
     title: "The Ceremony",
-    subtitle: "A real human ritual moment, establishing context immediately.",
+    subtitle: "The quiet weight of a promise, surrounded by the people who matter most.",
     image: {
       src: "/images/portfolio/wedding-party-trial/final_40/PTO_3403.jpg",
       path: "/images/portfolio/wedding-party-trial/final_40/PTO_3403.jpg",
@@ -66,7 +66,7 @@ export const selectedStoriesConfig = [
   },
   {
     title: "Family Blessing",
-    subtitle: "Hands, blessing, and proximity expressing the relational core.",
+    subtitle: "Hands held close, passing warmth and unspoken words.",
     image: {
       src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
       path: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
@@ -76,7 +76,7 @@ export const selectedStoriesConfig = [
   },
   {
     title: "The Warmth Remains",
-    subtitle: "Family warmth and what remains after the formal moments pass.",
+    subtitle: "When the formalities fade, and only genuine closeness is left.",
     image: {
       src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
       path: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
