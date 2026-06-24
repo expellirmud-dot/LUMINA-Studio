@@ -2,16 +2,43 @@
 
 ## Latest Task
 
-TASK-022: Identity Lock Review.
+TASK-023: Thai Typography Experiment.
 
 ## Current Implementation
+
+- Applied a conservative "Softer Editorial Thai" typography pass under the approved GPT-5.5 decision memo.
+- Reduced mobile hero headline heaviness slightly while preserving large editorial presence.
+- Relaxed Thai section headline rhythm and supporting Thai copy line-height without redesigning the page.
+- Captured local desktop/mobile evidence for the modified candidate at `.runtime-captures/lumina/TASK-023/`.
+
+## Current Files Changed
+
+- `src/config/typography.ts`
+- `app/globals.css`
+- `.tasks/TASK-023/task.md`
+- `.tasks/TASK-023/status.md`
+- `.tasks/TASK-023/reports/01-gpt55-gate.md`
+- `.tasks/TASK-023/reports/final-report.md`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+- `reports/visual_audit.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint` (with existing warnings in skill/mirror folders outside the task diff)
+Passed: `node tools\\capture-lumina-evidence.mjs` against local candidate via `LUMINA_CAPTURE_URL=http://127.0.0.1:3001`
+
+## Previous Task
+
+TASK-022: Identity Lock Review.
 
 - Created a formal `TASK-022` packet and plan under `.tasks/TASK-022/`.
 - Reviewed current visual identity using existing reports and recent `TASK-021-TEST` desktop/mobile captures.
 - Locked the homepage direction as Warm Premium / Quiet Luxury / Human Documentary with Stories-before-Portfolio preserved.
 - Documented controlled polish targets for TASK-023 through TASK-028 without changing website code.
 
-## Current Files Changed
+## Previous Files Changed
 
 - `.tasks/TASK-022/task.md`
 - `.tasks/TASK-022/plan.md`
@@ -20,7 +47,7 @@ TASK-022: Identity Lock Review.
 - `AI_HANDOFF.md`
 - `reports/implementation_report.md`
 
-## Current Build Status
+## Previous Build Status
 
 Not run for TASK-022 because this task is documentation-only.
 Validation run: `git status --short`

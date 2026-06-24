@@ -8,10 +8,10 @@ export const typographyConfig = {
     brandStudioHeader: "text-lg italic text-[var(--accent)]",
     brandStudioFooter: "text-[1.4rem] italic text-[var(--accent)]",
     heroHeadline:
-      "max-w-3xl font-sans text-[clamp(2.2rem,4.5vw,4.2rem)] font-normal leading-[1.15] tracking-normal text-white",
-    sectionHeadline: "font-sans text-[clamp(2.2rem,5vw,5rem)] font-medium leading-[1.08] tracking-normal text-[var(--text)]",
+      "max-w-3xl font-sans text-[clamp(1.95rem,8.8vw,4.1rem)] sm:text-[clamp(2.2rem,4.5vw,4.2rem)] font-normal leading-[1.22] sm:leading-[1.15] tracking-normal text-white",
+    sectionHeadline: "font-sans text-[clamp(2.05rem,4.8vw,4.85rem)] font-normal leading-[1.12] sm:leading-[1.08] tracking-normal text-[var(--text)]",
     portfolioHeadline: "mt-5 font-sans text-[clamp(2.2rem,5vw,4.6rem)] font-medium leading-[1.08] tracking-normal text-[var(--text)]",
-    contactHeadline: "font-sans text-[clamp(2.2rem,4.6vw,4.4rem)] font-medium leading-[1.12] tracking-normal text-[var(--text)]",
+    contactHeadline: "font-sans text-[clamp(2rem,4.4vw,4.25rem)] font-normal leading-[1.16] sm:leading-[1.12] tracking-normal text-[var(--text)]",
     contactValue: "font-sans text-[clamp(0.95rem,1.4vw,1.25rem)] font-medium leading-snug text-[var(--text)] mt-1",
     heroConceptTitle: "max-w-[13ch] my-3 font-sans text-[clamp(2rem,5vw,3.6rem)] font-medium leading-[1.1] tracking-normal text-white",
   },

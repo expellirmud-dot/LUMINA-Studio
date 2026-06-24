@@ -1,5 +1,20 @@
 # VISUAL AUDIT
 
+## TASK-023
+
+Task:
+Thai Typography Experiment
+
+Current assessment:
+- The typography changes stay within a narrow polish boundary and do not read as redesign.
+- Desktop remains visually stable; the main difference is slightly calmer Thai rhythm in the large editorial text blocks.
+- Mobile hero balance is improved modestly: the Thai headline is still large, but it no longer dominates the first screen as aggressively.
+- Large Thai section text in `What We Notice`, `Behind The Lens`, `Experience`, and `Kind Words` feels softer and less mechanically stacked.
+- The photograph still leads the homepage emotionally, and the UI remains a quiet support layer.
+
+Recommendation:
+APPROVED. This is the correct scale of change for TASK-023 and it preserves Warm Premium / Quiet Luxury / Human Documentary identity.
+
 ## LUMINA-V2-QUIET-POLISH-001
 
 Task:

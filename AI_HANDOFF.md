@@ -6,6 +6,8 @@ LUMINA Studio
 
 ## Latest Completed Scope
 
+TASK-023: Conservative Thai typography polish completed under GPT-5.5 "Softer Editorial Thai" approval. Mobile hero headline scale/line-height was softened slightly, section Thai headline weight/rhythm was relaxed, and supporting Thai copy line-height was tuned without redesigning the page, changing imagery, or altering layout structure. Validation passed with local evidence captured under `.runtime-captures/lumina/TASK-023/`.
+
 TASK-022: Identity lock review completed for the final homepage polish sequence. Existing evidence from reports and `TASK-021-TEST` runtime captures was reviewed and the current direction was locked as Warm Premium / Quiet Luxury / Human Documentary with Stories-before-Portfolio preserved. Approved polish targets for the next sequence are Thai typography, mobile hero balance, image ordering logic, rhythm spacing, and quiet copy refinement. No website code changed.
 
 LUMINA-V2-QUIET-POLISH-001: Visual fine-tuning and premium editorial layout adjustments on the home page (headline visual weight reduced, warmer/softer hero overlay, relaxed line heights/spacing, "de-cardified" Selected Stories grid with stagger, and asymmetric collage styling in Moments Between).

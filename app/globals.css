@@ -152,7 +152,7 @@ body {
   margin-top: 1.75rem;
   color: rgba(255, 255, 255, 0.82);
   font-size: clamp(0.98rem, 1.8vw, 1.2rem);
-  line-height: 1.9;
+  line-height: 1.96;
   font-weight: 300;
 }
 
@@ -213,14 +213,14 @@ body {
 .notice-copy p {
   font-size: clamp(2rem, 5.6vw, 5rem);
   font-weight: 400;
-  line-height: 1.28;
+  line-height: 1.32;
 }
 
 .notice-copy p:nth-child(even) {
   max-width: 44rem;
   color: var(--muted);
   font-size: clamp(1.45rem, 3.8vw, 3.45rem);
-  line-height: 1.35;
+  line-height: 1.42;
 }
 
 .selected-stories {
@@ -371,7 +371,7 @@ body {
 .behind-copy h2,
 .experience-copy h2 {
   font-size: clamp(1.85rem, 4.2vw, 4.2rem);
-  line-height: 1.24;
+  line-height: 1.28;
 }
 
 .text-action {
@@ -392,7 +392,7 @@ body {
   max-width: 70rem;
   font-size: clamp(2.1rem, 5.5vw, 5.2rem);
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.22;
   text-wrap: balance;
 }
 
