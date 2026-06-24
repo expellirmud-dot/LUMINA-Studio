@@ -2,15 +2,38 @@
 
 ## Latest Task
 
-TASK-017: Clarify Runtime Review Skill Roles.
+TASK-022: Identity Lock Review.
 
 ## Current Implementation
+
+- Created a formal `TASK-022` packet and plan under `.tasks/TASK-022/`.
+- Reviewed current visual identity using existing reports and recent `TASK-021-TEST` desktop/mobile captures.
+- Locked the homepage direction as Warm Premium / Quiet Luxury / Human Documentary with Stories-before-Portfolio preserved.
+- Documented controlled polish targets for TASK-023 through TASK-028 without changing website code.
+
+## Current Files Changed
+
+- `.tasks/TASK-022/task.md`
+- `.tasks/TASK-022/plan.md`
+- `.tasks/TASK-022/status.md`
+- `.tasks/TASK-022/reports/identity-lock-review.md`
+- `AI_HANDOFF.md`
+- `reports/implementation_report.md`
+
+## Current Build Status
+
+Not run for TASK-022 because this task is documentation-only.
+Validation run: `git status --short`
+
+## Previous Task
+
+TASK-017: Clarify Runtime Review Skill Roles.
 
 - Marked `computer-use-runtime-bridge` as the primary LUMINA runtime review bridge.
 - Marked `windows-ui-review-runtime` as STT-derived reference/template only.
 - Added `__pycache__/`, `*.pyc`, and `.runtime-captures/` rules to `.gitignore`.
 
-## Current Files Changed
+## Previous Files Changed
 
 - `skills/computer-use-runtime-bridge/SKILL.md`
 - `skills/windows-ui-review-runtime/SKILL.md`
@@ -18,6 +41,11 @@ TASK-017: Clarify Runtime Review Skill Roles.
 - `.tasks/TASK-017/task.md`
 - `AI_HANDOFF.md`
 - `reports/implementation_report.md`
+
+## Previous Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint` (with warnings only in copied/external skill folders)
 
 ## Previous Task
 
@@ -36,11 +64,6 @@ TASK-016: Import Web Review Runtime Skills.
 - `docs/SKILL_SOURCE_REGISTRY.md`
 - `docs/CONTEXT_INDEX.md`
 - `.tasks/TASK-016/`
-
-## Current Build Status
-
-Passed: `npm run build`
-Passed: `npm run lint` (with warnings only in copied/external skill folders)
 
 ## Previous Task
 
