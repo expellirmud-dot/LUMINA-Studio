@@ -5,18 +5,18 @@ export const contactConfig = {
   items: [
     {
       label: "Phone",
-      value: "+66 64 986 1939",
-      href: "tel:+66649861939",
+      value: "0649861939",
+      href: "tel:0649861939",
     },
     {
-      label: "Line",
+      label: "LINE",
       value: "expellirmud",
       href: "https://line.me/ti/p/~expellirmud",
     },
     {
       label: "Facebook",
       value: "ExStreet",
-      href: "https://facebook.com/exstreet",
+      href: "https://www.facebook.com/Exstreet",
     },
   ],
 };

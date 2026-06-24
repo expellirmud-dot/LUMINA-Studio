@@ -6,6 +6,7 @@ import { contentConfig } from "../src/config/content";
 import { selectedStoriesConfig, momentImagesConfig } from "../src/config/portfolio";
 import { servicesConfig } from "../src/config/services";
 import { navigationConfig } from "../src/config/navigation";
+import { contactConfig } from "../src/config/contact";
 
 export default function Home() {
   return (
@@ -203,6 +204,19 @@ export default function Home() {
                 {navigationConfig.logoSecondary}
               </span>
             </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-2 mb-4 text-[0.95rem]">
+              {contactConfig.items.map((item) => (
+                <a 
+                  key={item.label} 
+                  href={item.href} 
+                  target={item.href.startsWith('http') ? "_blank" : undefined}
+                  rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                  className="hover:text-[var(--text)] transition-colors duration-300"
+                >
+                  {item.label === "Facebook" ? item.label : `${item.label}: ${item.value}`}
+                </a>
+              ))}
+            </div>
             <p>
               {contentConfig.owner.name} / {contentConfig.owner.role}
             </p>
