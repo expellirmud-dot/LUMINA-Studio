@@ -5,31 +5,33 @@ description: Mandatory startup protocol for every LUMINA Studio task before impl
 
 # LUMINA STARTUP
 
-Read first:
+Read current governance docs:
 
-- PROJECT_RULES.md
+- docs/CONTEXT_INDEX.md
+- PROJECT_RULES.md (if present)
 - AI_HANDOFF.md
-- reports/implementation_report.md
-- reports/visual_audit.md
-- .mcp/serena.md
-- .mcp/codegraph.md
+- AGENTS.md
+- GEMINI.md
+- docs/LUMINA_MODEL_AND_WORKER_POLICY.md
+- docs/LUMINA_V2_CONSTITUTION.md
+- docs/LUMINA_VISUAL_LANGUAGE.md
+- docs/HOME_PAGE_BLUEPRINT.md
+- docs/SKILL_SOURCE_REGISTRY.md
 
-Review current config architecture before implementation.
+Inspect config architecture before implementation:
 
-Verify existence of:
-
-- visual.ts
-- motion.ts
-- content.ts
-- portfolio.ts
-- services.ts
-- navigation.ts
-- contact.ts
+- src/config/visual.ts
+- src/config/motion.ts
+- src/config/content.ts
+- src/config/portfolio.ts
+- src/config/services.ts
+- src/config/navigation.ts
+- src/config/contact.ts
+- src/config/typography.ts
 
 Run:
 
 - git status --short
-
 
 Report before implementation:
 

@@ -6,6 +6,10 @@ LUMINA Studio
 
 ## Latest Completed Scope
 
+TASK-026: Rhythm polish implemented strictly for the Moments Between section to improve mobile spacing and heading flow. Verified with local desktop/mobile visual capture.
+
+TASK-025: Image sequence logic updated to use the approved narrative sequence from the image audit. Verified with local desktop/mobile visual capture.
+
 TASK-024: Mobile hero balance polished without redesign. Mobile-only hero overlay density was softened slightly, the copy block was given more breathing room below the fixed header, and subtitle/body/CTA spacing was tightened so text and photograph sit together more calmly on first screen. Validation passed with local evidence captured under `.runtime-captures/lumina/TASK-024/`.
 
 TASK-023: Conservative Thai typography polish completed under GPT-5.5 "Softer Editorial Thai" approval. Mobile hero headline scale/line-height was softened slightly, section Thai headline weight/rhythm was relaxed, and supporting Thai copy line-height was tuned without redesigning the page, changing imagery, or altering layout structure. Validation passed with local evidence captured under `.runtime-captures/lumina/TASK-023/`.

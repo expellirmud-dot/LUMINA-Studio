@@ -1,6 +1,54 @@
 # IMPLEMENTATION REPORT
 
+*Note: The `.tasks/<TASK-ID>/reports/` directory remains the authoritative source of truth per task. These rolling reports summarize recent highlights.*
+
 ## Latest Task
+
+TASK-026: Rhythm Polish.
+
+## Current Implementation
+
+- Implemented minimal visual rhythm adjustments on the Moments Between section to fix mobile heaviness and heading wraps.
+- Added `scroll-margin-top` to protect the layout rhythm from the sticky header.
+- Scaled down the Thai `<h2>` on mobile and applied a `1.42` line-height for better flow.
+- Softened the mobile grid gap (`1.25rem`) to ease image crowding and gently relaxed desktop grid gaps without altering the editorial narrative.
+- Kept all images, core typographies, and page elements fully intact; pure CSS structural tuning.
+
+## Current Files Changed
+
+- `app/globals.css`
+- `.tasks/TASK-026/task.md`
+- `.tasks/TASK-026/status.md`
+- `.tasks/TASK-026/reports/final-report.md`
+- `reports/implementation_report.md`
+- `reports/visual_audit.md`
+
+## Current Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint`
+Passed: `node tools\capture-lumina-evidence.mjs` (Evidence captured at `.runtime-captures/lumina/TASK-026/`)
+
+## Previous Task
+
+TASK-025: Image Sequence Update.
+
+- Updated `src/config/portfolio.ts` with the approved image sequence from the TASK-025 audit.
+- Exclusively applied the approved image narrative sequence without redesigning the website layout or adding legacy placeholder images.
+
+## Previous Files Changed
+
+- `src/config/portfolio.ts`
+- `.tasks/TASK-025/status.md`
+- `.tasks/TASK-025/reports/final-report.md`
+
+## Previous Build Status
+
+Passed: `npm run build`
+Passed: `npm run lint`
+Passed: `node tools\capture-lumina-evidence.mjs` (Evidence captured at `.runtime-captures/lumina/TASK-025/`)
+
+## Previous Task
 
 TASK-024: Mobile Hero Balance.
 

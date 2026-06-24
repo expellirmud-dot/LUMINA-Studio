@@ -1,5 +1,35 @@
 # VISUAL AUDIT
 
+*Note: The `.tasks/<TASK-ID>/reports/` directory remains the authoritative source of truth per task. These rolling reports summarize recent highlights.*
+
+## TASK-026
+
+Task:
+Rhythm Polish
+
+Current assessment:
+- Mobile Moments Between heading breathes much better; the reduced size and 1.42 line-height prevent awkward breaking.
+- Mobile Moments Between image grid gap increased to 1.25rem, creating calmer pacing and removing the heavy, clustered feeling.
+- Global `scroll-margin-top: 5.5rem` added to `.moments-section` to protect the visual rhythm from the sticky header.
+- Desktop grid spacing was very gently relaxed to improve gallery calmness without altering the core editorial composition.
+
+Recommendation:
+APPROVED. The rhythm is significantly cleaner and more intentional without redesigning the UI.
+
+## TASK-025
+
+Task:
+Image Sequence Update
+
+Current assessment:
+- Replaced previous placeholder-heavy sequence with the approved narrative sequence from the image sequence audit.
+- Selected Stories now perfectly highlights a focused wedding ceremony, ordination, and family portrait mix.
+- Moments Between now leverages the rich horizontal/vertical collage with real emotional beats (wedding party, ceremony preparation, close bonds).
+- The editorial weight of the photography leads the design beautifully.
+
+Recommendation:
+APPROVED. This locks in the final narrative flow for Phase 1.
+
 ## TASK-024
 
 Task:
