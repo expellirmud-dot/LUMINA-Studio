@@ -11,7 +11,7 @@ The absolute source of truth is the local **filesystem**. If an external index, 
 ### Authoritative Files
 *   **Code & Configuration**: `app/page.tsx`, `app/globals.css`, and configurations under `src/config/`.
 *   **Task Management**: Active task packets located under `.tasks/<TASK-ID>/`.
-*   **Rules & Governance**: `PROJECT_RULES.md`, `AGENTS.md`, `GEMINI.md`, and this `docs/CONTEXT_INDEX.md`.
+*   **Rules & Governance**: `PROJECT_RULES.md`, `AGENTS.md`, `GEMINI.md`, `docs/LUMINA_MODEL_AND_WORKER_POLICY.md`, and this `docs/CONTEXT_INDEX.md`.
 *   **Brand & Design Policies**: `docs/LUMINA_V2_CONSTITUTION.md`, `docs/LUMINA_VISUAL_LANGUAGE.md`, and `docs/HOME_PAGE_BLUEPRINT.md`.
 
 ---
@@ -58,7 +58,7 @@ To resolve conflicts between context files, all documentation is categorized int
 
 | Tier | Name | Target Files / Directories |
 | :--- | :--- | :--- |
-| **Tier 0** | Mandatory Project Truth | `PROJECT_RULES.md`, `AGENTS.md`, `GEMINI.md`, `docs/CONTEXT_INDEX.md` |
+| **Tier 0** | Mandatory Project Truth | `PROJECT_RULES.md`, `AGENTS.md`, `GEMINI.md`, `docs/CONTEXT_INDEX.md`, `docs/LUMINA_MODEL_AND_WORKER_POLICY.md` |
 | **Tier 1** | Brand & Product Lock | `docs/LUMINA_V2_CONSTITUTION.md`, `docs/LUMINA_VISUAL_LANGUAGE.md`, `docs/HOME_PAGE_BLUEPRINT.md` |
 | **Tier 2** | Project Skills | `skills/` directory (the local source of truth for agent execution rules) |
 | **Tier 3** | App-Specific Configs | `src/config/`, `.gemini/`, `.opencode/`, `.agent/` |

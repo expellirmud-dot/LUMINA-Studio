@@ -262,6 +262,7 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 - Current skill structure is closed and clean, featuring 47 project skills.
 - `skills/` is the source of truth.
 - `.gemini/skills`, `.opencode/skills`, `.agent/skills` are mirrors/adapters.
+- Active Model and Worker Policy is defined in `docs/LUMINA_MODEL_AND_WORKER_POLICY.md`.
 - Working tree contains newly added skills, updated docs, and task packet under `.tasks/TASK-016/`.
 
 ## Pending
