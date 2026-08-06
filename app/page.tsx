@@ -16,10 +16,7 @@ export default function Home() {
       <nav aria-label="Primary navigation" className="site-nav">
         <div className="site-nav-inner">
           <a href="#hero" className={typographyConfig.tokens.brandLockup}>
-            {navigationConfig.logoText}{" "}
-            <span className={typographyConfig.tokens.brandStudioHeader}>
-              {navigationConfig.logoSecondary}
-            </span>
+            {navigationConfig.logoText}
           </a>
           <div className="nav-items">
             {navigationConfig.items.map((item) => (

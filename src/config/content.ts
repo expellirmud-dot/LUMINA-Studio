@@ -1,7 +1,7 @@
 export const contentConfig = {
   hero: {
     eyebrow: "HUMAN DOCUMENTARY PHOTOGRAPHY",
-    title: "Stories live in\nthe moments\nwe almost miss.",
+    title: "Stories live in the moments\nwe almost miss.",
     body: "Photographs of people, relationships, and rituals—\nobserved with care and held with honesty.",
     primaryCta: "View the stories",
     rotatingMicrocopy: [
@@ -59,7 +59,7 @@ export const contentConfig = {
   },
   footer: {
     statement: "Photographs of what happened—\nand what it meant.",
-    identity: "Human documentary photography of people, relationships, and rituals.",
+    identity: "Human documentary photography\nfor people, relationships, and rituals.",
   },
   owner: {
     name: "ToTo Therdsak",
