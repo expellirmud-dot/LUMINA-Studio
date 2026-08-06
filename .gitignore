@@ -23,6 +23,7 @@ out/
 
 # windows
 Thumbs.db
+desktop.ini
 .vercel
 
 .codegraph/*.db
