@@ -55,66 +55,69 @@ export const portfolioConfig: PortfolioImage[] = [
 
 export const selectedStoriesConfig = [
   {
-    title: "The Ceremony",
-    subtitle: "The quiet weight of a promise, surrounded by the people who matter most.",
-    image: {
-      src: "/images/portfolio/wedding-party-trial/final_40/PTO_3403.jpg",
-      path: "/images/portfolio/wedding-party-trial/final_40/PTO_3403.jpg",
-      alt: "Ritual / ceremony",
-      position: "50% 50%",
-    },
-  },
-  {
-    title: "Family Blessing",
-    subtitle: "Hands held close, passing warmth and unspoken words.",
+    eyebrow: "RITUAL",
+    title: "What is carried forward",
+    subtitle: "Tradition, gestures, and the people who give them meaning.",
     image: {
       src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
       path: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
-      alt: "Elder blessing a couple during a family ceremony",
-      position: "50% 48%",
+      alt: "An elder offering a blessing during a family ceremony",
+      position: "55% 52%",
     },
   },
   {
-    title: "The Warmth Remains",
-    subtitle: "When the formalities fade, and only genuine closeness is left.",
+    eyebrow: "RELATIONSHIP",
+    title: "What holds us close",
+    subtitle: "The affection that appears without being asked for.",
     image: {
       src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
       path: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
-      alt: "Family emotion and aftermath",
-      position: "50% 50%",
+      alt: "A family sharing an affectionate embrace during a celebration",
+      position: "58% 68%",
+    },
+  },
+  {
+    eyebrow: "PRESENCE",
+    title: "What it felt like",
+    subtitle: "Portraits and passing moments that belong only to that day.",
+    image: {
+      src: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
+      path: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
+      alt: "A bride smiling naturally while holding a cream bouquet",
+      position: "50% 48%",
     },
   },
 ];
 
 export const momentImagesConfig = [
   {
-    src: "/images/portfolio/wedding-party-trial/final_40/PTO_3246.jpg",
-    path: "/images/portfolio/wedding-party-trial/final_40/PTO_3246.jpg",
-    alt: "Monks seated during a wedding ceremony",
-    position: "50% 50%",
-  },
-  {
-    src: "/images/portfolio/wedding-party-trial/final_40/PTO_3397.jpg",
-    path: "/images/portfolio/wedding-party-trial/final_40/PTO_3397.jpg",
-    alt: "Hands lighting candles during a ceremony",
-    position: "50% 50%",
-  },
-  {
-    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-    path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-    alt: "Ordination portrait during a ritual moment",
-    position: "50% 42%",
+    src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+    path: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+    alt: "A quiet emotional gesture shared during an ordination ceremony",
+    position: "54% 58%",
   },
   {
     src: "/images/portfolio/2569-03-09/A M/PTO_5711.jpg",
     path: "/images/portfolio/2569-03-09/A M/PTO_5711.jpg",
-    alt: "Quiet family care image",
+    alt: "A carefully prepared ceremonial detail in soft warm light",
     position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/2569-03-09/A M/PTO_5779.jpg",
+    path: "/images/portfolio/2569-03-09/A M/PTO_5779.jpg",
+    alt: "A smiling participant surrounded by family during a lively ceremony",
+    position: "52% 60%",
+  },
+  {
+    src: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
+    path: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
+    alt: "A relaxed bridal portrait with a cream bouquet and dark green ribbon",
+    position: "50% 48%",
   },
   {
     src: "/images/portfolio/2569-03-09/A M/PTO_5723.jpg",
     path: "/images/portfolio/2569-03-09/A M/PTO_5723.jpg",
-    alt: "Family walking together with a ceremonial offering",
-    position: "50% 50%",
+    alt: "Family members walking together with a ceremonial offering",
+    position: "58% 70%",
   },
 ];

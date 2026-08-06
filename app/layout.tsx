@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, IBM_Plex_Sans_Thai_Looped } from "next/font/google";
-import { contentConfig } from "../src/config/content";
-import { navigationConfig } from "../src/config/navigation";
 import "./globals.css";
 
 const inter = Inter({
@@ -22,11 +20,11 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: `${navigationConfig.logoText} ${navigationConfig.logoSecondary} | ${contentConfig.owner.name} Photography`,
-  description: contentConfig.hero.subtitle,
+  title: "LUMINA Studio — Human Documentary Photography",
+  description: "Human documentary photography of people, relationships, and rituals, observed with care and held with honesty.",
   openGraph: {
-    title: `${navigationConfig.logoText} ${navigationConfig.logoSecondary} by ${contentConfig.owner.name}`,
-    description: contentConfig.hero.subtitle,
+    title: "LUMINA Studio — Human Documentary Photography",
+    description: "Human documentary photography of people, relationships, and rituals, observed with care and held with honesty.",
     type: "website",
   },
 };

@@ -22,10 +22,10 @@ export const profileImage: ConfigImage = {
 };
 
 export const heroImage: ConfigImage = {
-  src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-  path: "images/portfolio/phra-louis-v1/PTO-296.jpg",
-  alt: "Ordination blessing with family gathered close",
-  position: "56% 42%",
+  src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+  path: "images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+  alt: "A warm family embrace during a meaningful celebration",
+  position: "48% 68%",
 };
 
 export const heroSequence: ConfigImage[] = [

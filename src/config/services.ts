@@ -1,6 +1,6 @@
 export const servicesConfig = [
-  "พูดคุยเพื่อเข้าใจจังหวะของวัน",
-  "วางลำดับภาพจากผู้คนและความสัมพันธ์",
-  "อยู่ใกล้พอที่จะเห็น แต่ไม่รบกวนช่วงเวลา",
-  "ส่งมอบเรื่องราวที่เรียบง่าย อบอุ่น และจริง",
+  "We begin with what matters to you",
+  "The day is observed, not directed",
+  "Photographs are selected with intention",
+  "Your story is delivered with care",
 ];

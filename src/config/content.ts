@@ -1,9 +1,9 @@
 export const contentConfig = {
   hero: {
-    title: "เรื่องราวที่ดีที่สุด\nมักเกิดขึ้นในช่วงเวลาธรรมดา",
-    subtitle: "Natural • Emotional • Documentary Photography",
-    body: "บันทึกผู้คน ความสัมพันธ์ และความรู้สึก\nในแบบที่เกิดขึ้นจริง",
-    primaryCta: "View Stories",
+    eyebrow: "HUMAN DOCUMENTARY PHOTOGRAPHY",
+    title: "Stories live in\nthe moments\nwe almost miss.",
+    body: "Photographs of people, relationships, and rituals—\nobserved with care and held with honesty.",
+    primaryCta: "View the stories",
     rotatingMicrocopy: [
       "Stay close to what is real.",
       "Let the day unfold.",
@@ -13,43 +13,53 @@ export const contentConfig = {
     ]
   },
   whatWeNotice: {
-    label: "What We Notice",
-    copy: [
-      "เราไม่ได้มองหาช่วงเวลาที่สมบูรณ์แบบ",
-      "เราเฝ้าสังเกตรอยยิ้มเล็ก ๆ\nการจับมือโดยไม่รู้ตัว\nและความรู้สึกที่เกิดขึ้นเพียงชั่วครู่",
-      "เพราะหลายครั้ง\nสิ่งที่ผู้คนคิดถึงมากที่สุด\nไม่ใช่ภาพที่สวยที่สุด",
-      "แต่คือภาพที่ทำให้พวกเขารู้สึกได้อีกครั้ง",
-    ],
+    label: "WHAT WE NOTICE",
+    title: "The quiet things\nare often what remain.",
+    body: "A hand reaching out.\nA familiar look across the room.\nThe pause before everything begins.\n\nThese are not always the moments people plan for,\nbut they are often the ones that stay.",
   },
   selectedStories: {
-    label: "Selected Stories",
-    title: "Stories held together by people, ritual, and quiet feeling.",
+    label: "SELECTED STORIES",
+    title: "People, rituals,\nand the spaces between.",
+    body: "A small selection of stories shaped by connection,\ntradition, and the feeling of being there.",
   },
   momentsBetween: {
-    label: "The Moments Between",
-    copy: "บางช่วงเวลา\nไม่มีใครวางแผนให้เกิดขึ้น\n\nและนั่นคือเหตุผลที่เราชอบมันมากที่สุด",
+    label: "MOMENTS BETWEEN",
+    title: "Not everything meaningful\nhappens at the centre.",
+    body: "Sometimes the story is in the waiting,\nthe movement, the small detail,\nor the person standing just outside the frame.",
+  },
+  brandBridge: {
+    copy: "Different places.\nDifferent kinds of days.\nThe same attention to people.",
   },
   behindTheLens: {
-    label: "Behind The Lens",
-    button: "About Toto",
-    copy: "ผมเชื่อว่าภาพถ่ายที่ดี\nไม่ได้เริ่มจากกล้อง\n\nแต่มาจากการทำให้ผู้คนรู้สึกสบายใจ\nมากพอที่จะเป็นตัวของตัวเอง\n\nและนั่นคือสิ่งที่ผมตั้งใจทำ\nทุกครั้งที่ได้บันทึกเรื่องราว",
+    label: "BEHIND THE LENS",
+    title: "Photographs begin\nwith trust.",
+    body: "I work quietly, stay close to what is unfolding,\nand make space for people to remain themselves.\n\nThe aim is not to make every moment look perfect.\nIt is to recognise what already matters.",
+    signature: "ผมไม่ได้อยากให้ทุกคนดูเหมือนนางแบบ\n\nแค่อยากให้ภาพยังเป็นตัวเขา\nและยังรู้สึกได้ว่า\nวันนั้นมีความหมายอย่างไร",
+    button: "More about the approach",
   },
   kindWords: {
-    label: "Kind Words",
+    label: "KIND WORDS",
+    title: "How it felt\nto be photographed.",
+    intro: "Not only how the photographs looked,\nbut how the day was allowed to feel.",
     quote: "ภาพที่ได้ไม่ได้ทำให้เรานึกถึงแค่ว่าวันนั้นหน้าตาเป็นอย่างไร แต่ทำให้เราจำได้ว่าเรารู้สึกอย่างไรในวันนั้น",
     credit: "A family story, remembered quietly",
   },
   experience: {
-    label: "Experience",
-    button: "Learn More",
-    copy: "ทุกเรื่องราวมีจังหวะของตัวเอง\n\nเราเชื่อว่าภาพถ่ายที่จริงใจ\nเริ่มต้นจากการทำความรู้จักและเข้าใจกัน\n\nเพื่อให้คุณรู้สึกสบายใจ\nและปล่อยให้วันสำคัญดำเนินไปอย่างเป็นธรรมชาติ",
+    label: "THE EXPERIENCE",
+    title: "A calm presence.\nA thoughtful process.",
+    body: "From the first conversation to the final photographs,\nthe process is kept clear, personal, and unhurried.",
+    supporting: "Guidance is always available.\nPressure is not.",
   },
   finalCta: {
-    button: "Let's Talk",
-    copy: "หากเรื่องราวของคุณกำลังจะเริ่มต้น\n\nเรายินดีรับฟัง",
+    label: "BEGIN A CONVERSATION",
+    title: "Tell me what matters\nto you.",
+    body: "You do not need to know exactly what the photographs should look like.\n\nBegin with the people, the day,\nand what you hope to remember.",
+    button: "Start a conversation",
+    secondary: "View contact details",
   },
   footer: {
-    text: "Natural • Emotional • Documentary Photography",
+    statement: "Photographs of what happened—\nand what it meant.",
+    identity: "Human documentary photography of people, relationships, and rituals.",
   },
   owner: {
     name: "ToTo Therdsak",

@@ -9,6 +9,8 @@ import { navigationConfig } from "../src/config/navigation";
 import { contactConfig } from "../src/config/contact";
 
 export default function Home() {
+  const primaryContact = contactConfig.items.find((item) => item.label === "LINE") ?? contactConfig.items[0];
+
   return (
     <>
       <nav aria-label="Primary navigation" className="site-nav">
@@ -45,10 +47,10 @@ export default function Home() {
           />
           <div className="hero-grade" aria-hidden="true" />
           <div className="hero-copy reveal">
+            <p className="hero-eyebrow">{contentConfig.hero.eyebrow}</p>
             <h1 className={typographyConfig.tokens.heroHeadline}>
               {contentConfig.hero.title}
             </h1>
-            <p className="hero-subtitle">{contentConfig.hero.subtitle}</p>
             <p className="hero-body">{contentConfig.hero.body}</p>
             <a href="#selected-stories" className="primary-action">
               {contentConfig.hero.primaryCta}
@@ -58,16 +60,11 @@ export default function Home() {
 
         <section id="what-we-notice" className="section-shell notice-section">
           <p className="section-label reveal">{contentConfig.whatWeNotice.label}</p>
-          <div className="notice-copy">
-            {contentConfig.whatWeNotice.copy.map((paragraph, index) => (
-              <p
-                key={paragraph}
-                className="reveal"
-                style={{ animationDelay: `${index * 90}ms` }}
-              >
-                {paragraph}
-              </p>
-            ))}
+          <div className="notice-copy reveal" style={{ animationDelay: "90ms" }}>
+            <h2 className={typographyConfig.tokens.sectionHeadline}>
+              {contentConfig.whatWeNotice.title}
+            </h2>
+            <p>{contentConfig.whatWeNotice.body}</p>
           </div>
         </section>
 
@@ -80,6 +77,9 @@ export default function Home() {
             >
               {contentConfig.selectedStories.title}
             </h2>
+            <p className="section-intro reveal" style={{ animationDelay: "140ms" }}>
+              {contentConfig.selectedStories.body}
+            </p>
           </div>
           <div className="story-card-grid">
             {selectedStoriesConfig.map((story, index) => (
@@ -98,6 +98,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="story-card-copy">
+                  <p className="story-eyebrow">{story.eyebrow}</p>
                   <h3>{story.title}</h3>
                   <p>{story.subtitle}</p>
                 </div>
@@ -110,8 +111,9 @@ export default function Home() {
           <div className="moments-intro reveal">
             <p className="section-label">{contentConfig.momentsBetween.label}</p>
             <h2 className={typographyConfig.tokens.sectionHeadline}>
-              {contentConfig.momentsBetween.copy}
+              {contentConfig.momentsBetween.title}
             </h2>
+            <p className="section-intro">{contentConfig.momentsBetween.body}</p>
           </div>
           <div className="moments-grid">
             {momentImagesConfig.map((image, index) => (
@@ -124,13 +126,17 @@ export default function Home() {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  sizes="(min-width: 900px) 30vw, 50vw"
+                  sizes={index === 1 || index === 4 ? "(min-width: 768px) 30vw, 100vw" : "(min-width: 768px) 30vw, 50vw"}
                   style={{ objectPosition: image.position }}
                 />
               </figure>
             ))}
           </div>
         </section>
+
+        <aside className="section-shell brand-bridge reveal" aria-label="LUMINA approach">
+          <p>{contentConfig.brandBridge.copy}</p>
+        </aside>
 
         <section id="behind-the-lens" className="section-shell behind-section">
           <figure className="behind-portrait reveal">
@@ -146,9 +152,13 @@ export default function Home() {
           <div className="behind-copy reveal" style={{ animationDelay: "120ms" }}>
             <p className="section-label">{contentConfig.behindTheLens.label}</p>
             <h2 className={typographyConfig.tokens.sectionHeadline}>
-              {contentConfig.behindTheLens.copy}
+              {contentConfig.behindTheLens.title}
             </h2>
-            <a href="#final-cta" className="text-action">
+            <p className="behind-body">{contentConfig.behindTheLens.body}</p>
+            <blockquote lang="th" className="thai-signature">
+              {contentConfig.behindTheLens.signature}
+            </blockquote>
+            <a href="#experience" className="text-action">
               {contentConfig.behindTheLens.button}
             </a>
           </div>
@@ -156,10 +166,16 @@ export default function Home() {
 
         <section id="kind-words" className="section-shell words-section">
           <p className="section-label reveal">{contentConfig.kindWords.label}</p>
-          <blockquote className="kind-quote reveal" style={{ animationDelay: "90ms" }}>
+          <h2 className={`reveal ${typographyConfig.tokens.sectionHeadline}`}>
+            {contentConfig.kindWords.title}
+          </h2>
+          <p className="section-intro reveal" style={{ animationDelay: "70ms" }}>
+            {contentConfig.kindWords.intro}
+          </p>
+          <blockquote lang="th" className="kind-quote reveal" style={{ animationDelay: "120ms" }}>
             {contentConfig.kindWords.quote}
           </blockquote>
-          <p className="quote-credit reveal" style={{ animationDelay: "160ms" }}>
+          <p className="quote-credit reveal" style={{ animationDelay: "180ms" }}>
             {contentConfig.kindWords.credit}
           </p>
         </section>
@@ -168,11 +184,10 @@ export default function Home() {
           <div className="experience-copy reveal">
             <p className="section-label">{contentConfig.experience.label}</p>
             <h2 className={typographyConfig.tokens.sectionHeadline}>
-              {contentConfig.experience.copy}
+              {contentConfig.experience.title}
             </h2>
-            <a href="#final-cta" className="text-action">
-              {contentConfig.experience.button}
-            </a>
+            <p className="section-intro">{contentConfig.experience.body}</p>
+            <p className="experience-supporting">{contentConfig.experience.supporting}</p>
           </div>
           <ol className="experience-list">
             {servicesConfig.map((item, index) => (
@@ -190,12 +205,19 @@ export default function Home() {
 
         <section id="final-cta" className="section-shell final-cta">
           <div className="final-cta-copy reveal">
+            <p className="section-label">{contentConfig.finalCta.label}</p>
             <h2 className={typographyConfig.tokens.contactHeadline}>
-              {contentConfig.finalCta.copy}
+              {contentConfig.finalCta.title}
             </h2>
-            <a href="https://line.me/ti/p/~expellirmud" className="primary-action linen-action">
-              {contentConfig.finalCta.button}
-            </a>
+            <p className="final-cta-body">{contentConfig.finalCta.body}</p>
+            <div className="final-cta-actions">
+              <a href={primaryContact.href} className="primary-action linen-action">
+                {contentConfig.finalCta.button}
+              </a>
+              <a href="#contact-details" className="text-action">
+                {contentConfig.finalCta.secondary}
+              </a>
+            </div>
           </div>
           <footer className="site-footer">
             <p className="flex items-baseline gap-1.5 font-serif text-3xl text-[var(--text)]">
@@ -204,7 +226,8 @@ export default function Home() {
                 {navigationConfig.logoSecondary}
               </span>
             </p>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-2 mb-4 text-[0.95rem]">
+            <p className="footer-statement">{contentConfig.footer.statement}</p>
+            <div id="contact-details" className="footer-contacts">
               {contactConfig.items.map((item) => (
                 <a 
                   key={item.label} 
@@ -220,7 +243,7 @@ export default function Home() {
             <p>
               {contentConfig.owner.name} / {contentConfig.owner.role}
             </p>
-            <p>{contentConfig.footer.text}</p>
+            <p>{contentConfig.footer.identity}</p>
           </footer>
         </section>
       </main>
