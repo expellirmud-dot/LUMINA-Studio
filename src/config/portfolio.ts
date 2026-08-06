@@ -70,10 +70,10 @@ export const selectedStoriesConfig = [
     title: "What holds us close",
     subtitle: "The affection that appears without being asked for.",
     image: {
-      src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
-      path: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
-      alt: "A family sharing an affectionate embrace during a celebration",
-      position: "58% 68%",
+      src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+      path: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+      alt: "A newlywed couple walking together after their ceremony",
+      position: "52% 55%",
     },
   },
   {
@@ -97,10 +97,10 @@ export const momentImagesConfig = [
     position: "54% 58%",
   },
   {
-    src: "/images/portfolio/2569-03-09/A M/PTO_5711.jpg",
-    path: "/images/portfolio/2569-03-09/A M/PTO_5711.jpg",
-    alt: "A carefully prepared ceremonial detail in soft warm light",
-    position: "50% 50%",
+    src: "/images/portfolio/lumina-harvest-v1/000002_detail_IMG_0637.webp",
+    path: "/images/portfolio/lumina-harvest-v1/000002_detail_IMG_0637.webp",
+    alt: "Ceremonial details arranged quietly before the day begins",
+    position: "52% 58%",
   },
   {
     src: "/images/portfolio/2569-03-09/A M/PTO_5779.jpg",
@@ -109,9 +109,9 @@ export const momentImagesConfig = [
     position: "52% 60%",
   },
   {
-    src: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
-    path: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
-    alt: "A relaxed bridal portrait with a cream bouquet and dark green ribbon",
+    src: "/images/portfolio/my/1693906229159.jpg",
+    path: "/images/portfolio/my/1693906229159.jpg",
+    alt: "A couple sharing a quiet close moment",
     position: "50% 48%",
   },
   {
