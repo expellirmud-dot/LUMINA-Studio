@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "capture:review": "node scripts/capture_review.js --target production --type full --viewport all",
+    "capture:hero": "node scripts/capture_review.js --target production --type hero --viewport all",
+    "capture:sections": "node scripts/capture_review.js --target production --type sections --viewport all",
+    "capture:video:desktop": "node scripts/capture_video.js --target production --viewport desktop",
+    "capture:video:mobile": "node scripts/capture_video.js --target production --viewport mobile"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -21,6 +26,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "playwright": "^1.61.1",
+    "puppeteer": "^23.11.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
