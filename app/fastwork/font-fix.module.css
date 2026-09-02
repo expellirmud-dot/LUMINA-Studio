@@ -1,0 +1,22 @@
+.typographyScope {
+  display: contents;
+}
+
+.typographyScope h1,
+.typographyScope h2,
+.typographyScope h3 {
+  font-family: var(--font-ibm-plex), var(--font-inter), sans-serif !important;
+  letter-spacing: -0.01em !important;
+}
+
+.typographyScope h1 {
+  line-height: 1.12 !important;
+}
+
+.typographyScope h2 {
+  line-height: 1.14 !important;
+}
+
+.typographyScope h3 {
+  line-height: 1.28 !important;
+}
