@@ -1,22 +1,33 @@
 .typographyScope {
   display: contents;
+  font-family: var(--font-inter), var(--font-fastwork-thai), sans-serif;
 }
 
 .typographyScope h1,
 .typographyScope h2,
 .typographyScope h3 {
-  font-family: var(--font-ibm-plex), var(--font-inter), sans-serif !important;
-  letter-spacing: -0.01em !important;
+  font-family: var(--font-fastwork-thai), var(--font-inter), sans-serif !important;
+  letter-spacing: -0.008em !important;
 }
 
 .typographyScope h1 {
   line-height: 1.12 !important;
+  font-weight: 500 !important;
 }
 
 .typographyScope h2 {
-  line-height: 1.14 !important;
+  line-height: 1.16 !important;
+  font-weight: 500 !important;
 }
 
 .typographyScope h3 {
-  line-height: 1.28 !important;
+  line-height: 1.3 !important;
+  font-weight: 500 !important;
+}
+
+.typographyScope nav a,
+.typographyScope button,
+.typographyScope [role="button"] {
+  font-family: var(--font-fastwork-thai), var(--font-inter), sans-serif;
+  letter-spacing: 0;
 }
