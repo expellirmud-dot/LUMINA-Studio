@@ -208,7 +208,11 @@ export default function Home() {
             </h2>
             <p className="final-cta-body">{contentConfig.finalCta.body}</p>
             <div className="final-cta-actions">
-              <a href={primaryContact.href} className="primary-action linen-action">
+              <a
+                href={primaryContact.href}
+                className="primary-action linen-action"
+                data-openai-ads-conversion="lead_created"
+              >
                 {contentConfig.finalCta.button}
               </a>
               <a href="#contact-details" className="text-action">
@@ -231,6 +235,11 @@ export default function Home() {
                   href={item.href} 
                   target={item.href.startsWith('http') ? "_blank" : undefined}
                   rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                  data-openai-ads-conversion={
+                    item.label === "Phone" || item.label === "LINE"
+                      ? "lead_created"
+                      : undefined
+                  }
                   className="hover:text-[var(--text)] transition-colors duration-300"
                 >
                   {item.label} {item.value}
