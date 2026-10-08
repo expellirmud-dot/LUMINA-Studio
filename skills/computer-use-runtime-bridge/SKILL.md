@@ -26,7 +26,7 @@ Active project: D:\lumina-studio
 Active Serena CodeGraph: D:\lumina-studio
 Computer Use runtime: D:\ai-tools\computer-use-preview
 Computer Use bridge skill: D:\lumina-studio\skills\computer-use-runtime-bridge
-Default working model: gemini-3-flash-preview
+Default working model: gemini-3.5-flash-lite
 ```
 
 Do not modify LUMINA website behavior unless browser-control integration is explicitly scoped.
@@ -61,19 +61,19 @@ Runtime CLI:
 
 `D:\ai-tools\computer-use-preview\main.py`
 
-Verified working model on this machine:
+Configured working model on this machine:
 
-`gemini-3-flash-preview`
+`gemini-3.5-flash-lite`
 
 Original repo default model that is blocked on the current free-tier key/project:
 
 `gemini-2.5-computer-use-preview-10-2025`
 
-Verified smoke test result:
+Smoke test command (re-run after model changes):
 
 ```text
 Command:
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3.5-flash-lite
 
 Result:
 The heading shown on example.com is "Example Domain".
@@ -86,7 +86,7 @@ For local tests, prefer:
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3.5-flash-lite
 ```
 
 Avoid Google search as a first test because it can trigger CAPTCHA.

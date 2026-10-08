@@ -21,7 +21,7 @@ COMPUTER_USE_PYTHON = COMPUTER_USE_DIR / ".venv" / "Scripts" / "python.exe"
 async def run_computer_use(
     query: str,
     *,
-    model: str = "gemini-3-flash-preview",
+    model: str = "gemini-3.5-flash-lite",
     env_name: str = "playwright",
     initial_url: str | None = None,
 ) -> dict:
@@ -71,7 +71,7 @@ async def run_computer_use(
 ## Integration rules
 
 - Keep model configurable.
-- Default to `gemini-3-flash-preview`.
+- Default to `gemini-3.5-flash-lite`.
 - Keep the runtime path configurable if possible.
 - Do not hardcode API keys.
 - Do not print full environment variables.

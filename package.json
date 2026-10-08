@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "eslint app src scripts",
     "capture:review": "node scripts/capture_review.js --target production --type full --viewport all",
     "capture:hero": "node scripts/capture_review.js --target production --type hero --viewport all",
     "capture:sections": "node scripts/capture_review.js --target production --type sections --viewport all",

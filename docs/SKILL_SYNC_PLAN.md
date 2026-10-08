@@ -48,3 +48,17 @@ The sync script must implement the following safety mechanisms:
     *   The script must **never** delete unknown or app-specific files/folders under the target mirrors without explicit owner approval.
 5.  **Corrupted Nested Folder Removal**:
     *   Upon execution, the script should specifically locate and purge the corrupted recursively nested `.gemini/skills/skills/` folders.
+
+---
+
+## 4. `.agent` Curated Runtime Profile (Owner-approved 2026-10-08)
+
+`.agent/skills/` is a curated agent runtime set rather than a byte-for-byte full mirror.
+
+Rules:
+- Shared skill content is still edited in root `skills/` first.
+- `gridgeist` is an approved `.agent` design skill and now also exists in root `skills/`.
+- Do not recreate same-name nested directories inside a skill folder.
+- Exclude these root skills from `.agent/skills/`: `docx`, `pdf`, `pptx`, `xlsx`, `entra-agent-id`, `entra-app-registration`.
+- A future sync script must preserve this exclusion list instead of restoring the excluded folders.
+- `.opencode/skills/` and `.gemini/skills/` are not changed by this exception unless separately approved.

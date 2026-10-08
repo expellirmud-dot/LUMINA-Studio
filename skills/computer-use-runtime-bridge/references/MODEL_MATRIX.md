@@ -3,12 +3,12 @@
 ## Default local model
 
 ```text
-gemini-3-flash-preview
+gemini-3.5-flash-lite
 ```
 
 Use this by default on this machine.
 
-It has been verified locally with:
+Validation target for this configured model:
 
 ```text
 Environment: playwright
@@ -41,7 +41,7 @@ Do not reinstall Python, Playwright, or the repository just because of this erro
 Use this order:
 
 ```text
-1. gemini-3-flash-preview
+1. gemini-3.5-flash-lite
 2. gemini-2.5-computer-use-preview-10-2025 only when quota/billing is available
 3. Other Gemini preview/pro models only as explicitly scoped experiments
 ```
@@ -74,7 +74,7 @@ If a model cannot produce the tool/action structure expected by the runtime, the
 For routine local testing:
 
 ```powershell
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3.5-flash-lite
 ```
 
 For original Computer Use Preview testing:

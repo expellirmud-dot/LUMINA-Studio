@@ -91,33 +91,33 @@ export const selectedStoriesConfig = [
 
 export const momentImagesConfig = [
   {
+    src: "/images/portfolio/phra-louis-v1/PTO-13.jpg",
+    path: "/images/portfolio/phra-louis-v1/PTO-13.jpg",
+    alt: "Ceremonial offerings prepared before an ordination ritual",
+    position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/phra-louis-v1/PTO-101.jpg",
+    path: "/images/portfolio/phra-louis-v1/PTO-101.jpg",
+    alt: "Family members taking part in the hair-cutting ritual before ordination",
+    position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
+    path: "/images/portfolio/phra-louis-v1/PTO-250.jpg",
+    alt: "A ceremonial offering being shared with elders during an ordination",
+    position: "52% 52%",
+  },
+  {
     src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
     path: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-    alt: "A quiet emotional gesture shared during an ordination ceremony",
+    alt: "A quiet water-blessing gesture shared with family during ordination",
     position: "54% 58%",
   },
   {
-    src: "/images/portfolio/lumina-harvest-v1/000002_detail_IMG_0637.webp",
-    path: "/images/portfolio/lumina-harvest-v1/000002_detail_IMG_0637.webp",
-    alt: "Ceremonial details arranged quietly before the day begins",
-    position: "52% 58%",
-  },
-  {
-    src: "/images/portfolio/2569-03-09/A M/PTO_5779.jpg",
-    path: "/images/portfolio/2569-03-09/A M/PTO_5779.jpg",
-    alt: "A smiling participant surrounded by family during a lively ceremony",
-    position: "52% 60%",
-  },
-  {
-    src: "/images/portfolio/my/1693906229159.jpg",
-    path: "/images/portfolio/my/1693906229159.jpg",
-    alt: "A couple sharing a quiet close moment",
-    position: "50% 48%",
-  },
-  {
-    src: "/images/portfolio/2569-03-09/A M/PTO_5723.jpg",
-    path: "/images/portfolio/2569-03-09/A M/PTO_5723.jpg",
-    alt: "Family members walking together with a ceremonial offering",
-    position: "58% 70%",
+    src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+    path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+    alt: "A quiet portrait of the ordinand near the temple doorway",
+    position: "50% 42%",
   },
 ];

@@ -1,6 +1,6 @@
 param(
     [string]$RuntimePath = "D:\ai-tools\computer-use-preview",
-    [string]$Model = "gemini-3-flash-preview",
+    [string]$Model = "gemini-3.5-flash-lite",
     [string]$Query = "Open example.com and tell me what heading is shown on the page"
 )
 

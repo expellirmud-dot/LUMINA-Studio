@@ -9,7 +9,7 @@ Active project: D:\lumina-studio
 Active Serena CodeGraph: D:\lumina-studio
 Computer Use runtime: D:\ai-tools\computer-use-preview
 Computer Use bridge skill: D:\lumina-studio\skills\computer-use-runtime-bridge
-Default working model: gemini-3-flash-preview
+Default working model: gemini-3.5-flash-lite
 ```
 
 ## Goal
@@ -21,7 +21,7 @@ Use the existing local `computer-use-preview` runtime through its own virtual en
 - Do not move the runtime repo into `.ai\skills`.
 - Do not expose `.env` or API keys.
 - Do not modify STT runtime behavior unless explicitly scoped.
-- Prefer `gemini-3-flash-preview` for local tests.
+- Prefer `gemini-3.5-flash-lite` for local tests.
 - Use `gemini-2.5-computer-use-preview-10-2025` only when quota/billing is available.
 - Do not bypass CAPTCHA.
 - Do not automate final submission on high-risk systems.
@@ -32,7 +32,7 @@ Use the existing local `computer-use-preview` runtime through its own virtual en
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3.5-flash-lite
 ```
 
 ## Expected result

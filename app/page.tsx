@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MiniAlbum } from "../src/components/MiniAlbum";
 import { heroImage, profileImage } from "../src/config/images";
 import { typographyConfig } from "../src/config/typography";
 import { visualConfig } from "../src/config/visual";
@@ -112,23 +113,7 @@ export default function Home() {
             </h2>
             <p className="section-intro">{contentConfig.momentsBetween.body}</p>
           </div>
-          <div className="moments-grid">
-            {momentImagesConfig.map((image, index) => (
-              <figure
-                key={image.path}
-                className="moment-frame reveal"
-                style={{ animationDelay: `${index * 80}ms` }}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  sizes={index === 1 || index === 4 ? "(min-width: 768px) 30vw, 100vw" : "(min-width: 768px) 30vw, 50vw"}
-                  style={{ objectPosition: image.position }}
-                />
-              </figure>
-            ))}
-          </div>
+          <MiniAlbum images={momentImagesConfig} />
         </section>
 
         <aside className="section-shell brand-bridge reveal" aria-label="LUMINA approach">

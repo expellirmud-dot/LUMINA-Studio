@@ -114,7 +114,7 @@ Action:
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3.5-flash-lite
 ```
 
 Do not reinstall the repo, dependencies, or Playwright for this error.
@@ -186,6 +186,6 @@ Follow this order:
 3. Confirm .env exists without printing secrets.
 4. Clear conflicting Vertex variables if using GEMINI_API_KEY.
 5. Install Playwright Chromium.
-6. Run gemini-3-flash-preview smoke test against example.com.
+6. Run gemini-3.5-flash-lite smoke test against example.com.
 7. Only then consider source-code changes.
 ```

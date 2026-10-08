@@ -104,7 +104,7 @@ Set-Location D:\ai-tools\computer-use-preview
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env playwright --model gemini-3.5-flash-lite
 ```
 
 Expected final answer:
@@ -118,7 +118,7 @@ The heading shown on example.com is "Example Domain".
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Describe the visible UI layout of this website" --env playwright --model gemini-3-flash-preview --initial_url "https://example.com"
+.\.venv\Scripts\python.exe main.py --query "Describe the visible UI layout of this website" --env playwright --model gemini-3.5-flash-lite --initial_url "https://example.com"
 ```
 
 ## Mouse-highlight debugging
@@ -126,7 +126,7 @@ Set-Location D:\ai-tools\computer-use-preview
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Open example.com and identify the main heading" --env playwright --model gemini-3-flash-preview --highlight_mouse
+.\.venv\Scripts\python.exe main.py --query "Open example.com and identify the main heading" --env playwright --model gemini-3.5-flash-lite --highlight_mouse
 ```
 
 ## Original Computer Use Preview model
@@ -154,7 +154,7 @@ Run:
 ```powershell
 Set-Location D:\ai-tools\computer-use-preview
 
-.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env browserbase --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "Open example.com and tell me what heading is shown on the page" --env browserbase --model gemini-3.5-flash-lite
 ```
 
 Use Browserbase when local Playwright cannot capture or operate UI reliably, especially native dropdowns.

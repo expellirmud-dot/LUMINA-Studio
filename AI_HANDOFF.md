@@ -1,3 +1,23 @@
+# CURRENT HANDOFF — 2026-10-08
+
+**Current Active Task:** TASK-034 — Full Project Audit and Release Gate
+**Current Decision:** APPROVED_WITH_NOTES_FOR_COMMIT_PUSH / NOT APPROVED FOR NEW PRODUCTION DEPLOY
+
+Latest completed/ready work:
+- TASK-032: Moments Between mini-album prototype validated on desktop/mobile, keyboard, reduced-motion, build and scoped lint.
+- TASK-033: `.agent/skills` curated cleanup; duplicate nesting removed, Gridgeist promoted to root source, computer-use bridge configured for `gemini-3.5-flash-lite`.
+- TASK-034: Full audit completed. `npm run lint` scope corrected to `app src scripts`; lint/build/diff-check pass.
+
+Immediate P0 next action:
+- TASK-035: upgrade `next` + `eslint-config-next` 16.2.6 → 16.4.0 and rerun production dependency audit + browser regression before intentional deploy.
+
+Important unresolved source state:
+- `.serena/project.yml` is locally modified by Serena and is not part of the approved commit.
+- `app/fastwork/` and `src/config/fastwork.ts` remain untracked and are excluded until production/local Fastwork source is reconciled.
+
+Authoritative audit: `.tasks/TASK-034/reports/full-audit.md`.
+
+---
 # AI HANDOFF
 
 ## Project

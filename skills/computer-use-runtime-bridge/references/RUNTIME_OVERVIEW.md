@@ -39,7 +39,7 @@ browserbase
 ## Main CLI pattern
 
 ```powershell
-.\.venv\Scripts\python.exe main.py --query "<natural-language browser task>" --env playwright --model gemini-3-flash-preview
+.\.venv\Scripts\python.exe main.py --query "<natural-language browser task>" --env playwright --model gemini-3.5-flash-lite
 ```
 
 ## Important CLI arguments
@@ -63,13 +63,13 @@ BROWSERBASE_API_KEY        Required only for Browserbase mode.
 BROWSERBASE_PROJECT_ID     Required only for Browserbase mode.
 ```
 
-## Current verified local behavior
+## Current configured local behavior
 
-The local runtime has been verified with:
+The current validation target is:
 
 ```text
 Environment: playwright
-Model: gemini-3-flash-preview
+Model: gemini-3.5-flash-lite
 Test page: example.com
 Final answer: The heading shown on example.com is "Example Domain".
 ```

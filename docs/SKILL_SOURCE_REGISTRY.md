@@ -8,8 +8,8 @@ This registry catalogues all project-local and app-specific agent skills detecte
 
 We audited five folders in the workspace:
 
-*   **`skills/`**: 47 skills (Clean, flat layout. Primary project source of truth).
-*   **`.agent/skills/`**: 45 skills (Clean, flat layout. Mirror of primary skills).
+*   **`skills/`**: 48 skills (Clean, flat layout. Primary project source of truth).
+*   **`.agent/skills/`**: 39 skills (Clean, flat layout. Curated agent runtime mirror; office/Entra-only skills intentionally excluded).
 *   **`.opencode/skills/`**: 45 skills (Clean, flat layout. Mirror of primary skills).
 *   **`.gemini/skills/`**: 44 skills + 1 corrupted subfolder `skills/` containing nested structures.
     *   *Nesting Bug*: `.gemini/skills/skills/` contains 17 nested skills, which in turn holds a `.gemini/skills/skills/skills/` directory with 16 nested folders. This represents a corrupted copy-paste recursive loop.
@@ -22,6 +22,19 @@ We audited five folders in the workspace:
 The table below maps all 45 primary skills found in the project root `skills/` and details their active status across all mirror locations.
 
 ### Primary Rule
+### `.agent` Curated Runtime Exception (2026-10-08)
+
+`.agent/skills/` is intentionally smaller than the root source registry. The following source skills remain available under `skills/` but are excluded from the `.agent` runtime set because they are not needed for normal LUMINA web implementation:
+
+- `docx`
+- `pdf`
+- `pptx`
+- `xlsx`
+- `entra-agent-id`
+- `entra-app-registration`
+
+Same-name recursive folders such as `.agent/skills/frontend-react-governance/frontend-react-governance/` are invalid duplicates and should not be regenerated.
+
 Root `skills/` is **always** the primary source of truth. All others are mirrors or app adapters.
 
 | Skill Name | Path | Duplicated In | Status / Action |
@@ -49,6 +62,7 @@ Root `skills/` is **always** the primary source of truth. All others are mirrors
 | `find-skills` | `skills/find-skills/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `frontend-design` | `skills/frontend-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `frontend-react-governance` | `skills/frontend-react-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
+| `gridgeist` | `skills/gridgeist/` | `.agent/` | `KEEP_AS_SOURCE` / Curated design skill for grid/editorial UI review and redesign |
 | `frontend-visual-design` | `skills/frontend-visual-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `governance-platform-domain` | `skills/governance-platform-domain/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
 | `impeccable` | `skills/impeccable/` | `.agent/`, `.opencode/` | `KEEP_AS_SOURCE` / **Missing in `.gemini/`** |

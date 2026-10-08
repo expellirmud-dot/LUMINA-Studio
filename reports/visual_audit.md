@@ -1,3 +1,15 @@
+# LATEST VISUAL UPDATE — TASK-032 (2026-10-08)
+
+- `Moments Between` now contains one bounded mini-album interaction: one quiet stacked-photo point reveals a five-frame ordination sequence.
+- Uses one real event/story rather than a mixed gallery.
+- Desktop 1440×900 and mobile 390×844 runtime QA passed.
+- Broken album images: 0; page horizontal overflow: 0; console/page errors: 0.
+- Keyboard toggle and reduced-motion behavior passed.
+- Direction remains Human Documentary / photography-first; no new dependency, Hero redesign, WebGL, or effect-showcase pattern.
+
+Decision: APPROVED_WITH_NOTES. The interaction is suitable as the first reusable LUMINA mini-album pattern; do not multiply interaction types until a second bounded experiment is reviewed.
+
+---
 # VISUAL AUDIT
 
 *Note: The `.tasks/<TASK-ID>/reports/` directory remains the authoritative source of truth per task. These rolling reports summarize recent highlights.*
