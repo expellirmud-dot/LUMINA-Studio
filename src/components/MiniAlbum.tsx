@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useId, useState } from "react";
+import { useId, useRef, useState } from "react";
 
 type MiniAlbumImage = {
   src: string;
@@ -16,17 +16,28 @@ type MiniAlbumProps = {
 
 export function MiniAlbum({ images }: MiniAlbumProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
   const previewOrder = [3, 2, 4];
   const previewImages = previewOrder
     .map((index) => images[index])
     .filter((image): image is MiniAlbumImage => Boolean(image));
 
+  function closeWithEscape(event: React.KeyboardEvent<HTMLElement>) {
+    if (isOpen && event.key === "Escape") {
+      event.preventDefault();
+      setIsOpen(false);
+      toggleRef.current?.focus();
+    }
+  }
+
   return (
     <div className={`mini-album${isOpen ? " is-open" : ""}`}>
       <button
+        ref={toggleRef}
         type="button"
         className="mini-album-toggle"
+        onKeyDown={closeWithEscape}
         onClick={() => setIsOpen((current) => !current)}
         aria-expanded={isOpen}
         aria-controls={panelId}
@@ -64,7 +75,13 @@ export function MiniAlbum({ images }: MiniAlbumProps) {
         aria-hidden={!isOpen}
       >
         <div className="mini-album-panel-inner">
-          <div className="mini-album-rail" role="list">
+          <div
+            className="mini-album-rail"
+            role="list"
+            aria-label="Album photographs"
+            tabIndex={isOpen ? 0 : -1}
+            onKeyDown={closeWithEscape}
+          >
             {images.map((image, index) => (
               <figure
                 className={`mini-album-item mini-album-item-${index + 1}`}
