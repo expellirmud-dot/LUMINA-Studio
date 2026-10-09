@@ -3,7 +3,7 @@
 Date: 2026-10-09
 Candidate: task/TASK-039-mini-album-keyboard-20261009
 Base: origin/main@fc24fec41c28abc5c534dc5267942d5039cec009
-Status: CURRENT_CANDIDATE_VALIDATED_PENDING_RELEASE
+Status: VERIFIED_MERGED_AND_DEPLOYED_2026-10-09
 
 ## Why the change is justified
 
@@ -28,11 +28,11 @@ Bounded current HEAD baseline was reproduced by Puppeteer at 1440x900 and 390x84
 - Album 5 image frames intact, reduced-motion transition duration 0s, Image Focus 3 triggers intact, no overflow, broken images, page/console/request errors.
 - A first QA screenshot on mobile was captured during scroll and showed Selected Stories; settled-scroll rerun proved rail in viewport and showed it in final desktop/mobile screenshots. No app code change was required for this QA capture artifact.
 
-## Remaining gates
+## Completed release gates
 
-- Existing TASK-035 full Home/Fastwork browser regression and TASK-038 photo focus regression must pass.
-- Inspect staged diff, commit, push, GitHub check and PR merge with verified SHA.
-- Verify Vercel production, preserve ignored runtime evidence in main project, reconcile canonical status/handoff and clean worktrees.
+- TASK-035 full Home/Fastwork browser regression 4/4 PASS and TASK-038 photo focus regression desktop/mobile PASS.
+- Scoped staged diff check, commit, push, GitHub PR #9 checks and squash merge PASS.
+- Vercel production READY on exact merge SHA, production Home/Fastwork HTTP 200, unique QA evidence SHA-256 verified and implementation worktree removed cleanly. Canonical release records reconciled in follow-up documentation PR.
 
 ## Regression suite on current candidate
 
@@ -48,3 +48,13 @@ Bounded current HEAD baseline was reproduced by Puppeteer at 1440x900 and 390x84
 - Local archive `D:\lumina-studio\.runtime-captures\lumina\TASK-039-fullpage-regression-20261009` — full-page Home/Fastwork smoke evidence, 5 files.
 - Local archive `D:\lumina-studio\.runtime-captures\lumina\TASK-039-imagefocus-regression-20261009` — Image Focus regression evidence, 3 files.
 - SHA256 verified 14/14 copied files using Remote Desktop Commander after IE Coder temporarily rate-limited. No Source-of-Truth code or Owner file was overwritten.
+
+## Verified external receipts (2026-10-09)
+
+- PR #9: https://github.com/expellirmud-dot/LUMINA-Studio/pull/9 (GitHub merged = true; squash SHA `e1552631e2c02915ba45969223203671a17b31d4`).
+- Vercel deployment `dpl_DGZm16JQKwSjgMhz2iYWfXY9X4Eb`: production READY for exact SHA.
+- Production `https://lumina-studio-iota-ten.vercel.app/` and `/fastwork`: HTTP 200; Mini Album present on Home only.
+- Source candidate commit `262a90f691576c2619e081d36d2b978b0ca698b5` included exactly 6 scoped files; no protected changes.
+- Stale temporary Next.js server 3012 stopped, and no listener remains.
+- Clean implementation worktree `D:\lumina-studio_worktrees\task039-mini-album-keyboard-20261009` removed using `git worktree remove` after verifying it clean, without remaining related processes.
+- Follow-up documentation PR records closure separately; don't repeat a production deployment already confirmed READY.
