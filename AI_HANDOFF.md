@@ -1,4 +1,18 @@
-# CURRENT HANDOFF — 2026-10-09 (TASK-037)
+# CURRENT HANDOFF — 2026-10-09 (TASK-038)
+
+**Current Active Task:** NONE — TASK-038 completed.
+**Decision:** MERGED_AND_DEPLOYED; verified GitHub PR #7 and Vercel production `cc5b009`.
+**Canonical report:** `.tasks/TASK-038/reports/final-report.md`
+
+- Selected Stories now supports an accessible photo-focus dialog with Escape, close button, focus return and loaded-image handling.
+- Browser QA desktop/mobile and /fastwork regression PASS; current candidate lint/build/TypeScript PASS and production audit 0 vulnerabilities.
+- Original local main remains dirty with unrelated Owner/provenance data; do not reset or clean it blindly.
+- Ignored QA captures archived at `D:\lumina-studio\.runtime-captures\lumina\TASK-038-release-20261009` and `TASK-038-page-smoke-20261009`.
+- No 21st.dev MCP registration or API credits required for this bounded improvement.
+
+---
+
+# HISTORICAL HANDOFF — 2026-10-09 (TASK-037)
 
 **Current Active Task:** NONE — TASK-035, TASK-036 and TASK-037 have been released.
 **Decision:** TASK-037 MERGED_AND_DEPLOYED; production verified 2026-10-09.
