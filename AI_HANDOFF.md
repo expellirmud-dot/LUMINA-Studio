@@ -1,4 +1,19 @@
-# CURRENT HANDOFF — 2026-10-09 (TASK-038)
+# CURRENT HANDOFF — 2026-10-09 (TASK-039)
+
+**Current Active Task:** NONE — TASK-039 implementation and production released.
+**Decision:** VERIFIED_MERGED_AND_DEPLOYED; GitHub PR #9 squash `e1552631e2c02915ba45969223203671a17b31d4`.
+**Canonical report:** `.tasks/TASK-039/reports/final-report.md`
+
+- Mini Album keyboard handling now includes Escape from toggle or open rail, focus restoration, Tab reachability and ArrowRight horizontal navigation.
+- Desktop/mobile keyboard QA and 4/4 Home/Fastwork regression PASS; prior TASK-038 Image Focus remains PASS.
+- Next.js lint/build/TypeScript PASS; production security audit 0 vulnerabilities.
+- Vercel production deployment `dpl_DGZm16JQKwSjgMhz2iYWfXY9X4Eb` READY; Home and Fastwork HTTP 200.
+- Ignored QA evidence preserved at `D:\lumina-studio\.runtime-captures\lumina\TASK-039-*-20261009`, 14 SHA-256 verified files.
+- Original mixed/dirty local main and old dirty TASK-035 worktree intentionally preserved. No new package or 21st.dev MCP registration.
+
+---
+
+# HISTORICAL HANDOFF — 2026-10-09 (TASK-038)
 
 **Current Active Task:** NONE — TASK-038 completed.
 **Decision:** MERGED_AND_DEPLOYED; verified GitHub PR #7 and Vercel production `cc5b009`.

@@ -1,4 +1,15 @@
-# LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-038)
+# LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-039)
+
+- TASK-039: Mini Album keyboard accessibility shipped without new dependencies.
+- PR #9 squash merged: `e1552631e2c02915ba45969223203671a17b31d4`; Vercel production `dpl_DGZm16JQKwSjgMhz2iYWfXY9X4Eb` READY.
+- Desktop/mobile keyboard tests passed for Escape, Tab, ArrowRight and returning focus. Existing Home/Fastwork and Image Focus regression suites PASS.
+- QA baseline proved the prior limitation; 14 captured evidence files preserved outside disposable worktrees and verified by SHA-256.
+- No changes to Hero, protected Fastwork route, portfolio images, Next.js dependencies or page structure.
+- Canonical task record: `.tasks/TASK-039/reports/final-report.md`.
+
+---
+
+# HISTORICAL IMPLEMENTATION UPDATE — 2026-10-09 (TASK-038)
 
 - Accessible photo-focus for Selected Stories deployed, inspired by 21st.dev image component concept with original dependency-free implementation.
 - PR #7 `cc5b009a5a274bfd000bf77508a1c50a43ca5721` verified merged to GitHub main.
