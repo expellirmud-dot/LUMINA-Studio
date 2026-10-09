@@ -1,7 +1,7 @@
 # CURRENT HANDOFF — 2026-10-09 (TASK-037)
 
-**Current Active Task:** TASK-037 — Homepage Interaction Story Map
-**Decision:** APPROVED_WITH_NOTE / READY_FOR_OWNER_REVIEW
+**Current Active Task:** NONE — TASK-035, TASK-036 and TASK-037 have been released.
+**Decision:** TASK-037 MERGED_AND_DEPLOYED; production verified 2026-10-09.
 **Authoritative report:** `.tasks/TASK-037/reports/final-report.md`
 
 - Final lint/build/TypeScript validation: PASS on the current candidate.
@@ -9,8 +9,8 @@
 - No overflow, broken images, console/page errors, or mobile anchor obstruction.
 - MiniAlbum opens 5 frames and closes via disclosure toggle; Escape-close is optional polish, not a blocker.
 - CodeGraph is up to date at 200 files / 3,402 nodes / 8,610 edges.
-- Working tree remains mixed/dirty from separate tasks; TASK-037 is scoped and uncommitted.
-- No commit, push, deploy, or external effect performed.
+- TASK-036 merged in PR #4 (`112d7de`) and TASK-037 merged in PR #5 (`f6157a4`); Vercel production for TASK-037 is READY.
+- Canonical local `main` retains unrelated pre-existing dirty files; do not reset or stage these without task-specific reconciliation.
 
 ---
 

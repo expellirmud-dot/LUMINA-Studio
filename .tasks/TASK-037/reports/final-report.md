@@ -82,3 +82,11 @@ No commit, push, production deploy, domain/account change, or external effect wa
 - Scope: only task-owned app/page, app/globals.css, src/config content/portfolio, ExperienceSequence component, task packet and related handoff/reports. No protected Fastwork/Serena/security changes.
 - Existing optional Mini Album Escape behavior note remains non-blocking as an inline disclosure.
 - Standing Owner delegation 2026-10-09 authorized completion of commit, PR, merge and deployment subject to external verification.
+
+## Verified release and cleanup (2026-10-09)
+
+- PR #5: https://github.com/expellirmud-dot/LUMINA-Studio/pull/5 — VERIFIED merged to `main` (squash SHA `f6157a440d2f42e0e8225de5a1391bab3b6b2e11`).
+- Vercel production deployment `dpl_HYb9YayAidD5mLY2KNnF2CJtEueT`: READY, exact SHA `f6157a4`; production `/` and `/fastwork` both HTTP 200, homepage Experience marker present.
+- Runtime QA evidence (5 files) preserved in `D:\lumina-studio\.runtime-captures\lumina\TASK-037-postmerge-20261009` before clean worktree removal.
+- Local `D:\lumina-studio_worktrees\task037-home-interaction-20261009` removed with `git worktree remove`; verified 0 dirty/untracked files and no active related processes.
+- Pre-existing dirty main and dirty TASK-035 release worktree retained without reset or forced deletion.

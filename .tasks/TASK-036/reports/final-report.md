@@ -125,3 +125,10 @@ If approved, commit TASK-036 with explicit paths only; do not use `git add .` wh
 - `npm ci --no-audit --no-fund`: PASS; `npm run build` and TypeScript: PASS, `/` and `/fastwork` routes generated; `npm run lint`: PASS.
 - Skill files migrated from pre-existing project source; no unrelated Fastwork, Serena working-state, or TASK-037 implementation staged.
 - Standing Owner delegation (2026-10-09) supersedes the earlier task packet's owner-review-only release stop. Verify GitHub merge and deployment receipts separately.
+
+## Verified release and cleanup (2026-10-09)
+
+- PR #4: https://github.com/expellirmud-dot/LUMINA-Studio/pull/4 — VERIFIED merged to `main` (squash SHA `112d7de002bff64456971f693ca20f81ee43e4bf`).
+- Vercel production deployment on that SHA: READY (superseded by TASK-037).
+- Local clean task worktree `D:\lumina-studio_worktrees\task036-skill-consolidation-20261009` removed using `git worktree remove` after verifying 0 dirty/untracked files and no active processes.
+- Local original mixed/dirty `D:\lumina-studio` and older TASK-035 worktree preserved.
