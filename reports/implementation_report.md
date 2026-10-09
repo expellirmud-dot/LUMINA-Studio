@@ -1,6 +1,6 @@
 # LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-037)
 
-- Homepage Interaction Story Map candidate is implementation-complete and READY_FOR_OWNER_REVIEW.
+- Homepage Interaction Story Map is MERGED_AND_DEPLOYED, PR #5 / `f6157a4`; current-candidate release gates passed 2026-10-09.
 - Selected Stories now uses an editorial threshold with inline stills and asymmetric story layout.
 - Experience links four process steps to one changing documentary still; future micro-cinematic slots are reserved without video/audio.
 - Final lint/build/TypeScript, scoped diff-check, exact desktop/mobile runtime, overflow, broken-image, CTA-anchor, reduced-motion, and interaction checks pass.
