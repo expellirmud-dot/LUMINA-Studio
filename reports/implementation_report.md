@@ -1,4 +1,14 @@
-# LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-037)
+# LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-038)
+
+- Accessible photo-focus for Selected Stories deployed, inspired by 21st.dev image component concept with original dependency-free implementation.
+- PR #7 `cc5b009a5a274bfd000bf77508a1c50a43ca5721` verified merged to GitHub main.
+- Vercel production deployment `dpl_3AP4gncjWPXmRB1nMH61reYQ6JzZ` READY; production Home and Fastwork HTTP 200.
+- Three images open and close by mouse, touch and Escape; focus returns. Desktop/mobile full-image visual QA corrected loading frame and empty-space defects.
+- Full QA details: `.tasks/TASK-038/reports/final-report.md`; no protected Fastwork, Hero or dependencies changed.
+
+---
+
+# HISTORICAL IMPLEMENTATION UPDATE — 2026-10-09 (TASK-037)
 
 - Homepage Interaction Story Map is MERGED_AND_DEPLOYED, PR #5 / `f6157a4`; current-candidate release gates passed 2026-10-09.
 - Selected Stories now uses an editorial threshold with inline stills and asymmetric story layout.
