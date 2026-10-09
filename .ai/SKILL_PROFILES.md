@@ -145,3 +145,24 @@ alternative_concepts: true
 implement_unapproved_proposals: false
 production_code: false
 
+
+
+---
+
+## thai-language-and-ux-writing
+
+Purpose:
+Interpret Thai intent and produce natural, context-appropriate Thai for owner communication, client-facing text, documentation, and UI/UX copy without changing facts or creating unauthorized commitments.
+
+Recommended settings:
+
+temperature: 0.2
+top_p: 0.6
+
+Permissions:
+
+propose_improvements: true
+implement_unapproved_proposals: false
+self_refactor: false
+scope_expansion: false
+strict_execution: true

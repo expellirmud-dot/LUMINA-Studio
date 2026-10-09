@@ -1,100 +1,99 @@
 # LUMINA Skill Source Registry
 
-This registry catalogues all project-local and app-specific agent skills detected in `D:\lumina-studio`. It defines the authoritative source of truth for each skill and flags duplicated or corrupted folders for future synchronization and clean-up.
+Updated: 2026-10-08
+Owner decision: consolidate all project-local skills into one physical directory.
 
----
+## Canonical Skill Root
 
-## 1. Skill Folder Status Overview
+`D:\lumina-studio\.agents\skills\`
 
-We audited five folders in the workspace:
+This directory is the **single physical source of truth** for LUMINA project skills.
 
-*   **`skills/`**: 48 skills (Clean, flat layout. Primary project source of truth).
-*   **`.agent/skills/`**: 39 skills (Clean, flat layout. Curated agent runtime mirror; office/Entra-only skills intentionally excluded).
-*   **`.opencode/skills/`**: 45 skills (Clean, flat layout. Mirror of primary skills).
-*   **`.gemini/skills/`**: 44 skills + 1 corrupted subfolder `skills/` containing nested structures.
-    *   *Nesting Bug*: `.gemini/skills/skills/` contains 17 nested skills, which in turn holds a `.gemini/skills/skills/skills/` directory with 16 nested folders. This represents a corrupted copy-paste recursive loop.
-*   **`.ai/skills/`**: Does not exist (0 folders).
+Rules:
+- Add, edit, review, and remove project skills only under `.agents/skills/`.
+- Do not recreate duplicate physical skill trees under root `skills/`, `.agent/skills/`, `.gemini/skills/`, or `.opencode/skills/`.
+- Tool-specific folders such as `.gemini/` and `.opencode/` may still contain configuration, but not duplicate project skill content.
+- Every top-level skill directory should expose `SKILL.md` with exact casing.
+- Same-name recursive nesting such as `skill-name/skill-name/` is invalid.
+- Historical backups and task reports may contain old paths; they are evidence only and do not override this registry.
 
----
+## Current Inventory
 
-## 2. Registry Directory Map
+Total active skill directories: **49**
 
-The table below maps all 45 primary skills found in the project root `skills/` and details their active status across all mirror locations.
-
-### Primary Rule
-### `.agent` Curated Runtime Exception (2026-10-08)
-
-`.agent/skills/` is intentionally smaller than the root source registry. The following source skills remain available under `skills/` but are excluded from the `.agent` runtime set because they are not needed for normal LUMINA web implementation:
-
+- `agent-browser`
+- `agent-run-governance`
+- `canvas-design`
+- `certification-governance`
+- `code-analysis-ocumentation-agent`
+- `computer-use-runtime-bridge`
 - `docx`
-- `pdf`
-- `pptx`
-- `xlsx`
 - `entra-agent-id`
 - `entra-app-registration`
+- `escalation-governance`
+- `find-skills`
+- `frontend-design`
+- `frontend-react-governance`
+- `frontend-visual-design`
+- `governance-platform-domain`
+- `gridgeist`
+- `impeccable`
+- `impeccable-project-workflow`
+- `implementation-governance`
+- `interaction-design`
+- `LUMINA_ART_DIRECTION`
+- `LUMINA_BOOTSTRAP`
+- `LUMINA_CONFIG_CHANGE`
+- `LUMINA_DEPLOYMENT`
+- `LUMINA_Frontend-Visual-Design`
+- `LUMINA_PHOTO_SELECTION`
+- `LUMINA_REPORTING`
+- `LUMINA_REVIEW_CHECKLIST`
+- `LUMINA_STARTUP`
+- `LUMINA_VISUAL_REVIEW`
+- `mcp-connector-governance`
+- `microsoft-foundry`
+- `pdf`
+- `pptx`
+- `react-polling-review`
+- `read-first-governance`
+- `repo-cleanliness-governance`
+- `responsive-design`
+- `review-gate-governance`
+- `runtime-console-domain`
+- `serena-repo-intelligence`
+- `skill-creator`
+- `tailwind-design-system`
+- `task-state-governance`
+- `thai-language-and-ux-writing`
+- `webapp-testing`
+- `web-artifacts-builder`
+- `windows-ui-review-runtime`
+- `xlsx`
 
-Same-name recursive folders such as `.agent/skills/frontend-react-governance/frontend-react-governance/` are invalid duplicates and should not be regenerated.
+## Newly Added Skill
 
-Root `skills/` is **always** the primary source of truth. All others are mirrors or app adapters.
+`thai-language-and-ux-writing`
 
-| Skill Name | Path | Duplicated In | Status / Action |
-| :--- | :--- | :--- | :--- |
-| `LUMINA_ART_DIRECTION` | `skills/LUMINA_ART_DIRECTION/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_BOOTSTRAP` | `skills/LUMINA_BOOTSTRAP/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_CONFIG_CHANGE` | `skills/LUMINA_CONFIG_CHANGE/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_DEPLOYMENT` | `skills/LUMINA_DEPLOYMENT/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_Frontend-Visual-Design` | `skills/LUMINA_Frontend-Visual-Design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_PHOTO_SELECTION` | `skills/LUMINA_PHOTO_SELECTION/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_REPORTING` | `skills/LUMINA_REPORTING/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_REVIEW_CHECKLIST` | `skills/LUMINA_REVIEW_CHECKLIST/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_STARTUP` | `skills/LUMINA_STARTUP/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `LUMINA_VISUAL_REVIEW` | `skills/LUMINA_VISUAL_REVIEW/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `agent-browser` | `skills/agent-browser/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `agent-run-governance` | `skills/agent-run-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `canvas-design` | `skills/canvas-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `certification-governance` | `skills/certification-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `code-analysis-ocumentation-agent` | `skills/code-analysis-ocumentation-agent/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `computer-use-runtime-bridge` | `skills/computer-use-runtime-bridge/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` / Available for browser/runtime/computer-use bridge workflows. Used only when explicitly requested; not mandatory. |
-| `docx` | `skills/docx/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `entra-agent-id` | `skills/entra-agent-id/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `entra-app-registration` | `skills/entra-app-registration/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `escalation-governance` | `skills/escalation-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `find-skills` | `skills/find-skills/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `frontend-design` | `skills/frontend-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `frontend-react-governance` | `skills/frontend-react-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `gridgeist` | `skills/gridgeist/` | `.agent/` | `KEEP_AS_SOURCE` / Curated design skill for grid/editorial UI review and redesign |
-| `frontend-visual-design` | `skills/frontend-visual-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `governance-platform-domain` | `skills/governance-platform-domain/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `impeccable` | `skills/impeccable/` | `.agent/`, `.opencode/` | `KEEP_AS_SOURCE` / **Missing in `.gemini/`** |
-| `impeccable-project-workflow` | `skills/impeccable-project-workflow/` | `.agent/`, `.opencode/` | `KEEP_AS_SOURCE` / **Missing in `.gemini/`** |
-| `implementation-governance` | `skills/implementation-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `interaction-design` | `skills/interaction-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `mcp-connector-governance` | `skills/mcp-connector-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `microsoft-foundry` | `skills/microsoft-foundry/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `pdf` | `skills/pdf/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `pptx` | `skills/pptx/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `react-polling-review` | `skills/react-polling-review/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `read-first-governance` | `skills/read-first-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `repo-cleanliness-governance` | `skills/repo-cleanliness-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `responsive-design` | `skills/responsive-design/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `review-gate-governance` | `skills/review-gate-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `runtime-console-domain` | `skills/runtime-console-domain/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `serena-repo-intelligence` | `skills/serena-repo-intelligence/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `skill-creator` | `skills/skill-creator/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `tailwind-design-system` | `skills/tailwind-design-system/` | `.agent/`, `.opencode/` | `KEEP_AS_SOURCE` / **Missing in `.gemini/`** |
-| `task-state-governance` | `skills/task-state-governance/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `web-artifacts-builder` | `skills/web-artifacts-builder/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `webapp-testing` | `skills/webapp-testing/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
-| `windows-ui-review-runtime` | `skills/windows-ui-review-runtime/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` / Available for Windows UI / browser visual review workflows. Used only when explicitly requested; not mandatory. |
-| `xlsx` | `skills/xlsx/` | `.agent/`, `.gemini/`, `.opencode/` | `KEEP_AS_SOURCE` / Mirrors set to `MIRROR_ONLY` |
+Use when Thai materially affects:
+- Owner intent interpretation
+- Thai client communication
+- Thai-facing UI/UX copy
+- Thai documentation or operational wording
+- Thai-English code-switching and noisy/STT-derived input
 
----
+Its own `SKILL.md` remains authoritative for activation and wording rules.
 
-## 3. Nesting Duplication and Corrupted Directory Warning
+## Migration Record
 
-> [!CAUTION]
-> The path `.gemini/skills/skills/` contains a nested tree that is likely a result of an incorrect sync copy operation:
-> *   Folder `.gemini/skills/skills/`: **ARCHIVE_CANDIDATE** (Contains 17 subfolders of duplicate code).
-> *   Folder `.gemini/skills/skills/skills/`: **ARCHIVE_CANDIDATE** (Contains 16 subfolders of duplicate code).
-> 
-> **Action Required**: Do not edit these directories. In the next task (Sync Execution), these nested paths should be safely deleted after user review.
+TASK-036 consolidated the previous skill locations into `.agents/skills/`.
+
+Old physical roots removed:
+- `skills/`
+- `.agent/skills/`
+- `.gemini/skills/`
+- `.opencode/skills/`
+
+An external pre-deletion backup was created under `D:\tools\lumina-skill-consolidation-backup-*`.
+
+If a future tool requires a different discovery path, prefer configuring that tool to read `.agents/skills/`. Do not restore copy-based mirrors without a new explicit Owner decision.

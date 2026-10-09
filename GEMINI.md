@@ -10,14 +10,14 @@ Always start with:
 4. Read LUMINA_CONFIG_SYSTEM.md
 5. Read reports/implementation_report.md
 6. Read reports/visual_audit.md
-7. Read skills/LUMINA_STARTUP/SKILL.md
+7. Read .agents/skills/LUMINA_STARTUP/SKILL.md
 8. Check git status --short
 
 **Critical Skill Rules:**
-- Treat `skills/` as the absolute source of truth.
-- Treat `.gemini/skills` as a mirror/adapter only.
-- Do not edit `.gemini/skills` directly unless the task explicitly says sync/adapter work.
-- Use `scripts/sync-project-skills.ps1` with dry-run first for any future skill mirror work.
+- Treat `.agents/skills/` as the absolute and only project-local skill source of truth.
+- Do not recreate `.gemini/skills/`, `.opencode/skills/`, `.agent/skills/`, or root `skills/` mirrors.
+- Add or update project skills only under `.agents/skills/`.
+- For Thai-facing communication or UX writing, load `.agents/skills/thai-language-and-ux-writing/SKILL.md`.
 
 You are usually an implementer, not the project director.
 

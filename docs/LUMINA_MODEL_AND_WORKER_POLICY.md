@@ -11,11 +11,12 @@ LUMINA uses AI through a controlled workflow:
 
 ## 2. Active Project Context
 * Active project: `D:\lumina-studio`
-* Skill source: `D:\lumina-studio\skills`
+* Skill source: `D:\lumina-studio\.agents\skills`
 * Serena/CodeGraph project: `D:\lumina-studio`
 * Evidence capture script: `tools/capture-lumina-evidence.mjs`
 * Runtime evidence folder: `.runtime-captures/`
 * Task packet folder: `.tasks/`
+* Owner CLI routing reference: `docs/CLI_WORKER_ROUTING_REFERENCE.md`
 
 ## 3. LUMINA Creative Position
 The locked LUMINA identity:
@@ -128,26 +129,21 @@ Requires:
 * owner approval
 * no automatic worker execution
 
-## 6. Controller / Worker Rules
+## 6. Nexus / CLI Worker Orchestration
 
-**Controller:**
-* defines scope
-* defines allowed/forbidden files
-* sets risk level
-* reviews evidence
-* decides commit readiness
+Cross-project owner: `D:\tools\nexus-project-continuity\agent_orchestration.json` (`parallel_doctrine`). Live CLI routes come from verified global route owners; this section adds LUMINA-specific execution and review constraints.
 
-**Worker:**
-* executes only approved task packet
-* does not expand scope
-* reports commands and results
-* does not commit unless owner approves
-* stops on scope drift
+**Default:** Nexus is the controller. For each nontrivial LUMINA task, compare direct execution with bounded CLI worker dispatch. Use CLI workers concurrently whenever independent subtasks make total execution faster or materially strengthen validation; do not serialize work that is safe to launch in parallel. Skip dispatch when startup overhead, contention, routing uncertainty, or missing capability makes it slower or unsafe.
 
-**Owner:**
-* approves scope
-* approves commit
-* decides when paid models or runtime automation are allowed
+**Nexus:** decomposes goals; selects exact live worker/model routes; assigns disjoint scopes and result artifacts; launches independent work in parallel; reconciles worker diffs, evidence and checks; and performs final acceptance. Worker assertions are evidence, never final authority.
+
+**Workers:** execute only the bounded approved packet, do not widen scope or independently make external commitments, and report changed files, checks and limitations. Independent readers/reviewers can run alongside writers.
+
+**Collision rule:** one writer per worktree/file domain (WIP=1), not one global worker. Parallel writers require separate worktrees and controlled Nexus integration. Read-only reviewers/tests may run concurrently where resources do not collide.
+
+**Trust gate:** for security, data integrity, release, production, irreversible or uncertain work, use a separate independent reviewer or Nexus direct verification against canonical repo/runtime evidence. The implementing worker must not be the only reviewer; block integration/external effects if verification fails.
+
+**Authority:** standing delegation for PR review/approve/merge, scoped commit, push, deploy and verified post-merge folder cleanup is owned by `AGENTS.md#Owner Standing Delegation`. No repeated approval is needed, but technical safety and reconciliation gates remain mandatory. Other external commitments still require applicable Owner authority.
 
 ## 7. Evidence Policy
 * Capture script: `tools/capture-lumina-evidence.mjs`
@@ -214,5 +210,5 @@ Stop and report if:
 3. Worker executes narrow scope.
 4. Build/lint/capture evidence.
 5. GPT-5.5 or Controller reviews result.
-6. Owner approves commit.
-7. Commit with explicit files only.
+6. Nexus verifies results independently and resolves blockers.
+7. When checks pass, Nexus may commit, merge, push and deploy under the Owner's standing delegation; stage explicit files only.

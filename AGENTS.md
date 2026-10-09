@@ -7,16 +7,17 @@ Before any work, read:
 - AI_HANDOFF.md
 - reports/implementation_report.md
 - reports/visual_audit.md
-- skills/LUMINA_STARTUP/SKILL.md
+- .agents/skills/LUMINA_STARTUP/SKILL.md
 - .mcp/serena.md
 - .mcp/codegraph.md
 
 Rules & Governance Architecture:
 
 - `docs/CONTEXT_INDEX.md` is the context map.
+- `docs/CLI_WORKER_ROUTING_REFERENCE.md` preserves the Owner-approved local Hermes/OpenCode CLI routing reference and cross-project STT source pointers; live project policy and live provider inventory still take precedence.
 - `.tasks/` is the task packet/report/checkpoint system.
-- `skills/` is project skill source of truth.
-- App-specific skill folders are mirrors/adapters.
+- `.agents/skills/` is the single project skill source of truth.
+- Do not recreate project-local skill mirrors under `.agent/skills/`, `.gemini/skills/`, `.opencode/skills/`, or root `skills/`.
 - STT correction belongs to `D:\stt_typing`, not LUMINA.
 - Dashboard is not core workflow.
 - Any destructive action must have explicit owner approval and a task report.
@@ -26,6 +27,15 @@ Rules & Governance Architecture:
 - Do not edit files outside the task brief.
 - If build or lint fails, stop and report unless explicitly allowed to fix.
 - Update AI_HANDOFF.md and reports/implementation_report.md after successful work.
+
+## Owner Standing Delegation
+
+Owner standing authorization (2026-10-09, OWNER_REPORTED):
+- Nexus may review, approve, and merge LUMINA pull requests; create scoped commits; push verified changes; and deploy LUMINA without requesting per-action approval. Hosting-platform permissions, project review checks, current-candidate validation, and release safety rules still apply. A failed or blocked review/merge must not be represented as successful.
+- Nexus may clean up disposable **local LUMINA plan/worktree folders** after the associated PR is VERIFIED merged into its intended target. Verify the exact local path, PR merge status, landed changes (including squash/rebase cases), uncommitted and untracked contents, ownership, active worktrees/processes, and whether unique evidence or Owner data remains.
+- Delete only an individually verified, no-longer-needed worktree or temporary plan directory; prefer `git worktree remove` for worktrees. Never force-delete dirty worktrees, ambiguous/unknown folders, canonical `.tasks/` task records, `docs/`, `reports/`, or unrelated project/Owner files. Record cleanup evidence and path in the relevant existing task report. On uncertainty, preserve and report.
+- No per-action Owner approval is required for the actions explicitly delegated above once their preconditions are met. An explicit task-specific prohibition unrelated to approval, Kernel recovery restriction, failed validation, or unresolved external effect still stops execution.
+- Reconcile uncertain external effects before any retry. Spending, domain/DNS changes, production account/permission changes, sensitive-data transfer, and unrelated destructive actions remain outside this delegation unless separately authorized.
 
 ## Goal Execution Contract
 
@@ -99,6 +109,10 @@ Important:
 Agents may propose improvements only when the active profile allows it.
 Agents must not implement unapproved proposals unless explicitly instructed.
 
+For Thai intent, Thai-facing UI copy, Thai client/owner communication, or Thai UX writing, activate:
+
+- .agents/skills/thai-language-and-ux-writing/SKILL.md
+
 Before approving any completed task, execute:
 
-- skills/LUMINA_REVIEW_CHECKLIST/SKILL.md
+- .agents/skills/LUMINA_REVIEW_CHECKLIST/SKILL.md
