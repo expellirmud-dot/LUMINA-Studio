@@ -26,6 +26,9 @@ export const contentConfig = {
       tail: "between.",
     },
     body: "A small selection of stories shaped by connection,\ntradition, and the feeling of being there.",
+    imageFocusOpen: "View photograph",
+    imageFocusClose: "Close photograph",
+    imageFocusLoading: "Loading photograph…",
   },
   momentsBetween: {
     label: "MOMENTS BETWEEN",

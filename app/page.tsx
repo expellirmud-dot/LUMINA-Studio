@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MiniAlbum } from "../src/components/MiniAlbum";
 import { ExperienceSequence } from "../src/components/ExperienceSequence";
+import { StoryImageFocus } from "../src/components/StoryImageFocus";
 import { heroImage, profileImage } from "../src/config/images";
 import { typographyConfig } from "../src/config/typography";
 import { visualConfig } from "../src/config/visual";
@@ -117,12 +118,12 @@ export default function Home() {
                 style={{ animationDelay: `${160 + index * 90}ms` }}
               >
                 <div className="story-card-image">
-                  <Image
-                    src={story.image.src}
-                    alt={story.image.alt}
-                    fill
-                    sizes="(min-width: 900px) 30vw, 100vw"
-                    style={{ objectPosition: story.image.position }}
+                  <StoryImageFocus
+                    image={story.image}
+                    title={story.title}
+                    openLabel={contentConfig.selectedStories.imageFocusOpen}
+                    closeLabel={contentConfig.selectedStories.imageFocusClose}
+                    loadingLabel={contentConfig.selectedStories.imageFocusLoading}
                   />
                 </div>
                 <div className="story-card-copy">
