@@ -1,3 +1,15 @@
+# LATEST VISUAL UPDATE — TASK-037 (2026-10-09)
+
+- Final desktop 1440×900 and mobile 390×844 visual/runtime gate passed.
+- Selected Stories reads as an editorial threshold rather than a repeated-card effect.
+- Experience has one distinct image/process interaction; Hero and intentionally quiet sections remain unchanged.
+- No horizontal overflow, broken images, runtime errors, or mobile fixed-nav anchor obstruction found.
+- Recent mobile review preserves the Quiet / Editorial / Human Documentary character with no blocker.
+- Decision: APPROVED_WITH_NOTE. Escape-close for the inline MiniAlbum is optional future polish, not a TASK-037 blocker.
+- Canonical report: `.tasks/TASK-037/reports/final-report.md`.
+
+---
+
 # LATEST VISUAL UPDATE — TASK-032 (2026-10-08)
 
 - `Moments Between` now contains one bounded mini-album interaction: one quiet stacked-photo point reveals a five-frame ordination sequence.
@@ -259,3 +271,8 @@ Phase 1.6 — Design Audit and Visual Config System
 
 
 
+
+
+---
+## TASK-037 Visual Review — 2026-10-09
+Selected Stories now reads as an editorial threshold rather than equal cards. Experience uses a distinct image/process interaction. Hero and calm sections remain unchanged. Desktop/mobile review passed. Recommendation: owner visual review before any further interaction points.

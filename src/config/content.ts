@@ -20,6 +20,11 @@ export const contentConfig = {
   selectedStories: {
     label: "SELECTED STORIES",
     title: "People, rituals,\nand the spaces between.",
+    titleParts: {
+      lead: "People,",
+      middle: "rituals, and the spaces",
+      tail: "between.",
+    },
     body: "A small selection of stories shaped by connection,\ntradition, and the feeling of being there.",
   },
   momentsBetween: {
