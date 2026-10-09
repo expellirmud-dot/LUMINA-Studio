@@ -1,64 +1,45 @@
-# LUMINA Skill Synchronization Plan
+# LUMINA Skill Location Policy
 
-This document maps out the strategy for maintaining consistency across primary project skills and their environment mirrors in `D:\lumina-studio` without manual duplications.
+Updated: 2026-10-08
+Status: **SINGLE-SOURCE MODE**
 
----
+The old mirror/synchronization model is retired.
 
-## 1. Directory Roles
+## Canonical Directory
 
-To prevent context drift, directories are segmented into source, mirrors, and adapters:
+`D:\lumina-studio\.agents\skills\`
 
-*   **Source of Truth Directory**:
-    *   `D:\lumina-studio\skills\`
-    *   *Role*: Every modification to skill files must occur here first.
-*   **Mirror Directories**:
-    *   `D:\lumina-studio\.agent\skills\`
-    *   `D:\lumina-studio\.opencode\skills\`
-    *   `D:\lumina-studio\.gemini\skills\`
-    *   *Role*: These are read-only targets populated automatically by the sync script.
-*   **App Adapters**:
-    *   *Role*: Specific settings (like `.gemini/settings.json` or `.opencode/package.json`) that govern environment setups remain local and are never overwritten by the sync script.
+There is one physical copy of each active project skill.
 
----
+## No Mirror Policy
 
-## 2. Sync Execution Rules
+Do not create project skill copies under:
+- `D:\lumina-studio\skills\`
+- `D:\lumina-studio\.agent\skills\`
+- `D:\lumina-studio\.gemini\skills\`
+- `D:\lumina-studio\.opencode\skills\`
 
-*   **Do Not Edit Mirrors Directly**: Modifying a file inside `.gemini/skills/` or `.agent/skills/` directly is strictly forbidden. It will be overwritten during the next sync.
-*   **Symlinks Rule (Windows)**:
-    *   > [!WARNING]
-    *   > Symbolic links (`symlink`) must be avoided on Windows systems. Windows filesystem permission layers (requiring Administrator rights for symlinks by default) make them fragile for developers. A script-based copy sync is much safer and more reliable.
+Do not use copy-sync scripts for project skills.
 
----
+If Gemini, OpenCode, another CLI, or an editor gains a configurable skill search path, point it at `.agents/skills/`. If a tool cannot consume the canonical directory, stop and document the compatibility issue before introducing any adapter or link.
 
-## 3. Recommended Sync Script: `scripts/sync-project-skills.ps1`
+## Adding a Skill
 
-A PowerShell script `scripts/sync-project-skills.ps1` will be created in a future task to automate folder mirroring.
+1. Create or install the skill under `.agents/skills/<skill-name>/`.
+2. Ensure the entry file is exactly `SKILL.md`.
+3. Reject same-name nesting such as `<skill-name>/<skill-name>/`.
+4. Update `docs/SKILL_SOURCE_REGISTRY.md`.
+5. Add a profile to `.ai/SKILL_PROFILES.md` only when project-specific execution guidance is useful.
+6. Validate Git status and active path references.
 
-### Script Specifications & Safety Checks
+## Updating a Skill
 
-The sync script must implement the following safety mechanisms:
+Edit the canonical copy directly under `.agents/skills/`. There is no downstream mirror step.
 
-1.  **Backup Layer**:
-    *   Before rewriting any mirror folder, the script must create a compressed backup or temporary copy of the target mirror (e.g. `.gemini/skills_backup_timestamp/`) to prevent accidental data loss.
-2.  **Dry-Run Mode (`-DryRun`)**:
-    *   Allows the developer/agent to preview exactly what folders will be created, copied, or deleted without executing the changes.
-3.  **Diff Mode (`-ShowDiff`)**:
-    *   Outputs a line-by-line file diff for modified skills before mirroring.
-4.  **Preservation Rule**:
-    *   The script must **never** delete unknown or app-specific files/folders under the target mirrors without explicit owner approval.
-5.  **Corrupted Nested Folder Removal**:
-    *   Upon execution, the script should specifically locate and purge the corrupted recursively nested `.gemini/skills/skills/` folders.
+## Removing a Skill
 
----
+Removal is destructive and requires explicit Owner approval. Create a backup/evidence record before deletion.
 
-## 4. `.agent` Curated Runtime Profile (Owner-approved 2026-10-08)
+## Historical Data
 
-`.agent/skills/` is a curated agent runtime set rather than a byte-for-byte full mirror.
-
-Rules:
-- Shared skill content is still edited in root `skills/` first.
-- `gridgeist` is an approved `.agent` design skill and now also exists in root `skills/`.
-- Do not recreate same-name nested directories inside a skill folder.
-- Exclude these root skills from `.agent/skills/`: `docx`, `pdf`, `pptx`, `xlsx`, `entra-agent-id`, `entra-app-registration`.
-- A future sync script must preserve this exclusion list instead of restoring the excluded folders.
-- `.opencode/skills/` and `.gemini/skills/` are not changed by this exception unless separately approved.
+Old backups, archived task reports, and legacy documentation may contain previous `skills/`, `.agent/skills/`, `.gemini/skills/`, or `.opencode/skills/` paths. Those references are historical only.
