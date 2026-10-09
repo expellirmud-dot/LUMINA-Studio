@@ -1,3 +1,34 @@
+# LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-037)
+
+- Homepage Interaction Story Map candidate is implementation-complete and READY_FOR_OWNER_REVIEW.
+- Selected Stories now uses an editorial threshold with inline stills and asymmetric story layout.
+- Experience links four process steps to one changing documentary still; future micro-cinematic slots are reserved without video/audio.
+- Final lint/build/TypeScript, scoped diff-check, exact desktop/mobile runtime, overflow, broken-image, CTA-anchor, reduced-motion, and interaction checks pass.
+- Canonical task report: `.tasks/TASK-037/reports/final-report.md`.
+- No commit, push, or deploy performed.
+
+---
+
+# LATEST IMPLEMENTATION UPDATE — 2026-10-08 (TASK-035)
+
+- Upgraded Next.js and eslint-config-next 16.2.6 → 16.4.0.
+- Updated safe transitive fixes for source-map-js and baseline-browser-mapping.
+- Production dependency audit now reports 0 vulnerabilities.
+- Lint, build, TypeScript and mini-album desktop/mobile regression checks pass.
+- Full dev audit still reports 19 High findings in Puppeteer/MCP/eslint tooling; deferred to a separate bounded maintenance task.
+
+---
+# LATEST IMPLEMENTATION UPDATE — TASK-035 (2026-10-08)
+
+- Upgraded Next.js and eslint-config-next from 16.2.6 to 16.4.0.
+- Applied safe transitive updates for baseline-browser-mapping and source-map-js.
+- Production dependency audit reduced from 6 vulnerabilities (1 critical / 4 high / 1 moderate) to 0.
+- npm run lint: PASS; npm run build: PASS; TypeScript: PASS.
+- Desktop/mobile MiniAlbum regression passed with five loaded frames, zero page overflow, and reduced-motion behavior preserved.
+- Fastwork desktop/mobile smoke shows zero broken images, overflow, console/page errors, or failed requests.
+- Full dev/tool audit still reports 19 High issues; deferred to a separate tooling-security task.
+
+---
 # LATEST IMPLEMENTATION UPDATE — 2026-10-08
 
 ### TASK-032 — Moments Between Mini Album
@@ -311,3 +342,13 @@ Remaining technical debt:
 - Preserved the modern, minimal, emotional, professional photography direction and warnings against SaaS, dashboard, corporate, and generic template styles.
 - Added an explicit documentation-only note and a warning not to reintroduce Luxury / Crystal / Premium as the primary direction.
 - Production code was not changed.
+
+
+---
+## TASK-037 — Homepage Interaction Story Map (2026-10-09)
+
+Status: READY_FOR_OWNER_REVIEW.
+
+Selected Stories now uses a restrained editorial heading with two inline stills and an asymmetric story spread. Moments Between remains the only stacked mini album. Experience now links four process steps to one changing documentary still and reserves future micro-cinematic replacement slots.
+
+Validation passed: lint, build, TypeScript, scoped diff-check, desktop/mobile overflow and broken-image checks, Experience interaction, reduced motion, CodeGraph sync. No commit, push, or deploy.

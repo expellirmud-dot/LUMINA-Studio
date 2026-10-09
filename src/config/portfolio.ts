@@ -121,3 +121,31 @@ export const momentImagesConfig = [
     position: "50% 42%",
   },
 ];
+
+
+export const experienceImagesConfig = [
+  {
+    src: "/images/portfolio/lumina-harvest-v1/000001_opening_detail_IMG_0629.webp",
+    path: "/images/portfolio/lumina-harvest-v1/000001_opening_detail_IMG_0629.webp",
+    alt: "A ceremony space prepared quietly before people arrive",
+    position: "50% 50%",
+  },
+  {
+    src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
+    path: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
+    alt: "An elder offering a blessing during a family ceremony",
+    position: "55% 52%",
+  },
+  {
+    src: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
+    path: "/images/portfolio/lumina-harvest-v1/000018_hero_IMG_2036.webp",
+    alt: "A bride held in a natural portrait between moments",
+    position: "50% 48%",
+  },
+  {
+    src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+    path: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+    alt: "A warm family embrace after the ceremony",
+    position: "48% 68%",
+  },
+];

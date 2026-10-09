@@ -1,3 +1,51 @@
+# CURRENT HANDOFF — 2026-10-09 (TASK-037)
+
+**Current Active Task:** TASK-037 — Homepage Interaction Story Map
+**Decision:** APPROVED_WITH_NOTE / READY_FOR_OWNER_REVIEW
+**Authoritative report:** `.tasks/TASK-037/reports/final-report.md`
+
+- Final lint/build/TypeScript validation: PASS on the current candidate.
+- Exact runtime gate passed at desktop 1440×900 and mobile 390×844.
+- No overflow, broken images, console/page errors, or mobile anchor obstruction.
+- MiniAlbum opens 5 frames and closes via disclosure toggle; Escape-close is optional polish, not a blocker.
+- CodeGraph is up to date at 200 files / 3,402 nodes / 8,610 edges.
+- Working tree remains mixed/dirty from separate tasks; TASK-037 is scoped and uncommitted.
+- No commit, push, deploy, or external effect performed.
+
+---
+
+# CURRENT HANDOFF — 2026-10-08 (TASK-035)
+
+**Current Active Task:** TASK-035 — Next.js Security Upgrade Gate
+**Decision:** PRODUCTION DEPENDENCY SECURITY GATE PASS / READY_FOR_OWNER_REVIEW
+
+- `next` + `eslint-config-next`: 16.2.6 → 16.4.0
+- `npm audit --omit=dev`: 0 vulnerabilities
+- lint/build/TypeScript: PASS
+- desktop/mobile mini-album runtime: PASS
+- Fastwork desktop/mobile runtime integrity: PASS; generic capture anchor finding is a route-checklist mismatch
+- full dev audit still has 19 High tooling findings; separate from production bundle
+- commit/push/deploy not performed by TASK-035
+
+Recommended follow-up: TASK-036 Dev Toolchain Security & QA Harness Cleanup.
+
+---
+# CURRENT HANDOFF — TASK-035 (2026-10-08)
+
+**Current Active Task:** TASK-035 — Next.js Security Upgrade Gate
+**Status:** READY_FOR_OWNER_REVIEW
+
+- next / eslint-config-next upgraded 16.2.6 → 16.4.0.
+- production `npm audit --omit=dev`: 0 vulnerabilities.
+- lint/build/TypeScript: PASS.
+- MiniAlbum desktop/mobile runtime regression: PASS.
+- Fastwork desktop/mobile runtime smoke: no broken images, overflow, console/page/network errors.
+- Full npm audit still has 19 High findings in dev/tooling chains; track separately.
+- No deploy, commit, or push performed for TASK-035.
+
+Authoritative report: `.tasks/TASK-035/reports/security-gate.md`.
+
+---
 # CURRENT HANDOFF — 2026-10-08
 
 **Current Active Task:** TASK-034 — Full Project Audit and Release Gate
@@ -210,3 +258,13 @@ Production URL: https://lumina-studio-iota-ten.vercel.app
 ## Next Task
 
 - Await owner's instruction for the next active work slice.
+
+
+---
+## TASK-037 — Homepage Interaction Story Map (2026-10-09)
+
+Status: READY_FOR_OWNER_REVIEW.
+
+Selected Stories now uses a restrained editorial heading with two inline stills and an asymmetric story spread. Moments Between remains the only stacked mini album. Experience now links four process steps to one changing documentary still and reserves future micro-cinematic replacement slots.
+
+Validation passed: lint, build, TypeScript, scoped diff-check, desktop/mobile overflow and broken-image checks, Experience interaction, reduced motion, CodeGraph sync. No commit, push, or deploy.
