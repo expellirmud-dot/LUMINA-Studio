@@ -1,4 +1,17 @@
-# CURRENT HANDOFF — 2026-10-09 (TASK-040)
+# CURRENT HANDOFF — 2026-10-10 (TASK-041)
+
+**Current Active Task:** NONE — TASK-041 documentation-only references and Phase 1 sequencing recorded.
+**Decision:** LOCAL_ROADMAP_REFERENCES_SAVED / NO_APP_CHANGE / NOT_DEPLOYED.
+**Canonical roadmap:** `docs/ROADMAP.md`; task record: `.tasks/TASK-041/reports/final-report.md`.
+
+- Stored verified 21st.dev bookmarked component links in the existing ROADMAP as deferred design references, not approved implementation.
+- Phase 1 next bounded task: inspect current English-heavy copy and Thai/English consistency against brand locks and actual Home layout; propose changes before implementation. Hero remains FROZEN.
+- Shipped MiniAlbum, StoryImageFocus and ExperienceSequence stay unchanged. No new component packages, animation prototypes, production changes, or deployment.
+- Source inspected on main@d0e98e9 with initially clean working tree. TASK-041 documentation edits remain local until explicitly reconciled/committed.
+
+---
+
+# HISTORICAL HANDOFF — 2026-10-09 (TASK-040)
 
 **Current Active Task:** NONE — TASK-040 local repository reconciliation complete.
 **Decision:** LOCAL_MAIN_FAST_FORWARD_VERIFIED, 0408de5; preserved prior changes without replay.
