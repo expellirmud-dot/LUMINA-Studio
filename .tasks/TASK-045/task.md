@@ -1,7 +1,9 @@
 # TASK-045 — Complete LUMINA Documentation/Skill/Plan Cleanup
-Status: LOCAL_VALIDATED / RELEASE_PENDING
+Status: VERIFIED_MERGED_AND_PRODUCTION
 Start: 2026-10-10T18:02:09+07:00
 Git baseline: main@acabd21400b3d231d9e17696c25423622cdc4877 CLEAN / one root worktree
+Completed: 2026-10-10T18:14:09+07:00
+Release evidence: PR #16 MERGED at 7b7daa072ab294822e5dc3793e244b46ce832eed, Vercel production READY, live Home smoke PASS
 Owner goal: continue TASK-044 safe-hold through evidence-led completion using parallel CLI readers; no silent guessing.
 
 ## Scope / source-of-truth
@@ -15,5 +17,5 @@ Allowed edits: existing BRAND.md/DESIGN.md if proven needed; minimal skill metad
 - [x] Reconcile exact dependency/ownership and current progress evidence
 - [x] Apply smallest bounded cleanup through one writer
 - [x] Validate scoped diff and independent review; update task/registry/handoff
-- [ ] Commit/PR/merge after checks, reconcile local and production effect, safe cleanup
+- [x] Commit/PR #16 merged after checks; sync local main, production READY and smoke verified; merged-task branches safely retired
 Stop on unknown/unsafe mutation or failed validation.

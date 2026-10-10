@@ -3,7 +3,7 @@
 Start: 2026-10-10T18:02:09+07:00
 Candidate validation: 2026-10-10T18:09:58+07:00
 Baseline: main@acabd21400b3d231d9e17696c25423622cdc4877, clean, one root worktree
-Decision: **LOCAL_VALIDATED / PR_AND_PRODUCTION_RECONCILIATION_PENDING** (update after release)
+Decision: **VERIFIED_MERGED_AND_DEPLOYED** (closure evidence below)
 
 ## Hard bootstrap and worker execution
 - Project Continuity `resume --project lumina`: NOT_CONFIGURED / NAVIGATION_ONLY; routing only.
@@ -35,12 +35,18 @@ Decision: **LOCAL_VALIDATED / PR_AND_PRODUCTION_RECONCILIATION_PENDING** (update
 - `git diff --check` and `git diff --cached --check`: PASS. Two initial audit regex checks were incorrect (CRLF/unscoped bullet matching); corrected validation passed.
 - Impeccable's `loadContext()` loaded `docs/DESIGN.md` and found locked Constitution pointer: PASS. Existing `PRODUCT.md` absent: unrelated pre-existing optional Impeccable setup limitation; not created in this cleanup.
 - Diff is scoped to docs/skills/task records and no app/pages, Hero, images, dependencies or runtime source changed. Next.js build/lint intentionally NOT rerun for documentation/skill-only change under L1 policy; no new frontend output.
-- LUMINA_REVIEW_CHECKLIST: task scope and file inventory reviewed, no secrets or external account changes. Decision: APPROVED_WITH_NOTES pending PR and any auto-deployment receipt.
+- LUMINA_REVIEW_CHECKLIST: task scope and file inventory reviewed, no secrets or external account changes. Decision: APPROVED_WITH_NOTES for candidate; verified deployed closure below.
 
 ## Stop/hold decisions
 - Keep Tier 0/1 rules, `thai-language-and-ux-writing`, `LUMINA_BOOTSTRAP`, Impeccable, and `microsoft-foundry` for unique consumer integrity.
 - Do not merge unrelated PR#2 or delete Ads validation folder, recovery refs, stash, external backup or canonical task folders.
 - Avoid claiming all historical TASK-031..035 were independently revalidated on current candidate; PR/merge state is stronger than old status headers, but old evidence remains historical.
 
-## Post-merge completion
-Pending reconciliation of PR merge, exact Git main, and any automatically triggered production deployment. A follow-up task closure note should record the final observed effect instead of preclaiming success.
+## Verified post-merge completion (2026-10-10 18:14 ICT)
+
+- [GitHub PR #16](https://github.com/expellirmud-dot/LUMINA-Studio/pull/16): MERGED, squash commit `7b7daa072ab294822e5dc3793e244b46ce832eed` (2026-10-10T11:12:57Z).
+- Vercel production `dpl_GqSjFewqiLw5ApeXG9SE9UHAkpBZ`: READY at the same Git SHA, verified through live deployment listing.
+- Public `https://lumina-studio-iota-ten.vercel.app/`: HTTP 200, Home navigation exactly Home/Stories/About/Experience/Contact and no horizontal overflow on Chrome at 390x844 and 1440x900.
+- Local `main` fast-forwarded to `7b7daa...` matching `origin/main`, clean worktree, one root worktree. TASK-045 local branch removed after exact squash tree-equivalence check; recovery branch and stash retained.
+- Open PR #2 Ads, `D:\tools\_validate_lumina_ads_20260913`, and protected Owner backups remain explicitly outside task scope. These holds are not unfinished TASK-045 work.
+- Outcome: **TASK-045 cleanup delivered and production release verified**. This follow-up changes only documentary closure notes.

@@ -5,7 +5,7 @@
 - Refreshed BRAND.md/DESIGN.md as non-authoritative tool compatibility documents; corrected LUMINA_BOOTSTRAP and Thai skill metadata; retired exactly two unused one-file legacy skills; Registry 49 -> 47 validated.
 - Retired nine exact-head/merged old local branches; preserved recovery branch, stash, backups, TASK archives, Microsoft Foundry, and open Ads PR#2 / associated validation directory.
 - No changes to app/, src/, photography, dependencies or Hero. Validation: inventory 47=47; diff check PASS; Impeccable design-reader compatibility PASS; no JS build/lint requested for docs-only change.
-- **Release state:** local candidate validated, PR/merge and production effect verification pending. Source: `.tasks/TASK-045/reports/final-report.md`.
+- **Release state:** VERIFIED MERGED & DEPLOYED — PR #16 at `main@7b7daa0`, Vercel production READY `dpl_GqSjFewqiLw5ApeXG9SE9UHAkpBZ`, live 390px/1440px Home smoke PASS. Source: `.tasks/TASK-045/reports/final-report.md`.
 
 ---
 
