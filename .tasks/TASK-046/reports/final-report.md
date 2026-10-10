@@ -1,6 +1,6 @@
 # TASK-046 — Thai Editorial Copy (non-Hero): Candidate Validation
 
-Status: LOCAL_VALIDATED / PR_RELEASE_PENDING
+Status: VERIFIED_MERGED_AND_PRODUCTION (post-release evidence below)
 Start: 2026-10-11 02:37 ICT
 Baseline: main@b053f7445f8495f98b6f9cd2638f1b6bb5dd3510, clean, one root worktree
 
@@ -32,3 +32,11 @@ User-supplied Thai writing document: observational examples of people, families,
 ## Future follow-up
 - Separate authenticated-source review of Kind Words quote provenance; don't treat it as verified testimonial without source.
 - Hero remains FROZEN; 21st.dev components remain deferred.
+
+## Verified Release Closure (2026-10-11 ICT)
+
+- GitHub PR #18 https://github.com/expellirmud-dot/LUMINA-Studio/pull/18: **MERGED** at `3a5903ec5e0a08a505ce37c04b4694f2aaa6c485` (2026-10-10T19:52:25Z).
+- Vercel production deployment `dpl_7saPLZQo9paUJ32TYYL3cGfsLrde`: `READY`, target production, exact same Git SHA as PR #18.
+- Public `https://lumina-studio-iota-ten.vercel.app/`: Chrome at 390x844 and 1440x900 returned HTTP 200. Thai Final CTA text, five exact navigation names, `lang="th"` on all five translated headings, Hero unchanged, LINE href unchanged, no document horizontal overflow. External LINE destination was not clicked; markup checked.
+- Local root main fast-forwarded to `3a5903e` matching origin/main with clean worktree. Original task branch deleted only after exact squash tree-equivalence check; recovery refs/stash and other project tasks preserved.
+- Report state: TASK-046 implementation **VERIFIED_MERGED_AND_PRODUCTION**. PR #2 Ads conversion remains a separate unrelated open decision. Post-release closure documentation is a separate docs-only change.

@@ -3,7 +3,7 @@
 - Local exact candidate: headless system Chrome at 390x844 and 1440x900; all five updated Thai headings and CTA fit without horizontal overflow or visible clipping.
 - Confirmed unchanged Hero/nav/photography/section sequence; primary CTA existing LINE href preserved; two in-page anchor clicks PASS; language tags set on localized elements.
 - Evidence: ignored `.runtime-captures/lumina/TASK-046/candidate-{390,1440}-*.png` and QA script; full review in `.tasks/TASK-046/reports/final-report.md`.
-- Gate: APPROVED_WITH_NOTES for local candidate; PR/production pending. Other historical visual releases remain intact.
+- Gate: VERIFIED PRODUCTION: PR #18 merged, Vercel READY; public Chrome desktop/mobile smoke PASS. APPROVED_WITH_NOTES for later broader typography review. Other historical visual releases remain intact.
 
 ---
 

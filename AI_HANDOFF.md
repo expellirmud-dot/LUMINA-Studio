@@ -1,11 +1,11 @@
-# CURRENT HANDOFF — TASK-046 THAI EDITORIAL COPY (2026-10-11; LOCAL VALIDATED / RELEASE PENDING)
+# CURRENT HANDOFF — TASK-046 THAI EDITORIAL COPY (2026-10-11; VERIFIED PRODUCTION)
 
 - Baseline `main@b053f74` CLEAN on 2026-10-11 02:37 ICT. Canonical current packet: `.tasks/TASK-046/`; copy owner `src/config/content.ts` and Experience steps `src/config/services.ts`.
 - Refined non-Hero What We Notice, Moments Between, Behind The Lens, Experience and Final CTA with observational Thai. Four process steps localized. Added only necessary `lang="th"` accessibility attributes to Thai UI content.
 - Hero, Selected Stories, Kind Words quote/credit, Brand Bridge, Footer, image selection, Navigation, contact hrefs, CSS/motion and dependencies unchanged.
 - Parallel read-only AGY workers dispatched: UX review completed; Thai review timed out partially; Nexus independently validated.
 - Exact local candidate: lint/build/TypeScript PASS; Node protected-copy comparison PASS; Chrome 390px/1440px HTTP 200, no overflow, links and click anchors PASS, lang markers PASS. Visual captures in ignored `.runtime-captures/lumina/TASK-046/`.
-- **State: LOCAL_VALIDATED, NOT YET RELEASED.** PR/production confirmation pending. Hero still FROZEN; 21st.dev bookmarks deferred.
+- **State: VERIFIED PRODUCTION.** PR #18 merged at `main@3a5903e`; Vercel Production READY `dpl_7saPLZQo9paUJ32TYYL3cGfsLrde`; public Home Chrome 390px/1440px HTTP 200, Thai CTA/lang/nav/no overflow PASS. Hero FROZEN and 21st.dev bookmarks deferred.
 
 ---
 

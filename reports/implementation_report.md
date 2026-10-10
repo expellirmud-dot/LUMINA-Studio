@@ -3,7 +3,7 @@
 - Copy-only values in `src/config/content.ts` and `src/config/services.ts` plus `lang="th"` attributes in existing page/ExperienceSequence for Thai screen-reader pronunciation. Hero and protected sections unchanged.
 - AGY parallel read-only workers: one completed, one partial timeout; Nexus directly reconciled with Brand Blueprint and actual repo.
 - Local npm lint/build/TypeScript PASS. Protected sections unchanged versus main HEAD; Playwright/Chrome screenshots and functional QA at 390x844 + 1440x900 PASS, no horizontal overflow, destination anchors preserved.
-- Release: **LOCAL_VALIDATED / PR PENDING**. Evidence: `.tasks/TASK-046/reports/final-report.md`.
+- Release: **VERIFIED_MERGED_AND_PRODUCTION — PR #18 at main@3a5903e, Vercel READY dpl_7saPLZQo9paUJ32TYYL3cGfsLrde, live Chrome 390/1440 PASS**. Evidence: `.tasks/TASK-046/reports/final-report.md`.
 
 ---
 
