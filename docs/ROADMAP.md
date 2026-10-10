@@ -8,7 +8,7 @@ Landing Page + Deploy Test
 
 1. **TASK-042 Copy Audit complete (2026-10-10).** Compared the live Home at 1440px/390px with brand locks and current config; discrepancies are documented in `.tasks/TASK-042/reports/final-report.md`. Hero remains FROZEN; non-Hero Thai/English editorial changes need a separate scoped proposal/review.
 2. **Contact baseline checked in TASK-042.** Live CTA targets LINE, footer includes phone/LINE/Facebook anchors, and tested desktop/mobile widths have no document-level horizontal overflow. Actual external account response and full interactive accessibility QA remain separate validation.
-3. **TASK-043 navigation correction locally validated (2026-10-10):** Constitution-ordered Home / Stories / About / Experience / Contact, with the last item retained as the compact Contact CTA. Candidate lint, build, TypeScript, desktop and mobile QA pass. PR/release verification pending. Continue only evidence-backed, reversible Phase 1 polish; preserve existing MiniAlbum, StoryImageFocus and ExperienceSequence.
+3. **TASK-043 navigation correction RELEASED (2026-10-10):** Constitution-ordered Home / Stories / About / Experience / Contact, with the last item retained as the compact Contact CTA. Candidate lint, build, TypeScript, desktop and mobile QA pass; PR #13 merged, production Vercel READY at main@40edf3a, live page verified. Continue only evidence-backed, reversible Phase 1 polish; preserve existing MiniAlbum, StoryImageFocus and ExperienceSequence.
 4. Postpone new micro-album animation prototypes until copy/UX priorities are reconciled and a separate bounded task is approved.
 
 ## Phase 2
