@@ -1,4 +1,13 @@
-# LATEST IMPLEMENTATION UPDATE — 2026-10-09 (TASK-040)
+# LATEST DOCUMENTATION UPDATE — 2026-10-10 (TASK-041)
+
+- Preserved verified 21st.dev bookmarks in the canonical `docs/ROADMAP.md`; marked all links DEFERRED, not approved for installation.
+- Current Phase 1 next step is a bounded copy/content-consistency review (Thai-first vs English, CTA and mobile), preserving the frozen Hero and shipped UI.
+- No code, dependencies, assets, Next.js routing, or production effects changed.
+- Canonical task record: `.tasks/TASK-041/reports/final-report.md`.
+
+---
+
+# HISTORICAL IMPLEMENTATION UPDATE — 2026-10-09 (TASK-040)
 
 - Safely reconciled `D:\lumina-studio` main from eba90db to GitHub 0408de5 by verified recovery snapshot, stash and fast-forward only. Root Git status clean.
 - Snapshot 1,726 entries: 744 original files SHA-256 verified, 982 missing/deleted source paths recorded; previous modified TASK-035 worktree AGENTS.md preserved and verified before non-force worktree cleanup.
