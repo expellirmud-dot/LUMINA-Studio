@@ -1,3 +1,14 @@
+# TASK-045 — DOCUMENTATION/SKILL CLEANUP CANDIDATE (2026-10-10)
+
+- HARD BOOTSTRAP on main@acabd21: Continuity NAVIGATION_ONLY; Kernel ESTABLISHED/GUARDED_INTERNAL_ONLY/CLEAN; one root worktree.
+- Two parallel read-only AGY CLI audit readers: one completed; one timed out with partial result. Nexus cross-checked authoritative files/GitHub independently.
+- Refreshed BRAND.md/DESIGN.md as non-authoritative tool compatibility documents; corrected LUMINA_BOOTSTRAP and Thai skill metadata; retired exactly two unused one-file legacy skills; Registry 49 -> 47 validated.
+- Retired nine exact-head/merged old local branches; preserved recovery branch, stash, backups, TASK archives, Microsoft Foundry, and open Ads PR#2 / associated validation directory.
+- No changes to app/, src/, photography, dependencies or Hero. Validation: inventory 47=47; diff check PASS; Impeccable design-reader compatibility PASS; no JS build/lint requested for docs-only change.
+- **Release state:** local candidate validated, PR/merge and production effect verification pending. Source: `.tasks/TASK-045/reports/final-report.md`.
+
+---
+
 # LATEST VERIFIED RELEASE — TASK-043 (2026-10-10)
 
 - TASK-042 complete: read-only canonical copy/navigation audit with live desktop/mobile evidence; report `.tasks/TASK-042/reports/final-report.md`.

@@ -1,6 +1,6 @@
 # LUMINA Skill Source Registry
 
-Updated: 2026-10-08
+Updated: 2026-10-10
 Owner decision: consolidate all project-local skills into one physical directory.
 
 ## Canonical Skill Root
@@ -19,13 +19,12 @@ Rules:
 
 ## Current Inventory
 
-Total active skill directories: **49**
+Total active skill directories: **47**
 
 - `agent-browser`
 - `agent-run-governance`
 - `canvas-design`
 - `certification-governance`
-- `code-analysis-ocumentation-agent`
 - `computer-use-runtime-bridge`
 - `docx`
 - `entra-agent-id`
@@ -51,7 +50,6 @@ Total active skill directories: **49**
 - `LUMINA_REVIEW_CHECKLIST`
 - `LUMINA_STARTUP`
 - `LUMINA_VISUAL_REVIEW`
-- `mcp-connector-governance`
 - `microsoft-foundry`
 - `pdf`
 - `pptx`
@@ -97,3 +95,7 @@ Old physical roots removed:
 An external pre-deletion backup was created under `D:\tools\lumina-skill-consolidation-backup-*`.
 
 If a future tool requires a different discovery path, prefer configuring that tool to read `.agents/skills/`. Do not restore copy-based mirrors without a new explicit Owner decision.
+
+## TASK-045 Bounded Cleanup (2026-10-10)
+
+The unused legacy `code-analysis-ocumentation-agent` and `mcp-connector-governance` were retired after exact reference and overlap review. Their history remains recoverable in Git; authoritative scope, approvals and escalation are owned by `AGENTS.md`, current Kernel policy, and the surviving `escalation-governance` skill. `microsoft-foundry` remains preserved as an optional skill because it has unique subskills and a cross-reference from `entra-agent-id`; it is not part of the current Phase 1 execution path.

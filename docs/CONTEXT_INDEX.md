@@ -13,6 +13,7 @@ The absolute source of truth is the local **filesystem**. If an external index, 
 *   **Task Management**: Active task packets located under `.tasks/<TASK-ID>/`.
 *   **Rules & Governance**: `PROJECT_RULES.md`, `AGENTS.md`, `GEMINI.md`, `docs/LUMINA_MODEL_AND_WORKER_POLICY.md`, and this `docs/CONTEXT_INDEX.md`.
 *   **Brand & Design Policies**: `docs/LUMINA_V2_CONSTITUTION.md`, `docs/LUMINA_VISUAL_LANGUAGE.md`, and `docs/HOME_PAGE_BLUEPRINT.md`.
+*   **Compatibility summaries (not policy owners)**: `docs/BRAND.md` and `docs/DESIGN.md` remain for legacy tooling, including Impeccable. Locked Tier 1 documents take precedence.
 
 ---
 
