@@ -1,6 +1,6 @@
 ---
 name: thai-language-and-ux-writing
-description: Cross-cutting Thai communication competence for understanding Thai intent and producing natural, context-appropriate Thai across Owner, client, operational, documentation, and UI interactions in Online Job Factory.
+description: Cross-cutting Thai communication competence for understanding Thai intent and producing natural, context-appropriate Thai across Owner, client, operational, documentation, and UI interactions in LUMINA Studio.
 ---
 
 # Thai Language & UX Writing Skill

@@ -1,92 +1,38 @@
 ---
 name: lumina-bootstrap
-description: Lightweight project workflow for LUMINA Studio landing page, deploy test, and future photography portfolio foundation.
+description: Lightweight Phase 1 bootstrap for the LUMINA Studio Human Documentary photography landing page.
 ---
 
 # LUMINA Bootstrap
 
-Use this skill for LUMINA Studio Phase 1: premium single-page photography landing page and deploy test.
-
-This project utilizes a config-driven architecture where visual, motion, and content data are centralized in `src/config/` to ensure consistency and ease of maintenance.
+Use for the LUMINA Studio Phase 1 single-page editorial photography experience. Production implementation is config-driven under `src/config/`; this skill is a workflow aid and cannot override project authority.
 
 ## Required Discipline
 
-Before editing:
-- read `PROJECT_RULES.md`
-- read `AI_HANDOFF.md`
-- read `docs/BRAND.md`
-- read `docs/DESIGN.md`
-- read `docs/ROADMAP.md`
-- confirm current phase is Phase 1
-- state exact files and sections to change
+Before any work:
+- Follow Project Continuity + Kernel HARD BOOTSTRAP and inspect actual branch, HEAD, dirty/untracked files and worktrees.
+- Read `PROJECT_RULES.md`, `AGENTS.md`, `docs/CONTEXT_INDEX.md`, active `.tasks/<TASK-ID>/`, and `AI_HANDOFF.md`.
+- Read the canonical brand owners: `docs/LUMINA_V2_CONSTITUTION.md`, `docs/LUMINA_VISUAL_LANGUAGE.md`, `docs/HOME_PAGE_BLUEPRINT.md`.
+- `docs/BRAND.md` and `docs/DESIGN.md` exist for legacy/tool compatibility only, never as competing direction.
+- Verify the Phase 1 scope and exact files/sections to change.
 
-## Rules
+## Current Creative Direction
 
-Allowed:
-- single landing page implementation
-- hero section
-- scroll storytelling
-- mini gallery
-- services section
-- about section
-- contact CTA
-- footer
-- responsive UI
-- SEO metadata
-- performance optimization
-- lightweight CSS animation
-- frontend-only component extraction
+Human Documentary; warm off-white/linen, warm charcoal, muted earth accents; people, family, relationships, rituals and quiet moments. Respect editorial whitespace. Do not revive black/gold luxury, a generic portfolio wall, WebGL, spotlight effects or a hero carousel. Hero remains FROZEN and requires explicit Owner approval to revise.
 
-Forbidden:
-- backend changes
-- database
-- authentication
-- CMS
-- booking system
-- admin dashboard
-- payment system
-- client gallery system
-- API routes
-- unnecessary dependencies
-- complex infrastructure
+## Allowed Phase 1 Scope
 
-## Design Direction
+Frontend-only landing page, existing scroll storytelling, curated mini-gallery, services/experience, photographer/about, contact CTA, footer, responsive/SEO/performance, and minimal motion that supports photography.
 
-Follow:
-- luxury editorial photography
-- cinematic mood
-- Leica-inspired minimalism
-- charcoal black
-- warm white
-- soft gray
-- muted gold accent
+## Outside Phase 1
 
-Avoid:
-- SaaS layout
-- government style
-- generic corporate style
-- dashboard appearance
-- template-looking landing page
+No backend, database, authentication, CMS, booking system, admin dashboard, payments, client-gallery platform, new API routes or complex infrastructure.
 
-## Engineering Principle
+## Engineering/Review Checklist
 
-Use High Quality Engineering:
-- build for the current phase
-- prepare for the next phase
-- prioritize clarity
-- prioritize performance
-- prioritize maintainability
-- do not implement future requirements today
-
-## Scope Safety Checklist
-
-Check:
-- page remains single-page
-- no backend was added
-- no database was added
-- no auth was added
-- responsive layout works
-- visual direction matches brand
-- `npm run build` passes
-- `AI_HANDOFF.md` is updated
-- `reports/implementation_report.md` is updated
+- Respect existing config owners and the locked Home section blueprint.
+- Do not introduce future-phase architecture today.
+- Check actual Git and canonical task packet, including Owner work/recovery protections.
+- Define minimal changed files, validation and stop conditions before any mutation.
+- For code changes run required lint/build and visual QA; for documentation-only changes inspect scoped diff and whitespace.
+- Update existing `AI_HANDOFF.md` and `reports/implementation_report.md` after successful work; follow `LUMINA_REVIEW_CHECKLIST` before release.
