@@ -1,8 +1,8 @@
 # TASK-043 — Restore Canonical Home Navigation
 
-Status: LOCAL_VALIDATED / RELEASE_PENDING
+Status: VERIFIED_MERGED_AND_PRODUCTION
 Start: 2026-10-10T16:51+07:00
-End: PENDING
+End: 2026-10-10T17:00:24+07:00
 Owner goal: Continue Phase 1 Roadmap after preserving 21st.dev references and TASK-042 copy/UX audit.
 Baseline: main@28da59f; clean tracked worktree; only new TASK-042 report packet untracked (Nexus-owned).
 
@@ -24,4 +24,4 @@ Make the rendered desktop navigation match the five exact locked Constitution la
 - [x] Change nav config only, preserving existing href targets
 - [x] Run lint/build; functional browser QA desktop 1440 and mobile 390 (anchors/contact/overflow)
 - [x] Verify focused diff, images, report and reconcile canonical docs (final staged check pending)
-- [ ] Scope commit, PR review/merge if validation passes, post-merge cleanup/reconcile
+- [x] Scope commit, PR #13 merged, exact squash content verified, local branch cleaned, production READY and public DOM rechecked

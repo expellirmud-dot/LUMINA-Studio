@@ -4,7 +4,7 @@ Date: 2026-10-10 ICT
 Started: ~16:51+07
 Validation completed: 16:56+07
 Baseline: main@28da59f4ba8f352295c26796d831787ab3a24f48
-Decision: **VALIDATED_LOCAL_CANDIDATE / RELEASE_PENDING**
+Decision: **VERIFIED_MERGED_AND_DEPLOYED** (post-release verification below)
 
 ## Goal and exact change
 - In `src/config/navigation.ts`, replace the old labels `Stories, Approach, About, Inquire` plus `Inquire` CTA with the five **rendered** navigation labels in Constitution order: `Home, Stories, About, Experience, Contact`.
@@ -31,4 +31,11 @@ External reference code imported: none. New dependencies: none.
 Risk: external production deployment still needs post-merge verification if automatic Vercel triggers. No claim of new production release until checked. Existing page animation/mobile behavior otherwise unchanged.
 Next bounded step: propose non-Hero copy wording for What We Notice, Moments Between, Behind The Lens, Experience and Final CTA, with specific Thai/English choice and mobile wraps; do NOT change Hero without explicit Owner approval.
 
-Release state: pending commit/PR at this report revision; verify merge and production from live sources, then record follow-up closure.
+Initial report preceded release; canonical post-release closure follows.
+
+## Post-release verification (2026-10-10, ICT)
+- GitHub [PR #13](https://github.com/expellirmud-dot/LUMINA-Studio/pull/13) confirmed **MERGED**, squash SHA `40edf3a04d723c598c5ac7e74159f49b5c5270e1`.
+- Vercel production deployment `dpl_2NehhvkLXSozuBvvoyMT7MEffAGX`: `READY`, target `production`, source `main`, `githubCommitSha=40edf3a...` (verified via live Vercel deployment listing).
+- Public `https://lumina-studio-iota-ten.vercel.app/`: HTTP 200 and rendered nav exactly Home / Stories / About / Experience / Contact on 390x844 and 1440x900, no document-level horizontal overflow.
+- Local main fast-forwarded to same SHA, Git status clean, one root worktree. Scoped branch was removed only after tree-equivalent squash verification.
+- No new animation component, no Hero alteration, no contact account changes; next step is non-Hero bilingual copy proposal from TASK-042.

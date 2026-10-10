@@ -1,9 +1,9 @@
-# LATEST CANDIDATE UPDATE — TASK-043 (2026-10-10)
+# LATEST VERIFIED RELEASE — TASK-043 (2026-10-10)
 
 - TASK-042 complete: read-only canonical copy/navigation audit with live desktop/mobile evidence; report `.tasks/TASK-042/reports/final-report.md`.
 - TASK-043 candidate restores locked five navigation labels using only `src/config/navigation.ts`. No change to Hero, content copy, contact URLs, dependencies or layouts.
 - Candidate lint/build/TypeScript PASS; Chrome desktop/mobile nav/CTA/overflow checks PASS; screenshot comparison saved in ignored runtime folder.
-- PR/merge and live deployment verification pending; do not interpret this section as a deployed release.
+- PR #13 VERIFIED MERGED to main@40edf3a; Vercel production READY dpl_2NehhvkLXSozuBvvoyMT7MEffAGX. Live public URL HTTP 200 and exact five navigation labels confirmed at 390/1440; no overflow. No manual deployment or third-party component installation.
 - Full details: `.tasks/TASK-043/reports/final-report.md`.
 
 ---

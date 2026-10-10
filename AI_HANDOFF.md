@@ -1,13 +1,13 @@
-# CURRENT HANDOFF — 2026-10-10 (TASK-043)
+# CURRENT HANDOFF — 2026-10-10 (TASK-043 RELEASE VERIFIED)
 
-**Current task:** TASK-043 — Local navigation correction validated, PR/release pending.
+**Current task:** NONE — TASK-043 VERIFIED_MERGED_AND_DEPLOYED.
 **Prior task:** TASK-042 — Read-only Home Copy/Navigation audit COMPLETE; evidence in `.tasks/TASK-042/reports/final-report.md`.
-**Baseline:** main@28da59f before scoped TASK-043 edits.
+**Current Git:** main@40edf3a (matches origin/main); PR #13 squash merged.
 
 - Constitution-ordered rendered navigation is now Home, Stories, About, Experience, Contact. Single source of truth: `src/config/navigation.ts`; no Hero or site-copy changes.
 - On exact local candidate, `npm run lint`, `npm run build`/TypeScript PASS; localhost:3410 Chrome QA at 390x844 and 1440x900 confirms five labels, Contact #final-cta, no horizontal overflow or header collision.
 - Verified screenshots ignored under `.runtime-captures/lumina/TASK-043/`; temporary server stopped.
-- Release state is **LOCAL_VALIDATED / NOT YET DEPLOYED** until GitHub PR and production verification reconcile this update.
+- Release state: **VERIFIED PRODUCTION** — PR #13 merged, Vercel production READY deployment dpl_2NehhvkLXSozuBvvoyMT7MEffAGX at exact main@40edf3a. Live https://lumina-studio-iota-ten.vercel.app/ HTTP 200, five links PASS at mobile 390px and desktop 1440px, no horizontal overflow.
 - Next bounded task after release: non-Hero bilingual copy options; Hero remains FROZEN. 21st.dev animation references remain deferred in `docs/ROADMAP.md`.
 
 ---
