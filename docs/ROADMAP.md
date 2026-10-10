@@ -6,9 +6,9 @@ Landing Page + Deploy Test
 
 ### Current bounded follow-up (2026-10-10; evidence: current Git main@d0e98e9)
 
-1. **Copy and content-consistency review first** — compare actual `src/config/content.ts`, `src/config/navigation.ts`, and `app/page.tsx` to the locked brand/blueprint and live rendering. Check Thai-first vs English editorial accents, section headings, story clarity, CTA language, and mobile line breaks. Produce a scoped proposal before any user-visible copy changes. **Hero remains FROZEN**; no Hero text/visual change without explicit Owner approval.
-2. Verify current Phase 1 contact actions and mobile presentation against existing release QA before making any new changes.
-3. Continue small, reversible polish only where evidence shows a gap. Existing `MiniAlbum`, `StoryImageFocus`, and `ExperienceSequence` are shipped patterns; do not replace them to chase new effects.
+1. **TASK-042 Copy Audit complete (2026-10-10).** Compared the live Home at 1440px/390px with brand locks and current config; discrepancies are documented in `.tasks/TASK-042/reports/final-report.md`. Hero remains FROZEN; non-Hero Thai/English editorial changes need a separate scoped proposal/review.
+2. **Contact baseline checked in TASK-042.** Live CTA targets LINE, footer includes phone/LINE/Facebook anchors, and tested desktop/mobile widths have no document-level horizontal overflow. Actual external account response and full interactive accessibility QA remain separate validation.
+3. **TASK-043 navigation correction locally validated (2026-10-10):** Constitution-ordered Home / Stories / About / Experience / Contact, with the last item retained as the compact Contact CTA. Candidate lint, build, TypeScript, desktop and mobile QA pass. PR/release verification pending. Continue only evidence-backed, reversible Phase 1 polish; preserve existing MiniAlbum, StoryImageFocus and ExperienceSequence.
 4. Postpone new micro-album animation prototypes until copy/UX priorities are reconciled and a separate bounded task is approved.
 
 ## Phase 2

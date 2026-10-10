@@ -1,4 +1,14 @@
-# LATEST DOCUMENTATION UPDATE — 2026-10-10 (TASK-041)
+# LATEST CANDIDATE UPDATE — TASK-043 (2026-10-10)
+
+- TASK-042 complete: read-only canonical copy/navigation audit with live desktop/mobile evidence; report `.tasks/TASK-042/reports/final-report.md`.
+- TASK-043 candidate restores locked five navigation labels using only `src/config/navigation.ts`. No change to Hero, content copy, contact URLs, dependencies or layouts.
+- Candidate lint/build/TypeScript PASS; Chrome desktop/mobile nav/CTA/overflow checks PASS; screenshot comparison saved in ignored runtime folder.
+- PR/merge and live deployment verification pending; do not interpret this section as a deployed release.
+- Full details: `.tasks/TASK-043/reports/final-report.md`.
+
+---
+
+# HISTORICAL DOCUMENTATION UPDATE — 2026-10-10 (TASK-041)
 
 - Preserved verified 21st.dev bookmarks in the canonical `docs/ROADMAP.md`; marked all links DEFERRED, not approved for installation.
 - Current Phase 1 next step is a bounded copy/content-consistency review (Thai-first vs English, CTA and mobile), preserving the frozen Hero and shipped UI.
