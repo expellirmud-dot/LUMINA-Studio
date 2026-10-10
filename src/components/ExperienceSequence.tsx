@@ -42,7 +42,7 @@ export function ExperienceSequence({ items, images }: ExperienceSequenceProps) {
         </div>
         <figcaption className="experience-media-caption">
           <span>{String(activeIndex + 1).padStart(2, "0")}</span>
-          <span>{items[activeIndex]}</span>
+          <span lang="th">{items[activeIndex]}</span>
         </figcaption>
       </figure>
 
@@ -57,7 +57,7 @@ export function ExperienceSequence({ items, images }: ExperienceSequenceProps) {
               onMouseEnter={() => setActiveIndex(index)}
             >
               <span>{String(index + 1).padStart(2, "0")}</span>
-              <span>{item}</span>
+              <span lang="th">{item}</span>
             </button>
           </li>
         ))}

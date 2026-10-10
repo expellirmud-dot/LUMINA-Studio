@@ -14,8 +14,8 @@ export const contentConfig = {
   },
   whatWeNotice: {
     label: "WHAT WE NOTICE",
-    title: "The quiet things\nare often what remain.",
-    body: "A hand reaching out.\nA familiar look across the room.\nThe pause before everything begins.\n\nThese are not always the moments people plan for,\nbut they are often the ones that stay.",
+    title: "บางเรื่องเล็ก ๆ\nเกิดขึ้นระหว่างวัน",
+    body: "ก่อนพิธีเริ่ม บางคนขยับเสื้อให้กัน\nบางคนยืนรออยู่เงียบ ๆ\nใครบางคนเลื่อนเก้าอี้ให้คนข้าง ๆ\n\nไม่มีใครเตรียมจังหวะเหล่านี้ไว้\nแต่เราก็อยากให้มันอยู่ในภาพถ่ายด้วย",
   },
   selectedStories: {
     label: "SELECTED STORIES",
@@ -32,18 +32,18 @@ export const contentConfig = {
   },
   momentsBetween: {
     label: "MOMENTS BETWEEN",
-    title: "Not everything meaningful\nhappens at the centre.",
-    body: "Sometimes the story is in the waiting,\nthe movement, the small detail,\nor the person standing just outside the frame.",
+    title: "ระหว่างที่ทุกคนรอ\nยังมีเรื่องอื่นเกิดขึ้น",
+    body: "ก่อนพิธีเริ่ม ระหว่างที่ทุกคนรอ\nหรือเมื่อแขกเริ่มทยอยกลับ\nยังมีคนคุยกัน ช่วยกันเก็บของ\nและใช้เวลาอีกนิดกับคนที่ไม่ได้เจอกันบ่อย",
   },
   brandBridge: {
     copy: "Different places.\nDifferent kinds of days.\nThe same attention to people.",
   },
   behindTheLens: {
     label: "BEHIND THE LENS",
-    title: "Photographs begin\nwith trust.",
-    body: "I work quietly, stay close to what is unfolding,\nand make space for people to remain themselves.\n\nThe aim is not to make every moment look perfect.\nIt is to recognise what already matters.",
+    title: "ผมชอบมองว่า\nคนเราอยู่ด้วยกันอย่างไร",
+    body: "บางคนกอดกัน บางคนพูดไม่เก่ง\nบางคนแค่นั่งอยู่ข้าง ๆ\n\nผมอยากให้ทุกคนใช้เวลากับคนตรงหน้าได้ตามปกติ\nโดยไม่ต้องคอยคิดว่ากล้องกำลังอยู่ตรงไหน",
     signature: "ผมไม่ได้อยากให้ทุกคนดูเหมือนนางแบบ\n\nแค่อยากให้ภาพยังเป็นตัวเขา\nและยังรู้สึกได้ว่า\nวันนั้นมีความหมายอย่างไร",
-    button: "More about the approach",
+    button: "วิธีที่ผมทำงาน",
   },
   kindWords: {
     label: "KIND WORDS",
@@ -54,16 +54,16 @@ export const contentConfig = {
   },
   experience: {
     label: "THE EXPERIENCE",
-    title: "A calm presence.\nA thoughtful process.",
-    body: "From the first conversation to the final photographs,\nthe process is kept clear, personal, and unhurried.",
-    supporting: "Guidance is always available.\nPressure is not.",
+    title: "เริ่มจากการพูดคุย\nก่อนวันถ่ายภาพ",
+    body: "เล่าให้ผมฟังได้ครับว่าเป็นวันอะไร\nมีใครบ้าง และอะไรสำคัญกับคุณในวันนั้น\n\nระหว่างงาน ผมจะคอยดูสิ่งที่เกิดขึ้น\nพร้อมช่วยแนะนำเมื่อคุณต้องการ",
+    supporting: "ไม่ต้องเตรียมคำตอบว่าทุกภาพควรออกมาอย่างไร\nเราค่อยคุยรายละเอียดกันได้",
   },
   finalCta: {
     label: "BEGIN A CONVERSATION",
-    title: "Tell me what matters\nto you.",
-    body: "You do not need to know exactly what the photographs should look like.\n\nBegin with the people, the day,\nand what you hope to remember.",
-    button: "Start a conversation",
-    secondary: "View contact details",
+    title: "เล่าให้ผมฟังได้ครับ\nว่าเป็นวันแบบไหน",
+    body: "เริ่มจากบอกว่าเป็นวันอะไร\nมีใครบ้าง และอะไรที่คุณอยากให้ผมเข้าใจเกี่ยวกับวันนั้น\n\nไม่จำเป็นต้องวางแผนทุกภาพไว้ล่วงหน้า",
+    button: "เริ่มพูดคุย",
+    secondary: "ดูช่องทางติดต่อ",
   },
   footer: {
     statement: "Photographs of what happened—\nand what it meant.",
