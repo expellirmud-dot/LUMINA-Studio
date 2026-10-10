@@ -1,11 +1,11 @@
-# CURRENT HANDOFF — TASK-045 (2026-10-10; LOCAL VALIDATED, RELEASE PENDING)
+# CURRENT HANDOFF — TASK-045 VERIFIED PRODUCTION (2026-10-10)
 
 - **Canonical audit/cleanup:** `.tasks/TASK-045/reports/final-report.md`; run started 18:02:09 ICT on `main@acabd21` after HARD BOOTSTRAP.
 - **Workers:** two AGY Gemini read-only CLI jobs dispatched in parallel; W1 completed, W2 timed out with partial output. Nexus independently reconciled decisions against current repository and GitHub.
 - **Skill inventory:** 49 -> 47; two redundant legacy skills retired with Git recovery retained. Kept Microsoft Foundry (unique content/dependencies), Impeccable, Thai language skill, locked brand docs. BRAND/DESIGN are now compatibility summaries under locked V2 owner.
 - **Local Git housekeeping:** nine validated squash-merged task branches retired; only `main` and `recovery/TASK-040-main-pre-ff` retained, stash/backups untouched.
 - **Open PR:** GitHub #2 Ads conversion tracking (unrelated, no merge/deletion of its validation folder). TASK-031..035 old headers are historical, not active-state proof.
-- **Gate:** scoped documentation/skill validation PASS; PR/merge and Vercel reconciliation still pending. No application/Hero/source deployment change initiated directly by this cleanup.
+- **Gate:** PR #16 MERGED at main@7b7daa0; Vercel production READY (dpl_GqSjFewqiLw5ApeXG9SE9UHAkpBZ); live Home 390px/1440px HTTP 200, nav and overflow smoke PASS. Working tree clean after PR #16 sync. This follow-up closure changes documentation only. No Hero/source behavior change.
 
 ---
 
