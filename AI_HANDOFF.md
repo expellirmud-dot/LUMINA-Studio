@@ -1,4 +1,15 @@
-# CURRENT HANDOFF — 2026-10-10 (TASK-043 RELEASE VERIFIED)
+# CURRENT HANDOFF — 2026-10-10 (TASK-044 DOCUMENTATION AUDIT)
+
+**Current task:** TASK-044 — documentation and plan-state audit completed; see `.tasks/TASK-044/reports/final-report.md`.
+**Git baseline at audit:** main@e453eb3 (initially clean; one root worktree).
+**Unmerged GitHub work:** PR #2 `feat/openai-ads-conversions` remains OPEN, unrelated to documentation cleanup. PR #1 and #3–14 are MERGED.
+**Historical task statuses:** TASK-031–035 have older READY/IN_PROGRESS text; do not treat these headers as current Git truth without reconciling later PRs.
+**Skill/doc decisions:** Preserve canonical Context Index, Constitution, Visual Language and Thai UX skill. BRAND.md and DESIGN.md have live skill references. Three questioned skills are candidates for separate deprecation/consumer review; nothing deleted. Owner-approved cleanup is limited by evidence and preservation gates.
+**Next bounded step:** reconcile exact references and consumers of redundant skill/docs before any removal; PR #2 remains a separate business/release decision.
+
+---
+
+# HISTORICAL HANDOFF — 2026-10-10 (TASK-043 RELEASE VERIFIED)
 
 **Current task:** NONE — TASK-043 VERIFIED_MERGED_AND_DEPLOYED.
 **Prior task:** TASK-042 — Read-only Home Copy/Navigation audit COMPLETE; evidence in `.tasks/TASK-042/reports/final-report.md`.
