@@ -6,7 +6,7 @@ Landing Page + Deploy Test
 
 ### Current bounded follow-up (2026-10-11; prior TASK-041 baseline was main@d0e98e9)
 
-**TASK-046 — non-Hero Thai Editorial Copy:** local candidate validated on 2026-10-11 (lint/build, mobile 390px and desktop 1440px, links and language accessibility); PR/Production release pending. This changes only observational Thai copy in five existing sections and four Experience steps, with `lang="th"` markup. Hero FROZEN; Selected Stories and Kind Words untouched. Canonical evidence: `.tasks/TASK-046/reports/final-report.md`.
+**TASK-046 — non-Hero Thai Editorial Copy:** local candidate validated on 2026-10-11 (lint/build, mobile 390px and desktop 1440px, links and language accessibility); PR #18 merged and Production Vercel READY at main@3a5903e, with live Chrome mobile/desktop verification. This changes only observational Thai copy in five existing sections and four Experience steps, with `lang="th"` markup. Hero FROZEN; Selected Stories and Kind Words untouched. Canonical evidence: `.tasks/TASK-046/reports/final-report.md`.
 
 1. **TASK-042 Copy Audit complete (2026-10-10).** Compared the live Home at 1440px/390px with brand locks and current config; discrepancies are documented in `.tasks/TASK-042/reports/final-report.md`. Hero remains FROZEN; non-Hero Thai/English editorial changes need a separate scoped proposal/review.
 2. **Contact baseline checked in TASK-042.** Live CTA targets LINE, footer includes phone/LINE/Facebook anchors, and tested desktop/mobile widths have no document-level horizontal overflow. Actual external account response and full interactive accessibility QA remain separate validation.
