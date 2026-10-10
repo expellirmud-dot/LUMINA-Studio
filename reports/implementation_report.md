@@ -1,4 +1,13 @@
-# TASK-045 — DOCUMENTATION/SKILL CLEANUP CANDIDATE (2026-10-10)
+# TASK-046 — NON-HERO THAI COPY CANDIDATE (2026-10-11)
+
+- Copy-only values in `src/config/content.ts` and `src/config/services.ts` plus `lang="th"` attributes in existing page/ExperienceSequence for Thai screen-reader pronunciation. Hero and protected sections unchanged.
+- AGY parallel read-only workers: one completed, one partial timeout; Nexus directly reconciled with Brand Blueprint and actual repo.
+- Local npm lint/build/TypeScript PASS. Protected sections unchanged versus main HEAD; Playwright/Chrome screenshots and functional QA at 390x844 + 1440x900 PASS, no horizontal overflow, destination anchors preserved.
+- Release: **LOCAL_VALIDATED / PR PENDING**. Evidence: `.tasks/TASK-046/reports/final-report.md`.
+
+---
+
+# HISTORICAL TASK-045 — DOCUMENTATION/SKILL CLEANUP CANDIDATE (2026-10-10)
 
 - HARD BOOTSTRAP on main@acabd21: Continuity NAVIGATION_ONLY; Kernel ESTABLISHED/GUARDED_INTERNAL_ONLY/CLEAN; one root worktree.
 - Two parallel read-only AGY CLI audit readers: one completed; one timed out with partial result. Nexus cross-checked authoritative files/GitHub independently.

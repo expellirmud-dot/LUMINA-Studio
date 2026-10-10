@@ -1,6 +1,6 @@
 export const servicesConfig = [
-  "We begin with what matters to you",
-  "The day is observed, not directed",
-  "Photographs are selected with intention",
-  "Your story is delivered with care",
+  "เริ่มจากฟังว่าเป็นวันแบบไหน",
+  "อยู่กับจังหวะจริงของวัน",
+  "เลือกภาพจากสิ่งที่เกิดขึ้น",
+  "คัดเลือกและส่งมอบภาพถ่าย",
 ];
