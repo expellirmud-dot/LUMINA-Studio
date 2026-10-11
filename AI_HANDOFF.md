@@ -1,4 +1,15 @@
-# CURRENT HANDOFF — TASK-047 BILINGUAL EDITORIAL PREVIEW (2026-10-11; ART DIRECTION GATE OPEN)
+# CURRENT HANDOFF — TASK-047 MERGED + PRODUCTION VERIFIED (2026-10-11 17:50 ICT)
+
+- PR #20 **MERGED** at `2026-10-11T10:34:30Z` (17:34:30 ICT): `main@fbf4640`. Exact released tree is equal to former preview head `185ea18` (`git diff --quiet` PASS).
+- Vercel Production `dpl_395Y5YDsgpxx78bmQFbESr63LD2g` **READY**, production alias `https://lumina-studio-iota-ten.vercel.app/` HTTP **200**. This is verified deployment metadata, not just an assumed merge-triggered release.
+- Live Production Chrome/Puppeteer 390/768/1440 section captures: **27/27, qaFindings=0**. Live Playwright interaction/font/links/scroll check: **90/90 PASS**. Capture/manifest/evidence under ignored `.runtime-captures/lumina/TASK-047/prod-postmerge-20261011/` and `prod-postmerge-interaction/`. No new app code.
+- Local `main=origin/main=fbf4640`. Root worktree intentionally remains on former preview branch while `npm run dev` uses `next-env.d.ts` (dev-generated modified file); do not reset it. This docs-only closeout is prepared separately.
+- **Technical decision: APPROVED_WITH_NOTES / MERGED_PRODUCTION_VERIFIED.** Owner executed merge; separate explicit subjective Art Direction approval not documented independently. `Kind Words` quote provenance still unverified; not changed here.
+- Authoritative evidence: `.tasks/TASK-047/reports/final-report.md` production addendum. All prior preview/pending entries below are **historical**, not current production state.
+
+---
+
+# HISTORICAL HANDOFF — TASK-047 BILINGUAL EDITORIAL PREVIEW (2026-10-11; PRE-MERGE ART DIRECTION GATE)
 
 - Active task `.tasks/TASK-047/`; canonical preview branch `experiment/task047-bilingual-editorial` based on Production `main@de8f7ad`. No production merge/deploy permitted by this task before Owner visual acceptance.
 - Edited five non-Hero editorial headings to English Cormorant; shortened Thai body with explicit IBM Plex Sans Thai Looped token. Removed a redundant Behind The Lens Thai quote, hid repeated active-image caption on mobile, offset Experience anchor below fixed navigation.
