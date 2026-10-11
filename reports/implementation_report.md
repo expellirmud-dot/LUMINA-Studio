@@ -1,3 +1,13 @@
+# TASK-047 — VERIFIED MERGED AND PRODUCTION QA (2026-10-11)
+
+- GitHub PR #20 merged to `main@fbf4640` at 17:34:30 ICT; Vercel Production `dpl_395Y5YDsgpxx78bmQFbESr63LD2g` READY on exact SHA and canonical Home HTTP 200.
+- Released source tree identical to `185ea18` preview candidate; previous candidate lint/build/TypeScript PASS remains applicable to this source revision.
+- Actual Production visual capture 9 sections × 3 viewports (390/768/1440) = **27 screenshots, qaFindings=0**; Production Mini Album / Experience / typography / anchor / link test **90/90 PASS**.
+- Only task closeout documentation updated in isolated worktree; no changes to site source, Hero, images, dependencies or production environment by this review. Owner's merge action is verified; independent subjective Art Direction sign-off not separately evidenced. Kind Words provenance remains open.
+- Canonical details and manifest paths: `.tasks/TASK-047/reports/final-report.md`.
+
+---
+
 # TASK-046 — NON-HERO THAI COPY CANDIDATE (2026-10-11)
 
 - Copy-only values in `src/config/content.ts` and `src/config/services.ts` plus `lang="th"` attributes in existing page/ExperienceSequence for Thai screen-reader pronunciation. Hero and protected sections unchanged.

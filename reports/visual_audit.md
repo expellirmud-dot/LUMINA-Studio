@@ -1,3 +1,13 @@
+# TASK-047 — POST-MERGE PRODUCTION VISUAL QA (2026-10-11)
+
+- Released `main@fbf4640`, Vercel Production READY. Used existing `scripts/capture_review.js` against canonical public website (not local preview).
+- Desktop 1440×900, tablet 768×1024, mobile 390×844: 9 sections per viewport, **27 screenshots**, **0 QA findings**. No broken images, missing anchors, horizontal overflow, blocking console/page/network errors; H1 count 1.
+- Production interactive regression **90/90 PASS** including English serif headings, Thai font, Mini Album open/close, Experience responsive caption/list state, anchor clearance and contact CTA.
+- Spot-reviewed actual Mobile Behind The Lens and Desktop/Mobile Experience capture; typography legible, captions not repeated in stacked mobile layout, and editorial photography remains foreground. Technical checks and this visual spot-check do not replace subjective Owner aesthetic sign-off.
+- Manifest: `.runtime-captures/lumina/TASK-047/prod-postmerge-20261011/2026-10-11T10-47-26-442Z/manifest.json`; interaction evidence `prod-postmerge-interaction/validation-postfix.json`. `Kind Words` testimonial origin remains unverified. Final technical decision: **APPROVED_WITH_NOTES**. No site modification in this verification.
+
+---
+
 # TASK-046 — NON-HERO THAI COPY VISUAL QA (2026-10-11)
 
 - Local exact candidate: headless system Chrome at 390x844 and 1440x900; all five updated Thai headings and CTA fit without horizontal overflow or visible clipping.

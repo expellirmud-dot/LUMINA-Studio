@@ -52,3 +52,20 @@ Start 13:31:14 ICT; end (technical checks) 13:45:16 ICT. Owner requested re-use 
 **Changed code scope:** `scripts/capture_review.js` (existing QA script, no new dependency) and one Experience breakpoint rule in `app/globals.css`. Task packet/hand-off/report evidence only. Original Draft PR #20 stays DRAFT pending subjective Owner art-direction. No production merge/deploy. No temporary scripts scattered under `D:\tools`; captured evidence is under the repo's ignored `.runtime-captures/`.
 
 **Final decision:** TECHNICAL VISUAL QA **APPROVED_WITH_NOTES**; Owner aesthetic acceptance **PENDING**. Remaining nontechnical gate: approve bilingual typography and editorial mood in authenticated Preview. The 3–5-image Story expansion is Phase 2 research, not silently implemented here.
+
+---
+
+## 2026-10-11 Production release and post-merge QA addendum (17:34–17:50 ICT)
+
+**Release state: MERGED_PRODUCTION_VERIFIED / TECHNICAL_QA_PASS.** This addendum supersedes the earlier *current-state* preview/draft/production-pending statements above; those remain preserved as dated historical evidence.
+
+- GitHub PR #20 `https://github.com/expellirmud-dot/LUMINA-Studio/pull/20` is **merged=true, closed** at **2026-10-11 17:34:30 ICT** (`2026-10-11T10:34:30Z`). Merge SHA: `fbf464033f089c3c1f8f1d328a7856c319b17b3c`; merged head: `185ea184bec2b51a170cde4eb4b495d87927c442`.
+- Confirmed **exact file-tree equivalence**: `git diff --quiet 185ea18 fbf4640` PASS, so pre-merge candidate lint/build/TypeScript and scoped 90/90 interaction checks refer to the same released source tree, not a different post-merge codebase.
+- Vercel Production deployment `dpl_395Y5YDsgpxx78bmQFbESr63LD2g` is **READY**, target `production`, Git ref `main`, SHA `fbf4640`; canonical alias `https://lumina-studio-iota-ten.vercel.app/`. Live HTTP **200** observed post-release.
+- **New, direct Production visual QA**: existing `node scripts/capture_review.js --target production --type sections --viewport all` ran against canonical URL on desktop **1440x900**, tablet **768x1024**, mobile **390x844**. **27/27 section captures produced; qaFindings=0**. Manifest under `.runtime-captures/lumina/TASK-047/prod-postmerge-20261011/2026-10-11T10-47-26-442Z/manifest.json`. Checked broken images, anchors, overflow, H1, console/page errors, failed network requests.
+- **New, direct Production functional QA**: reused copied, unchanged `validate-candidate.cjs` in separate ignored `.runtime-captures/lumina/TASK-047/prod-postmerge-interaction/` evidence folder; invoked with Production URL; **90/90 PASS, exit 0** at 390/768/1440. Includes English Cormorant headlines / Thai IBM Plex Sans Thai Looped body, unchanged Hero, protected contact LINE URL, Mini Album five items open/close, four Experience buttons/pressed state, fixed-nav scroll positioning and responsive caption rule. Preserved previous candidate evidence.
+- Manual screenshot spot-check: Mobile Behind The Lens and Desktop/Mobile Experience show no observed clipping or duplicate mobile Experience caption. These observations are not a substitute for the Owner's independent aesthetic judgment.
+- Local `main` fast-forward synchronized to `fbf4640`, matching `origin/main` before this docs-only closeout. Active root development worktree remains on `experiment/task047-bilingual-editorial`; `next-env.d.ts` has a Next dev-generated path change and was intentionally neither reset nor edited. Production did **not** need redeployment by this validation.
+- **Outstanding distinction**: Owner merged PR #20, a confirmed release action, but an independent explicit subjective typography/Art Direction acceptance was not captured in the evidence reviewed. Record that limitation instead of retroactively claiming a separate approval. `Kind Words` testimonial provenance remains **UNVERIFIED**, inherited and not part of TASK-047.
+
+**Technical decision:** APPROVED_WITH_NOTES / RELEASE VERIFIED. No app/asset/dependency/source edits were needed for this post-merge QA. The documentation-only closeout was prepared on an isolated worktree to protect the live dev process and recovery state.

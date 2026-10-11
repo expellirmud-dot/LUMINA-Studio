@@ -1,5 +1,5 @@
 # TASK-047 — Bilingual Editorial Typography Preview (Owner Art Direction Gate)
-Status: PREVIEW_READY_AWAITING_OWNER_ART_DIRECTION (NOT APPROVED FOR PRODUCTION)
+Status: MERGED_PRODUCTION_VERIFIED / TECHNICAL_QA_PASS (Owner visual approval not separately evidenced; see release addendum)
 Start: 2026-10-11T06:01:25+07:00
 Baseline: main@de8f7ad8564b6c3abd0d30e8f61175a351fe010e; clean, one root worktree.
 Owner feedback: TASK-046 Thai-only headlines feel awkward, unnatural and visually inconsistent; Thai font not acceptable; English and Thai should be designed together.
@@ -42,3 +42,16 @@ Hero (all fields and layout), photo assets/order, Selected Stories, Kind Words, 
 - [x] Tablet 768 screenshot: hide duplicate active step caption wherever Experience uses stacked layout (<900px); verify again at 390/768/1440
 
 Image QA result (13:45 ICT): original automated all-viewport capture had one *false positive* for 2 hidden lazy images; source image URLs returned 200. Corrected the existing script; rerun 9 sections x 3 viewport = 27 captures, qaFindings=0 (mobile deferredLazyImages=2). On 768px visual, repeated '01' under stacked image was real; extended Experience caption hiding to <=899px. Post-build DOM + MiniAlbum interactive QA 90/90 PASS at 390, 768, 1440. Tablet screenshot QA 9/9, qaFindings=0. No Hero/Stories/Kind Words/photography content changes; Draft PR only. Art-direction Owner approval remains open.
+
+## Post-merge Production verification (2026-10-11, 17:34–17:50 ICT)
+- [x] Confirm PR #20 merged into main at `fbf4640`, GitHub merged timestamp 17:34:30 ICT.
+- [x] Confirm Vercel Production READY on exact merge SHA and canonical URL HTTP 200.
+- [x] Verify source tree matches pre-merge tested candidate (`git diff --quiet 185ea18 fbf4640`).
+- [x] Execute existing Production visual capture at 390/768/1440 (27 screenshots, 0 QA findings).
+- [x] Execute Production Mini Album/Experience/typography/contact functional regression (90/90 PASS).
+- [x] Preserve production evidence under ignored `.runtime-captures/lumina/TASK-047/` and protect active root worktree.
+- [x] Produce technical closeout addendum; no new frontend/backend features or asset changes.
+- [ ] Independent Owner subjective Art Direction acceptance not separately evidenced by this QA/merge.
+- [ ] Kind Words testimonial provenance remains a separate historical issue.
+
+Technical release status: `MERGED_PRODUCTION_VERIFIED / TECHNICAL_QA_PASS / APPROVED_WITH_NOTES`.
