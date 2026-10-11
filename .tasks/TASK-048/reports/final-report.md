@@ -3,7 +3,7 @@
 - **Date**: 2026-10-11 Asia/Bangkok
 - **Start**: 2026-10-11 18:47:00 ICT
 - **Completion**: 2026-10-11 19:02:00 ICT
-- **Status**: TECHNICAL_QA_PASS / READY_FOR_OWNER_REVIEW
+- **Status**: TECHNICAL_QA_PASS / PENDING_OWNER_ART_DIRECTION
 - **Base**: `main@172684a03edf0f91b1e90a67bbc39e1d7a8e083b`
 - **Branch**: `feat/task048-narrative-enhancements`
 
@@ -77,3 +77,12 @@ Branch `feat/task048-narrative-enhancements` ได้ถูกพุชขึ�
 - Head SHA: `349e16e`
 - Remote URL: https://github.com/expellirmud-dot/LUMINA-Studio/tree/feat/task048-narrative-enhancements
 - Ready to open Pull Request หรือนำเสนอ Owner เพื่อตรวจสอบ
+
+## 2026-10-11 PR #22 Scope and QA Reconciliation
+- **Initial review:** PR #22 head `364b3cf` added `ExpandableGallery`, `motion` and a tenth homepage section despite TASK-048 declaring Tactile Print Fan SHELVED. It also introduced nine gallery images with unsupported exact timestamps, missing equivalent keyboard card activation, and a stale report claiming zero external dependencies. Review result HOLD MERGE.
+- **Preserved, not deleted:** `experiment/task048-gallery-shelved-20261011` branch points to original `364b3cf` and has been pushed to origin; kept for a separate future Owner scope decision. On current PR candidate, only commit `364b3cf` was reversed, leaving earlier approved TASK-048 work intact. Do not reintroduce it in this task.
+- **Story truth:** replaced the unverified exact time labels 06:40, 08:15, 09:30 in `src/config/portfolio.ts` with thematic descriptions. No claim to know capture timestamps. Scene captions were made more observational, without asserting unverified sequence.
+- **Inquiry accessibility:** `QuietInquiryStarter` now exposes a group of native selection buttons with `aria-pressed` (Tab and Enter/Space behavior), resets status when option changes, and provides visible polite status for Clipboard success or failure. This does not claim an actual LINE message was sent.
+- **Candidate validation:** ESLint PASS; Next.js 16.4 production build and TypeScript PASS; protected segments Hero/Selected Stories/Brand Bridge/Kind Words/Footer 5/5 unchanged; Chrome interactions and responsive checks at 390, 768, 1440 passed 42/42. Explicitly verified Story dialog three frames, Escape/focus restoration, absence of fabricated clocks and shelved Gallery, button selection via keyboard, both Clipboard paths, Experience crossfade and no horizontal overflow.
+- **Screenshot evidence (VERIFIED):** canonical `scripts/capture_review.js` ran against local candidate production build; **27 screenshots** (9 sections × 390, 768, 1440), `qaFindings=0`; 0 broken images, missing anchors, overflow, page/console errors and failed requests. Two hidden lazy images correctly classified as deferred on mobile. Manifest: `.runtime-captures/lumina/TASK-048/repair-pr22/2026-10-11T13-42-51-563Z/manifest.json`. Inspected selected mobile Story, tablet Experience and desktop Contact screenshots; no new objective visual blocker; subjective Owner Art Direction remains pending.
+- **Release gate:** no production merge/deploy until current-candidate screenshot and Owner Art Direction acceptability are verified. CI/Vercel success alone is not enough.

@@ -19,32 +19,31 @@ export function QuietInquiryStarter({
   secondaryLabel,
 }: QuietInquiryStarterProps) {
   const [selectedId, setSelectedId] = useState<string>(options[0]?.id ?? "");
-  const [copied, setCopied] = useState(false);
+  const [copyStatus, setCopyStatus] = useState<"idle" | "success" | "error">("idle");
 
   const activeOption = options.find((opt) => opt.id === selectedId) ?? options[0];
 
   async function handleCopy() {
     if (!activeOption) return;
     try {
+      if (!navigator.clipboard?.writeText) throw new Error("Clipboard is unavailable");
       await navigator.clipboard.writeText(activeOption.defaultMessage);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2200);
+      setCopyStatus("success");
     } catch {
-      // Graceful fallback for non-clipboard environments
+      setCopyStatus("error");
     }
   }
 
   return (
     <div className="quiet-inquiry-starter">
-      <div className="quiet-inquiry-chips" role="radiogroup" aria-label="เลือกหัวข้อที่ต้องการปรึกษา">
+      <div className="quiet-inquiry-chips" role="group" aria-label="เลือกหัวข้อที่ต้องการปรึกษา">
         {options.map((option) => (
           <button
             key={option.id}
             type="button"
-            role="radio"
-            aria-checked={selectedId === option.id}
+            aria-pressed={selectedId === option.id}
             className={`quiet-inquiry-chip ${selectedId === option.id ? "is-selected" : ""}`}
-            onClick={() => setSelectedId(option.id)}
+            onClick={() => { setSelectedId(option.id); setCopyStatus("idle"); }}
           >
             {option.label}
           </button>
@@ -64,9 +63,12 @@ export function QuietInquiryStarter({
               onClick={handleCopy}
               aria-label="คัดลอกข้อความทักทาย"
             >
-              {copied ? "คัดลอกแล้ว ✓" : "คัดลอกข้อความ"}
+              {copyStatus === "success" ? "คัดลอกแล้ว ✓" : "คัดลอกข้อความ"}
             </button>
           </div>
+          <p className="quiet-inquiry-note-label" role="status" aria-live="polite">
+            {copyStatus === "success" ? "คัดลอกข้อความแล้ว สามารถวางใน LINE ได้" : copyStatus === "error" ? "ไม่สามารถคัดลอกอัตโนมัติได้ กรุณาเลือกและคัดลอกข้อความด้านบนด้วยตนเอง" : ""}
+          </p>
         </div>
       )}
 

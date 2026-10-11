@@ -86,8 +86,8 @@ export const selectedStoriesConfig: SelectedStory[] = [
           alt: "Ceremony items placed calmly before the arrival of family",
           position: "50% 50%",
         },
-        timeContext: "06:40 — The Space Before",
-        caption: "พื้นที่ที่จัดเตรียมไว้อย่างเงียบสงบในแสงแรก ก่อนที่ทุกคนจะมารวมตัวกัน",
+        timeContext: "รายละเอียดของพิธี",
+        caption: "รายละเอียดของสถานที่และสิ่งของที่เตรียมไว้สำหรับพิธี",
       },
       {
         image: {
@@ -96,7 +96,7 @@ export const selectedStoriesConfig: SelectedStory[] = [
           alt: "An elder offering a blessing during a family ceremony",
           position: "55% 52%",
         },
-        timeContext: "08:15 — The Blessing",
+        timeContext: "ช่วงเวลาแห่งคำอวยพร",
         caption: "คำอวยพรและสัมผัสมือจากผู้ใหญ่ ช่วงเวลาที่เรียบง่ายแต่เปี่ยมด้วยความหมาย",
       },
       {
@@ -106,8 +106,8 @@ export const selectedStoriesConfig: SelectedStory[] = [
           alt: "A warm family embrace after the ceremony",
           position: "48% 68%",
         },
-        timeContext: "09:30 — The Embrace",
-        caption: "อ้อมกอดและความอบอุ่นในครอบครัว เมื่อพิธีการสิ้นสุดลงและความรู้สึกยังคงอยู่",
+        timeContext: "สายใยครอบครัว",
+        caption: "อ้อมกอดและความอบอุ่นที่สะท้อนความผูกพันในครอบครัว",
       },
     ],
   },

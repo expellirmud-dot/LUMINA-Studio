@@ -1,6 +1,6 @@
 # TASK-048 — Sequential Interactive Enhancements
 
-- **Status**: READY_FOR_OWNER_REVIEW
+- **Status**: TECHNICAL_QA_PASS / PENDING_OWNER_ART_DIRECTION
 - **Start**: 2026-10-11T18:47:00+07:00
 - **Completed**: 2026-10-11T19:02:00+07:00
 - **Baseline**: `main@172684a03edf0f91b1e90a67bbc39e1d7a8e083b`
@@ -47,3 +47,15 @@
 - No broken images, no horizontal scroll overflow
 - Hero remains untouched and FROZEN
 - Commit and push each subtask independently upon validation.
+
+## PR #22 Scope Repair (2026-10-11)
+- [x] Verify fresh main/head, clean worktree, Kernel and task scope
+- [x] Preserve out-of-scope ExpandableGallery and motion experiment at `origin/experiment/task048-gallery-shelved-20261011@364b3cf`
+- [x] Restore current PR to exactly three approved enhancements; keep MiniAlbum untouched
+- [x] Replace unsupported clock timestamps with truthful thematic Story labels
+- [x] Make inquiry chips keyboard-operable ordinary buttons (`role=group`, `aria-pressed`) and report clipboard success/failure
+- [x] Lint/build PASS and protected-copy 5/5 PASS
+- [x] Chrome 390/768/1440 interactions 42/42 PASS
+- [x] Canonical screenshot capture QA and visual review against the new candidate
+- [ ] Commit/push exact tested candidate and reconcile GitHub/Vercel preview
+- [ ] Owner subjective Art Direction acceptance before production merge

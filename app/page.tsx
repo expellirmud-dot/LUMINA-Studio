@@ -3,7 +3,6 @@ import { MiniAlbum } from "../src/components/MiniAlbum";
 import { ExperienceSequence } from "../src/components/ExperienceSequence";
 import { StoryImageFocus } from "../src/components/StoryImageFocus";
 import { QuietInquiryStarter } from "../src/components/QuietInquiryStarter";
-import { ExpandableGallery } from "../src/components/ExpandableGallery";
 import { heroImage, profileImage } from "../src/config/images";
 import { typographyConfig } from "../src/config/typography";
 import { visualConfig } from "../src/config/visual";
@@ -151,8 +150,6 @@ export default function Home() {
           </div>
           <MiniAlbum images={momentImagesConfig} />
         </section>
-
-        <ExpandableGallery />
 
         <aside className="section-shell brand-bridge reveal" aria-label="LUMINA approach">
           <p>{contentConfig.brandBridge.copy}</p>

@@ -39,3 +39,6 @@
 
 ## Subtask 4: Tactile Print Fan
 - [x] พักไว้ (Shelved) ตามคำสั่งของ Owner
+
+## Follow-up PR #22 Review — 2026-10-11
+Existing work is limited to Narrative Story Drawer (one Story trial), Experience Crossfade in current component, and Quiet Inquiry Starter. Last Gallery commit `364b3cf` exceeded the shelved experiment boundary and changed locked homepage sequence, so retain on separate archive branch, revert only that specific commit from PR tip. Do not remove the archive branch. Replace unsupported times with thematic labels, correct accessible inquiry-selection semantics/clipboard feedback, run current-candidate lint/build, browser interaction and the canonical screenshots, then update report and GitHub Draft PR. No production changes or extra Story system.
