@@ -2,6 +2,7 @@ export const typographyConfig = {
   fonts: {
     heading: "Inter / IBM Plex Sans Thai Looped",
     body: "Inter / IBM Plex Sans Thai Looped",
+    thaiBody: "var(--font-ibm-plex), sans-serif",
   },
   tokens: {
     brandLockup: "flex items-baseline gap-1.5 font-serif text-2xl text-[var(--text)]",

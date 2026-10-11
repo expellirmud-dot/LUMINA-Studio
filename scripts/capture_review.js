@@ -15,9 +15,11 @@ const VIEWPORTS = {
 };
 const SECTION_IDS = [
   "hero",
+  "what-we-notice",
   "selected-stories",
   "moments-between",
   "behind-the-lens",
+  "kind-words",
   "experience",
   "final-cta",
   "contact-details",
@@ -124,6 +126,8 @@ async function waitForFontsAndImages(page) {
     if (document.fonts && document.fonts.ready) await document.fonts.ready;
     const images = [...document.images];
     await Promise.all(images.map((image) => {
+      // Closed photo rails and decorative layers intentionally defer lazy loads.
+      if (image.loading === "lazy" && !image.complete && image.closest('[aria-hidden="true"]')) return;
       if (image.complete) return image.decode ? image.decode().catch(() => undefined) : undefined;
       return new Promise((resolve) => {
         const done = () => resolve();
@@ -163,6 +167,9 @@ async function preparePage(page, url) {
 async function collectQa(page) {
   return page.evaluate((canonicalIds) => {
     const images = [...document.images];
+    const isDeferredLazyImage = (image) => image.loading === "lazy"
+      && !image.complete
+      && Boolean(image.closest('[aria-hidden="true"]'));
     const hrefTargets = [...document.querySelectorAll('a[href^="#"]')]
       .map((anchor) => decodeURIComponent(anchor.hash.slice(1)))
       .filter(Boolean);
@@ -170,7 +177,10 @@ async function collectQa(page) {
     return {
       imageCount: images.length,
       brokenImages: images
-        .filter((image) => !image.complete || image.naturalWidth === 0)
+        .filter((image) => !isDeferredLazyImage(image) && (!image.complete || image.naturalWidth === 0))
+        .map((image) => image.currentSrc || image.src || image.getAttribute("src")),
+      deferredLazyImages: images
+        .filter(isDeferredLazyImage)
         .map((image) => image.currentSrc || image.src || image.getAttribute("src")),
       missingInternalAnchors: requiredIds.filter((id) => !document.getElementById(id)),
       horizontalOverflowPx: Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth),

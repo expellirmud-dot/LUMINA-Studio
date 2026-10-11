@@ -586,6 +586,7 @@ body {
 .experience-section {
   display: grid;
   gap: clamp(3rem, 8vw, 7rem);
+  scroll-margin-top: 5.5rem;
 }
 
 .experience-copy {
@@ -1238,6 +1239,13 @@ body {
 @media (min-width: 900px) {
   .experience-sequence {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  }
+}
+
+/* Experience stacks below 900px; the active step is repeated in the list. */
+@media (max-width: 899px) {
+  .experience-media-caption {
+    display: none;
   }
 }
 

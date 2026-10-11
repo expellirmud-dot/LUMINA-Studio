@@ -1,3 +1,14 @@
+# CURRENT HANDOFF — TASK-047 BILINGUAL EDITORIAL PREVIEW (2026-10-11; ART DIRECTION GATE OPEN)
+
+- Active task `.tasks/TASK-047/`; canonical preview branch `experiment/task047-bilingual-editorial` based on Production `main@de8f7ad`. No production merge/deploy permitted by this task before Owner visual acceptance.
+- Edited five non-Hero editorial headings to English Cormorant; shortened Thai body with explicit IBM Plex Sans Thai Looped token. Removed a redundant Behind The Lens Thai quote, hid repeated active-image caption on mobile, offset Experience anchor below fixed navigation.
+- On current candidate: `npm run lint` PASS; `npm run build` (Next.js 16.4 and TypeScript) PASS; protected Hero, Selected Stories, Brand Bridge, Kind Words and Footer segments byte-equal; Chrome viewport 390x844 and 1440x900 **50/50 bounded QA PASS**. Visual screenshots and machine JSON in ignored `.runtime-captures/lumina/TASK-047/`. Two prior read-only AGY reviewers completed their respective copy/typography proposals.
+- **Preview for Owner:** GitHub Draft PR #20 https://github.com/expellirmud-dot/LUMINA-Studio/pull/20; Vercel Preview READY at https://lumina-studio-emtgxxbue-expellirmud-dots-projects.vercel.app/ (requires appropriate Vercel login; anonymous browser redirected to Login). Production remains `main@de8f7ad`.
+- 2026-10-11 13:45 ICT automated review: reused `scripts/capture_review.js` and patched hidden deferred lazy image false positive; full 9 sections × 390/768/1440 capture passes `qaFindings=0`. Tablet duplicated Experience '01' fixed by <=899px caption rule; 90/90 Chrome responsive + MiniAlbum interaction PASS, protected sections 5/5 unchanged. See `.tasks/TASK-047/reports/final-report.md`. No merge/production deploy.
+- Candidate still requires Owner subjective Art Direction approval. Never mistake build/DOM checks for font aesthetic acceptance. Preview/PR metadata and evidence live in canonical `.tasks/TASK-047/reports/final-report.md`. Kind Words provenance remains a separate older open issue.
+
+---
+
 # CURRENT HANDOFF — TASK-046 THAI EDITORIAL COPY (2026-10-11; VERIFIED PRODUCTION)
 
 - Baseline `main@b053f74` CLEAN on 2026-10-11 02:37 ICT. Canonical current packet: `.tasks/TASK-046/`; copy owner `src/config/content.ts` and Experience steps `src/config/services.ts`.
