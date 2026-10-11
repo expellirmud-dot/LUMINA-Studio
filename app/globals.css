@@ -1242,12 +1242,14 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  /* The active step is already present in the interactive list below the image. */
+/* Experience stacks below 900px; the active step is repeated in the list. */
+@media (max-width: 899px) {
   .experience-media-caption {
     display: none;
   }
+}
 
+@media (max-width: 767px) {
   .story-editorial-heading {
     gap: 0.12em 0.18em;
     line-height: 1.04;

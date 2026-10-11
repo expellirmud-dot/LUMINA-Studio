@@ -14,6 +14,8 @@ Create an editorial bilingual variant A for objective side-by-side review: Engli
 - src/config/typography.ts: add dedicated Thai body font token; no global CSS override.
 - app/globals.css: bounded Experience anchor scroll offset under fixed navigation, and mobile-only suppression of duplicate active-image caption (list remains present, interactive and unchanged). No animation, image or service content modifications.
 - .tasks/TASK-047 packet, parts, reports; existing AI_HANDOFF and reports only if needed when approval becomes final.
+- scripts/capture_review.js: correct the existing visual QA's false-positive classification for not-yet-loaded lazy images under aria-hidden content. Keep public capture CLI and output contract stable; no change to app components, protected photography, or CI.
+
 ## Forbidden
 Hero (all fields and layout), photo assets/order, Selected Stories, Kind Words, footer, logo/navigation, service step content, animation/timing, new dependencies or routes, client information, production deploy/merge. No new docs authority.
 ## Checklist
@@ -29,3 +31,14 @@ Hero (all fields and layout), photo assets/order, Selected Stories, Kind Words, 
 - Vercel Preview deployment READY (non-production), Git SHA c7c8e3a; view https://lumina-studio-emtgxxbue-expellirmud-dots-projects.vercel.app/ while signed into the appropriate Vercel account.
 - Unauthenticated Chrome was redirected to Vercel Login; therefore external public Preview QA is BLOCKED_BY_ACCESS, not passed. Local 390/1440 Chrome PASS 50/50.
 - Production remains READY on main@de8f7ad. Await Owner subjective typography/art-direction approval before release.
+
+## Follow-up QA — existing automatic capture (2026-10-11 13:31 ICT)
+- [x] Inspect existing `scripts/capture_review.js` and Visual Review skills; reuse, do not duplicate
+- [x] Capture candidate desktop/tablet/mobile and inspect manifest
+- [x] Reproduce two flagged mobile images as hidden lazy images; source files exist and optimized HTTP 200
+- [x] Update only existing capture script to distinguish deferred lazy images from genuine broken images
+- [x] Repeat desktop/tablet/mobile screenshot QA; compare existing Production baseline and mobile visual composition
+- [x] Lint/build/exact diff; update report, Draft PR, and stop at Owner art-direction gate
+- [x] Tablet 768 screenshot: hide duplicate active step caption wherever Experience uses stacked layout (<900px); verify again at 390/768/1440
+
+Image QA result (13:45 ICT): original automated all-viewport capture had one *false positive* for 2 hidden lazy images; source image URLs returned 200. Corrected the existing script; rerun 9 sections x 3 viewport = 27 captures, qaFindings=0 (mobile deferredLazyImages=2). On 768px visual, repeated '01' under stacked image was real; extended Experience caption hiding to <=899px. Post-build DOM + MiniAlbum interactive QA 90/90 PASS at 390, 768, 1440. Tablet screenshot QA 9/9, qaFindings=0. No Hero/Stories/Kind Words/photography content changes; Draft PR only. Art-direction Owner approval remains open.
