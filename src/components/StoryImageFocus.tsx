@@ -106,7 +106,7 @@ export function StoryImageFocus({
 
         {hasNarrativeFrames ? (
           <div className="story-narrative-stream">
-            {frames?.map((frame, index) => (
+            {isOpen && frames?.map((frame, index) => (
               <figure key={frame.timeContext || index} className="story-narrative-item">
                 <div className="story-narrative-frame">
                   <Image
