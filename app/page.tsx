@@ -121,6 +121,9 @@ export default function Home() {
                   <StoryImageFocus
                     image={story.image}
                     title={story.title}
+                    eyebrow={story.eyebrow}
+                    subtitle={story.subtitle}
+                    frames={story.frames}
                     openLabel={contentConfig.selectedStories.imageFocusOpen}
                     closeLabel={contentConfig.selectedStories.imageFocusClose}
                     loadingLabel={contentConfig.selectedStories.imageFocusLoading}
