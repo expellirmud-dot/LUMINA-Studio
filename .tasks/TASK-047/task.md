@@ -1,5 +1,5 @@
 # TASK-047 — Bilingual Editorial Typography Preview (Owner Art Direction Gate)
-Status: TECHNICAL_QA_PASS / DRAFT_PREVIEW_PREPARATION (ART DIRECTION NOT APPROVED)
+Status: PREVIEW_READY_AWAITING_OWNER_ART_DIRECTION (NOT APPROVED FOR PRODUCTION)
 Start: 2026-10-11T06:01:25+07:00
 Baseline: main@de8f7ad8564b6c3abd0d30e8f61175a351fe010e; clean, one root worktree.
 Owner feedback: TASK-046 Thai-only headlines feel awkward, unnatural and visually inconsistent; Thai font not acceptable; English and Thai should be designed together.
@@ -21,5 +21,11 @@ Hero (all fields and layout), photo assets/order, Selected Stories, Kind Words, 
 - [x] Parallel CLI readers: Thai editorial critique / bilingual typography CSS and QA
 - [x] Scoped candidate in task-specific branch; preserve baseline
 - [x] lint/build, DOM, responsive screenshot/visual difference 390 and 1440, validate protected content and semantics
-- [ ] Draft PR (not ready for merge) with Preview URL only if automated checks PASS
-- [ ] Close as PREVIEW_READY_AWAITING_OWNER_ART_DIRECTION, no production effect
+- [x] Draft PR (not ready for merge) with Preview URL only if automated checks PASS
+- [x] Close as PREVIEW_READY_AWAITING_OWNER_ART_DIRECTION, no production effect
+
+## Preview gate — 2026-10-11
+- GitHub Draft PR #20: https://github.com/expellirmud-dot/LUMINA-Studio/pull/20 (DRAFT, open; NO MERGE)
+- Vercel Preview deployment READY (non-production), Git SHA c7c8e3a; view https://lumina-studio-emtgxxbue-expellirmud-dots-projects.vercel.app/ while signed into the appropriate Vercel account.
+- Unauthenticated Chrome was redirected to Vercel Login; therefore external public Preview QA is BLOCKED_BY_ACCESS, not passed. Local 390/1440 Chrome PASS 50/50.
+- Production remains READY on main@de8f7ad. Await Owner subjective typography/art-direction approval before release.

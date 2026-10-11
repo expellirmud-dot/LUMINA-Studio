@@ -28,3 +28,10 @@ Preview-only bilingual editorial presentation of five non-Hero sections; no prod
 ## Release and art-direction gate
 **Decision: PREVIEW_READY_AWAITING_OWNER_ART_DIRECTION, NOT APPROVED FOR PRODUCTION.** Only Draft PR / Vercel Preview may be used to let Owner review actual pages. No merge, production deployment or unrelated issue cleanup in this task. Any further copy/font refinements are scoped to this candidate and must be revalidated at exact HEAD.
 Technical tests do not attest to emotional/editorial quality. Kind Words testimonial provenance remains UNKNOWN and out of scope.
+
+## Draft PR, Vercel Preview and final gate — 2026-10-11 11:34 ICT
+- GitHub **Draft PR #20**, open, head `experiment/task047-bilingual-editorial`, first candidate Commit `c7c8e3aff58d052ca8d5e4f14d175677704256af`: https://github.com/expellirmud-dot/LUMINA-Studio/pull/20
+- Vercel Preview deployment `dpl_DKfAom33ikVDK7JkpRq1QUa1BHMm` **READY** on candidate SHA; target not production: https://lumina-studio-emtgxxbue-expellirmud-dots-projects.vercel.app/
+- External anonymous Chrome verification **BLOCKED_BY_ACCESS**, redirected to `https://vercel.com` login page (both 390/1440). This is an access control, not a failed Next.js build. Preview only for appropriately authenticated Owner; do not remove protection just for this test.
+- Independent Production Vercel deployment `dpl_ABxF3ZpUJBfvAU8PkAviNrZMPZbP` is still **READY** and points to `main@de8f7ad`. No production deployment or merge performed.
+- Decision: TECHNICAL QA COMPLETE, DRAFT PREVIEW OPEN. Owner art-direction approval and authenticated preview UX remain outstanding. This is the intended stop condition, not an engineering failure.
