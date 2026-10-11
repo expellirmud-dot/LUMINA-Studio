@@ -29,11 +29,11 @@
 ---
 
 ## Subtask 3: Quiet Inquiry Starter (ตรวจสอบรูปแบบบัญชี LINE ก่อน)
-- [ ] 1. ตรวจสอบ `src/config/contact.ts` และ URL ปัจจุบันของ LINE
-- [ ] 2. ตรวจสอบว่าบัญชีเป็น LINE Official Account (`https://line.me/R/ti/p/...` หรือ `@...`) หรือ Personal LINE เพื่อเลือก URL scheme ที่ถูกต้องสำหรับการส่ง pre-filled message
-- [ ] 3. เพิ่มตัวเลือก Chip สั้น ๆ 3 ตัวเลือกในส่วน Final CTA
-- [ ] 4. ทดสอบ build & lint
-- [ ] 5. Commit และ Push สำหรับ Subtask 3
+- [x] 1. ตรวจสอบ `src/config/contact.ts` และ URL ปัจจุบันของ LINE -> ยืนยันเป็น Personal LINE (`ti/p/~expellirmud`)
+- [x] 2. ตรวจสอบข้อจำกัดของ Personal LINE URL scheme -> ออกแบบให้มี Conversation Starter Note และปุ่มคัดลอกข้อความทักทาย พร้อมรองรับ LINE OA ในอนาคต
+- [x] 3. เพิ่มตัวเลือก Chip สั้น ๆ 3 ตัวเลือกในส่วน Final CTA ผ่าน `QuietInquiryStarter`
+- [x] 4. ทดสอบ build & lint -> PASS
+- [x] 5. Commit และ Push สำหรับ Subtask 3
 
 ---
 
