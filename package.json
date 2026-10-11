@@ -14,6 +14,7 @@
     "capture:video:mobile": "node scripts/capture_video.js --target production --viewport mobile"
   },
   "dependencies": {
+    "motion": "^14.1.0",
     "next": "16.4.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"

@@ -18,6 +18,7 @@ const SECTION_IDS = [
   "what-we-notice",
   "selected-stories",
   "moments-between",
+  "unfolding-moments",
   "behind-the-lens",
   "kind-words",
   "experience",
