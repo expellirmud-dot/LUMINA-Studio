@@ -30,15 +30,19 @@ export function ExperienceSequence({ items, images }: ExperienceSequenceProps) {
         data-future-media-slot="micro-cinematic"
       >
         <div className="experience-media-frame">
-          <Image
-            key={activeImage.path}
-            src={activeImage.src}
-            alt={activeImage.alt}
-            fill
-            sizes="(min-width: 900px) 44vw, 100vw"
-            className="experience-media-image"
-            style={{ objectPosition: activeImage.position }}
-          />
+          {images.map((image, index) => (
+            <Image
+              key={image.path || image.src}
+              src={image.src}
+              alt={image.alt}
+              fill
+              priority={index === 0}
+              sizes="(min-width: 900px) 44vw, 100vw"
+              className={`experience-media-image ${index === activeIndex ? "is-active" : "is-hidden"}`}
+              style={{ objectPosition: image.position }}
+              aria-hidden={index !== activeIndex}
+            />
+          ))}
         </div>
         <figcaption className="experience-media-caption">
           <span>{String(activeIndex + 1).padStart(2, "0")}</span>

@@ -20,11 +20,11 @@
 ---
 
 ## Subtask 2: Experience Crossfade (ปรับ Component เดิม ไม่สร้างใหม่)
-- [ ] 1. ตรวจสอบ `src/components/ExperienceSequence.tsx`
-- [ ] 2. ปรับ logic การแสดงผลภาพให้เรนเดอร์ภาพแบบ dual-layer (current & next) หรือ opacity crossfade 0.4s แทนการเปลี่ยน `src` ทันที
-- [ ] 3. รักษา accessibility และ mobile stack behavior
-- [ ] 4. ทดสอบ build & lint
-- [ ] 5. Commit และ Push สำหรับ Subtask 2
+- [x] 1. ตรวจสอบ `src/components/ExperienceSequence.tsx`
+- [x] 2. ปรับ logic การแสดงผลภาพให้เรนเดอร์ภาพแบบ dual-layer (current & next) หรือ opacity crossfade 0.5s แทนการเปลี่ยน `src` ทันที
+- [x] 3. รักษา accessibility และ mobile stack behavior
+- [x] 4. ทดสอบ build & lint -> PASS
+- [x] 5. Commit และ Push สำหรับ Subtask 2
 
 ---
 
