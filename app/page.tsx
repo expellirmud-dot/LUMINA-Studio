@@ -61,10 +61,10 @@ export default function Home() {
         <section id="what-we-notice" className="section-shell notice-section">
           <p className="section-label reveal">{contentConfig.whatWeNotice.label}</p>
           <div className="notice-copy reveal" style={{ animationDelay: "90ms" }}>
-            <h2 lang="th" className={typographyConfig.tokens.sectionHeadline}>
+            <h2 className={typographyConfig.tokens.sectionHeadline}>
               {contentConfig.whatWeNotice.title}
             </h2>
-            <p lang="th">{contentConfig.whatWeNotice.body}</p>
+            <p lang="th" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.whatWeNotice.body}</p>
           </div>
         </section>
 
@@ -139,10 +139,10 @@ export default function Home() {
         <section id="moments-between" className="section-shell moments-section">
           <div className="moments-intro reveal">
             <p className="section-label">{contentConfig.momentsBetween.label}</p>
-            <h2 lang="th" className={typographyConfig.tokens.sectionHeadline}>
+            <h2 className={typographyConfig.tokens.sectionHeadline}>
               {contentConfig.momentsBetween.title}
             </h2>
-            <p lang="th" className="section-intro">{contentConfig.momentsBetween.body}</p>
+            <p lang="th" className="section-intro" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.momentsBetween.body}</p>
           </div>
           <MiniAlbum images={momentImagesConfig} />
         </section>
@@ -164,13 +164,15 @@ export default function Home() {
           </figure>
           <div className="behind-copy reveal" style={{ animationDelay: "120ms" }}>
             <p className="section-label">{contentConfig.behindTheLens.label}</p>
-            <h2 lang="th" className={typographyConfig.tokens.sectionHeadline}>
+            <h2 className={typographyConfig.tokens.sectionHeadline}>
               {contentConfig.behindTheLens.title}
             </h2>
-            <p lang="th" className="behind-body">{contentConfig.behindTheLens.body}</p>
-            <blockquote lang="th" className="thai-signature">
-              {contentConfig.behindTheLens.signature}
-            </blockquote>
+            <p lang="th" className="behind-body" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.behindTheLens.body}</p>
+            {contentConfig.behindTheLens.signature && (
+              <blockquote lang="th" className="thai-signature">
+                {contentConfig.behindTheLens.signature}
+              </blockquote>
+            )}
             <a lang="th" href="#experience" className="text-action">
               {contentConfig.behindTheLens.button}
             </a>
@@ -196,11 +198,11 @@ export default function Home() {
         <section id="experience" className="section-shell experience-section">
           <div className="experience-copy reveal">
             <p className="section-label">{contentConfig.experience.label}</p>
-            <h2 lang="th" className={typographyConfig.tokens.sectionHeadline}>
+            <h2 className={typographyConfig.tokens.sectionHeadline}>
               {contentConfig.experience.title}
             </h2>
-            <p lang="th" className="section-intro">{contentConfig.experience.body}</p>
-            <p lang="th" className="experience-supporting">{contentConfig.experience.supporting}</p>
+            <p lang="th" className="section-intro" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.experience.body}</p>
+            <p lang="th" className="experience-supporting" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.experience.supporting}</p>
           </div>
           <ExperienceSequence
             items={servicesConfig}
@@ -211,10 +213,10 @@ export default function Home() {
         <section id="final-cta" className="section-shell final-cta">
           <div className="final-cta-copy reveal">
             <p className="section-label">{contentConfig.finalCta.label}</p>
-            <h2 lang="th" className={typographyConfig.tokens.contactHeadline}>
+            <h2 className={typographyConfig.tokens.contactHeadline}>
               {contentConfig.finalCta.title}
             </h2>
-            <p lang="th" className="final-cta-body">{contentConfig.finalCta.body}</p>
+            <p lang="th" className="final-cta-body" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.finalCta.body}</p>
             <div className="final-cta-actions">
               <a lang="th" href={primaryContact.href} className="primary-action linen-action">
                 {contentConfig.finalCta.button}

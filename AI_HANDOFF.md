@@ -1,3 +1,12 @@
+# CURRENT HANDOFF — TASK-047 BILINGUAL EDITORIAL PREVIEW (2026-10-11; ART DIRECTION GATE OPEN)
+
+- Active task `.tasks/TASK-047/`; canonical preview branch `experiment/task047-bilingual-editorial` based on Production `main@de8f7ad`. No production merge/deploy permitted by this task before Owner visual acceptance.
+- Edited five non-Hero editorial headings to English Cormorant; shortened Thai body with explicit IBM Plex Sans Thai Looped token. Removed a redundant Behind The Lens Thai quote, hid repeated active-image caption on mobile, offset Experience anchor below fixed navigation.
+- On current candidate: `npm run lint` PASS; `npm run build` (Next.js 16.4 and TypeScript) PASS; protected Hero, Selected Stories, Brand Bridge, Kind Words and Footer segments byte-equal; Chrome viewport 390x844 and 1440x900 **50/50 bounded QA PASS**. Visual screenshots and machine JSON in ignored `.runtime-captures/lumina/TASK-047/`. Two prior read-only AGY reviewers completed their respective copy/typography proposals.
+- Candidate still requires Owner subjective Art Direction approval. Never mistake build/DOM checks for font aesthetic acceptance. Preview/PR metadata and evidence live in canonical `.tasks/TASK-047/reports/final-report.md`. Kind Words provenance remains a separate older open issue.
+
+---
+
 # CURRENT HANDOFF — TASK-046 THAI EDITORIAL COPY (2026-10-11; VERIFIED PRODUCTION)
 
 - Baseline `main@b053f74` CLEAN on 2026-10-11 02:37 ICT. Canonical current packet: `.tasks/TASK-046/`; copy owner `src/config/content.ts` and Experience steps `src/config/services.ts`.

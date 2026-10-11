@@ -1,0 +1,10 @@
+# TASK-047 Plan — Side-by-side Bilingual Editorial
+One writer: Nexus on isolated task branch; read-only CLI reviewers can run concurrently.
+Canonical: PROJECT_RULES.md (Hero FROZEN), docs/LUMINA_V2_CONSTITUTION.md (natural bilingual), docs/LUMINA_VISUAL_LANGUAGE.md (Cormorant for English; IBM Plex Thai Looped for Thai), docs/HOME_PAGE_BLUEPRINT.md (locked section order), existing src/config/* implementation.
+Minimal change: revert 5 oversized Thai H2s to editorial English headings, edit 5 Thai bodies into short, unforced paragraphs; suppress duplicated Thai photographer statement while retaining the existing link and photography; attach explicit IBM Thai font from typographyConfig only to newly edited body prose without touching typographic tokens/global font configuration.
+Candidate must read more as a fine art journal, not a paragraph-by-paragraph translation. No promise all events are unposed, no invented client facts. Hero unchanged byte for byte.
+QA target: mobile 390x844 / desktop 1440x900: screen-reader langs, heading computed font, body computed font, horizontal overflow, CTA destinations, screenshots for five sections. Include baseline screenshot from public production and candidate local preview. If visual rhythm worsens or title/body repetition persists, stop/iterate before creating draft PR. Candidate not production-authorized by acknowledgement alone.
+Use current tooling under D:\tools and preserve its boundaries; no scattered tool files. Start/end timestamps in final-report.md.
+
+## 2026-10-11 Visual QA Amendment
+Owner image feedback identified a redundant Behind The Lens quotation and repeated active step 01 on mobile. Nexus confirmed fixed nav bottom 60px but Experience lacks scroll-margin-top. Preview-only changes are scoped to empty/conditionally absent redundant quote, CSS `#experience` anchor offset and hide the media caption at mobile widths only. Experience numbered interactive list and desktop active-image caption remain unchanged. Verify font, focus, anchors and cards at 390/1440 after changes; no merge/deployment.

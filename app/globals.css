@@ -586,6 +586,7 @@ body {
 .experience-section {
   display: grid;
   gap: clamp(3rem, 8vw, 7rem);
+  scroll-margin-top: 5.5rem;
 }
 
 .experience-copy {
@@ -1242,6 +1243,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  /* The active step is already present in the interactive list below the image. */
+  .experience-media-caption {
+    display: none;
+  }
+
   .story-editorial-heading {
     gap: 0.12em 0.18em;
     line-height: 1.04;
