@@ -62,6 +62,7 @@ $$\text{Hero} \rightarrow \text{What We Notice} \rightarrow \text{Selected Stori
   * Label must be "Stories" or "Selected Stories".
   * Absolutely no generic 3x3 grid or masonry wall.
   * High-quality card design displaying a single cover photo, title, and subtitle per story.
+* **Additional Story Discovery (Owner decision 2026-10-12):** The three existing Homepage cards remain exactly three. Two further independent photo essays exist outside the Home three-card inventory, discoverable through restrained in-section navigation or editorial detail pages once visually approved; this is not permission to add a ninth section, replace cards, or unfreeze Hero.
 * **Suggested Story Roles**:
   1. *Wedding / Family Ceremony* (Focus on relationships, parents, emotion)
   2. *Ordination / Family Celebration* (Focus on traditional rituals, laughter, community)
