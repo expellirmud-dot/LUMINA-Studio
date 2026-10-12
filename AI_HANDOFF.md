@@ -1,3 +1,11 @@
+# CURRENT HANDOFF — TASK-049 VERIFIED LOCAL EXPERIMENT (2026-10-12)
+
+- Isolated `D:\lumina-studio_worktrees\TASK-049` @ `feat/task049-story-presentation-spike`: two verified project photo collections in `/story-spike`, concepts A (Editorial) and B (Quiet Scroll). Existing Homepage/Hero/PR #22 source remains unchanged.
+- Lint/Build PASS and Chrome/Playwright QA **57/57 PASS** at 390/768/1440, including modal keyboard and reduced motion. Exact report `.tasks/TASK-049/reports/final-report.md`; ignored runtime screenshots under `.runtime-captures/lumina/TASK-049/`.
+- **Decision:** EXPERIMENT_VERIFIED_LOCAL / PENDING_OWNER_ART_DIRECTION / NOT_RELEASED. No push, merge, production deploy or external Preview. Review locked Home Blueprint before any integration.
+
+---
+
 # CURRENT HANDOFF — TASK-048 PR #22 SCOPE RECONCILIATION (2026-10-11)
 
 - Original PR head `364b3cf` contained out-of-scope Gallery and `motion`. Archived at `origin/experiment/task048-gallery-shelved-20261011` before reversing this one Gallery commit on active TASK-048 branch.

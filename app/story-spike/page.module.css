@@ -1,0 +1,103 @@
+.page {
+  --ink: #2d2a26;
+  --muted: #7d756e;
+  --linen: #f4f1eb;
+  color: var(--ink);
+  background: var(--linen);
+  min-height: 100vh;
+  font-family: var(--font-ibm-thai-looped, sans-serif);
+}
+.page * { box-sizing: border-box; }
+.page a:focus-visible { outline: 2px solid #8c7561; outline-offset: 5px; }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem clamp(1.25rem, 5vw, 5rem);
+  gap: 1.5rem;
+  border-bottom: 1px solid #e7e1d8;
+}
+.brand { color: inherit; font-family: Georgia, serif; font-size: 1.5rem; letter-spacing: .04em; text-decoration: none; white-space: nowrap; }
+.brand span { color: #a78c78; font-size: 1rem; font-style: italic; }
+.back { font-size: .85rem; color: var(--muted); text-decoration: none; }
+.intro { padding: clamp(5.5rem, 11vw, 10rem) clamp(1.25rem, 5vw, 5rem) 4rem; max-width: 1280px; margin: 0 auto; }
+.kicker { color: #977962; font-family: Arial, sans-serif; font-weight: 650; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; }
+.intro h1 { margin: 1.6rem 0; font-family: var(--font-editorial-serif, Georgia), Georgia, serif; font-weight: 400; font-size: clamp(2.8rem, 5.8vw, 5.7rem); line-height: 1.17; letter-spacing: -.03em; }
+.introCopy { max-width: 560px; font-size: clamp(.98rem, 1.5vw, 1.2rem); line-height: 1.85; color: var(--muted); }
+.variants { margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.variants a { padding: .8rem 1.1rem; border: 1px solid #cfc6b9; color: inherit; text-decoration: none; font-size: .82rem; transition: background .3s ease; }
+.variants a:hover { background: #e7e1d8; }
+.variantSection { padding: 3rem clamp(1.25rem, 5vw, 5rem) 8rem; max-width: 1440px; margin: 0 auto; scroll-margin-top: 1rem; }
+.variantHeader { display: flex; justify-content: space-between; align-items: end; border-top: 1px solid #d8cfc4; padding: 2.2rem 0 5rem; gap: 2rem; }
+.variantHeader h2 { margin: 1rem 0 0; font-family: Georgia, serif; font-size: clamp(2.2rem, 3.5vw, 4rem); font-weight: 400; letter-spacing: -.03em; }
+.variantHeader > p { max-width: 340px; color: var(--muted); line-height: 1.75; font-size: .93rem; }
+.spread {
+  display: grid;
+  grid-template-columns: minmax(0,1.22fr) minmax(0,.78fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 7rem);
+  margin: 0 0 clamp(7rem, 13vw, 13rem);
+}
+.spreadReverse { grid-template-columns: minmax(0,.78fr) minmax(0,1.22fr); }
+.spreadReverse .primaryImage { grid-column: 2; grid-row: 1; }
+.spreadReverse .storyAside { grid-column: 1; grid-row: 1; }
+.primaryImage, .cover { min-width: 0; }
+.cover { position: relative; aspect-ratio: 4/5; overflow: hidden; background: #e7e1d8; }
+.cover :global(.story-image-trigger) { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cover :global(.story-image-trigger > img) { object-fit: cover; filter: saturate(.89) contrast(.98); }
+.cover :global(.story-image-trigger:focus-visible) { outline: 3px solid #977962; outline-offset: -5px; }
+.storyAside { min-width: 0; }
+.storyAside h3, .stickyCopy h3 { margin: 1.3rem 0 1.2rem; font-family: Georgia, var(--font-ibm-thai-looped, sans-serif); font-size: clamp(2rem, 3vw, 3.2rem); font-weight: 400; line-height: 1.4; }
+.storyNote { color: var(--muted); line-height: 1.85; font-size: 1rem; max-width: 26rem; }
+.openHint { margin: 1.8rem 0 2.5rem; font-size: .78rem; letter-spacing: .01em; color: #846e5a; }
+.details { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.detail, .scrollDetail { position: relative; min-width: 0; margin: 0; overflow: hidden; background: #e7e1d8; }
+.detail { aspect-ratio: 4/5; }
+.detail img, .scrollDetail img { object-fit: cover; filter: saturate(.88) contrast(.98); }
+.scrollVariant { padding-top: 2rem; }
+.scrollStory { display: grid; grid-template-columns: minmax(0,.42fr) minmax(0,.58fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; margin-bottom: 10rem; }
+.stickyCopy { position: sticky; top: 3rem; padding: 1.5rem 0 2rem; }
+.scrollImages { display: grid; gap: clamp(1.3rem, 3vw, 3rem); min-width: 0; }
+.scrollImages .cover { aspect-ratio: 5/4; }
+.scrollDetail { aspect-ratio: 4/3; }
+.scrollDetail:nth-child(3) { aspect-ratio: 4/5; }
+.footer { border-top: 1px solid #ddd5cc; padding: 4rem clamp(1.25rem, 5vw, 5rem) 6rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .78rem; }
+.footer a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+@media (max-width: 850px) {
+  .variantHeader { display: block; }
+  .variantHeader > p { margin-top: 1.2rem; }
+  .spread, .spreadReverse, .scrollStory { grid-template-columns: minmax(0,1fr); gap: 2rem; }
+  .spreadReverse .primaryImage, .spreadReverse .storyAside { grid-column: auto; grid-row: auto; }
+  .storyAside h3, .stickyCopy h3 { margin-top: .6rem; }
+  .scrollStory { margin-bottom: 6rem; }
+  .stickyCopy { position: static; padding: 0; }
+  .details { max-width: 620px; }
+}
+@media (max-width: 480px) {
+  .header { padding-block: 1rem; }
+  .brand { font-size: 1.2rem; }
+  .brand span { font-size: .82rem; }
+  .back { font-size: .75rem; }
+  .intro { padding-top: 5rem; }
+  .intro h1 { font-size: clamp(2.4rem, 10vw, 3.2rem); }
+  .variants a { flex: 1 1 100%; }
+  .variantSection { padding-bottom: 4rem; }
+  .variantHeader { padding-bottom: 2.5rem; }
+  .spread { margin-bottom: 5.5rem; }
+  .cover { aspect-ratio: 4/5; }
+  .details { gap: .7rem; }
+  .scrollImages .cover { aspect-ratio: 4/5; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page *, .page *::before, .page *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* LANDSCAPE_FRAME_FIX_TASK049: scoped to the experimental page; PR #22 untouched. */
+@media (max-width: 850px) {
+  .relationshipCover :global(.story-narrative-item:nth-child(1)) :global(.story-narrative-frame),
+  .relationshipCover :global(.story-narrative-item:nth-child(2)) :global(.story-narrative-frame),
+  .ritualCover :global(.story-narrative-item:first-child) :global(.story-narrative-frame) {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+}
