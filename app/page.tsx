@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MiniAlbum } from "../src/components/MiniAlbum";
 import { ExperienceSequence } from "../src/components/ExperienceSequence";
 import { StoryImageFocus } from "../src/components/StoryImageFocus";
@@ -138,6 +139,9 @@ export default function Home() {
               </article>
             ))}
           </div>
+            <div className="more-stories-discovery">
+              <Link href="/stories" aria-label="อ่านเรื่องราวเพิ่มเติมอีกสองชุด">อ่านเรื่องราวเพิ่มเติมอีกสองบท <span aria-hidden="true">↗</span></Link>
+            </div>
         </section>
 
         <section id="moments-between" className="section-shell moments-section">

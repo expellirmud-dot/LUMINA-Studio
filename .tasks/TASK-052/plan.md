@@ -1,0 +1,11 @@
+# TASK-052 Checklist / Closeout
+- [x] Continuity/Kernel/Git bootstrap, brand and Context Index.
+- [x] 2026-10-13 00:28 ICT — Scoping and task packet.
+- [x] Independent AGY visual/engineering reviewer.
+- [x] New /stories and two standalone SSG detail routes, all use canonical portfolio config.
+- [x] Only one in-section Home discovery link; 3 cards unchanged, Hero untouched.
+- [x] Lint PASS, build/typecheck PASS.
+- [x] Browser QA 72/72 PASS at 390/768/1440 and screenshots inspected.
+- [x] Record evidence and release gating.
+- [ ] OWNER art/photographic rights and testimonial/contact approval; exact release candidate integration.
+- [ ] Push/merge/deploy only after release gates.
