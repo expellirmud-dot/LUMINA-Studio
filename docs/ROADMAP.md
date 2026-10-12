@@ -1,5 +1,15 @@
 # ROADMAP
 
+## Owner decision — additional story collections (2026-10-12 18:14 ICT)
+
+**OWNER_APPROVED:** Keep the three Selected Stories on Home unchanged. The two new photo sets are TWO ADDITIONAL INDEPENDENT STORIES, not extra frames inside the three existing stories. Total editorial inventory: five standalone stories; Home still displays exactly three cards. This resolves the prior placement-choice ambiguity.
+
+Implementation scope: preserve the frozen Hero and existing eight-section Home Blueprint. Two additional editorial stories must have their own discoverable presentation (dedicated story detail routes or an unobtrusive link within Selected Stories, subject to art/UX review). Reuse existing StoryImageFocus and canonical src/config/portfolio.ts. TASK-049 Concept A is a working prototype, not final Owner art-direction acceptance. Never ship the internal /story-spike comparison page.
+
+Owner also requests merging independently completed and verified work into main, and removal of local disposable folders only AFTER exact landed/merged verification and preservation of unique ignored evidence. TASK-048 PR #22 remains Draft, and TASK-049/050 remain unreleased: do not delete their worktrees prematurely. Canonical .tasks/, docs/ and reports/ are not temporary files.
+
+---
+
 ## Execution checkpoint — TASK-050 (2026-10-12 16:36 ICT)
 
 **Release state: HELD / P0 PARTIALLY VERIFIED, NOT PUBLIC-READY.** The Owner's broad goal-loop instruction authorizes bounded work but does not supply factual consent for photographs/testimonials, confirm customer contact delivery, or approve a specific subjective redesign. There is **no % complete** claim. Canonical evidence: `.tasks/TASK-050/reports/final-report.md`.

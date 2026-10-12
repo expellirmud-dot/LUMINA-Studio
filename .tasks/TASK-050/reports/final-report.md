@@ -54,3 +54,10 @@
 - Local experiment reversible; no dependency or new brand section, Hero unchanged. Preserve all worktrees until merged/reconciled.
 - **Next unblock:** Owner Art Direction decision **and** three-card placement choice, permissioned imagery/testimonial, public LINE/contact proof and final domain decision. Once supplied, create release-specific bounded candidate from the correct Git base, reproduce QA and follow canonical deploy checklist.
 - Scope closeout is **technical execution pass**; website-wide roadmap is not claimed complete while blockers remain.
+
+## Owner decision and completed-plan merge receipt (2026-10-12 18:21 ICT)
+- OWNER_APPROVED: two additional independent story collections outside the existing three Home cards. Preserve the eight Home sections and frozen Hero. Recorded in canonical docs/ROADMAP.md and docs/HOME_PAGE_BLUEPRINT.md.
+- Docs-only PR #23 https://github.com/expellirmud-dot/LUMINA-Studio/pull/23 merged into main at 086d8b96719e5619495b76cbfd2c595c4c4183da; exact docs content compared against the source branch using git diff --exit-code (PASS).
+- Worktree D:\lumina-studio_worktrees\TASK-051 checked clean, no untracked or ignored files; removed with git worktree remove (not force). Obsolete local feat/task051-roadmap-main-integration branch deleted after squash and exact content verification.
+- TASK-049 and TASK-050 worktrees explicitly retained: their application code and evidence are not merged to main; PR #22 remains Draft. Neither removal nor deployment is permitted by this receipt.
+- Docs-only merge to main may trigger platform build; do not conflate the merge event with successful post-deploy Production verification.
