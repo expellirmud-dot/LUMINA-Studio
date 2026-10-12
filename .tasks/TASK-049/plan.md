@@ -17,7 +17,7 @@
 - [x] Browser QA 57/57 PASS on 390/768/1440; reduced motion, image decode, modal keyboard/focus, screenshot evidence reviewed.
 - [x] Avoid public Preview, push, PR merge, deploy, backend, CMS, new NPM dependency.
 - [x] Record canonical task closeout and QA evidence.
-- [ ] Local scoped commit (will be recorded in Git; no push).
+- [x] Local scoped implementation commit `126495e47c351db30accfca047adeb9d6104477c` VERIFIED 13:19 ICT; no push.
 - [ ] Owner Art Direction acceptance (outside technical experiment).
 
 ## Decision

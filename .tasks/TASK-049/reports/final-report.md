@@ -4,6 +4,7 @@
 - **Status:** EXPERIMENT_VERIFIED_LOCAL / PENDING_OWNER_ART_DIRECTION / NOT_RELEASED.
 - **Worktree:** `D:\lumina-studio_worktrees\TASK-049`, branch `feat/task049-story-presentation-spike`, baseline `38f4eac`.
 - **Production and PR #22:** unchanged. Neither merged, pushed nor deployed during TASK-049.
+- **Local implementation commit:** `126495e47c351db30accfca047adeb9d6104477c` VERIFIED; documentation receipt added afterward on the same unpushed branch.
 - **Owner intent preserved:** exactly two additional photo-story sets, not a fifth generic Home card.
 
 ## Actual prototype
