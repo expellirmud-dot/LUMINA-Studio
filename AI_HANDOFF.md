@@ -1,3 +1,12 @@
+# CURRENT HANDOFF — TASK-050 PUBLIC-READINESS GAP / LOCAL SEO SECURITY PASS (2026-10-12)
+
+- Canonical roadmap `docs/ROADMAP.md` updated with per-gate evidence statuses; task proof `.tasks/TASK-050/reports/final-report.md`.
+- Isolated branch `feat/task050-public-ready-audit` based on TASK-049@406d8fb: added canonical site URL/SEO metadata, robots, sitemap, baseline security headers, production-only block on `/story-spike`. These fixes are **local only** and must be integrated selectively after approval; this branch includes unmerged experiments.
+- Actual Production Vercel READY on `main@172684a`; Production Browser QA 27/27 PASS; local candidate lint/build PASS and Browser 27/27 PASS on 390/768/1440.
+- **Stop state:** Phase 1 NOT PUBLIC-READY: Owner Art Direction and the 2-set/3-card Blueprint choice, image & testimonial permissions, real contact receipt and final domain not confirmed. PR #22 remains Draft. No push, merge or deploy.
+
+---
+
 # CURRENT HANDOFF — TASK-049 VERIFIED LOCAL EXPERIMENT (2026-10-12)
 
 - Isolated `D:\lumina-studio_worktrees\TASK-049` @ `feat/task049-story-presentation-spike`: two verified project photo collections in `/story-spike`, concepts A (Editorial) and B (Quiet Scroll). Existing Homepage/Hero/PR #22 source remains unchanged.

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { StoryImageFocus } from "../../src/components/StoryImageFocus";
 import { storyPresentationSets, type StoryPresentationSet } from "../../src/config/portfolio";
@@ -51,6 +52,9 @@ function DetailImages({ story }: { story: StoryPresentationSet }) {
 }
 
 export default function StorySpikePage() {
+  // Internal visual study: unavailable to visitors in production/preview builds.
+  if (process.env.NODE_ENV === "production") notFound();
+
   return (
     <main className={styles.page}>
       <header className={styles.header}>

@@ -1,5 +1,26 @@
 # ROADMAP
 
+## Execution checkpoint — TASK-050 (2026-10-12 16:36 ICT)
+
+**Release state: HELD / P0 PARTIALLY VERIFIED, NOT PUBLIC-READY.** The Owner's broad goal-loop instruction authorizes bounded work but does not supply factual consent for photographs/testimonials, confirm customer contact delivery, or approve a specific subjective redesign. There is **no % complete** claim. Canonical evidence: `.tasks/TASK-050/reports/final-report.md`.
+
+| Work package | Evidence-backed status | Required next action |
+| --- | --- | --- |
+| AD-01 / Art direction | **BLOCKED: OWNER DECISION**. TASK-048 PR #22 still Draft; TASK-049 Concept A recommended but not Owner accepted. | Review real imagery on desktop/mobile and accept A / alter / reject; if locked Home must change, approve Blueprint scope first. |
+| ST-01 / Two-story placement | **PROTOTYPE VERIFIED LOCAL ONLY** on TASK-049; 2 real asset sets exist but no release integration approved. | Confirm whether 2 additional full stories or 2 frame sequences inside the existing 3 cards; confirm display rights/final captions. |
+| CT-01 / Trust and content | **CODE AUDIT COMPLETE; HUMAN VERIFICATION BLOCKED**. Contact URI formats syntactically valid, but actual LINE/Facebook/phone ownership and receipt unverified; Kind Words quote has anonymous attribution without source proof. | Owner confirms public contact destinations and supplies a permitted real testimonial or approves an unquoted neutral statement; confirm client-image usage rights. |
+| QA-01 / Browser | **PARTIAL VERIFIED**. Actual Production `main@172684a` 27/27 browser smoke PASS at 390/768/1440; local combined TASK-050 candidate also 27/27 PASS; no broken images/overflow/JS errors observed in those tests. | Final full accessibility/manual art review and exact Release HEAD QA after merge plan, especially drawer/inquiry. The two 27/27 results do not validate any future HEAD. |
+| PF-01 / SEO, performance, security | **LOCAL REMEDIATION VERIFIED; DEPLOY PENDING**. Production originally returned 404 for `robots.txt`/`sitemap.xml`, lacked canonical/OG image/twitter meta and basic security headers. TASK-050 local Build/Lint PASS, HTTP 200 on robots/sitemap, canonical/social meta present, security headers returned. Experimental `/story-spike` becomes 404 in Production Mode. Field CWV performance, owner-selected canonical domain and published-fix confirmation remain UNKNOWN. | Confirm final domain; measure real LCP/CLS/INP/Lighthouse and deploy only through RL-01 gate. Preview/noindex behavior must be independently checked on target environment. |
+| RL-01 / Release | **HOLD**. Vercel Production `dpl_HjGBCjoX6Efj5Mh2QxM7cLtu4zw6` READY at `main@172684a`; PR #22 Open/Draft at `38f4eac`. TASK-050 branch includes unmerged TASK-049 experiment; it is **not** a releasable merge unit without reconciliation. | Resolve AD/CT owner gates, separate/cherry-pick approved changes, verify exact candidate and release; no merge/push/deploy in this checkpoint. |
+| OP-01 / Operations | **DRAFT PREPARED, NOT OPERATIONALLY VERIFIED**. Extended existing `docs/DEPLOYMENT.md` release/rollback/periodic-check procedure, avoiding new runbook. | After launch record real deployment/rollback and assign routine review ownership. |
+| Phases 2–5 | **CONDITIONAL DEFERRED (P2)**. No new portal, booking system, CMS, gallery database, or payments started. | Establish actual client demand, privacy/security, service design, costs and separate Owner scope before activating. |
+
+**Technical change scope in TASK-050:** `src/config/site.ts` (one URL owner, current Vercel address is provisional), `app/robots.ts`, `app/sitemap.ts`, `app/layout.tsx` (metadata), `next.config.ts` (three baseline headers), and safe production-only blocking of the experimental `app/story-spike/page.tsx`. No Hero/locked Home change, no new dependency.
+
+**Do not equate local success with release.** The Production hostname verified today is `https://lumina-studio-iota-ten.vercel.app`; do not claim it is an Owner-approved final custom domain. Original worktrees and PR #22 remain intact.
+
+---
+
 ## Completion Roadmap — Public-Ready Human Documentary Website (assessment 2026-10-12)
 
 **Purpose and authority.** This section extends the existing Phase 1–5 roadmap; it does not replace the locked `docs/HOME_PAGE_BLUEPRINT.md`, `docs/LUMINA_V2_CONSTITUTION.md`, `docs/LUMINA_VISUAL_LANGUAGE.md`, task packets, or live runtime truth. "Website complete" has two meanings:

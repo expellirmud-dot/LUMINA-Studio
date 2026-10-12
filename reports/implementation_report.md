@@ -1,3 +1,12 @@
+# TASK-050 — Local SEO / Security and Phase 1 Readiness Review (2026-10-12)
+
+- Canonical evidence: `.tasks/TASK-050/reports/final-report.md`; current gap statuses: `docs/ROADMAP.md`.
+- New SEO metadata, single site URL Config, robots.txt, sitemap.xml, three baseline security headers, and local experimental route disabled in Production Mode.
+- Tested local Candidate: ESLint/Next Build/TypeScript PASS, Chrome 27/27 and HTTP SEO/security PASS. Actual existing Vercel Production: Chrome 27/27 but old SEO endpoints 404. **No external deployment was made.**
+- Art Direction, final site domain, client consent and verified contact arrival remain blocked; do not auto-merge Draft PR #22 or treat TASK-050 branch as release-ready.
+
+---
+
 # TASK-049 — Verified Local Two-Story Prototype (2026-10-12)
 
 - Canonical source: `.tasks/TASK-049/reports/final-report.md`.
