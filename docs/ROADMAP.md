@@ -1,5 +1,95 @@
 # ROADMAP
 
+## Owner decision — additional story collections (2026-10-12 18:14 ICT)
+
+**OWNER_APPROVED:** Keep the three Selected Stories on Home unchanged. The two new photo sets are TWO ADDITIONAL INDEPENDENT STORIES, not extra frames inside the three existing stories. Total editorial inventory: five standalone stories; Home still displays exactly three cards. This resolves the prior placement-choice ambiguity.
+
+Implementation scope: preserve the frozen Hero and existing eight-section Home Blueprint. Two additional editorial stories must have their own discoverable presentation (dedicated story detail routes or an unobtrusive link within Selected Stories, subject to art/UX review). Reuse existing StoryImageFocus and canonical src/config/portfolio.ts. TASK-049 Concept A is a working prototype, not final Owner art-direction acceptance. Never ship the internal /story-spike comparison page.
+
+Owner also requests merging independently completed and verified work into main, and removal of local disposable folders only AFTER exact landed/merged verification and preservation of unique ignored evidence. TASK-048 PR #22 remains Draft, and TASK-049/050 remain unreleased: do not delete their worktrees prematurely. Canonical .tasks/, docs/ and reports/ are not temporary files.
+
+---
+
+## Execution checkpoint — TASK-050 (2026-10-12 16:36 ICT)
+
+**Release state: HELD / P0 PARTIALLY VERIFIED, NOT PUBLIC-READY.** The Owner's broad goal-loop instruction authorizes bounded work but does not supply factual consent for photographs/testimonials, confirm customer contact delivery, or approve a specific subjective redesign. There is **no % complete** claim. Canonical evidence: `.tasks/TASK-050/reports/final-report.md`.
+
+| Work package | Evidence-backed status | Required next action |
+| --- | --- | --- |
+| AD-01 / Art direction | **BLOCKED: OWNER DECISION**. TASK-048 PR #22 still Draft; TASK-049 Concept A recommended but not Owner accepted. | Review real imagery on desktop/mobile and accept A / alter / reject; if locked Home must change, approve Blueprint scope first. |
+| ST-01 / Two-story placement | **PROTOTYPE VERIFIED LOCAL ONLY** on TASK-049; 2 real asset sets exist but no release integration approved. | Confirm whether 2 additional full stories or 2 frame sequences inside the existing 3 cards; confirm display rights/final captions. |
+| CT-01 / Trust and content | **CODE AUDIT COMPLETE; HUMAN VERIFICATION BLOCKED**. Contact URI formats syntactically valid, but actual LINE/Facebook/phone ownership and receipt unverified; Kind Words quote has anonymous attribution without source proof. | Owner confirms public contact destinations and supplies a permitted real testimonial or approves an unquoted neutral statement; confirm client-image usage rights. |
+| QA-01 / Browser | **PARTIAL VERIFIED**. Actual Production `main@172684a` 27/27 browser smoke PASS at 390/768/1440; local combined TASK-050 candidate also 27/27 PASS; no broken images/overflow/JS errors observed in those tests. | Final full accessibility/manual art review and exact Release HEAD QA after merge plan, especially drawer/inquiry. The two 27/27 results do not validate any future HEAD. |
+| PF-01 / SEO, performance, security | **LOCAL REMEDIATION VERIFIED; DEPLOY PENDING**. Production originally returned 404 for `robots.txt`/`sitemap.xml`, lacked canonical/OG image/twitter meta and basic security headers. TASK-050 local Build/Lint PASS, HTTP 200 on robots/sitemap, canonical/social meta present, security headers returned. Experimental `/story-spike` becomes 404 in Production Mode. Field CWV performance, owner-selected canonical domain and published-fix confirmation remain UNKNOWN. | Confirm final domain; measure real LCP/CLS/INP/Lighthouse and deploy only through RL-01 gate. Preview/noindex behavior must be independently checked on target environment. |
+| RL-01 / Release | **HOLD**. Vercel Production `dpl_HjGBCjoX6Efj5Mh2QxM7cLtu4zw6` READY at `main@172684a`; PR #22 Open/Draft at `38f4eac`. TASK-050 branch includes unmerged TASK-049 experiment; it is **not** a releasable merge unit without reconciliation. | Resolve AD/CT owner gates, separate/cherry-pick approved changes, verify exact candidate and release; no merge/push/deploy in this checkpoint. |
+| OP-01 / Operations | **DRAFT PREPARED, NOT OPERATIONALLY VERIFIED**. Extended existing `docs/DEPLOYMENT.md` release/rollback/periodic-check procedure, avoiding new runbook. | After launch record real deployment/rollback and assign routine review ownership. |
+| Phases 2–5 | **CONDITIONAL DEFERRED (P2)**. No new portal, booking system, CMS, gallery database, or payments started. | Establish actual client demand, privacy/security, service design, costs and separate Owner scope before activating. |
+
+**Technical change scope in TASK-050:** `src/config/site.ts` (one URL owner, current Vercel address is provisional), `app/robots.ts`, `app/sitemap.ts`, `app/layout.tsx` (metadata), `next.config.ts` (three baseline headers), and safe production-only blocking of the experimental `app/story-spike/page.tsx`. No Hero/locked Home change, no new dependency.
+
+**Do not equate local success with release.** The Production hostname verified today is `https://lumina-studio-iota-ten.vercel.app`; do not claim it is an Owner-approved final custom domain. Original worktrees and PR #22 remain intact.
+
+---
+
+## Completion Roadmap — Public-Ready Human Documentary Website (assessment 2026-10-12)
+
+**Purpose and authority.** This section extends the existing Phase 1–5 roadmap; it does not replace the locked `docs/HOME_PAGE_BLUEPRINT.md`, `docs/LUMINA_V2_CONSTITUTION.md`, `docs/LUMINA_VISUAL_LANGUAGE.md`, task packets, or live runtime truth. "Website complete" has two meanings:
+- **Phase 1 public-ready (launchable):** a trustworthy one-page Human Documentary photography website that communicates who LUMINA is, shows real stories, and lets a prospective client reach the photographer reliably.
+- **Expanded full studio platform (optional later phases):** detail portfolio pages, booking inquiry form, private client gallery, and business tools. These are **not required** for Phase 1 completion. Do not implement their backend in Phase 1.
+
+**Evidence classification as of 2026-10-12:** TASK-046 and TASK-047 have historical verified production releases (see their canonical task reports). TASK-048 at `feat/task048-narrative-enhancements@38f4eac` is `TECHNICAL_QA_PASS / PENDING_OWNER_ART_DIRECTION`, GitHub PR #22 **Draft, not merged**; its app candidate and previous browser 42/42 belong to that HEAD. TASK-049 at `feat/task049-story-presentation-spike@de69bca` is **local-only experimental prototype** for two additional photo sets (Editorial Spread A preferred; Quiet Scroll B alternative), lint/build/57-browser-check PASS on its own candidate; no remote merge/deploy. Existing Vercel Production is **not** TASK-048/049. Never treat a successful old-head check as validation for a future merged candidate.
+
+### Completion criteria for Phase 1 (proposed acceptance gates)
+
+A Phase 1 launch is complete only when **all P0 gates** below are VERIFIED on the exact release Git HEAD and Owner approves the photographic/editorial direction. The checks are task proposals, **not claims that the current website fails**.
+
+| Gate | Evidence required on release candidate | Current evidence / action |
+| --- | --- | --- |
+| Brand / narrative | Owner accepts representative desktop/mobile screenshots; Human Documentary, quiet warm linen, emotional/observational Thai, photography-first; Hero unchanged | Owner art direction acceptance for TASK-048 still pending; TASK-049 presentation choice remains experimental |
+| Curated photography | Each public image file exists, is owned/licensed for display, represents genuine people/rituals, has appropriate crop, alt text and no misleading captions | Real project image inventory exists; final photo selections, permission/release suitability and full published photo audit must be confirmed |
+| Homepage narrative | Eight locked sections in exact order; Selected Stories exactly three editorial cards unless Owner separately approves a Blueprint change; responsive story reading works | Blueprint lock is verified; reconcile the Owner-requested two extra photo sets without silently appending cards or adding a ninth section |
+| Contact / lead path | Reachable LINE/phone/Facebook targets; actual external destination and end-to-end inquiry flow tested from mobile and desktop; no unverified booking promises | Links previously inspected; real account/message handoff not yet documented as verified |
+| Trust and factual copy | Real permissioned Kind Words quote (or truthful alternative); genuine photographer introduction, contact details, services and delivery language; no invented clock times or unsupported client claims | Audit against `src/config/`; collect Owner-confirmed content and proof before release |
+| UX / accessibility | 390/768/1440 + keyboard/focus/Escape/reduced-motion, Thai readability, accessible forms/labels, no overflow or broken images | TASK-048 historical Chrome 42/42 and TASK-049 local 57/57 are scoped evidence only; reproduce on exact integrated release candidate |
+| Performance / SEO | Real-world Core Web Vitals where available, Lighthouse/WebPageTest lab baseline, mobile image loading, image dimensions, font/loading behavior, SEO title/description, canonical/open graph, robots/sitemap | Verify exact deployed page. No numeric performance score should be declared PASS without measurement |
+| Operations / release | Branch/PR scope verified; lint/build/typecheck; deployment preview and actual Production READY at correct HEAD; HTTPS, URLs, 404 and cache; post-deploy smoke; rollback route documented | Production exists but current experiments are not released; repeat validation only after Owner accepts final direction |
+
+### Ordered work packages / dependencies
+
+| Order | Work package | Priority | Scope / deliverable | Definition of done / stop condition |
+| --- | --- | --- | --- | --- |
+| 1 | **AD-01: Art direction decision** | P0 / BLOCKER | Review real TASK-048 visuals plus TASK-049 Concept A/B screenshots, pick one visual plan for **two additional image sets**, resolve the three-card Blueprint conflict without altering the frozen Hero. | Written Owner Art Direction acceptance; if Home structure changes, amend existing canonical `docs/HOME_PAGE_BLUEPRINT.md` through a separately scoped decision before source edits. No silent change. |
+| 2 | **ST-01: Two-story integration plan** | P0 if two sets are launch requirement | Specify exact destination within selected three stories or optional Phase 2 story detail; identify photos, sequence, crops, alt and captions; reuse `StoryImageFocus` / canonical `src/config/portfolio.ts`. | 2 complete documentary sequences approved by Owner and photo provenance confirmed. Do not create a generic gallery grid, parallax effect showcase or duplicate config. |
+| 3 | **CT-01: Content and trust verification** | P0 | Audit Kind Words authenticity, profile, contact/LINE format, photographic representation and factual CTA/copy; replace unverifiable claims with neutral truthful copy. | Signed-off content sheet or documented Owner source; no unsupported testimonial, timeline or service promise. |
+| 4 | **QA-01: Release-candidate accessibility & responsive sweep** | P0 | Validate integrated exact HEAD at 390/768/1440: Home, story dialogs, Experience, inquiry, keyboard and touch, reduced motion, image load/crop, console, overflow and semantic HTML. | Relevant automated tests and independent screenshot review PASS; defects resolved on same HEAD. |
+| 5 | **PF-01: Performance, SEO and security baseline** | P0 | Check measured LCP/CLS/INP (field data when available), images/fonts, HTTP caching, metadata/OG, robots/sitemap, link security and exposed environment/secrets; no premature framework changes. | Baseline evidence + remediation of material issues; remaining noncritical improvements documented. |
+| 6 | **RL-01: Release reconciliation** | P0 | Reconcile Draft PR #22 with task gate, exact candidate, protected Home, clean worktree, branch scope, preview, checks and Owner permission. Merge/deploy only when all prior gates pass and any standing hold has been expressly resolved. | Production READY at landed HEAD, post-deploy mobile/desktop smoke PASS, rollout receipt, documented safe rollback. |
+| 7 | **OP-01: Low-maintenance operations** | P1 / after launch | Lightweight update procedure for photo captions/contacts/config, dependency advisories, broken-link review and rollback runbook. Reuse existing files/skills. | One canonical runbook reference, named maintenance owner and periodic check; no unnecessary dashboard. |
+
+**Priority interpretation:** P0 is essential for Phase 1 public-readiness and applies only after confirming the issue exists; P1 improves reliability after public launch; P2 is product expansion. These are ordered dependencies, not fixed calendar deadlines. TASK-048 merge and TASK-049 worktree cleanup **must not** precede their actual approval/landed verification.
+
+### Later phases — conditional, not blockers for Phase 1
+
+- **Phase 2 / P2 — Real editorial portfolio/story pages:** distinct photo-essay detail views, controlled image curation, SEO per story, intentional navigation. Promote TASK-049 Concept A only if the Owner approves how it relates to the locked Home. Do not make the experimental `/story-spike` URL public as-is.
+- **Phase 3 / P2 — Booking inquiry form:** optional structured lead intake only if LINE-based contact proves insufficient. Before implementation decide privacy notices, spam controls, data-retention, delivery channel and explicit external-service authorization; no backend just to create a form.
+- **Phase 4 / P2 — Client gallery:** separate private delivery/review product with access control, data retention, download permissions and storage costs; not a public masonry section and not Phase 1 scope.
+- **Phase 5 / P2 — Studio platform:** evaluate actual studio operating needs, demand, cost and privacy before proposing CRM, CMS, database or payments. No speculative infrastructure.
+
+### Open evidence / decisions that change the outcome
+
+1. Owner must confirm whether "two additional sets" means **extra stories available beyond the three Homepage cards** or **additional frames within the existing three-story experience**; never infer consent to remove or replace current story cards.
+2. Final photo permission/credit and customer-testimonial authenticity must be checked against their actual owners; a file being in `public/images` proves availability, **not** consent to display.
+3. Live inquiry/account delivery, SEO behavior, traffic performance and production accessibility cannot be marked VERIFIED from task-history alone.
+4. Full source code and licensing of the two 21st.dev scroll examples remained unverified in TASK-049. It is safe to use broad design inspiration; do not introduce or copy dependencies until source, licensing, and benefits are examined.
+5. No percentage-complete estimate is defensible until P0 checklist evidence is collected on one exact candidate.
+
+### Suggested next bounded action
+
+Create a **read-only Phase 1 release-gap audit** against the current Production and exact PR #22; inventory all public images/links/config and use a 390/768/1440 screenshot comparison. Package the Owner's art-direction decision as a short side-by-side of TASK-049 A/B. Do not touch the frozen Hero, create new systems, merge Draft PR #22 or deploy while the hold remains.
+
+
+---
+
 ## Phase 1
 
 Landing Page + Deploy Test
