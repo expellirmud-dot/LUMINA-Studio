@@ -26,3 +26,7 @@
 - Production Vercel `dpl_GKq2gmCoVUN9wgGP5wGbp6YZ6Gba`: READY on `main@086d8b9`, separate from Draft PR. No production deployment/alias change made by TASK-053.
 - **Effect state:** Push=VERIFIED, GitHub Draft PR=VERIFIED, Vercel Preview READY=VERIFIED, hosted app HTTP QA=BLOCKED_BY_AUTH, Production merge/deploy=NOT_EXECUTED.
 - Next external gate: confirm Owner preferred final canonical public domain and securely review authenticated Vercel Preview exact PR SHA before readiness transition. Preserve this unmerged worktree and ignored QA evidence.
+
+## Owner domain decision (2026-10-13)
+- OWNER_APPROVED: keep `https://lumina-studio-iota-ten.vercel.app` as current free primary canonical domain; no new domain, DNS or purchase.
+- Updated canonical URL configuration comment only; runtime URL was already correct. Hosted Vercel Preview still redirects unauthenticated requests to login, so its content QA is not verified. Keep PR #24 Draft until that gate is resolved; do not change Deployment Protection.

@@ -1,6 +1,6 @@
 // Canonical owner for the public web origin and social preview image.
-// The Vercel URL is the verified current production address, NOT a confirmed custom domain.
-// Set NEXT_PUBLIC_SITE_URL to the Owner-approved primary domain before any final release.
+// Owner confirmed the existing free Vercel hostname as LUMINA's current public canonical domain (2026-10-13).
+// Keep NEXT_PUBLIC_SITE_URL as an explicit override only if the Owner later approves a different primary domain.
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
 export const publicSiteUrl = (configuredSiteUrl || "https://lumina-studio-iota-ten.vercel.app").replace(/\/+$/, "");

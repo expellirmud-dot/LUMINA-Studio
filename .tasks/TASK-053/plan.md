@@ -11,7 +11,8 @@
 - [x] Return to Production-mode Build PASS; Chrome QA 46/46 PASS again; test servers stopped.
 - [x] Update canonical Roadmap, task report, existing deployment/implementation/handoff references.
 - [x] Exact diff staged/check PASS, committed `0d6328a`, pushed; GitHub Draft PR #24 VERIFIED. No merge.
-- [ ] Approve final canonical domain and independently authorize production merge/deploy under RL-01.
+- [x] Owner approved existing free Vercel canonical `lumina-studio-iota-ten.vercel.app` (2026-10-13); no DNS or purchase.
+- [ ] Authenticated hosted Preview QA and independent production merge/deploy checks under RL-01.
 - [x] Vercel Preview deployment `dpl_Gm4mxgba` READY on exact app SHA `0d6328a`, but hosted HTTP redirects to Vercel login; external app content NOT VERIFIED.
 - [ ] Post-authenticated hosted Preview QA; clean up worktree only after merged/verified.
 
