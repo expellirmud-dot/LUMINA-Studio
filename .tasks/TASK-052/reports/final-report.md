@@ -21,3 +21,14 @@
 - AGY independent photo reviewer was attempted with gemini-3.8-flash-low but yielded empty response after 100s print timeout. No reviewer PASS claimed.
 - Post-change npm run lint PASS (exit 0) and npm run build PASS (exit 0), Next.js 16.4.0 and TypeScript; two story pages SSG.
 - Post-change headless Chrome QA 72/72 PASS (390/768/1440) on same local build; receipts and screenshots under ignored .runtime-captures/lumina/TASK-050/task052/. Owner subjective visual/permission gates remain HOLD. No push/merge/deploy.
+
+## Release scope reconciliation (2026-10-13 10:15 ICT)
+
+- **Verified candidate:** local branch `feat/task050-public-ready-audit@9a32b46` CLEAN at review start, composed of pending TASK-048, TASK-049, TASK-050 and TASK-052 changes; comparison vs `main` showed **35 changed files**. This is a mixed experimental branch, not a bounded releasable PR.
+- **Keep for future release review:** `app/stories/page.tsx`, `app/stories/[id]/page.tsx`, `app/stories/stories.module.css`, the in-section discovery link in `app/page.tsx`, associated `app/globals.css` rules, and photo-story data in canonical `src/config/portfolio.ts`. Existing three Home story cards must remain intact.
+- **Keep isolated / do not ship:** `app/story-spike/page.tsx` and `app/story-spike/page.module.css` are comparison-only experiment. Current guard returns 404 on production; a final release should preferably omit both from the selected patch entirely, not rely on noindex alone.
+- **Independent review required:** TASK-048 narrative Drawer and Inquiry UX, plus TASK-050 SEO headers/site URL/robots/sitemap should be cherry-picked or integrated only after their own scope gates, not implicitly accepted through the 35-file diff.
+- **Photo weight spot check (source files, not transferred WebP size):** Wedding source PTO-692 0.33 MB, PTO-3488 0.40 MB, PTO-556 0.43 MB; ordination PTO-296 0.57 MB, PTO-13 0.66 MB, PTO-318 0.49 MB. Do not confuse source JPEG disk size with Next.js-optimized transfer size or user-observed LCP.
+- **Content verification:** the selected sources visually match human documentary scope; updated alt text describes visible gestures and subjects; no portrait permission/client testimonial/contact receipt was established by the image files or this audit. Their public exposure remains on hold.
+- **Next release preparation:** create a fresh release-candidate branch from exact current `origin/main`, with independently approved narrow scopes. Verify Homepage remains eight sections and three Selected Stories cards, story pages noindex or later Owner-approved indexing, remove experimental route, run lint/build/browser QA, then obtain art/photo rights signoff. Push/Merge/Deploy only when all gates are satisfied.
+- **Current decision:** RELEASE PREPARATION REVIEW COMPLETE / PRODUCTION HOLD, not a claim of Owner subjective Art Direction acceptance.
