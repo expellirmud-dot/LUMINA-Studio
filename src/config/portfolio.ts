@@ -215,10 +215,10 @@ export const storyPresentationSets: StoryPresentationSet[] = [
     title: "ใกล้กันในช่วงเวลาธรรมดา",
     note: "ภาพเล็ก ๆ ของความผูกพัน ท่ามกลางวันสำคัญของผู้คน",
     image: {
-      src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
-      path: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
-      alt: "คู่บ่าวสาวเดินเคียงกันในงานพิธี",
-      position: "52% 55%",
+      src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+      path: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+      alt: "เจ้าสาวโอบกอดชายสูงวัยในภาพครอบครัววันแต่งงาน",
+      position: "50% 45%",
     },
     details: [
       {
@@ -230,7 +230,7 @@ export const storyPresentationSets: StoryPresentationSet[] = [
       {
         src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
         path: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
-        alt: "อีกหนึ่งภาพจากเรื่องราวงานแต่งงาน",
+        alt: "เจ้าสาวโอบกอดชายสูงวัยในภาพครอบครัววันแต่งงาน",
         position: "50% 50%",
       },
     ],
@@ -259,7 +259,7 @@ export const storyPresentationSets: StoryPresentationSet[] = [
         image: {
           src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
           path: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
-          alt: "ภาพหนึ่งจากชุดงานแต่งงาน",
+          alt: "เจ้าสาวโอบกอดชายสูงวัยในภาพครอบครัววันแต่งงาน",
           position: "50% 50%",
         },
         timeContext: "ในวันเดียวกัน",
@@ -275,7 +275,7 @@ export const storyPresentationSets: StoryPresentationSet[] = [
     image: {
       src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
       path: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-      alt: "ช่วงเวลาทำพิธีร่วมกันภายในครอบครัว",
+      alt: "ผู้เข้าพิธีอุปสมบทเทน้ำจากภาชนะลงบนมือของผู้ร่วมงาน",
       position: "54% 58%",
     },
     details: [
@@ -288,7 +288,7 @@ export const storyPresentationSets: StoryPresentationSet[] = [
       {
         src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
         path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-        alt: "ภาพบุคคลในวันอุปสมบท",
+        alt: "ผู้เข้าพิธีอุปสมบทในเครื่องแต่งกายสีขาวและทองหน้าอาคารสีแดง",
         position: "50% 42%",
       },
     ],
@@ -307,7 +307,7 @@ export const storyPresentationSets: StoryPresentationSet[] = [
         image: {
           src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
           path: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
-          alt: "ช่วงเวลาทำพิธีร่วมกันภายในครอบครัว",
+          alt: "ผู้เข้าพิธีอุปสมบทเทน้ำจากภาชนะลงบนมือของผู้ร่วมงาน",
           position: "54% 58%",
         },
         timeContext: "ผู้คนและพิธีการ",
@@ -317,7 +317,7 @@ export const storyPresentationSets: StoryPresentationSet[] = [
         image: {
           src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
           path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
-          alt: "ภาพบุคคลในวันอุปสมบท",
+          alt: "ผู้เข้าพิธีอุปสมบทในเครื่องแต่งกายสีขาวและทองหน้าอาคารสีแดง",
           position: "50% 42%",
         },
         timeContext: "ภาพหนึ่งของวัน",
