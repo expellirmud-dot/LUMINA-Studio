@@ -2,11 +2,11 @@
 
 ## TASK-053 isolated SEO Release Candidate — 2026-10-13
 
-**Status: QA_VERIFIED_LOCAL / PENDING_FINAL_DOMAIN_AND_RELEASE_GATE / NOT_DEPLOYED.**
+**Status: QA_VERIFIED_LOCAL / DRAFT_PR_24_OPEN / PENDING_FINAL_DOMAIN_AND_RELEASE_GATE / NOT_DEPLOYED.**
 - Branched from actual `origin/main@086d8b9`, *not* TASK-048/049/050/052 combined history. Exactly five application/config paths: `app/layout.tsx`, `app/robots.ts`, `app/sitemap.ts`, `next.config.ts`, `src/config/site.ts`.
 - Recreated and verified SEO + baseline security headers on this independent base. ESLint / Next Build / TypeScript PASS; Chrome local Production QA **46/46** at 390/768/1440, preserving eight Home sections and exactly three stories; Preview-mode robots Disallow all and empty sitemap were independently tested after a second build.
 - Existing live Vercel hostname is used as a *provisional canonical fallback*, not as a confirmed brand-domain decision. No client stories/photos or frozen Hero changes. Worker review timed out without usable verdict; automated QA is not an Owner art-direction signoff.
-- Canonical proof: `.tasks/TASK-053/reports/final-report.md`. Keep this slice in a separate Draft PR until domain and release gates are met. TASK-048 PR #22 and mixed TASK-049/050/052 still remain independent and unmerged. **Do not infer Production SEO has changed.**
+- Canonical proof: `.tasks/TASK-053/reports/final-report.md`. GitHub [Draft PR #24](https://github.com/expellirmud-dot/LUMINA-Studio/pull/24) is OPEN, Preview deployment `dpl_Gm4mxgba` READY at `0d6328a`, but its public HTTP redirects to Vercel Login (hosted content not verified). Keep Draft until domain and release gates are met. TASK-048 PR #22 and mixed TASK-049/050/052 still remain independent and unmerged. **Do not infer Production SEO has changed.**
 
 ---
 

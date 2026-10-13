@@ -10,8 +10,9 @@
 - [x] Separate `VERCEL_ENV=preview` Build PASS; HTTP `robots.txt` returns Disallow all, Preview `sitemap.xml` empty.
 - [x] Return to Production-mode Build PASS; Chrome QA 46/46 PASS again; test servers stopped.
 - [x] Update canonical Roadmap, task report, existing deployment/implementation/handoff references.
-- [ ] Stage exact diff; commit local candidate; optionally Push and open a Draft PR (no merge).
+- [x] Exact diff staged/check PASS, committed `0d6328a`, pushed; GitHub Draft PR #24 VERIFIED. No merge.
 - [ ] Approve final canonical domain and independently authorize production merge/deploy under RL-01.
-- [ ] Record live Vercel Preview exact SHA, if a Draft PR is opened; clean up worktree only after merged/verified.
+- [x] Vercel Preview deployment `dpl_Gm4mxgba` READY on exact app SHA `0d6328a`, but hosted HTTP redirects to Vercel login; external app content NOT VERIFIED.
+- [ ] Post-authenticated hosted Preview QA; clean up worktree only after merged/verified.
 
 **No tasks 048/049/050/052 or Story photos are eligible for deletion/merge by this QA receipt.**

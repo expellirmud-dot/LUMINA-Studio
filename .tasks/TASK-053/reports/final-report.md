@@ -17,3 +17,12 @@
 - **External effects at this checkpoint:** none; any subsequent GitHub Draft PR creation or Preview deployment must be recorded as its own effect/verification, not assumed.
 
 **Decision:** The PF-01 SEO/security technical slice is isolated and QA-verified. Prepare a scoped Draft PR with merge HOLD pending final canonical domain and applicable release checks; do not fold mixed photo experiments into the PR.
+
+## Draft PR and deployment inspection receipt (2026-10-13)
+
+- Local technical implementation commit: `0d6328ae8d97983d26e877afc5ea0c7549cf7b8f`, explicitly staged 12 task/SEO/doc files, cached diff check PASS, remote push SUCCESS.
+- GitHub **Draft PR #24**: https://github.com/expellirmud-dot/LUMINA-Studio/pull/24, target `main@086d8b96719e5619495b76cbfd2c595c4c4183da`. PR observed OPEN/DRAFT, mergeable=true, not merged. No production merge issued.
+- Vercel Preview `dpl_Gm4mxgbaGv7f24NYCtdkATQtxyUe`: `READY`, exact app code SHA `0d6328a`. Unauthenticated hosted HTTP requests to Preview redirect to Vercel Login/Deployment Protection; returned HTTP 200 was the **login page**, not the preview application. Therefore hosted Preview content, robots and sitemap remain NOT VERIFIED externally. Local Preview-mode HTTP did pass as recorded above.
+- Production Vercel `dpl_GKq2gmCoVUN9wgGP5wGbp6YZ6Gba`: READY on `main@086d8b9`, separate from Draft PR. No production deployment/alias change made by TASK-053.
+- **Effect state:** Push=VERIFIED, GitHub Draft PR=VERIFIED, Vercel Preview READY=VERIFIED, hosted app HTTP QA=BLOCKED_BY_AUTH, Production merge/deploy=NOT_EXECUTED.
+- Next external gate: confirm Owner preferred final canonical public domain and securely review authenticated Vercel Preview exact PR SHA before readiness transition. Preserve this unmerged worktree and ignored QA evidence.
