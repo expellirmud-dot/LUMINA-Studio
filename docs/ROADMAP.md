@@ -1,5 +1,15 @@
 # ROADMAP
 
+## TASK-053 isolated SEO Release Candidate — 2026-10-13
+
+**Status: QA_VERIFIED_LOCAL / PENDING_FINAL_DOMAIN_AND_RELEASE_GATE / NOT_DEPLOYED.**
+- Branched from actual `origin/main@086d8b9`, *not* TASK-048/049/050/052 combined history. Exactly five application/config paths: `app/layout.tsx`, `app/robots.ts`, `app/sitemap.ts`, `next.config.ts`, `src/config/site.ts`.
+- Recreated and verified SEO + baseline security headers on this independent base. ESLint / Next Build / TypeScript PASS; Chrome local Production QA **46/46** at 390/768/1440, preserving eight Home sections and exactly three stories; Preview-mode robots Disallow all and empty sitemap were independently tested after a second build.
+- Existing live Vercel hostname is used as a *provisional canonical fallback*, not as a confirmed brand-domain decision. No client stories/photos or frozen Hero changes. Worker review timed out without usable verdict; automated QA is not an Owner art-direction signoff.
+- Canonical proof: `.tasks/TASK-053/reports/final-report.md`. Keep this slice in a separate Draft PR until domain and release gates are met. TASK-048 PR #22 and mixed TASK-049/050/052 still remain independent and unmerged. **Do not infer Production SEO has changed.**
+
+---
+
 ## Owner decision — additional story collections (2026-10-12 18:14 ICT)
 
 **OWNER_APPROVED:** Keep the three Selected Stories on Home unchanged. The two new photo sets are TWO ADDITIONAL INDEPENDENT STORIES, not extra frames inside the three existing stories. Total editorial inventory: five standalone stories; Home still displays exactly three cards. This resolves the prior placement-choice ambiguity.
