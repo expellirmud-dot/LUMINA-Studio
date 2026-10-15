@@ -1,4 +1,4 @@
-import type { PortfolioImage } from "./images";
+import type { PortfolioImage, ConfigImage } from "./images";
 
 export const portfolioConfig: PortfolioImage[] = [
   {
@@ -53,7 +53,21 @@ export const portfolioConfig: PortfolioImage[] = [
   },
 ];
 
-export const selectedStoriesConfig = [
+export type NarrativeFrame = {
+  image: ConfigImage;
+  timeContext?: string;
+  caption: string;
+};
+
+export type SelectedStory = {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  image: ConfigImage;
+  frames?: NarrativeFrame[];
+};
+
+export const selectedStoriesConfig: SelectedStory[] = [
   {
     eyebrow: "RITUAL",
     title: "What is carried forward",
@@ -64,6 +78,38 @@ export const selectedStoriesConfig = [
       alt: "An elder offering a blessing during a family ceremony",
       position: "55% 52%",
     },
+    frames: [
+      {
+        image: {
+          src: "/images/portfolio/lumina-harvest-v1/000001_opening_detail_IMG_0629.webp",
+          path: "/images/portfolio/lumina-harvest-v1/000001_opening_detail_IMG_0629.webp",
+          alt: "Ceremony items placed calmly before the arrival of family",
+          position: "50% 50%",
+        },
+        timeContext: "รายละเอียดของพิธี",
+        caption: "รายละเอียดของสถานที่และสิ่งของที่เตรียมไว้สำหรับพิธี",
+      },
+      {
+        image: {
+          src: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
+          path: "/images/portfolio/lumina-harvest-v1/000013_ceremony_IMG_1676.webp",
+          alt: "An elder offering a blessing during a family ceremony",
+          position: "55% 52%",
+        },
+        timeContext: "ช่วงเวลาแห่งคำอวยพร",
+        caption: "คำอวยพรและสัมผัสมือจากผู้ใหญ่ ช่วงเวลาที่เรียบง่ายแต่เปี่ยมด้วยความหมาย",
+      },
+      {
+        image: {
+          src: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+          path: "/images/portfolio/lumina-harvest-v1/000035_family_emotion_PTO_9008.webp",
+          alt: "A warm family embrace after the ceremony",
+          position: "48% 68%",
+        },
+        timeContext: "สายใยครอบครัว",
+        caption: "อ้อมกอดและความอบอุ่นที่สะท้อนความผูกพันในครอบครัว",
+      },
+    ],
   },
   {
     eyebrow: "RELATIONSHIP",

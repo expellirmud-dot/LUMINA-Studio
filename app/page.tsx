@@ -2,6 +2,7 @@ import Image from "next/image";
 import { MiniAlbum } from "../src/components/MiniAlbum";
 import { ExperienceSequence } from "../src/components/ExperienceSequence";
 import { StoryImageFocus } from "../src/components/StoryImageFocus";
+import { QuietInquiryStarter } from "../src/components/QuietInquiryStarter";
 import { heroImage, profileImage } from "../src/config/images";
 import { typographyConfig } from "../src/config/typography";
 import { visualConfig } from "../src/config/visual";
@@ -9,7 +10,7 @@ import { contentConfig } from "../src/config/content";
 import { selectedStoriesConfig, momentImagesConfig, experienceImagesConfig } from "../src/config/portfolio";
 import { servicesConfig } from "../src/config/services";
 import { navigationConfig } from "../src/config/navigation";
-import { contactConfig } from "../src/config/contact";
+import { contactConfig, inquiryOptionsConfig } from "../src/config/contact";
 
 export default function Home() {
   const primaryContact = contactConfig.items.find((item) => item.label === "LINE") ?? contactConfig.items[0];
@@ -121,6 +122,9 @@ export default function Home() {
                   <StoryImageFocus
                     image={story.image}
                     title={story.title}
+                    eyebrow={story.eyebrow}
+                    subtitle={story.subtitle}
+                    frames={story.frames}
                     openLabel={contentConfig.selectedStories.imageFocusOpen}
                     closeLabel={contentConfig.selectedStories.imageFocusClose}
                     loadingLabel={contentConfig.selectedStories.imageFocusLoading}
@@ -217,14 +221,13 @@ export default function Home() {
               {contentConfig.finalCta.title}
             </h2>
             <p lang="th" className="final-cta-body" style={{ fontFamily: typographyConfig.fonts.thaiBody }}>{contentConfig.finalCta.body}</p>
-            <div className="final-cta-actions">
-              <a lang="th" href={primaryContact.href} className="primary-action linen-action">
-                {contentConfig.finalCta.button}
-              </a>
-              <a lang="th" href="#contact-details" className="text-action">
-                {contentConfig.finalCta.secondary}
-              </a>
-            </div>
+            <QuietInquiryStarter
+              options={inquiryOptionsConfig}
+              primaryHref={primaryContact.href}
+              primaryLabel={contentConfig.finalCta.button}
+              secondaryHref="#contact-details"
+              secondaryLabel={contentConfig.finalCta.secondary}
+            />
           </div>
           <footer className="site-footer">
             <p className="flex items-baseline gap-1.5 font-serif text-3xl text-[var(--text)]">

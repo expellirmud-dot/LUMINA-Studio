@@ -1,3 +1,11 @@
+# TASK-048 — PR #22 Corrective Review (2026-10-11)
+
+- Preserved shelved Gallery at `origin/experiment/task048-gallery-shelved-20261011@364b3cf` and reversed only its tip commit in PR candidate. Retained three original TASK-048 features.
+- Corrected Story timestamps and QuietInquiryStarter keyboard / clipboard status. Lint/build PASS; protected 5/5; Chrome 390/768/1440 42/42. Screenshot 27 captures and qaFindings=0, no production merge. Candidate `d52d97d` was pushed to PR #22, which was converted to DRAFT. Current checkpoint remains unmerged.
+- Exact candidate screenshot evidence and review status are owned by `.tasks/TASK-048/reports/final-report.md`, not duplicated here.
+
+---
+
 # TASK-047 — VERIFIED MERGED AND PRODUCTION QA (2026-10-11)
 
 - GitHub PR #20 merged to `main@fbf4640` at 17:34:30 ICT; Vercel Production `dpl_395Y5YDsgpxx78bmQFbESr63LD2g` READY on exact SHA and canonical Home HTTP 200.
