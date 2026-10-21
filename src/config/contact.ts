@@ -20,3 +20,27 @@ export const contactConfig = {
     },
   ],
 };
+
+export type InquiryOption = {
+  id: string;
+  label: string;
+  defaultMessage: string;
+};
+
+export const inquiryOptionsConfig: InquiryOption[] = [
+  {
+    id: "family",
+    label: "บันทึกช่วงเวลาครอบครัว",
+    defaultMessage: "สวัสดีครับ สนใจอยากปรึกษาเรื่องการบันทึกภาพช่วงเวลาครอบครัวครับ",
+  },
+  {
+    id: "ceremony",
+    label: "งานแต่งงานหรือพิธีสำคัญ",
+    defaultMessage: "สวัสดีครับ สนใจอยากปรึกษาเรื่องการบันทึกภาพงานแต่งงานหรือพิธีการครับ",
+  },
+  {
+    id: "portrait",
+    label: "ภาพบุคคลและเรื่องราวเฉพาะ",
+    defaultMessage: "สวัสดีครับ สนใจอยากปรึกษาเรื่องการถ่ายภาพบุคคลและเรื่องราวเฉพาะครับ",
+  },
+];

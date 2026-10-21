@@ -1,3 +1,11 @@
+# CURRENT HANDOFF — TASK-048 PR #22 SCOPE RECONCILIATION (2026-10-11)
+
+- Original PR head `364b3cf` contained out-of-scope Gallery and `motion`. Archived at `origin/experiment/task048-gallery-shelved-20261011` before reversing this one Gallery commit on active TASK-048 branch.
+- Repaired Story labels (no unsupported clock times) and inquiry keyboard/clipboard feedback. Candidate lint/build PASS, protected 5/5, Chrome 390/768/1440 42/42. Canonical screenshots 27/27 qaFindings=0; tested app source at `d52d97d` pushed to GitHub PR #22 as DRAFT; Vercel redeployment was pending at latest check. **No merge/deploy authorized before exact current-candidate validation and art-direction review.**
+- Canonical details: `.tasks/TASK-048/reports/final-report.md`. Historic TASK-047 production receipt below remains evidence of its own previous HEAD only.
+
+---
+
 # CURRENT HANDOFF — TASK-047 MERGED + PRODUCTION VERIFIED (2026-10-11 17:50 ICT)
 
 - PR #20 **MERGED** at `2026-10-11T10:34:30Z` (17:34:30 ICT): `main@fbf4640`. Exact released tree is equal to former preview head `185ea18` (`git diff --quiet` PASS).
