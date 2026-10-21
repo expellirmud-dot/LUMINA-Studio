@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description: "Human documentary photography of people, relationships, and rituals, observed with care and held with honesty.",
     type: "website",
     url: "/",
-    images: [{ url: socialPreviewImage, alt: "LUMINA Studio documentary family ceremony photograph" }],
+    images: [{ url: socialPreviewImage, alt: "LUMINA Studio documentary ceremony photograph" }],
   },
   twitter: { card: "summary_large_image", images: [socialPreviewImage] },
 };

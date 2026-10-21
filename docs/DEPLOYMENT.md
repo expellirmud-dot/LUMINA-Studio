@@ -22,15 +22,13 @@ Best for:
 
 Current project has no database and no backend.
 
-## Phase 1 release and rollback operating checklist (2026-10-12)
+## Exact-candidate release and rollback (Phase 1)
 
-This extends the existing Vercel deployment guide; release authority and acceptance remain under `PROJECT_RULES.md`, `AGENTS.md`, `docs/ROADMAP.md` and the active task packet. It is an **unexecuted checklist**, not proof of a deployment or tested rollback.
+This checklist is a future procedure, not evidence that a release or rollback happened.
 
-1. Before release: confirm Owner Art Direction acceptance, actual rights to show curated photographs and testimonial, public contact account ownership/message receipt, and the final canonical domain. Confirm the three-card/section Home Blueprint or explicitly approve a scoped amendment.
-2. Confirm the exact release branch/HEAD and clean Git status, PR checks/merge scope, immutable candidate lint/build and 390/768/1440 screenshot/browser QA. Never reuse test evidence from a different HEAD without reproducing it.
-3. Use the verified Vercel Preview for the same candidate before Production. Record project, deployment ID, origin SHA, domain aliases, and prior READY Production deployment ID in the active task report.
-4. Production: deploy only after release gates pass. Reconcile any ambiguous Vercel/GitHub effect before retrying. Verify the landed Git SHA, `READY` state, HTTPS/HTTP 200, SEO `robots.txt`/`sitemap.xml`, canonical/social cards, links, mobile navigation, drawer and inquiry UI. Do not send a real client message during smoke testing.
-5. If release fails: stop new changes; inspect deployment and Git receipt. Restore the **recorded, verified previous Production deployment** using the platform's supported rollback flow (or revert the release commit via a separately reviewed PR if platform rollback cannot be verified). Do not assert rollback success until the alias points at the intended known-good deployment and public smoke passes.
-6. Ongoing operations after launch: periodically check broken contact links, public image availability/rights, SEO metadata and Core Web Vitals, dependency advisories, and owner-visible incoming inquiry path. Store receipts in existing task reports; do not add a dashboard, database or competing maintenance registry.
-
-Current deployment for comparison at this checkpoint (verified 2026-10-12): `main@172684a03edf0f91b1e90a67bbc39e1d7a8e083b`, Vercel deployment `dpl_HjGBCjoX6Efj5Mh2QxM7cLtu4zw6` READY at `https://lumina-studio-iota-ten.vercel.app/`. **Not** a guarantee of future rollback availability or authorization.
+1. Reconcile the Owner-approved public domain, real photo/client permissions and the specific scope of the PR. Never merge mixed experimental branches into Production.
+2. Capture exact Git HEAD and clean diff; run lint, build/TypeScript and mobile/tablet/desktop browser QA on the actual release candidate. Treat tests on a different HEAD as historical.
+3. Check Vercel Preview with the same candidate: test HTTPS/Metadata, `robots.txt` disallow for Preview, and empty Preview sitemap. Record the deployment ID and commit SHA.
+4. Before Production, record previous READY Vercel Production deployment ID, aliases and rollback options, then merge/deploy only if task-specific gates permit. Reconcile ambiguous effects before retrying.
+5. Verify new Production alias points to the landed SHA: Home and relevant routes HTTP 200, images and links work, `robots.txt` and `sitemap.xml` serve intended values, and key screens pass smoke at 390/768/1440. Record effect as VERIFIED only after checking.
+6. If verification fails, return to the recorded known-good deployment through the Vercel-supported rollback flow (or a separate reviewed revert PR) and verify alias, SHA and public smoke again. Do not force-delete worktrees or unique evidence before all landed checks pass.
