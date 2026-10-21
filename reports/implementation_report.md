@@ -1,3 +1,20 @@
+# TASK-050 — Local SEO / Security and Phase 1 Readiness Review (2026-10-12)
+
+- Canonical evidence: `.tasks/TASK-050/reports/final-report.md`; current gap statuses: `docs/ROADMAP.md`.
+- New SEO metadata, single site URL Config, robots.txt, sitemap.xml, three baseline security headers, and local experimental route disabled in Production Mode.
+- Tested local Candidate: ESLint/Next Build/TypeScript PASS, Chrome 27/27 and HTTP SEO/security PASS. Actual existing Vercel Production: Chrome 27/27 but old SEO endpoints 404. **No external deployment was made.**
+- Art Direction, final site domain, client consent and verified contact arrival remain blocked; do not auto-merge Draft PR #22 or treat TASK-050 branch as release-ready.
+
+---
+
+# TASK-049 — Verified Local Two-Story Prototype (2026-10-12)
+
+- Canonical source: `.tasks/TASK-049/reports/final-report.md`.
+- Two project photo sets trialed in isolated `/story-spike` route. A = Editorial Spread (recommended); B = Quiet Scroll. No new dependencies, backend, Hero or Home changes.
+- Reused `src/config/portfolio.ts` and existing `StoryImageFocus`; final ESLint/Next build PASS and Chrome QA 57/57 PASS. Prototype remains local-only on unpushed worktree, pending Owner art direction; PR #22 remains untouched.
+
+---
+
 # TASK-048 — PR #22 Corrective Review (2026-10-11)
 
 - Preserved shelved Gallery at `origin/experiment/task048-gallery-shelved-20261011@364b3cf` and reversed only its tip commit in PR candidate. Retained three original TASK-048 features.

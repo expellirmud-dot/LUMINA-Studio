@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, IBM_Plex_Sans_Thai_Looped } from "next/font/google";
 import "./globals.css";
+import { publicSiteUrl, socialPreviewImage } from "../src/config/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,13 +21,18 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(publicSiteUrl),
+  alternates: { canonical: "/" },
   title: "LUMINA Studio — Human Documentary Photography",
   description: "Human documentary photography of people, relationships, and rituals, observed with care and held with honesty.",
   openGraph: {
     title: "LUMINA Studio — Human Documentary Photography",
     description: "Human documentary photography of people, relationships, and rituals, observed with care and held with honesty.",
     type: "website",
+    url: "/",
+    images: [{ url: socialPreviewImage, alt: "LUMINA Studio documentary family ceremony photograph" }],
   },
+  twitter: { card: "summary_large_image", images: [socialPreviewImage] },
 };
 
 export default function RootLayout({

@@ -1495,3 +1495,8 @@ body {
     transform: none;
   }
 }
+
+/* TASK-052: restrained discovery of two additional independent stories. */
+.more-stories-discovery { text-align: center; margin: clamp(2rem, 5vw, 5rem) 0 0; }
+.more-stories-discovery a { color: var(--text); text-decoration: underline; text-underline-offset: 0.45em; font-size: clamp(.9rem, 1.1vw, 1rem); }
+.more-stories-discovery a:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }

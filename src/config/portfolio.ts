@@ -195,3 +195,134 @@ export const experienceImagesConfig = [
     position: "48% 68%",
   },
 ];
+
+// TASK-049 experimental photo-story presentation; canonical portfolio configuration.
+export type StoryPresentationSet = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  note: string;
+  image: ConfigImage;
+  details: ConfigImage[];
+  frames: NarrativeFrame[];
+};
+
+// TASK-049 experiment only. Existing photography is reused; no new assets.
+export const storyPresentationSets: StoryPresentationSet[] = [
+  {
+    id: "relationship",
+    eyebrow: "RELATIONSHIP · 01",
+    title: "ใกล้กันในช่วงเวลาธรรมดา",
+    note: "ภาพเล็ก ๆ ของความผูกพัน ท่ามกลางวันสำคัญของผู้คน",
+    image: {
+      src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+      path: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+      alt: "เจ้าสาวโอบกอดชายสูงวัยในภาพครอบครัววันแต่งงาน",
+      position: "50% 45%",
+    },
+    details: [
+      {
+        src: "/images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
+        path: "/images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
+        alt: "มือของเจ้าสาววางบนไหล่คนใกล้ชิด",
+        position: "55% 50%",
+      },
+      {
+        src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+        path: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+        alt: "เจ้าสาวโอบกอดชายสูงวัยในภาพครอบครัววันแต่งงาน",
+        position: "50% 50%",
+      },
+    ],
+    frames: [
+      {
+        image: {
+          src: "/images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
+          path: "/images/portfolio/wedding-ceremony-v1/PTO-3488.jpg",
+          alt: "มือของเจ้าสาววางบนไหล่คนใกล้ชิด",
+          position: "55% 50%",
+        },
+        timeContext: "ความใกล้ชิด",
+        caption: "บางความรู้สึกปรากฏผ่านท่าทางเล็ก ๆ โดยไม่ต้องมีคำพูด",
+      },
+      {
+        image: {
+          src: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+          path: "/images/portfolio/wedding-ceremony-v1/PTO-556.jpg",
+          alt: "คู่บ่าวสาวเดินเคียงกันในงานพิธี",
+          position: "52% 55%",
+        },
+        timeContext: "เคียงข้างกัน",
+        caption: "คนสองคนในช่วงเวลาที่ได้เดินอยู่ข้างกัน",
+      },
+      {
+        image: {
+          src: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+          path: "/images/portfolio/wedding-ceremony-v1/PTO-692.jpg",
+          alt: "เจ้าสาวโอบกอดชายสูงวัยในภาพครอบครัววันแต่งงาน",
+          position: "50% 50%",
+        },
+        timeContext: "ในวันเดียวกัน",
+        caption: "ยังมีรายละเอียดอื่น ๆ ที่ทำให้วันนั้นเป็นเรื่องราวของผู้คน",
+      },
+    ],
+  },
+  {
+    id: "ritual",
+    eyebrow: "RITUAL · 02",
+    title: "สิ่งที่ส่งต่อกันอย่างเงียบ ๆ",
+    note: "ประเพณี ผู้คน และรายละเอียดที่ทำให้เราอยากจดจำ",
+    image: {
+      src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+      path: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+      alt: "ผู้เข้าพิธีอุปสมบทเทน้ำจากภาชนะลงบนมือของผู้ร่วมงาน",
+      position: "54% 58%",
+    },
+    details: [
+      {
+        src: "/images/portfolio/phra-louis-v1/PTO-13.jpg",
+        path: "/images/portfolio/phra-louis-v1/PTO-13.jpg",
+        alt: "เครื่องประกอบพิธีที่จัดเตรียมไว้",
+        position: "50% 50%",
+      },
+      {
+        src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+        path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+        alt: "ผู้เข้าพิธีอุปสมบทในเครื่องแต่งกายสีขาวและทองหน้าอาคารสีแดง",
+        position: "50% 42%",
+      },
+    ],
+    frames: [
+      {
+        image: {
+          src: "/images/portfolio/phra-louis-v1/PTO-13.jpg",
+          path: "/images/portfolio/phra-louis-v1/PTO-13.jpg",
+          alt: "เครื่องประกอบพิธีที่จัดเตรียมไว้",
+          position: "50% 50%",
+        },
+        timeContext: "รายละเอียดพิธี",
+        caption: "สิ่งของที่เตรียมไว้เป็นส่วนหนึ่งของความหมายในวันสำคัญ",
+      },
+      {
+        image: {
+          src: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+          path: "/images/portfolio/phra-louis-v1/PTO-296.jpg",
+          alt: "ผู้เข้าพิธีอุปสมบทเทน้ำจากภาชนะลงบนมือของผู้ร่วมงาน",
+          position: "54% 58%",
+        },
+        timeContext: "ผู้คนและพิธีการ",
+        caption: "ความสัมพันธ์ของผู้คนปรากฏอยู่ในกิริยาและการอยู่ร่วมกัน",
+      },
+      {
+        image: {
+          src: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+          path: "/images/portfolio/phra-louis-v1/PTO-318.jpg",
+          alt: "ผู้เข้าพิธีอุปสมบทในเครื่องแต่งกายสีขาวและทองหน้าอาคารสีแดง",
+          position: "50% 42%",
+        },
+        timeContext: "ภาพหนึ่งของวัน",
+        caption: "ภาพที่ช่วยให้ย้อนนึกถึงผู้คนและบรรยากาศของช่วงเวลานั้น",
+      },
+    ],
+  },
+];
