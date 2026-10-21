@@ -1,3 +1,12 @@
+# TASK-048/049/050/053 — Merged to main (2026-10-22)
+
+- `main` at `8a9e24c` now carries TASK-048 narrative enhancements, TASK-050 public readiness and two documentary story pages, and the TASK-053 SEO slice.
+- Merge order: TASK-048 → TASK-050 (includes TASK-049) → TASK-053. The 053 conflict was resolved in favour of its SEO files; both handoff and report sections were kept.
+- Merged-HEAD verification: lint exit 0, build exit 0, browser QA 46/46 + 27/27 + 42/42 at 390/768/1440. `/story-spike` is 404 in production; robots and sitemap serve the intended values.
+- Owner gates AD-01 (art direction) and CT-01 (photo/testimonial permissions) remain the recorded reason the merge had been held; this merge ships them as the Owner directed.
+
+---
+
 # TASK-053 — Isolated SEO/Headers Candidate (2026-10-13)
 
 - Recreated five SEO/security-only files from current `origin/main@086d8b9`; no story/photography changes or dependency adds.

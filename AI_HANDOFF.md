@@ -1,3 +1,13 @@
+# CURRENT HANDOFF — TASK-048/049/050/053 MERGED TO MAIN (2026-10-22)
+
+- Merged into `main` at `8a9e24c`: `feat/task048-narrative-enhancements`, `feat/task050-public-ready-audit` (includes TASK-049), `feat/task053-seo-release-candidate`. The three prior unmerged branches are now landed.
+- The 053 merge conflicted on five files (`AI_HANDOFF.md`, `reports/implementation_report.md`, `app/layout.tsx`, `docs/DEPLOYMENT.md`, `src/config/site.ts`). Resolved by taking the 053 SEO versions (the Owner-confirmed canonical domain) and concatenating both handoff/report sections.
+- Re-verified on the merged HEAD `8a9e24c`: `npm run lint` exit 0, `npm run build` exit 0; browser QA 46/46 (`seo-qa.cjs`) + 27/27 (`prod-qa.cjs`) + 42/42 (`pr22-smoke.cjs`) at 390/768/1440. `/story-spike` returns 404 in production; `robots.txt` disallows `/story-spike` and `/fastwork`; `sitemap.xml` lists the homepage.
+- The recorded hold reason was Owner gates AD-01 (art direction) and CT-01 (photo/testimonial permissions), not a defect. The merged state ships TASK-049 Concept A story pages at `/stories` with `robots: noindex`, using photo sets already public on the site.
+- Evidence: `.tasks/TASK-048/reports/final-report.md`, `.tasks/TASK-049/reports/final-report.md`, `.tasks/TASK-050/reports/final-report.md`, `.tasks/TASK-053/reports/final-report.md`.
+
+---
+
 # CURRENT HANDOFF — TASK-053 ISOLATED SEO RELEASE CANDIDATE (2026-10-13)
 
 - Base `origin/main@086d8b9`; independent clean worktree `D:\lumina-studio_worktrees\TASK-053` / branch `feat/task053-seo-release-candidate`. Only SEO Metadata/robots/sitemap/security headers/site URL config, no TASK-048/049/050/052 photo or Home changes.
